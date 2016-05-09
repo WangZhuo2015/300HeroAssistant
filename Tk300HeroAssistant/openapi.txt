@@ -1,0 +1,385 @@
+﻿<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<战绩查询API文档>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>
+
+ =======================================
+<<          获取玩家基本信息            >>
+ =======================================
+[请求地址]
+  /api/getrole
+[参数](支持get与post方法)
+  name: 召唤师名称(utf8编码)
+[例子]
+  http://300report.jumpw.com/api/getrole?name=张三
+[返回值]
+  Json结构
+  {
+    Result: 结果("OK"为成功,其它值为失败原因)
+    Role: 角色信息
+    {
+      RoleName   string  // 角色名
+      RoleLevel  uint    // 角等级
+      JumpValue  int     // 节操值
+      WinCount   uint    // 胜场数
+      MatchCount uint    // 总场数
+      UpdateTime string  // 更新日期
+    }
+    Rank[]: 个人排行榜
+    {
+      Type       int     // 排行类型
+      RankName   string  // 排行名称
+      ValueName  string  // 排行值名称
+      Rank       int     // 排名
+      Value      string  // 排行值
+      RankChange int     // 名次变化
+    }
+  }
+[例子]
+  {
+   "Result":"OK",
+   "Role":
+    {
+      "RoleName":"张三",
+      "RoleLevel":23,
+      "JumpValue":1003,
+      "WinCount":50,
+      "MatchCount":80,
+      "UpdateTime":"2013-11-04 14:45:00"
+    }
+    "Rank":
+    [
+      {
+        "Type":0,
+        "RankName":"最受欢迎玩家",
+        "ValueName":"节操值",
+        "Rank":1,
+        "Value":"42118",
+        "RankChange":0,
+      },
+      ...
+      {
+        "Type":6,
+        "RankName":"最新必须死",
+        "ValueName":"死亡数",
+        "Rank":2682,
+        "Value":".20",
+        "RankChange":0,
+      }
+    ]
+  }
+
+ =======================================
+<<          获取最新的战斗列表          >>
+ =======================================
+[请求地址]
+  /api/getlist
+[参数](支持get与post方法)
+  name: 召唤师名称(utf8编码)
+  index: 列表索引值(默认为0)
+[例子]
+  http://300report.jumpw.com/api/getlist?name=张三
+[返回值]
+  Json结构
+  {
+    Result: 结果("OK"为成功,其它值为失败原因)
+    List[]: 战斗列表(数组)
+    {
+       MatchID   uint    // 比赛ID
+       MatchType uint    // 比赛类型(1:竟技场 2:战场)
+       HeroLevel uint    // 英雄等级 
+       Result    uint    // 比赛结果(1:胜利 2:失败 3:逃跑)
+       MatchDate string  // 比赛日期
+       Hero// 英雄信息
+       {
+          ID        uint    // ID
+          Name      string  // 名称
+          IconFile  string  // 图片相对路径.(在static/images/下)  
+       }
+    }
+  }
+  注:每次最多返回10条记录
+[例子]
+ {
+   "Result":"OK",
+   "List":
+     [
+       {
+         "MatchID":2,
+         "MatchType":2,
+         "HeroLevel":37,
+         "Result":1,
+         "MatchDate":"2013-11-04 14:45:00",
+         "HeroName":"化形战士",
+         "HeroIcon":"herohead/chara_5850.png"
+         },
+       {
+         "MatchID":1,
+         "MatchType":1,
+         "HeroLevel":37,
+         "Result":1,
+         "MatchDate":"2013-10-30 11:57:56",
+         "HeroName":"变异魔菇",
+         "HeroIcon":"herohead/chara_5858.png"
+       }
+     ]
+ }
+
+ =======================================
+<<          获取比赛详细信息            >>
+ =======================================
+[请求地址]
+  /api/getmatch
+[参数](支持get与post方法)
+  id: 比赛ID
+[例子]
+  http://300report.jumpw.com/api/getmatch?id=2
+[返回值]
+  Json结构
+  {
+    Result: 结果("OK"为成功,其它值为失败原因)
+    Match: 战斗详细信息
+    { 
+       MatchType    uint     // 比赛类型(1:竟技场 2:战场)
+       WinSideKill  uint     // 胜利方杀人数
+       LoseSideKill uint     // 失败方杀人数
+       UsedTime     uint     // 比赛所使用的时间(秒)
+       MatchDate    string   // 比赛日期
+       WinSide      []Role   // 胜利方角色信息
+       LoseSide     []Role   // 失败方角色信息
+    }
+  }
+  Role结构
+  {
+       RoleName      string  // 角色名
+       RoleID        uint    // 角色ID
+       RoleLevel     uint    // 角色等级
+       HeroID        uint    // 英雄ID
+       HeroLevel     uint    // 英雄等级
+       Result        uint    // 比赛结果(1:胜利 2:失败 3:逃跑)
+       TeamResult    uint    // 团队比赛结果(1:胜利 0:失败)
+       IsFirstWin    uint    // 是否首胜(1:首胜)
+       KillCount     uint    // 击杀数
+       DeathCount    uint    // 死亡数
+       AssistCount   uint    // 助攻数
+       TowerDestroy  uint    // 建筑摧毁数
+       KillUnitCount uint    // 小兵击杀数
+       TotalMoney    uint    // 金钱总数
+       SkillID       []uint  // 召唤师技能ID
+       EquipID       []uint  // 装备ID
+       RewardMoney   uint    // 金钱奖励
+       RewardExp     uint    // 经验奖励
+       JumpValue     int     // 节操值
+       WinCount      uint    // 胜场数
+       MatchCount    uint    // 总场数
+       ELO           uint    // 团队(胜负)实力
+       KDA           uint    // 本场表现评分
+       Hero// 英雄信息
+       {
+          ID        uint    // ID
+          Name      string  // 名称
+          IconFile  string  // 图片相对路径.(在static/images/下)  
+       }
+       Skill[]// 召唤师技能信息
+       {
+          ID        uint    // ID
+          Name      string  // 名称
+          IconFile  string  // 图片相对路径.(在static/images/下)
+       }
+       Equip[]// 装备信息
+       {
+          ID        uint    // ID
+          Name      string  // 名称
+          IconFile  string  // 图片相对路径.(在static/images/下)
+       }
+    }
+   }
+[例子]
+  {
+    "Result":"OK",
+    "Match":
+    {
+      "MatchType":1,
+      "WinSideKill":89,
+      "LoseSideKill":56,
+      "UsedTime":1567,
+      "MatchDate":"2013-10-30 11:57:56",
+      "WinSide":
+      [
+        {
+          "RoleName":"中文123",
+          "RoleID":123456,
+          "RoleLevel":23,
+          "HeroID":29,
+          "HeroLevel":37,
+          "Result":1,
+          "TeamResult":1,
+          "IsFirstWin":1,
+          "KillCount":26,
+          "DeathCount":12,
+          "AssistCount":56,
+          "TowerDestroy":3,
+          "KillUnitCount":98,
+          "TotalMoney":12340,
+          "SkillID":[8023,8024],
+          "EquipID":[21050,21051,21052,21053,21054,21055],
+          "RewardMoney":96,
+          "RewardExp":105,
+          "JumpValue":1003,
+          "WinCount":50,
+          "MatchCount":80,
+          "Hero":
+          {
+            "ID":29,
+            "Name":"变异魔菇",
+            "IconFile":"herohead/chara_5858.png"
+          },
+          "Skill":
+          [
+            {
+              "ID":8023,
+              "Name":"复活",
+              "IconFile":"skill/ico_8023..png"
+            },
+            {
+              "ID":8024,
+              "Name":"审判",
+              "IconFile":"skill/ico_8024..png"
+            }
+          ],
+          "Equip":
+          [
+            {
+              "ID":21050,
+              "Name":"凤凰羽衣",
+              "IconFile":"equip/acg005.png"
+            },
+            {
+              "ID":21051,
+              "Name":"X手套",
+              "IconFile":"equip/acg006.png"
+            },
+            {
+              "ID":21052,
+              "Name":"反震盔甲",
+              "IconFile":"equip/equip_23.png"
+            },
+            {
+              "ID":21053,
+              "Name":"救世斧",
+              "IconFile":"equip/equip_84.png"
+            },
+            {
+              "ID":21054,
+              "Name":"黑龙皮鞭",
+              "IconFile":"equip/equip_30.png"
+            },
+            {
+              "ID":21055,
+              "Name":"护心镜",
+              "IconFile":"equip/21019.png"
+            }
+          ]
+        }
+      ],
+      "LoseSide":[]
+    }
+  }
+
+ =======================================
+<<            获取排行榜信息            >>
+ =======================================
+[请求地址]
+  /api/getrank
+[参数](支持get与post方法)
+  type: 排行榜类型(默认为-1)
+        -1:排行榜列表
+        0:最受欢迎玩家
+        1:团队实力排行
+        2:常胜王排行
+        3:重度玩家排行
+        4:个人实力排行
+        5:最新杀人王
+        6:最新必须死
+        7:最新助攻王
+        8:最新拆迁王
+        9:最新小兵终结者
+        10:最新打钱王
+        11:最新金钱获取王
+        12:最新经验获取王
+        13:最新常胜王排行
+        14:最新重度玩家
+        28~156:英雄本命排行（不是所有ID都有）
+  index: 列表索引值(默认为0)
+[例子]
+  http://300report.jumpw.com/api/getrank?type=0
+[返回值]
+  Json结构
+  {
+    Result: 结果("OK"为成功,其它值为失败原因)
+    Rank: 排行榜信息
+    {
+       Title      string     // 标题
+       IndexName  string     // 索引名称
+       NameName   string     // 类型名称
+       ValueName  string     // 值名称
+       ChangeName string     // 变化名称
+       List       []RankList // 排行榜
+    }
+  }
+  排行榜结构
+  {
+    Index         int     // 名次
+    Url           string  // 链接地址
+    Name          string  // 玩家名
+    Value         string  // 值
+    RankChange    int     // 名次改变
+  }
+[例子]
+  {
+    "Result":"OK",
+    "Rank":
+    {
+      "Title":"最受欢迎玩家",
+      "IndexName":"排名",
+      "NameName":"召唤师",
+      "ValueName":"节操值",
+      "ChangeName":"名次变化",
+      "List":
+      [
+        {
+          "Index":1,
+          "Url":"list.html?name=忠義參天",
+          "Name":"忠義參天",
+          "Value":"42118",
+          "RankChange":0
+        },
+          ...
+        {
+          "Index":50,
+          "Url":"list.html?name=神啊APC",
+          "Name":"神啊APC",
+          "Value":"9612",
+          "RankChange":0
+        }
+      ]
+    }
+  }
+
+
+ =======================================
+<<            JSONP请求方式            >>
+ =======================================
+[调方法]
+  请在接口方式后面增加jsonp参数即可
+[例子]
+  http://300report.jumpw.com/api/getrole?name=张三&jsonp=GetRole
+  http://300report.jumpw.com/api/getlist?name=张三&jsonp=GetList
+  http://300report.jumpw.com/api/getmatch?id=2&jsonp=GetMatch
+  http://300report.jumpw.com/api/getrank?type=0&jsonp=GetRank
+
+
+===================================================
+|| 技术支持 : 上海跳跃网络科技有限公司            ||
+|| 联系方式 : xuzhiyang#jumpw.com (#换成@)        ||
+|| 更新日志 : 2015年3月9日18时31分                ||
+===================================================
