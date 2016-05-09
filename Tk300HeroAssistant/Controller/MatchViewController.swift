@@ -1,5 +1,5 @@
 //
-//  PersonalRecordViewController.swift
+//  MatchViewController.swift
 //  Tk300HeroAssistant
 //
 //  Created by 王卓 on 16/5/8.
@@ -7,12 +7,19 @@
 //
 
 import UIKit
-
-class PersonalRecordViewController: UIViewController {
+import Alamofire
+class MatchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Alamofire.request(.GET, "http://300report.jumpw.com/api/getlist?name=NextStep", parameters: nil, encoding: .URL, headers: [:]).validate(statusCode: 200..<300).responseJSON { (response:Response<AnyObject, NSError>) in
+            print(response.result.value!)
+        }
+        
+        
+        ServiceProxy.getBattleList("NextStep", index: 0) { (object, error) in
+                print(object)
+        }
         // Do any additional setup after loading the view.
     }
 

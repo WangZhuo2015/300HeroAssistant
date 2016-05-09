@@ -25,6 +25,11 @@ class ServiceProxy{
         return ServiceEndpointBase + "getrole"
     }
     
+    private static func getBattleListURL() -> String {
+        return ServiceEndpointBase + "getlist"
+    }
+    
+    
 //    =======================================
 //    <<          获取玩家基本信息            >>
 //    =======================================
@@ -38,5 +43,19 @@ class ServiceProxy{
         HttpClient.invokeObject(getPlayerBasicInfoURL(), parameters: ["name":playerName], complete: complete)
     }
 
+//    =======================================
+//    <<          获取最新的战斗列表          >>
+//    =======================================
+//    [请求地址]
+//    /api/getlist
+//    [参数](支持get与post方法)
+//    name: 召唤师名称(utf8编码)
+//    index: 列表索引值(默认为0)
+    internal static func getBattleList (
+        playerName:String,
+        index:Int,
+        complete:(object: MatchAPIBase?, error: NSError?) -> Void){
+        HttpClient.invokeObject(getBattleListURL(), parameters: ["name":playerName,"index":index], complete: complete)
+    }
     
 }
