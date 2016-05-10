@@ -8,6 +8,7 @@
 
 import Foundation
 class User {
+    var userName = "NextStep"
     class var sharedUser: User {
         dispatch_once(&Inner.token) {
             Inner.instance = User()
@@ -18,6 +19,7 @@ class User {
         static var instance: User?
         static var token: dispatch_once_t = 0
     }
-    
-    var userName = "NextStep"
+    func setUserName(name:String){
+        userName = name
+    }
 }

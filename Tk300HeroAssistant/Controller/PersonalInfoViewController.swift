@@ -10,9 +10,13 @@ import UIKit
 
 class PersonalInfoViewController: UIViewController {
 
+    
+    var playerData:RoleAPIBase?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        ServiceProxy.getPlayerBasicInfo("NextStep") { (playerInfo, error) in
+            self.playerData = playerInfo
+        }
         // Do any additional setup after loading the view.
     }
 
