@@ -2,63 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48267ff3-1646-4bc0-9089-84b7b52c0aa1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/Equip.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/LoseSide.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/Match.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/MatchDetail.swift" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/AlamofireJsonToObjects/AlamofireJsonToObjects/AlamofireJsonToObjects.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/AlamofireJsonToObjects/AlamofireJsonToObjects/AlamofireJsonToObjects.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/AlamofireJsonToObjects/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/AlamofireJsonToObjects/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/EVReflection/EVReflection/pod/EVExtensions.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/EVReflection/EVReflection/pod/EVObject.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/EVReflection/EVReflection/pod/EVObjectDescription.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/EVReflection/EVReflection/pod/EVReflection.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/EVReflection/EVReflection/pod/EVWorkaroundHelpers.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/EVReflection/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/EVReflection/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/AlamofireJsonToObjects/AlamofireJsonToObjects.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wz.xcuserdatad/xcschemes/AlamofireJsonToObjects.xcscheme" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wz.xcuserdatad/xcschemes/EVReflection.xcscheme" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/AlamofireJsonToObjects/AlamofireJsonToObjects-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/AlamofireJsonToObjects/AlamofireJsonToObjects-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/AlamofireJsonToObjects/AlamofireJsonToObjects-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/AlamofireJsonToObjects/AlamofireJsonToObjects.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/AlamofireJsonToObjects/AlamofireJsonToObjects.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/AlamofireJsonToObjects/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/EVReflection/EVReflection-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/EVReflection/EVReflection-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/EVReflection/EVReflection-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/EVReflection/EVReflection.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/EVReflection/EVReflection.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/EVReflection/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Model/Match.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchAPIBase.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchHero.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Model/Player.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Model/PlayerBasicInfoAPIBase.swift" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Model/PlayerRank.swift" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Cells/matchDetailTableViewCell.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Controller/matchDetailTableViewDataSource.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tk300HeroAssistant.xcworkspace/xcuserdata/wz.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Tk300HeroAssistant.xcworkspace/xcuserdata/wz.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile" afterPath="$PROJECT_DIR$/Podfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile.lock" afterPath="$PROJECT_DIR$/Podfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wz.xcuserdatad/xcschemes/Alamofire.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wz.xcuserdatad/xcschemes/Alamofire.xcscheme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wz.xcuserdatad/xcschemes/Kingfisher.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wz.xcuserdatad/xcschemes/Kingfisher.xcscheme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wz.xcuserdatad/xcschemes/Pods-Tk300HeroAssistant.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wz.xcuserdatad/xcschemes/Pods-Tk300HeroAssistant.xcscheme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wz.xcuserdatad/xcschemes/SnapKit.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wz.xcuserdatad/xcschemes/SnapKit.xcscheme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wz.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/wz.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-acknowledgements.markdown" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-acknowledgements.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-acknowledgements.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-acknowledgements.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-frameworks.sh" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-frameworks.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.debug.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.debug.xcconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.release.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.release.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/300HeroAssistant.iml" afterPath="$PROJECT_DIR$/.idea/300HeroAssistant.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tk300HeroAssistant.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Tk300HeroAssistant.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tk300HeroAssistant.xcworkspace/xcuserdata/wz.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/Tk300HeroAssistant.xcworkspace/xcuserdata/wz.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Base.lproj/Match.storyboard" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Base.lproj/Match.storyboard" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Controller/MatchDetailViewController.swift" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Controller/MatchDetailViewController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Controller/MatchViewController.swift" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Controller/MatchViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Controller/PersonalInfoViewController.swift" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Controller/PersonalInfoViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Network/HttpClient.swift" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Network/HttpClient.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Network/ServiceProxy.swift" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Network/ServiceProxy.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/Equip.swift" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/Equip.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/MatchRole.swift" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/MatchRole.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tk300HeroAssistant/openapi.txt" afterPath="$PROJECT_DIR$/Tk300HeroAssistant/openapi.txt" />
     </list>
     <ignored path="300HeroAssistant.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,7 +33,7 @@
     <favorites_list name="Tk300HeroAssistant" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MatchDetail.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/MatchDetail.swift">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,11 +44,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoseSide.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/LoseSide.swift">
+      <file leaf-file-name="Equip.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/Equip.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="120">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatchBasicAPIBase.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tk300HeroAssistant/Model/Match/MatchBasicAPIBase.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatchRole.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/MatchRole.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,6 +83,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/LoseSide.swift" />
+        <option value="$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/Equip.swift" />
       </list>
     </option>
   </component>
@@ -119,7 +95,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1366" />
-    <option name="height" value="680" />
+    <option name="height" value="690" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -146,6 +122,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,7 +197,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,6 +224,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -322,19 +304,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="680" extended-state="0" />
+    <frame x="0" y="23" width="1366" height="690" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24981412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -363,8 +345,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/LoseSide.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="360">
           <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/LoseSide.swift" />
+    <entry file="file://$PROJECT_DIR$/Tk300HeroAssistant/Model/Match/MatchBasicAPIBase.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/MatchRole.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/MatchDetail.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tk300HeroAssistant/Model/MatchDetail/Equip.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="10" />
           <folding />
         </state>
       </provider>

@@ -35,9 +35,9 @@ class MatchRole: NSObject, NSCoding{
     var assistCount : Int!
 	var deathCount : Int!
 	var eLO : Int!
-	var equip : [Equip]!
+	var equip : [Item]!
 	var equipID : [Int]!
-	var hero : Equip!
+	var hero : Item!
 	var heroID : Int!
 	var heroLevel : Int!
 	var isFirstWin : Int!
@@ -52,7 +52,7 @@ class MatchRole: NSObject, NSCoding{
 	var roleID : Int!
 	var roleLevel : Int!
 	var roleName : String!
-	var skill : [Equip]!
+	var skill : [Item]!
 	var skillID : [Int]!
 	var teamResult : Int!
 	var totalMoney : Int!
@@ -70,10 +70,10 @@ class MatchRole: NSObject, NSCoding{
 		assistCount = json["AssistCount"].intValue
 		deathCount = json["DeathCount"].intValue
 		eLO = json["ELO"].intValue
-		equip = [Equip]()
+		equip = [Item]()
 		let equipArray = json["Equip"].arrayValue
 		for equipJson in equipArray{
-			let value = Equip(fromJson: equipJson)
+			let value = Item(fromJson: equipJson)
 			equip.append(value)
 		}
 		equipID = [Int]()
@@ -83,7 +83,7 @@ class MatchRole: NSObject, NSCoding{
 		}
 		let heroJson = json["Hero"]
 		if heroJson != JSON.null{
-			hero = Equip(fromJson: heroJson)
+			hero = Item(fromJson: heroJson)
 		}
 		heroID = json["HeroID"].intValue
 		heroLevel = json["HeroLevel"].intValue
@@ -99,10 +99,10 @@ class MatchRole: NSObject, NSCoding{
 		roleID = json["RoleID"].intValue
 		roleLevel = json["RoleLevel"].intValue
 		roleName = json["RoleName"].stringValue
-		skill = [Equip]()
+		skill = [Item]()
 		let skillArray = json["Skill"].arrayValue
 		for skillJson in skillArray{
-			let value = Equip(fromJson: skillJson)
+			let value = Item(fromJson: skillJson)
 			skill.append(value)
 		}
 		skillID = [Int]()
@@ -220,9 +220,9 @@ class MatchRole: NSObject, NSCoding{
          assistCount = aDecoder.decodeObjectForKey("AssistCount") as? Int
          deathCount = aDecoder.decodeObjectForKey("DeathCount") as? Int
          eLO = aDecoder.decodeObjectForKey("ELO") as? Int
-         equip = aDecoder.decodeObjectForKey("Equip") as? [Equip]
+         equip = aDecoder.decodeObjectForKey("Equip") as? [Item]
          equipID = aDecoder.decodeObjectForKey("EquipID") as? [Int]
-         hero = aDecoder.decodeObjectForKey("Hero") as? Equip
+         hero = aDecoder.decodeObjectForKey("Hero") as? Item
          heroID = aDecoder.decodeObjectForKey("HeroID") as? Int
          heroLevel = aDecoder.decodeObjectForKey("HeroLevel") as? Int
          isFirstWin = aDecoder.decodeObjectForKey("IsFirstWin") as? Int
@@ -237,7 +237,7 @@ class MatchRole: NSObject, NSCoding{
          roleID = aDecoder.decodeObjectForKey("RoleID") as? Int
          roleLevel = aDecoder.decodeObjectForKey("RoleLevel") as? Int
          roleName = aDecoder.decodeObjectForKey("RoleName") as? String
-         skill = aDecoder.decodeObjectForKey("Skill") as? [Equip]
+         skill = aDecoder.decodeObjectForKey("Skill") as? [Item]
          skillID = aDecoder.decodeObjectForKey("SkillID") as? [Int]
          teamResult = aDecoder.decodeObjectForKey("TeamResult") as? Int
          totalMoney = aDecoder.decodeObjectForKey("TotalMoney") as? Int
@@ -262,7 +262,7 @@ class MatchRole: NSObject, NSCoding{
 			aCoder.encodeObject(eLO, forKey: "ELO")
 		}
 		if equip != nil{
-			aCoder.encodeObject(equip, forKey: "Equip")
+			aCoder.encodeObject(equip, forKey: "Item")
 		}
 		if equipID != nil{
 			aCoder.encodeObject(equipID, forKey: "EquipID")

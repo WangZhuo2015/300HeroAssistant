@@ -185,7 +185,7 @@
           Name      string  // 名称
           IconFile  string  // 图片相对路径.(在static/images/下)
        }
-       Equip[]// 装备信息
+       Item[]// 装备信息
        {
           ID        uint    // ID
           Name      string  // 名称
@@ -246,7 +246,7 @@
               "IconFile":"skill/ico_8024..png"
             }
           ],
-          "Equip":
+          "Item":
           [
             {
               "ID":21050,

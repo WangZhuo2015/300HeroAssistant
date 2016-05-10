@@ -10,9 +10,39 @@ import UIKit
 
 class MatchDetailViewController: UIViewController {
 
+    @IBOutlet weak var detailTableView: UITableView!
+    
+    @IBOutlet weak var detailHeaderView: UIView!
+    
+    @IBOutlet weak var matchTypeLabel: UILabel!
+    
+    @IBOutlet weak var matchDateLabel: UILabel!
+    
+    @IBOutlet weak var matchDurationLabel: UILabel!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    
+    
+    
+    
+    
+    @IBOutlet weak var matchScoreLabel: UILabel!
+    
+    var matchID = 0
+    let matchDetailCellIdentifier = "matchDetailCellIdentifier"
+    var matchData:Match?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.dataSource = self
+        tableView.delegate = self
+        ServiceProxy.getMatchDetail(matchID) { (matchDetail, error) in
+            self.matchData = (matchDetail?.match)
+            self.setMatchInfo(self.matchData!)
+            self.tableView.reloadData()
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +52,12 @@ class MatchDetailViewController: UIViewController {
     }
     
 
+    func setMatchInfo(match:Match){
+        matchTypeLabel.text = match.matchType == 1 ? "竞技场" : "战场"
+        matchDateLabel.text = match.matchDate
+        matchScoreLabel.text = "\(match.winSideKill) / \(match.loseSideKill)"
+        matchDurationLabel.text = "\(match.usedTime)秒"
+    }
     /*
     // MARK: - Navigation
 

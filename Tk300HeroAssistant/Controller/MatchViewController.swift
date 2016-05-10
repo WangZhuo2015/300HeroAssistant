@@ -22,7 +22,7 @@ class MatchViewController: UIViewController {
         matchTableView.delegate = self
         
         
-        ServiceProxy.getBattleList("Nico！！", index: 0) { (matchBasicAPIBase, error) in
+        ServiceProxy.getBattleList("NextStep", index: 0) { (matchBasicAPIBase, error) in
             self.matchBasicInfoArray = (matchBasicAPIBase?.list)!
             self.matchTableView.reloadData()
         }        // Do any additional setup after loading the view.
@@ -34,6 +34,11 @@ class MatchViewController: UIViewController {
     }
     
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as! MatchDetailViewController
+        vc.matchID = matchBasicInfoArray [matchTableView.indexPathForSelectedRow!.row].matchID
+    }
+    
     /*
     // MARK: - Navigation
 

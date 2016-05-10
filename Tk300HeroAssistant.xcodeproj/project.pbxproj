@@ -10,7 +10,9 @@
 		10E8B55053A6498DBE10C935 /* Pods_Tk300HeroAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7564F5567745CF2D7F2D7C7E /* Pods_Tk300HeroAssistant.framework */; };
 		35011C601CE03BCC004F7913 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */; };
 		35011C621CE03C3C004F7913 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35011C611CE03C3C004F7913 /* User.swift */; };
-		3517D6FC1CE0EA70006162BA /* Equip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D6F81CE0EA70006162BA /* Equip.swift */; };
+		350E2C971CE1A96D00DF5216 /* matchDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E2C961CE1A96D00DF5216 /* matchDetailTableViewCell.swift */; };
+		350E2C991CE1A99800DF5216 /* matchDetailTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E2C981CE1A99800DF5216 /* matchDetailTableViewDataSource.swift */; };
+		3517D6FC1CE0EA70006162BA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D6F81CE0EA70006162BA /* Item.swift */; };
 		3517D6FD1CE0EA70006162BA /* MatchRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D6F91CE0EA70006162BA /* MatchRole.swift */; };
 		3517D6FE1CE0EA70006162BA /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D6FA1CE0EA70006162BA /* Match.swift */; };
 		3517D6FF1CE0EA70006162BA /* MatchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D6FB1CE0EA70006162BA /* MatchDetail.swift */; };
@@ -50,7 +52,9 @@
 		18A602F317AB484ED053DA7E /* Pods-Tk300HeroAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tk300HeroAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationViewController.swift; path = Controller/MainNavigationViewController.swift; sourceTree = "<group>"; };
 		35011C611CE03C3C004F7913 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Tk300HeroAssistant/Model/User.swift; sourceTree = SOURCE_ROOT; };
-		3517D6F81CE0EA70006162BA /* Equip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Equip.swift; path = Tk300HeroAssistant/Model/MatchDetail/Equip.swift; sourceTree = SOURCE_ROOT; };
+		350E2C961CE1A96D00DF5216 /* matchDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = matchDetailTableViewCell.swift; path = Cells/matchDetailTableViewCell.swift; sourceTree = "<group>"; };
+		350E2C981CE1A99800DF5216 /* matchDetailTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = matchDetailTableViewDataSource.swift; path = Controller/matchDetailTableViewDataSource.swift; sourceTree = "<group>"; };
+		3517D6F81CE0EA70006162BA /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Tk300HeroAssistant/Model/MatchDetail/Item.swift; sourceTree = SOURCE_ROOT; };
 		3517D6F91CE0EA70006162BA /* MatchRole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchRole.swift; path = Tk300HeroAssistant/Model/MatchDetail/MatchRole.swift; sourceTree = SOURCE_ROOT; };
 		3517D6FA1CE0EA70006162BA /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Tk300HeroAssistant/Model/MatchDetail/Match.swift; sourceTree = SOURCE_ROOT; };
 		3517D6FB1CE0EA70006162BA /* MatchDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchDetail.swift; path = Tk300HeroAssistant/Model/MatchDetail/MatchDetail.swift; sourceTree = SOURCE_ROOT; };
@@ -160,7 +164,7 @@
 		3517D6E31CE0E6FD006162BA /* MatchDetail */ = {
 			isa = PBXGroup;
 			children = (
-				3517D6F81CE0EA70006162BA /* Equip.swift */,
+				3517D6F81CE0EA70006162BA /* Item.swift */,
 				3517D6F91CE0EA70006162BA /* MatchRole.swift */,
 				3517D6FA1CE0EA70006162BA /* Match.swift */,
 				3517D6FB1CE0EA70006162BA /* MatchDetail.swift */,
@@ -172,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				35FBA6401CDF717400A527B4 /* MatchDetailViewController.swift */,
+				350E2C961CE1A96D00DF5216 /* matchDetailTableViewCell.swift */,
+				350E2C981CE1A99800DF5216 /* matchDetailTableViewDataSource.swift */,
 			);
 			name = "详情";
 			sourceTree = "<group>";
@@ -431,7 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3517D70D1CE0F2FA006162BA /* MatchTableViewDataSource.swift in Sources */,
-				3517D6FC1CE0EA70006162BA /* Equip.swift in Sources */,
+				3517D6FC1CE0EA70006162BA /* Item.swift in Sources */,
 				3517D7031CE0EDE9006162BA /* Rank.swift in Sources */,
 				35FBA6201CDF523C00A527B4 /* HttpClient.swift in Sources */,
 				35FBA6181CDF51B100A527B4 /* DGRunkeeperSwitch.swift in Sources */,
@@ -440,10 +446,12 @@
 				35011C601CE03BCC004F7913 /* MainNavigationViewController.swift in Sources */,
 				35FBA6141CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift in Sources */,
 				3517D6FD1CE0EA70006162BA /* MatchRole.swift in Sources */,
+				350E2C971CE1A96D00DF5216 /* matchDetailTableViewCell.swift in Sources */,
 				3517D7041CE0EDE9006162BA /* Role.swift in Sources */,
 				3517D6FF1CE0EA70006162BA /* MatchDetail.swift in Sources */,
 				35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */,
 				35FBA5F91CDF4E5C00A527B4 /* AppDelegate.swift in Sources */,
+				350E2C991CE1A99800DF5216 /* matchDetailTableViewDataSource.swift in Sources */,
 				35011C621CE03C3C004F7913 /* User.swift in Sources */,
 				35FBA63F1CDF714A00A527B4 /* MatchViewController.swift in Sources */,
 				35FBA63B1CDF711800A527B4 /* PersonalInfoViewController.swift in Sources */,

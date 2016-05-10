@@ -1,5 +1,5 @@
 //
-//	Equip.swift
+//	Item.swift
 //  on 9/5/2016
 //	Copyright © 2016. All rights reserved.
 //	Model file Generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
@@ -7,7 +7,7 @@
 import Foundation
 import SwiftyJSON
 
-class Equip : NSObject, NSCoding{
+class Item: NSObject, NSCoding{
 
 //    ID        uint    // ID
 //    Name      string  // 名称

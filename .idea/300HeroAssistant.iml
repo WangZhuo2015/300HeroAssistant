@@ -14,18 +14,28 @@
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/AppDelegate.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Network/HttpClient.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Network/ServiceProxy.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/MatchDetail/Match.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/MatchDetail/LoseSide.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/Match/Hero.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/Match/List.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/Match/MatchBasicAPIBase.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/Player/RoleAPIBase.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/Player/Role.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/Player/Rank.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/User.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/MatchDetail/MatchRole.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/MatchDetail/Equip.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/MatchDetail/MatchDetail.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/User.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Model/MatchDetail/Match.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Cells/MatchBasicTableViewCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Cells/matchDetailTableViewCell.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Controller/MatchDetailViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Controller/RankViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Controller/MatchTableViewDataSource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Controller/PersonalInfoViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Controller/RankViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Controller/MainNavigationViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Controller/MatchViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Controller/matchDetailTableViewDataSource.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Controller/Main/MainViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tk300HeroAssistant/Base.lproj/Match.storyboard" isTestSource="false" />
@@ -39,31 +49,31 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/ImageDownloader.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/UIButton+Kingfisher.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/Resource.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/AnimatedImageView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/ThreadHelper.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/Kingfisher.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/String+MD5.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/ImageTransition.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/ImagePrefetcher.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/KingfisherOptionsInfo.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/ThreadHelper.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/AnimatedImageView.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Kingfisher/Sources/ImageView+Kingfisher.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Validation.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Response.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Download.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Timeline.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Error.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Stream.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/MultipartFormData.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Validation.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ServerTrustPolicy.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Alamofire.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ParameterEncoding.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Result.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Manager.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Download.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Upload.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/NetworkReachabilityManager.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Timeline.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ResponseSerialization.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Request.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Notifications.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ParameterEncoding.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Upload.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/MultipartFormData.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Response.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Alamofire.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SwiftyJSON/SwiftyJSON.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SwiftyJSON/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SwiftyJSON/SwiftyJSON-umbrella.h" isTestSource="false" />
@@ -73,12 +83,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.release.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-frameworks.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-umbrella.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-acknowledgements.markdown" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.debug.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-resources.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-acknowledgements.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-acknowledgements.markdown" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.debug.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.modulemap" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SnapKit/SnapKit-prefix.pch" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SnapKit/SnapKit-dummy.m" isTestSource="false" />
@@ -98,18 +108,18 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Kingfisher/Kingfisher.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Kingfisher/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Kingfisher/Kingfisher-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/ConstraintDescription.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/ConstraintMaker.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/View+SnapKit.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/ViewController+SnapKit.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/ConstraintAttributes.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/ConstraintMaker.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/ConstraintDescription.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/ViewController+SnapKit.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/View+SnapKit.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/Constraint.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/Debugging.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/LayoutConstraint.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/ConstraintRelation.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/SnapKit.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/EdgeInsets.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/ConstraintItem.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/ConstraintRelation.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SnapKit/Source/LayoutConstraint.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftyJSON/Source/SwiftyJSON.swift" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
