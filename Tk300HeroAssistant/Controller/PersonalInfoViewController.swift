@@ -12,14 +12,7 @@ class PersonalInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        HttpClient.invoke("http://300report.jumpw.com/api/getrole", parameters: ["name":"NextStep"]){ (object, error) in
-//                //print(object)
-//        }
-
         
-        ServiceProxy.getPlayerBasicInfo("NextStep") { (object, error) in
-            print(object)
-        }
         // Do any additional setup after loading the view.
     }
 

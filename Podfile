@@ -5,8 +5,7 @@
 
 target 'Tk300HeroAssistant' do
     pod 'SnapKit'
-    pod 'EVReflection'
-    pod 'AlamofireJsonToObjects'
+    pod 'SwiftyJSON'
     pod 'Alamofire'
     #Kingfisher图片缓存库
     pod 'Kingfisher', '~> 2.2'

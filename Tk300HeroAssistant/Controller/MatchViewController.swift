@@ -9,18 +9,23 @@
 import UIKit
 import Alamofire
 class MatchViewController: UIViewController {
-
+    @IBOutlet weak var matchTableView: UITableView!
+    
+    //MatchCell
+    let MatchCellIdentifier = "MatchCellIdentifier"
+    var matchBasicInfoArray = [List]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        Alamofire.request(.GET, "http://300report.jumpw.com/api/getlist?name=NextStep", parameters: nil, encoding: .URL, headers: [:]).validate(statusCode: 200..<300).responseJSON { (response:Response<AnyObject, NSError>) in
-            print(response.result.value!)
-        }
+        matchTableView.dataSource = self
+        matchTableView.delegate = self
         
         
-        ServiceProxy.getBattleList("NextStep", index: 0) { (object, error) in
-                print(object)
-        }
-        // Do any additional setup after loading the view.
+        ServiceProxy.getBattleList("Nico！！", index: 0) { (matchBasicAPIBase, error) in
+            self.matchBasicInfoArray = (matchBasicAPIBase?.list)!
+            self.matchTableView.reloadData()
+        }        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

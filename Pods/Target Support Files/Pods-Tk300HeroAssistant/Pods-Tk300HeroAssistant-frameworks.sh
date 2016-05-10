@@ -85,15 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Tk300HeroAssistant/Alamofire.framework"
-  install_framework "Pods-Tk300HeroAssistant/AlamofireJsonToObjects.framework"
-  install_framework "Pods-Tk300HeroAssistant/EVReflection.framework"
   install_framework "Pods-Tk300HeroAssistant/Kingfisher.framework"
   install_framework "Pods-Tk300HeroAssistant/SnapKit.framework"
+  install_framework "Pods-Tk300HeroAssistant/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Tk300HeroAssistant/Alamofire.framework"
-  install_framework "Pods-Tk300HeroAssistant/AlamofireJsonToObjects.framework"
-  install_framework "Pods-Tk300HeroAssistant/EVReflection.framework"
   install_framework "Pods-Tk300HeroAssistant/Kingfisher.framework"
   install_framework "Pods-Tk300HeroAssistant/SnapKit.framework"
+  install_framework "Pods-Tk300HeroAssistant/SwiftyJSON.framework"
 fi

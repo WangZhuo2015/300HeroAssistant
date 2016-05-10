@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0D54050FD2C5099546127FF3'
-               BlueprintName = 'Pods-Tk300HeroAssistant'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_Tk300HeroAssistant.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D88494FF4176C03D0A384A0B291C1748"
+               BlueprintName = "Pods-Tk300HeroAssistant"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "Pods_Tk300HeroAssistant.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
