@@ -12,6 +12,7 @@
 		35011C621CE03C3C004F7913 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35011C611CE03C3C004F7913 /* User.swift */; };
 		350E2C971CE1A96D00DF5216 /* matchDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E2C961CE1A96D00DF5216 /* matchDetailTableViewCell.swift */; };
 		350E2C991CE1A99800DF5216 /* matchDetailTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E2C981CE1A99800DF5216 /* matchDetailTableViewDataSource.swift */; };
+		3516C7CD1CE640F3005BF4D8 /* FriendAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3516C7CC1CE640F3005BF4D8 /* FriendAnalyzer.swift */; };
 		3517D6FC1CE0EA70006162BA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D6F81CE0EA70006162BA /* Item.swift */; };
 		3517D6FD1CE0EA70006162BA /* MatchRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D6F91CE0EA70006162BA /* MatchRole.swift */; };
 		3517D6FE1CE0EA70006162BA /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D6FA1CE0EA70006162BA /* Match.swift */; };
@@ -56,6 +57,7 @@
 		35011C611CE03C3C004F7913 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Tk300HeroAssistant/Model/User.swift; sourceTree = SOURCE_ROOT; };
 		350E2C961CE1A96D00DF5216 /* matchDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = matchDetailTableViewCell.swift; path = Cells/matchDetailTableViewCell.swift; sourceTree = "<group>"; };
 		350E2C981CE1A99800DF5216 /* matchDetailTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = matchDetailTableViewDataSource.swift; path = Controller/matchDetailTableViewDataSource.swift; sourceTree = "<group>"; };
+		3516C7CC1CE640F3005BF4D8 /* FriendAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendAnalyzer.swift; path = Tk300HeroAssistant/Model/FriendAnyalysis/FriendAnalyzer.swift; sourceTree = SOURCE_ROOT; };
 		3517D6F81CE0EA70006162BA /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Tk300HeroAssistant/Model/MatchDetail/Item.swift; sourceTree = SOURCE_ROOT; };
 		3517D6F91CE0EA70006162BA /* MatchRole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchRole.swift; path = Tk300HeroAssistant/Model/MatchDetail/MatchRole.swift; sourceTree = SOURCE_ROOT; };
 		3517D6FA1CE0EA70006162BA /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Tk300HeroAssistant/Model/MatchDetail/Match.swift; sourceTree = SOURCE_ROOT; };
@@ -136,6 +138,14 @@
 				3517D7081CE0EE5F006162BA /* MatchBasicAPIBase.swift */,
 			);
 			name = Match;
+			sourceTree = "<group>";
+		};
+		3516C7CB1CE64094005BF4D8 /* FriendAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				3516C7CC1CE640F3005BF4D8 /* FriendAnalyzer.swift */,
+			);
+			name = FriendAnalysis;
 			sourceTree = "<group>";
 		};
 		3517D6D41CE0DE4F006162BA /* 个人战绩 */ = {
@@ -266,6 +276,7 @@
 		35FBA6231CDF57DB00A527B4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3516C7CB1CE64094005BF4D8 /* FriendAnalysis */,
 				3517D6E31CE0E6FD006162BA /* MatchDetail */,
 				35011C631CE04028004F7913 /* Match */,
 				35011C5E1CE03616004F7913 /* Rank */,
@@ -457,6 +468,7 @@
 				3517D7041CE0EDE9006162BA /* Role.swift in Sources */,
 				3517D6FF1CE0EA70006162BA /* MatchDetail.swift in Sources */,
 				35DCA5CC1CE567730037577B /* PersonalRankTableViewCell.swift in Sources */,
+				3516C7CD1CE640F3005BF4D8 /* FriendAnalyzer.swift in Sources */,
 				35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */,
 				35FBA5F91CDF4E5C00A527B4 /* AppDelegate.swift in Sources */,
 				350E2C991CE1A99800DF5216 /* matchDetailTableViewDataSource.swift in Sources */,
