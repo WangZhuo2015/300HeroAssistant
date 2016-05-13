@@ -10,9 +10,10 @@ import UIKit
 
 class RankViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        ServiceProxy.getRank(<#T##type: Int##Int#>, index: <#T##Int#>, complete: <#T##(data: NSData?, error: NSError?) -> Void#>)
         // Do any additional setup after loading the view.
     }
 

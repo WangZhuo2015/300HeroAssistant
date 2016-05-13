@@ -45,6 +45,7 @@ class ServiceProxy{
         complete:(PlayerInfo: RoleAPIBase?, error: NSError?) -> Void){
         HttpClient.invoke(getPlayerBasicInfoURL(), parameters: ["name":playerName]) { (response, error) in
             let json = JSON(data: response!)
+            print(json)
             complete(PlayerInfo: RoleAPIBase(fromJson:json), error: error)
         }
     }
@@ -63,7 +64,6 @@ class ServiceProxy{
         complete:(MatchBasicAPIBase: MatchBasicAPIBase?, error: NSError?) -> Void){
         HttpClient.invoke(getMatchListURL(), parameters: ["name":playerName,"index":index]) { (response, error) in
             let json = JSON(data: response!)
-            print(json)
             complete(MatchBasicAPIBase: MatchBasicAPIBase(fromJson: json), error: error)
         }
     }
@@ -80,7 +80,6 @@ class ServiceProxy{
         complete:(MatchDetail: MatchDetail?, error: NSError?) -> Void){
         HttpClient.invoke(getMatchDetailURL(), parameters: ["id":id]) { (response, error) in
             let json = JSON(data: response!)
-            print(json)
             complete(MatchDetail: MatchDetail(fromJson: json), error: error)
         }
     }

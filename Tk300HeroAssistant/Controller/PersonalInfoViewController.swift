@@ -10,6 +10,22 @@ import UIKit
 
 class PersonalInfoViewController: UIViewController {
 
+    @IBOutlet weak var roleNameLabel: UILabel!
+    
+    @IBOutlet weak var roleLevelLabel: UILabel!
+    
+    @IBOutlet weak var winCountLabel: UILabel!
+    
+    @IBOutlet weak var jumpLevelLabel: UILabel!
+    
+    @IBOutlet weak var allCountLabel: UILabel!
+    
+    @IBOutlet weak var updateTimeLabel: UILabel!
+    
+    //PersonalRankCell
+    let PersonalRankCellIdentifier = "PersonalRankCellIdentifier"
+    var matchBasicInfoArray = [Rank]()
+    
     
     var playerData:RoleAPIBase?
     override func viewDidLoad() {
