@@ -26,22 +26,6 @@ class matchDetailTableViewCell: UITableViewCell {
     
     @IBOutlet weak var playerImage: UIImageView!
     
-    @IBOutlet weak var equipImg1: UIImageView!
-    
-    @IBOutlet weak var equipImg2: UIImageView!
-    
-    @IBOutlet weak var equipImg3: UIImageView!
-    
-    @IBOutlet weak var equipImg4: UIImageView!
-    
-    @IBOutlet weak var equipImg5: UIImageView!
-    
-    @IBOutlet weak var equipImg6: UIImageView!
-    
-    @IBOutlet weak var skillImg1: UIImageView!
-    
-    @IBOutlet weak var skillImg2: UIImageView!
-    
     @IBOutlet weak var eloLabel: UILabel!
     
     @IBOutlet weak var kdaLabel: UILabel!
@@ -53,6 +37,9 @@ class matchDetailTableViewCell: UITableViewCell {
     @IBOutlet var equipImages: [UIImageView]!
     
     @IBOutlet var skillImages: [UIImageView]!
+    
+    @IBOutlet weak var winOrLoseImage: UIImageView!
+    
     
     func setRoleCell(role:MatchRole){
         playerNameLabel.text = role.roleName
@@ -67,10 +54,26 @@ class matchDetailTableViewCell: UITableViewCell {
         winCountLabel.text = "\(role.winCount)"
         allMatchCountLabel.text = "\(role.matchCount)"
         
-        playerImage.kf_setImageWithURL(NSURL(string: "http://300report.jumpw.com/static/images/"+role.hero.iconFile)!)
-        for count in 0..<role.equip.count {
-            equipImages[count].kf_setImageWithURL(NSURL(string: "http://300report.jumpw.com/static/images/"+role.equip[count].iconFile)!)
+        if role.result == 1{
+            winOrLoseImage.image = UIImage(named: "win")
+        }else{
+            winOrLoseImage.image = UIImage(named: "lose")
         }
+        playerImage.kf_setImageWithURL(NSURL(string: "http://300report.jumpw.com/static/images/"+role.hero.iconFile)!)
+        //防止空格
+        role.equip = role.equip.filter { (item) -> Bool in
+            item.iconFile != ""
+        }
+        
+        for count in 0..<role.equip.count {
+            equipImages[count].kf_setImageWithURL(NSURL(string: "http://300report.jumpw.com/static/images/" + role.equip[count].iconFile)!)
+            print(role.equip[count].iconFile)
+        }
+        //防止复用Bug
+        for count in role.equip.count..<equipImages.count {
+            equipImages[count].image = nil
+        }
+        
         for count in 0..<role.skill.count {
             skillImages[count].kf_setImageWithURL(NSURL(string: "http://300report.jumpw.com/static/images/"+role.skill[count].iconFile)!)
         }
@@ -80,6 +83,8 @@ class matchDetailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.contentView.layer.cornerRadius = 30
+        self.contentView.clipsToBounds = true
         // Initialization code
     }
 
