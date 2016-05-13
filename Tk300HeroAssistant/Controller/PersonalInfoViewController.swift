@@ -22,20 +22,50 @@ class PersonalInfoViewController: UIViewController {
     
     @IBOutlet weak var updateTimeLabel: UILabel!
     
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    
     //PersonalRankCell
     let PersonalRankCellIdentifier = "PersonalRankCellIdentifier"
-    var matchBasicInfoArray = [Rank]()
-    
-    
-    var playerData:RoleAPIBase?
+    var rank = [Rank](){
+        didSet{
+            self.tableView.reloadData()
+        }
+    }
+    var role:Role?{
+        didSet{
+            if let roleContent = role{
+                setRoleContent(roleContent)
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        ServiceProxy.getPlayerBasicInfo("NextStep") { (playerInfo, error) in
-            self.playerData = playerInfo
-        }
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        loadPlayerBasicInfoWithName("古手梨花さん")
         // Do any additional setup after loading the view.
     }
+    
+    func loadPlayerBasicInfoWithName(name:String){
+        ServiceProxy.getPlayerBasicInfo(name) { (playerInfo, error) in
+            self.rank = (playerInfo?.rank)!
+            self.role = playerInfo?.role
+        }
+    }
 
+    
+    func setRoleContent(role:Role){
+        roleNameLabel.text = role.roleName
+        roleLevelLabel.text = "\(role.roleLevel)"
+        winCountLabel.text = "\(role.winCount)"
+        allCountLabel.text = "\(role.matchCount)"
+        jumpLevelLabel.text = "\(role.jumpValue)"
+        updateTimeLabel.text = role.updateTime
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

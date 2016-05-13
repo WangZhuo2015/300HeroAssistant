@@ -225,6 +225,7 @@
                         <outlet property="jumpLevelLabel" destination="dab-Tm-1J4" id="OWg-Zz-occ"/>
                         <outlet property="roleLevelLabel" destination="2rf-2n-Z3R" id="iF8-b2-ooF"/>
                         <outlet property="roleNameLabel" destination="uUf-t8-Ohz" id="VHk-mC-300"/>
+                        <outlet property="tableView" destination="0i3-wo-iRz" id="gBi-rg-45y"/>
                         <outlet property="updateTimeLabel" destination="OhN-Aa-a7S" id="OIt-Uv-wLH"/>
                         <outlet property="winCountLabel" destination="WP0-9P-0kX" id="4aW-TT-Py0"/>
                     </connections>

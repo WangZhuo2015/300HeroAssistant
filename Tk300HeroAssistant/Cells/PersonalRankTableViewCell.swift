@@ -28,5 +28,11 @@ class PersonalRankTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    func setCellContent(rank:Rank){
+        rankNameLabel.text = rank.rankName
+        rankLabel.text = "\(rank.rank)"
+        valueLabel.text = rank.value
+        valueChangeLabel.text = "\(rank.rankChange)"
+    }
 
 }
