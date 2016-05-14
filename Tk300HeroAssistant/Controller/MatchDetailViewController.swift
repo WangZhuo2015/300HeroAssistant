@@ -22,12 +22,6 @@ class MatchDetailViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    
-    
-    
-    
-    
-    
     @IBOutlet weak var matchScoreLabel: UILabel!
     
     var matchID = 0
@@ -68,4 +62,12 @@ class MatchDetailViewController: UIViewController {
     }
     */
 
+    @IBAction func sideSelect(sender: UISegmentedControl) {
+        //TODO -:防止index越界
+        tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0,inSection: sender.selectedSegmentIndex), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+    }
+    
+    
+    
+    
 }

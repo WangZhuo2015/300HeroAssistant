@@ -40,6 +40,13 @@ class matchDetailTableViewCell: UITableViewCell {
     
     @IBOutlet weak var winOrLoseImage: UIImageView!
     
+    @IBOutlet weak var innerView: UIView!
+    
+    @IBOutlet weak var playerInnerView: UIView!
+    
+    
+    
+    
     
     func setRoleCell(role:MatchRole){
         playerNameLabel.text = role.roleName
@@ -83,8 +90,10 @@ class matchDetailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.contentView.layer.cornerRadius = 30
-        self.contentView.clipsToBounds = true
+        innerView.layer.cornerRadius = 10
+        //playerInnerView.layer.cornerRadius = innerView.layer.cornerRadius
+        playerImage.layer.cornerRadius = playerImage.bounds.width/2
+        self.innerView.clipsToBounds = true
         // Initialization code
     }
 

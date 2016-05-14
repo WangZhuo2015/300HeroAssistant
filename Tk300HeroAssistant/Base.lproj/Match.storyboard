@@ -243,13 +243,13 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本局表现" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKv-W3-ygH">
-                                                            <rect key="frame" x="194" y="24" width="60" height="18"/>
+                                                            <rect key="frame" x="130" y="24" width="60" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcc-je-ZuP">
-                                                            <rect key="frame" x="262" y="24" width="10" height="18"/>
+                                                            <rect key="frame" x="198" y="24" width="10" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -495,7 +495,7 @@
                                                             <color key="backgroundColor" red="0.29803921568627451" green="0.56862745098039214" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstItem="Q50-72-muk" firstAttribute="leading" secondItem="rdf-CV-whe" secondAttribute="leading" constant="8" id="0q6-cv-ieE"/>
-                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zbS-xp-DTG" secondAttribute="trailing" constant="6" id="4ZL-4F-Qox"/>
+                                                                <constraint firstAttribute="trailing" secondItem="zbS-xp-DTG" secondAttribute="trailing" constant="6" id="4ZL-4F-Qox"/>
                                                                 <constraint firstItem="Teg-A6-QZh" firstAttribute="centerY" secondItem="rdf-CV-whe" secondAttribute="centerY" id="5WW-yP-nH1"/>
                                                                 <constraint firstItem="HWL-v0-I0V" firstAttribute="leading" secondItem="Q50-72-muk" secondAttribute="trailing" constant="8" id="5jJ-K2-w8G"/>
                                                                 <constraint firstItem="zbS-xp-DTG" firstAttribute="leading" secondItem="6EY-aW-Kn8" secondAttribute="trailing" constant="8" id="60t-0K-myw"/>
@@ -506,7 +506,7 @@
                                                                 <constraint firstItem="Xt9-bs-mEl" firstAttribute="centerY" secondItem="rdf-CV-whe" secondAttribute="centerY" id="Ka8-f2-FGs"/>
                                                                 <constraint firstItem="Xt9-bs-mEl" firstAttribute="leading" secondItem="Teg-A6-QZh" secondAttribute="trailing" constant="8" id="REo-6R-I6s"/>
                                                                 <constraint firstItem="Q50-72-muk" firstAttribute="centerY" secondItem="rdf-CV-whe" secondAttribute="centerY" id="lKQ-Ij-kaJ"/>
-                                                                <constraint firstItem="Teg-A6-QZh" firstAttribute="leading" secondItem="HWL-v0-I0V" secondAttribute="trailing" constant="8" id="mPJ-NP-ETZ"/>
+                                                                <constraint firstItem="Teg-A6-QZh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HWL-v0-I0V" secondAttribute="trailing" constant="8" id="mPJ-NP-ETZ"/>
                                                                 <constraint firstItem="6EY-aW-Kn8" firstAttribute="leading" secondItem="Xt9-bs-mEl" secondAttribute="trailing" constant="8" id="qjJ-Pk-cmN"/>
                                                             </constraints>
                                                         </view>
@@ -519,14 +519,13 @@
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="bcc-je-ZuP" firstAttribute="leading" secondItem="UKv-W3-ygH" secondAttribute="trailing" constant="8" id="0WB-WQ-5sq"/>
                                                         <constraint firstItem="ZPV-EU-ebM" firstAttribute="centerY" secondItem="rob-7G-wgP" secondAttribute="centerY" id="2X4-pr-BIY"/>
                                                         <constraint firstItem="eqj-g1-ypB" firstAttribute="leading" secondItem="oT8-tf-KBM" secondAttribute="trailing" constant="8" id="384-yZ-khc"/>
                                                         <constraint firstItem="rdf-CV-whe" firstAttribute="top" secondItem="6Qn-IC-Zyx" secondAttribute="bottom" constant="8" id="3Fb-tZ-cLb"/>
                                                         <constraint firstItem="Wqf-3x-IHA" firstAttribute="centerY" secondItem="rob-7G-wgP" secondAttribute="centerY" id="3hI-YK-olf"/>
                                                         <constraint firstItem="PQZ-s6-W3k" firstAttribute="centerY" secondItem="6Qn-IC-Zyx" secondAttribute="centerY" id="4Bf-HL-fkv"/>
                                                         <constraint firstItem="rdf-CV-whe" firstAttribute="width" secondItem="U3c-S5-9tP" secondAttribute="width" id="5fW-8L-3xH"/>
-                                                        <constraint firstAttribute="trailing" secondItem="bcc-je-ZuP" secondAttribute="trailing" constant="8" id="6VA-6C-bHT"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bcc-je-ZuP" secondAttribute="trailing" constant="8" id="6VA-6C-bHT"/>
                                                         <constraint firstItem="4OF-st-9jG" firstAttribute="centerY" secondItem="Sfb-Cq-KST" secondAttribute="centerY" id="6WH-Ep-kkr"/>
                                                         <constraint firstItem="aDI-Mh-h9e" firstAttribute="leading" secondItem="3ev-CS-EFn" secondAttribute="trailing" constant="8" id="85e-PX-G68"/>
                                                         <constraint firstItem="M5A-x7-rkF" firstAttribute="leading" secondItem="JUa-fj-fvM" secondAttribute="trailing" constant="8" id="8AD-H9-ra2"/>
@@ -534,6 +533,7 @@
                                                         <constraint firstItem="oT8-tf-KBM" firstAttribute="leading" secondItem="ZPV-EU-ebM" secondAttribute="trailing" constant="8" id="A1D-b8-jlZ"/>
                                                         <constraint firstItem="dca-sN-I1R" firstAttribute="centerY" secondItem="6Qn-IC-Zyx" secondAttribute="centerY" id="Bbb-aD-zzz"/>
                                                         <constraint firstItem="2LA-wt-3nl" firstAttribute="centerY" secondItem="JUa-fj-fvM" secondAttribute="centerY" id="D7i-0X-aEo"/>
+                                                        <constraint firstItem="UKv-W3-ygH" firstAttribute="leading" secondItem="2LA-wt-3nl" secondAttribute="trailing" constant="16" id="DgN-Qq-FZo"/>
                                                         <constraint firstItem="rob-7G-wgP" firstAttribute="leading" secondItem="U3c-S5-9tP" secondAttribute="leading" constant="8" id="Eoz-wS-dou"/>
                                                         <constraint firstItem="Sfb-Cq-KST" firstAttribute="top" secondItem="3ev-CS-EFn" secondAttribute="bottom" constant="8" id="G9H-ui-0hq"/>
                                                         <constraint firstItem="3ev-CS-EFn" firstAttribute="centerY" secondItem="DTj-M6-Ppd" secondAttribute="centerY" id="HXs-Iq-y8i"/>
@@ -547,6 +547,7 @@
                                                         <constraint firstItem="3EJ-0h-5sT" firstAttribute="centerY" secondItem="Sfb-Cq-KST" secondAttribute="centerY" id="OYq-v7-kfB"/>
                                                         <constraint firstItem="o3S-lg-XJw" firstAttribute="leading" secondItem="KQ0-LV-KJr" secondAttribute="trailing" constant="8" id="Qu9-po-tF2"/>
                                                         <constraint firstItem="7pq-D3-ZR6" firstAttribute="leading" secondItem="EZ5-m0-T1Y" secondAttribute="trailing" constant="8" id="T0M-ww-5A2"/>
+                                                        <constraint firstItem="bcc-je-ZuP" firstAttribute="leading" secondItem="UKv-W3-ygH" secondAttribute="trailing" constant="8" id="T7s-1a-znC"/>
                                                         <constraint firstItem="eao-gw-bIY" firstAttribute="centerY" secondItem="6Qn-IC-Zyx" secondAttribute="centerY" id="TTj-gE-fez"/>
                                                         <constraint firstItem="Xoy-iD-ilY" firstAttribute="leading" secondItem="7pq-D3-ZR6" secondAttribute="trailing" constant="8" id="TkH-aD-4tl"/>
                                                         <constraint firstItem="Wqf-3x-IHA" firstAttribute="leading" secondItem="eqj-g1-ypB" secondAttribute="trailing" constant="8" id="WV6-Dh-xOH"/>
@@ -585,7 +586,6 @@
                                                         <constraint firstItem="Sfb-Cq-KST" firstAttribute="centerX" secondItem="3ev-CS-EFn" secondAttribute="centerX" id="tbC-Bp-YiG"/>
                                                         <constraint firstItem="H1I-BN-lqH" firstAttribute="leading" secondItem="6Qn-IC-Zyx" secondAttribute="trailing" constant="8" id="u96-0H-YSI"/>
                                                         <constraint firstItem="aDI-Mh-h9e" firstAttribute="centerY" secondItem="DTj-M6-Ppd" secondAttribute="centerY" id="uQr-Ej-kGf"/>
-                                                        <constraint firstItem="UKv-W3-ygH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2LA-wt-3nl" secondAttribute="trailing" constant="8" id="ukX-C8-BZw"/>
                                                         <constraint firstItem="o7g-b8-Ggm" firstAttribute="leading" secondItem="seu-WK-Ag9" secondAttribute="trailing" constant="8" id="uyr-Th-1ou"/>
                                                         <constraint firstItem="2LA-wt-3nl" firstAttribute="leading" secondItem="M5A-x7-rkF" secondAttribute="trailing" constant="8" id="vAX-e3-FiA"/>
                                                         <constraint firstItem="PQZ-s6-W3k" firstAttribute="leading" secondItem="E0F-oe-2do" secondAttribute="trailing" constant="8" id="wNo-C9-bC2"/>
@@ -611,10 +611,12 @@
                                             <outlet property="deathCountLabel" destination="E0F-oe-2do" id="7bM-1f-eX9"/>
                                             <outlet property="destoryCountLabel" destination="v82-Gm-mZ8" id="r3u-pJ-bdU"/>
                                             <outlet property="eloLabel" destination="2LA-wt-3nl" id="Oi2-MF-C46"/>
+                                            <outlet property="innerView" destination="U3c-S5-9tP" id="gVT-4j-mFw"/>
                                             <outlet property="kdaLabel" destination="bcc-je-ZuP" id="C6j-1p-8fj"/>
                                             <outlet property="killCountLabel" destination="sy3-RL-3Vt" id="xpX-yv-mmQ"/>
                                             <outlet property="moneyLabel" destination="eao-gw-bIY" id="yrb-Qu-ngC"/>
                                             <outlet property="playerImage" destination="Q50-72-muk" id="bqd-YX-pLh"/>
+                                            <outlet property="playerInnerView" destination="rdf-CV-whe" id="TV5-c6-4pg"/>
                                             <outlet property="playerNameLabel" destination="HWL-v0-I0V" id="Cbh-TX-3o6"/>
                                             <outlet property="soldierKillCountLabel" destination="4OF-st-9jG" id="7fb-Y8-1Zm"/>
                                             <outlet property="winCountLabel" destination="Xt9-bs-mEl" id="Y8G-QQ-Qdv"/>
@@ -640,7 +642,20 @@
                             <constraint firstItem="ZGH-LH-6WZ" firstAttribute="centerY" secondItem="ryu-xA-0ZG" secondAttribute="centerY" id="tHT-HD-2Qf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="IJC-xx-LqX"/>
+                    <navigationItem key="navigationItem" id="IJC-xx-LqX">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="J9a-Hy-S7r">
+                            <rect key="frame" x="96" y="7" width="128" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Win"/>
+                                <segment title="Lose"/>
+                            </segments>
+                            <connections>
+                                <action selector="sideSelect:" destination="ftT-R1-tRq" eventType="valueChanged" id="jZG-de-VRE"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="detailHeaderView" destination="LGD-GL-M6f" id="Qif-jP-EyE"/>
