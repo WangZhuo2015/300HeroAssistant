@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AVOSCloud
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,6 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        //初始化LeanCloud
+        // applicationId 即 App Id，clientKey 是 App Key。
+        AVOSCloud.setApplicationId("vVdcroPswvf8ye5ha57yIoQL-gzGzoHsz", clientKey: "LYYA7TRfLU9CfmRYQ0v4BmP7")
+        AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        //导航栏颜色
+        UINavigationBar.appearance().barTintColor = UIColor(red: 178.0/255, green: 208.0/255, blue: 248.0/255, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        if let barFont = UIFont(name: "PingFangSC-ExtraLight", size: 22.0) {
+            UINavigationBar.appearance().titleTextAttributes =
+                [NSForegroundColorAttributeName:UIColor.whiteColor(), NSFontAttributeName:barFont]
+        }
+        //状态栏渲染颜色
+        //plist修改
+        //UIApplication.sharedApplication().statusBarStyle = .LightContent
+        //TabBar渲染颜色
+
         // Override point for customization after application launch.
         return true
     }

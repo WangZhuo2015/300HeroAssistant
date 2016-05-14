@@ -42,7 +42,9 @@ class PersonalInfoViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let login = UIBarButtonItem(title: "切换账号", style: .Plain , target: self, action: #selector(PersonalInfoViewController.login(_:)))
+        self.navigationItem.rightBarButtonItem = login
+        self.navigationController?.navigationItem.rightBarButtonItem = login
         tableView.dataSource = self
         tableView.delegate = self
         loadPlayerBasicInfoWithName("古手梨花さん")
@@ -71,7 +73,30 @@ class PersonalInfoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func login(sender:UIBarButtonItem){
+        let alert = UIAlertController(title: "登录/切换账号", message: "请输入您的游戏ID", preferredStyle: .Alert)
+        var usernameTextField: UITextField?
+        
+        let loginAction = UIAlertAction(
+        title: "登录", style: UIAlertActionStyle.Default) {
+            (action) -> Void in
+            
+            if let username = usernameTextField?.text {
+                print(" Username = \(username)")
+            } else {
+                print("No Username entered")
+            }
+        }
+        // 4.
+        alert.addTextFieldWithConfigurationHandler {
+            (txtUsername) -> Void in
+            usernameTextField = txtUsername
+            usernameTextField!.placeholder = "<Your username here>"
+        }
+        // 5.
+        alert.addAction(loginAction)
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

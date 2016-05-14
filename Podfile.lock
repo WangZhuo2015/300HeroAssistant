@@ -1,17 +1,24 @@
 PODS:
   - Alamofire (3.3.1)
+  - AVOSCloudCrashReportingDynamic (3.2.9):
+    - AVOSCloudDynamic
+  - AVOSCloudDynamic (3.2.9)
   - Kingfisher (2.4.0)
   - SnapKit (0.20.0)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire
+  - AVOSCloudCrashReportingDynamic
+  - AVOSCloudDynamic
   - Kingfisher (~> 2.2)
   - SnapKit
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  AVOSCloudCrashReportingDynamic: 47cfdd8ab649999a4d62556e9e1be77f321f4db0
+  AVOSCloudDynamic: 623fcd1541475841da553eb37cf9bab129f5bc5d
   Kingfisher: 9171a424ee7f8031f518f649bb850d1eab541247
   SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a

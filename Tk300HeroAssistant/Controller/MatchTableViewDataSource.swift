@@ -16,26 +16,7 @@ extension MatchViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(MatchCellIdentifier) as! MatchBasicTableViewCell
         let item  = matchBasicInfoArray[indexPath.row]
-        cell.matchImage.kf_setImageWithURL(NSURL(string: "http://300report.jumpw.com/static/images/"+item.hero.iconFile)!)
-        cell.heroLevel.text = "\(item.heroLevel)"
-        cell.heroName.text = item.hero.name
-        //cell.matchDate.text = item.matchDate
-        cell.matchResult.text = matchResToStr(item.result)
-        cell.matchType.text = "竞技场"
-    
+        cell.setContent(item)
         return cell
-    }
-    
-    func matchResToStr(res:Int)->String?{
-        switch res {
-        case 1:
-            return "胜利"
-        case 2:
-            return "失败"
-        case 3:
-            return "逃跑"
-        default:
-            return nil
-        }
     }
 }

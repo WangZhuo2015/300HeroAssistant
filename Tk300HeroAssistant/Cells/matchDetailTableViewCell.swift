@@ -44,10 +44,6 @@ class matchDetailTableViewCell: UITableViewCell {
     
     @IBOutlet weak var playerInnerView: UIView!
     
-    
-    
-    
-    
     func setRoleCell(role:MatchRole){
         playerNameLabel.text = role.roleName
         killCountLabel.text = "\(role.killCount)"

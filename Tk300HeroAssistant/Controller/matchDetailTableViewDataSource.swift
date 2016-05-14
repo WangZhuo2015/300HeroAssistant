@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 extension MatchDetailViewController:UITableViewDataSource,UITableViewDelegate{
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
@@ -26,13 +27,38 @@ extension MatchDetailViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return "Winner"
+            return "    Winner"
         case 1:
-            return "Loser"
+            return "    Loser"
         default:
-            return "error"
+            return "    error"
         }
     }
+//    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        //let view = tableView.dequeueReusableHeaderFooterViewWithIdentifier()// UIView()//frame: CGRect(x: 0,y: 0,width: 300,height: 30))
+//        let label = UILabel()
+//        view.addSubview(label)
+//        
+//        view.backgroundColor = UIColor(red: 113, green: 135, blue: 255, alpha: 1)
+//        view.tintColor = UIColor.whiteColor()
+//        label.textColor = UIColor.whiteColor()
+//        label.snp_makeConstraints { (make) in
+//            make.center.equalTo(view.snp_center)
+//        }
+//        label.text = {
+//            switch section {
+//            case 0:
+//                return "Winner"
+//            case 1:
+//                return "Loser"
+//            default:
+//                return "error"
+//            }
+//        }()
+//        print(label.text)
+//        return view
+//    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(matchDetailCellIdentifier) as! matchDetailTableViewCell
         switch indexPath.section {
