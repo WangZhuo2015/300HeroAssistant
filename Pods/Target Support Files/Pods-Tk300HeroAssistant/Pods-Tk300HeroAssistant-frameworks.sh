@@ -84,16 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/AVOSCloudCrashReportingDynamic/iOS/release-v3.2.9/Dynamic/AVOSCloudCrashReporting.framework"
-  install_framework "${PODS_ROOT}/AVOSCloudDynamic/iOS/release-v3.2.9/Dynamic/AVOSCloud.framework"
   install_framework "Pods-Tk300HeroAssistant/Alamofire.framework"
   install_framework "Pods-Tk300HeroAssistant/Kingfisher.framework"
   install_framework "Pods-Tk300HeroAssistant/SnapKit.framework"
   install_framework "Pods-Tk300HeroAssistant/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/AVOSCloudCrashReportingDynamic/iOS/release-v3.2.9/Dynamic/AVOSCloudCrashReporting.framework"
-  install_framework "${PODS_ROOT}/AVOSCloudDynamic/iOS/release-v3.2.9/Dynamic/AVOSCloud.framework"
   install_framework "Pods-Tk300HeroAssistant/Alamofire.framework"
   install_framework "Pods-Tk300HeroAssistant/Kingfisher.framework"
   install_framework "Pods-Tk300HeroAssistant/SnapKit.framework"

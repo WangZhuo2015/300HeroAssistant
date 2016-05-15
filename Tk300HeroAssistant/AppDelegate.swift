@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AVOSCloud
+//import AVOSCloud
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

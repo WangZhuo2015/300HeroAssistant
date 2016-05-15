@@ -1,17 +1,9 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## AVOSCloudCrashReportingDynamic
-
-Copyright 2015 LeanCloud, Inc. See https://leancloud.cn/terms.html
-
-## AVOSCloudDynamic
-
-Copyright 2015 LeanCloud, Inc. See https://leancloud.cn/terms.html
-
 ## Alamofire
 
-Copyright (c) 2014–2016 Alamofire Software Foundation (http://alamofire.org/)
+Copyright (c) 2014-2016 Alamofire Software Foundation (http://alamofire.org/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
