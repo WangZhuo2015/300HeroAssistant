@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0i3-wo-iRz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="prL-Ur-t57">
                                     <rect key="frame" x="0.0" y="64" width="320" height="139"/>
@@ -209,10 +209,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0i3-wo-iRz" firstAttribute="height" secondItem="kQs-ZQ-PaR" secondAttribute="height" id="6Yr-Tf-kec"/>
+                            <constraint firstItem="0i3-wo-iRz" firstAttribute="height" secondItem="kQs-ZQ-PaR" secondAttribute="height" constant="-49" id="6Yr-Tf-kec"/>
                             <constraint firstItem="0i3-wo-iRz" firstAttribute="width" secondItem="kQs-ZQ-PaR" secondAttribute="width" id="7T5-H1-cGB"/>
                             <constraint firstItem="0i3-wo-iRz" firstAttribute="centerX" secondItem="kQs-ZQ-PaR" secondAttribute="centerX" id="ZJU-q1-wJC"/>
-                            <constraint firstItem="0i3-wo-iRz" firstAttribute="centerY" secondItem="kQs-ZQ-PaR" secondAttribute="centerY" id="bNb-AF-z4X"/>
+                            <constraint firstItem="0i3-wo-iRz" firstAttribute="centerY" secondItem="kQs-ZQ-PaR" secondAttribute="centerY" constant="-24.5" id="bNb-AF-z4X"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="个人中心" image="Personal" id="K9J-Nv-VeU">

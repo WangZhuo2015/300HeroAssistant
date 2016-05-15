@@ -70,7 +70,6 @@ class matchDetailTableViewCell: UITableViewCell {
         
         for count in 0..<role.equip.count {
             equipImages[count].kf_setImageWithURL(NSURL(string: "http://300report.jumpw.com/static/images/" + role.equip[count].iconFile)!)
-            print(role.equip[count].iconFile)
         }
         //防止复用Bug
         for count in role.equip.count..<equipImages.count {

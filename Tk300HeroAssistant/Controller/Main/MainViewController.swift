@@ -12,6 +12,7 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        userChange()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.userChange), name: userChangedNotification, object: nil)
         let login = UIBarButtonItem(title: "切换账号", style: .Plain , target: self, action: #selector(self.login(_:)))
         self.navigationItem.rightBarButtonItem = login
@@ -42,12 +43,14 @@ class MainViewController: UITabBarController {
             usernameTextField = txtUsername
             usernameTextField!.placeholder = "<Your username here>"
         }
+        let cancelAction = UIAlertAction(title: "取消", style: .Cancel, handler: nil)
         let loginAction = UIAlertAction(
         title: "登录", style: UIAlertActionStyle.Default) {
             (action) -> Void in
             ServiceProxy.isIDvalid((usernameTextField?.text)!, complete: { (result, reason, error) in
                 if result{
                     User.sharedUser.setUserName((usernameTextField?.text)!)
+                    NSUserDefaults.standardUserDefaults().setObject(User.sharedUser.userName, forKey: "userName")
                     NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: userChangedNotification, object: nil))
                 }
                 else{
@@ -59,6 +62,7 @@ class MainViewController: UITabBarController {
             
         }
         alert.addAction(loginAction)
+        alert.addAction(cancelAction)
         self.presentViewController(alert, animated: true, completion: nil)
     }
     

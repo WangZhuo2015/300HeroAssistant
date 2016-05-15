@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--排行榜-->
         <scene sceneID="xnf-n9-a9e">
             <objects>
-                <viewController title="排行榜" id="U6e-jK-As5" customClass="RankViewController" customModule="Tk300HeroAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="排行榜" id="U6e-jK-As5" customClass="DataViewController" customModule="Tk300HeroAssistant" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uti-QL-BCm"/>
                         <viewControllerLayoutGuide type="bottom" id="ikK-71-00d"/>
@@ -16,15 +17,64 @@
                     <view key="view" contentMode="scaleToFill" id="R9x-iT-Fza">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9SL-V1-xnG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroDataCellIdentifier" id="pEP-Ha-ale" customClass="HeroTableViewCell" customModule="Tk300HeroAssistant" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pEP-Ha-ale" id="GMh-aU-KXT">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MC-dP-edY">
+                                                    <rect key="frame" x="8" y="11" width="38" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnB-9G-31c">
+                                                    <rect key="frame" x="260" y="11" width="52" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hnB-9G-31c" secondAttribute="trailing" id="Cq5-y7-16x"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="9MC-dP-edY" secondAttribute="leading" id="RqI-Ul-oDx"/>
+                                                <constraint firstItem="9MC-dP-edY" firstAttribute="centerY" secondItem="GMh-aU-KXT" secondAttribute="centerY" id="U0L-4F-5hJ"/>
+                                                <constraint firstItem="hnB-9G-31c" firstAttribute="centerY" secondItem="GMh-aU-KXT" secondAttribute="centerY" id="ltG-eO-EsG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="heroLabel" destination="9MC-dP-edY" id="74K-ac-DCc"/>
+                                            <outlet property="locateLabel" destination="hnB-9G-31c" id="VSc-Pr-Lhe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9SL-V1-xnG" firstAttribute="centerX" secondItem="R9x-iT-Fza" secondAttribute="centerX" id="E8N-7S-qig"/>
+                            <constraint firstItem="9SL-V1-xnG" firstAttribute="width" secondItem="R9x-iT-Fza" secondAttribute="width" id="WiR-ST-NOE"/>
+                            <constraint firstItem="9SL-V1-xnG" firstAttribute="centerY" secondItem="R9x-iT-Fza" secondAttribute="centerY" constant="-24.5" id="Y14-3v-Phk"/>
+                            <constraint firstItem="9SL-V1-xnG" firstAttribute="height" secondItem="R9x-iT-Fza" secondAttribute="height" constant="-49" id="x5i-y2-7Zw"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="排行榜" image="Rank" selectedImage="Rank" id="svl-67-pcg"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="9SL-V1-xnG" id="z1d-SE-IgE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQ8-Dc-yMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-37.333333333333336" y="-513.09333333333336"/>
+            <point key="canvasLocation" x="-38" y="-514"/>
         </scene>
     </scenes>
     <resources>

@@ -7,13 +7,23 @@
 //
 
 import UIKit
+import SwiftCSV
+class DataViewController: UIViewController {
 
-class RankViewController: UIViewController {
-
-    
+    @IBOutlet weak var tableView: UITableView!
+    var heroDataArray = [HeroData]()
+    let HeroDataCellIdentifier = "HeroDataCellIdentifier"
     override func viewDidLoad() {
         super.viewDidLoad()
-//        ServiceProxy.getRank(<#T##type: Int##Int#>, index: <#T##Int#>, complete: <#T##(data: NSData?, error: NSError?) -> Void#>)
+        tableView.dataSource = self
+        tableView.delegate = self
+        HeroDataManager.loadHeroData { (dataArray) in
+            self.heroDataArray = dataArray
+            self.tableView.reloadData()
+        }
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 

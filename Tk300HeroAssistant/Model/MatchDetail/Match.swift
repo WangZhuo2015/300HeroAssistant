@@ -37,7 +37,6 @@ class Match : NSObject, NSCoding{
 			let value = MatchRole(fromJson: loseSideJson)
 			loseSide.append(value)
 		}
-		loseSideKill = json["LoseSideKill"].intValue
 		matchDate = json["MatchDate"].stringValue
 		matchType = json["MatchType"].intValue
 		usedTime = json["UsedTime"].intValue
@@ -47,7 +46,8 @@ class Match : NSObject, NSCoding{
 			let value = MatchRole(fromJson: winSideJson)
 			winSide.append(value)
 		}
-		winSideKill = json["WinSideKill"].intValue
+        loseSideKill = loseSide.reduce(0, combine: { $0 + $1.killCount })
+		winSideKill = winSide.reduce(0, combine: { $0 + $1.killCount })
 	}
 
 	/**

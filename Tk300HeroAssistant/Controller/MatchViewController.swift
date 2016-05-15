@@ -33,6 +33,11 @@ class MatchViewController: UIViewController {
 
     func loadMatchList(name:String = User.sharedUser.userName,inout index:Int){
         ServiceProxy.getBattleList(name, index: 0) { (matchBasicAPIBase, error) in
+            guard error == nil else{
+                index = 0
+                self.matchBasicInfoArray.removeAll()
+                return
+            }
             self.matchBasicInfoArray = (matchBasicAPIBase?.list)!
             self.matchTableView.reloadData()
             index += 1

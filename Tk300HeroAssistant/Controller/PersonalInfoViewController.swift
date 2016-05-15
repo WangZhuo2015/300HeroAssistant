@@ -54,6 +54,11 @@ class PersonalInfoViewController: UIViewController {
     
     func loadPlayerBasicInfoWithName(name:String = User.sharedUser.userName){
         ServiceProxy.getPlayerBasicInfo(name) { (playerInfo, error) in
+            guard error == nil else{
+                self.rank.removeAll()
+                self.role = nil
+                return
+            }
             self.rank = (playerInfo?.rank)!
             self.role = playerInfo?.role
         }
