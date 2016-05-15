@@ -10,7 +10,7 @@ import UIKit
 
 class PersonalInfoViewController: UIViewController {
 
-    @IBOutlet weak var roleNameLabel: UILabel!
+    //@IBOutlet weak var roleNameLabel: UILabel!
     
     @IBOutlet weak var roleLevelLabel: UILabel!
     
@@ -66,7 +66,7 @@ class PersonalInfoViewController: UIViewController {
 
     
     func setRoleContent(role:Role){
-        roleNameLabel.text = role.roleName
+        //roleNameLabel.text = role.roleName
         roleLevelLabel.text = "\(role.roleLevel)"
         winCountLabel.text = "\(role.winCount)"
         allCountLabel.text = "\(role.matchCount)"

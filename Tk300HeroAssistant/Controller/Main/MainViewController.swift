@@ -47,6 +47,7 @@ class MainViewController: UITabBarController {
         let loginAction = UIAlertAction(
         title: "登录", style: UIAlertActionStyle.Default) {
             (action) -> Void in
+            usernameTextField?.resignFirstResponder()
             ServiceProxy.isIDvalid((usernameTextField?.text)!, complete: { (result, reason, error) in
                 if result{
                     User.sharedUser.setUserName((usernameTextField?.text)!)
