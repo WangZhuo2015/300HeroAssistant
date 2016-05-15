@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2AE49C2D2BE0E7C416409287'
+               BlueprintIdentifier = 'B4F3774CA771C63AFA6F2A82'
                BlueprintName = 'Pods-Tk300HeroAssistant'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Tk300HeroAssistant.framework'>
