@@ -14,20 +14,30 @@ class MatchViewController: UIViewController {
     //MatchCell
     let MatchCellIdentifier = "MatchCellIdentifier"
     var matchBasicInfoArray = [List]()
-    
+    var matchIndex:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         matchTableView.dataSource = self
         matchTableView.delegate = self
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.userChange), name: userChangedNotification, object: nil)
+        loadMatchList(index: &matchIndex)
         
-        
-        ServiceProxy.getBattleList("NextStep", index: 0) { (matchBasicAPIBase, error) in
-            self.matchBasicInfoArray = (matchBasicAPIBase?.list)!
-            self.matchTableView.reloadData()
-        }        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.
+    }
+    
+    func userChange(){
+        matchIndex = 0
+        loadMatchList(index: &matchIndex)
     }
 
+    func loadMatchList(name:String = User.sharedUser.userName,inout index:Int){
+        ServiceProxy.getBattleList(name, index: 0) { (matchBasicAPIBase, error) in
+            self.matchBasicInfoArray = (matchBasicAPIBase?.list)!
+            self.matchTableView.reloadData()
+            index += 1
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -12,7 +12,10 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.userChange), name: userChangedNotification, object: nil)
+        let login = UIBarButtonItem(title: "切换账号", style: .Plain , target: self, action: #selector(self.login(_:)))
+        self.navigationItem.rightBarButtonItem = login
+        self.navigationController?.navigationItem.rightBarButtonItem = login
         // Do any additional setup after loading the view.
     }
 
@@ -31,5 +34,35 @@ class MainViewController: UITabBarController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    func login(sender:UIBarButtonItem){
+        let alert = UIAlertController(title: "登录/切换账号", message: "请输入您的游戏ID", preferredStyle: .Alert)
+        var usernameTextField: UITextField?
+        alert.addTextFieldWithConfigurationHandler {
+            (txtUsername) -> Void in
+            usernameTextField = txtUsername
+            usernameTextField!.placeholder = "<Your username here>"
+        }
+        let loginAction = UIAlertAction(
+        title: "登录", style: UIAlertActionStyle.Default) {
+            (action) -> Void in
+            ServiceProxy.isIDvalid((usernameTextField?.text)!, complete: { (result, reason, error) in
+                if result{
+                    User.sharedUser.setUserName((usernameTextField?.text)!)
+                    NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: userChangedNotification, object: nil))
+                }
+                else{
+                    let alert = UIAlertController(title: "切换失败", message: reason, preferredStyle: .Alert)
+                    alert.addAction(UIAlertAction(title: "好的", style: .Cancel, handler: nil))
+                    self.presentViewController(alert, animated: true, completion: nil)
+                }
+            })
+            
+        }
+        alert.addAction(loginAction)
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func userChange(){
+        self.navigationItem.title = User.sharedUser.userName
+    }
 }

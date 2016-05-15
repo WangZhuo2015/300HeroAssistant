@@ -25,6 +25,10 @@
 		3517D70B1CE0EE5F006162BA /* MatchBasicAPIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D7081CE0EE5F006162BA /* MatchBasicAPIBase.swift */; };
 		3517D70D1CE0F2FA006162BA /* MatchTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D70C1CE0F2FA006162BA /* MatchTableViewDataSource.swift */; };
 		3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D70E1CE0F38D006162BA /* MatchBasicTableViewCell.swift */; };
+		35401A621CE82C5700F0EDE2 /* Tk300HeroAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A611CE82C5700F0EDE2 /* Tk300HeroAssistantTests.swift */; };
+		35401A6A1CE830DA00F0EDE2 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A691CE830D900F0EDE2 /* Global.swift */; };
+		35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */; };
+		35401A6F1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */; };
 		35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */; };
 		35DCA5CC1CE567730037577B /* PersonalRankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */; };
 		35DCA5CE1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift */; };
@@ -52,6 +56,16 @@
 		35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA6401CDF717400A527B4 /* MatchDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		35401A641CE82C5700F0EDE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35FBA5ED1CDF4E5C00A527B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35FBA5F41CDF4E5C00A527B4;
+			remoteInfo = Tk300HeroAssistant;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		18A602F317AB484ED053DA7E /* Pods-Tk300HeroAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tk300HeroAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationViewController.swift; path = Controller/MainNavigationViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +85,12 @@
 		3517D7081CE0EE5F006162BA /* MatchBasicAPIBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchBasicAPIBase.swift; path = Tk300HeroAssistant/Model/Match/MatchBasicAPIBase.swift; sourceTree = SOURCE_ROOT; };
 		3517D70C1CE0F2FA006162BA /* MatchTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchTableViewDataSource.swift; path = Controller/MatchTableViewDataSource.swift; sourceTree = "<group>"; };
 		3517D70E1CE0F38D006162BA /* MatchBasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchBasicTableViewCell.swift; path = Cells/MatchBasicTableViewCell.swift; sourceTree = "<group>"; };
+		35401A5F1CE82C5700F0EDE2 /* Tk300HeroAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tk300HeroAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35401A611CE82C5700F0EDE2 /* Tk300HeroAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tk300HeroAssistantTests.swift; sourceTree = "<group>"; };
+		35401A631CE82C5700F0EDE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35401A691CE830D900F0EDE2 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Tk300HeroAssistant/Model/Global.swift; sourceTree = SOURCE_ROOT; };
+		35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewExtension.swift; path = Extension/TableViewExtension.swift; sourceTree = "<group>"; };
+		35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableViewNetErrorDataSource.swift; path = Tools/UITableViewNetErrorDataSource.swift; sourceTree = "<group>"; };
 		35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchHeaderView.swift; path = Cells/MatchHeaderView.swift; sourceTree = "<group>"; };
 		35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalRankTableViewCell.swift; path = Cells/PersonalRankTableViewCell.swift; sourceTree = "<group>"; };
 		35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInfoTableViewDataSource.swift; path = Controller/PersonalInfoTableViewDataSource.swift; sourceTree = "<group>"; };
@@ -104,6 +124,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		35401A5C1CE82C5700F0EDE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35FBA5F21CDF4E5C00A527B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,10 +228,29 @@
 			name = "详情";
 			sourceTree = "<group>";
 		};
+		35401A601CE82C5700F0EDE2 /* Tk300HeroAssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				35401A611CE82C5700F0EDE2 /* Tk300HeroAssistantTests.swift */,
+				35401A631CE82C5700F0EDE2 /* Info.plist */,
+			);
+			path = Tk300HeroAssistantTests;
+			sourceTree = "<group>";
+		};
+		35401A6D1CE839C800F0EDE2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */,
+				35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
 		35FBA5EC1CDF4E5C00A527B4 = {
 			isa = PBXGroup;
 			children = (
 				35FBA5F71CDF4E5C00A527B4 /* Tk300HeroAssistant */,
+				35401A601CE82C5700F0EDE2 /* Tk300HeroAssistantTests */,
 				35FBA5F61CDF4E5C00A527B4 /* Products */,
 				64006A3D530329728F096356 /* Pods */,
 				8E1B8F5B6AC5ED8CEEF0CA34 /* Frameworks */,
@@ -215,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				35FBA5F51CDF4E5C00A527B4 /* Tk300HeroAssistant.app */,
+				35401A5F1CE82C5700F0EDE2 /* Tk300HeroAssistantTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,6 +269,7 @@
 		35FBA5F71CDF4E5C00A527B4 /* Tk300HeroAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				35401A6D1CE839C800F0EDE2 /* Tools */,
 				35FBA6231CDF57DB00A527B4 /* Model */,
 				35FBA6361CDF704000A527B4 /* View */,
 				35FBA6371CDF704B00A527B4 /* Controllers */,
@@ -285,6 +333,7 @@
 				35011C5E1CE03616004F7913 /* Rank */,
 				35011C5D1CE03605004F7913 /* Player */,
 				35011C611CE03C3C004F7913 /* User.swift */,
+				35401A691CE830D900F0EDE2 /* Global.swift */,
 			);
 			name = Model;
 			path = Network;
@@ -333,6 +382,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		35401A5E1CE82C5700F0EDE2 /* Tk300HeroAssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35401A681CE82C5700F0EDE2 /* Build configuration list for PBXNativeTarget "Tk300HeroAssistantTests" */;
+			buildPhases = (
+				35401A5B1CE82C5700F0EDE2 /* Sources */,
+				35401A5C1CE82C5700F0EDE2 /* Frameworks */,
+				35401A5D1CE82C5700F0EDE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35401A651CE82C5700F0EDE2 /* PBXTargetDependency */,
+			);
+			name = Tk300HeroAssistantTests;
+			productName = Tk300HeroAssistantTests;
+			productReference = 35401A5F1CE82C5700F0EDE2 /* Tk300HeroAssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		35FBA5F41CDF4E5C00A527B4 /* Tk300HeroAssistant */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35FBA6071CDF4E5C00A527B4 /* Build configuration list for PBXNativeTarget "Tk300HeroAssistant" */;
@@ -363,6 +430,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = SherryTeam;
 				TargetAttributes = {
+					35401A5E1CE82C5700F0EDE2 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 35FBA5F41CDF4E5C00A527B4;
+					};
 					35FBA5F41CDF4E5C00A527B4 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -382,11 +453,19 @@
 			projectRoot = "";
 			targets = (
 				35FBA5F41CDF4E5C00A527B4 /* Tk300HeroAssistant */,
+				35401A5E1CE82C5700F0EDE2 /* Tk300HeroAssistantTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		35401A5D1CE82C5700F0EDE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35FBA5F31CDF4E5C00A527B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,18 +531,28 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		35401A5B1CE82C5700F0EDE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35401A621CE82C5700F0EDE2 /* Tk300HeroAssistantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35FBA5F11CDF4E5C00A527B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				35DCA5CE1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift in Sources */,
 				3517D70D1CE0F2FA006162BA /* MatchTableViewDataSource.swift in Sources */,
+				35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */,
 				3517D6FC1CE0EA70006162BA /* Item.swift in Sources */,
 				3517D7031CE0EDE9006162BA /* Rank.swift in Sources */,
 				35FBA6201CDF523C00A527B4 /* HttpClient.swift in Sources */,
 				35FBA6181CDF51B100A527B4 /* DGRunkeeperSwitch.swift in Sources */,
 				3517D6FE1CE0EA70006162BA /* Match.swift in Sources */,
 				3517D7091CE0EE5F006162BA /* Hero.swift in Sources */,
+				35401A6A1CE830DA00F0EDE2 /* Global.swift in Sources */,
 				35011C601CE03BCC004F7913 /* MainNavigationViewController.swift in Sources */,
 				35FBA6141CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift in Sources */,
 				3517D6FD1CE0EA70006162BA /* MatchRole.swift in Sources */,
@@ -471,6 +560,7 @@
 				3517D7041CE0EDE9006162BA /* Role.swift in Sources */,
 				3517D6FF1CE0EA70006162BA /* MatchDetail.swift in Sources */,
 				35DCA5CC1CE567730037577B /* PersonalRankTableViewCell.swift in Sources */,
+				35401A6F1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift in Sources */,
 				3516C7CD1CE640F3005BF4D8 /* FriendAnalyzer.swift in Sources */,
 				35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */,
 				35FBA5F91CDF4E5C00A527B4 /* AppDelegate.swift in Sources */,
@@ -495,6 +585,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35401A651CE82C5700F0EDE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35FBA5F41CDF4E5C00A527B4 /* Tk300HeroAssistant */;
+			targetProxy = 35401A641CE82C5700F0EDE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		35FBA5FC1CDF4E5C00A527B4 /* Main.storyboard */ = {
@@ -540,6 +638,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		35401A661CE82C5700F0EDE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tk300HeroAssistantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherryTeam.Tk300HeroAssistantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tk300HeroAssistant.app/Tk300HeroAssistant";
+			};
+			name = Debug;
+		};
+		35401A671CE82C5700F0EDE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tk300HeroAssistantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherryTeam.Tk300HeroAssistantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tk300HeroAssistant.app/Tk300HeroAssistant";
+			};
+			name = Release;
+		};
 		35FBA6051CDF4E5C00A527B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -650,6 +772,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		35401A681CE82C5700F0EDE2 /* Build configuration list for PBXNativeTarget "Tk300HeroAssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35401A661CE82C5700F0EDE2 /* Debug */,
+				35401A671CE82C5700F0EDE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		35FBA5F01CDF4E5C00A527B4 /* Build configuration list for PBXProject "Tk300HeroAssistant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

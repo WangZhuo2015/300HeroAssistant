@@ -9,7 +9,7 @@ target 'Tk300HeroAssistant' do
     pod 'Alamofire'
     #Kingfisher图片缓存库
     pod 'Kingfisher', '~> 2.2'
-    pod 'AVOSCloudDynamic'               # 数据存储、短信、云引擎调用等基础服务模块
-    pod 'AVOSCloudCrashReportingDynamic' # 错误报告模块
+#    pod 'AVOSCloudDynamic'               # 数据存储、短信、云引擎调用等基础服务模块
+#    pod 'AVOSCloudCrashReportingDynamic' # 错误报告模块
 end
 

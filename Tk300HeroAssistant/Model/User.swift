@@ -8,7 +8,7 @@
 
 import Foundation
 class User {
-    var userName = "NextStep"
+    var userName = ""
     class var sharedUser: User {
         dispatch_once(&Inner.token) {
             Inner.instance = User()

@@ -32,6 +32,15 @@ class ServiceProxy{
     }
     
     
+    internal static func getPlayerBasicInfo (
+        playerName:String,
+        complete:(PlayerInfo: RoleAPIBase?, error: NSError?) -> Void){
+        HttpClient.invoke(getPlayerBasicInfoURL(), parameters: ["name":playerName]) { (response, error) in
+            let json = JSON(data: response!)
+            print(json)
+            complete(PlayerInfo: RoleAPIBase(fromJson:json), error: error)
+        }
+    }
     
 //    =======================================
 //    <<          获取玩家基本信息            >>
@@ -40,13 +49,12 @@ class ServiceProxy{
 //    /api/getrole
 //    [参数](支持get与post方法)
 //    name: 召唤师名称(utf8编码)
-    internal static func getPlayerBasicInfo (
+    internal static func isIDvalid (
         playerName:String,
-        complete:(PlayerInfo: RoleAPIBase?, error: NSError?) -> Void){
+        complete:(result: Bool,reason:String? , error: NSError?) -> Void){
         HttpClient.invoke(getPlayerBasicInfoURL(), parameters: ["name":playerName]) { (response, error) in
             let json = JSON(data: response!)
-            print(json)
-            complete(PlayerInfo: RoleAPIBase(fromJson:json), error: error)
+            (json["Result"].string == "OK" ) ? complete(result: true,reason: json["Result"].string, error: error) : complete(result: false,reason: json["Result"].string, error: error)
         }
     }
 

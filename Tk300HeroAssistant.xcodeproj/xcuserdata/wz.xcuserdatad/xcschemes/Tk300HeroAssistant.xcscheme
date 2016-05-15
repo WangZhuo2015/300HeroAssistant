@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "35401A5E1CE82C5700F0EDE2"
+               BuildableName = "Tk300HeroAssistantTests.xctest"
+               BlueprintName = "Tk300HeroAssistantTests"
+               ReferencedContainer = "container:Tk300HeroAssistant.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -10,6 +10,7 @@ import UIKit
 import Kingfisher
 extension MatchViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tableView.tableViewDisplayWith("查询无结果", ifNecessaryForRowCount: matchBasicInfoArray.count)
         return matchBasicInfoArray.count
     }
     
