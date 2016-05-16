@@ -9,6 +9,7 @@
 import UIKit
 
 class PersonalRankTableViewCell: UITableViewCell {
+    @IBOutlet weak var innerView: UIView!
 
     @IBOutlet weak var rankNameLabel: UILabel!
     
@@ -18,8 +19,11 @@ class PersonalRankTableViewCell: UITableViewCell {
     
     @IBOutlet weak var valueChangeLabel: UILabel!
     
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        innerView.layer.cornerRadius = 5
         // Initialization code
     }
 
@@ -29,7 +33,7 @@ class PersonalRankTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func setCellContent(rank:Rank){
-        rankNameLabel.text = rank.rankName
+        rankNameLabel.text = " " + rank.rankName
         rankLabel.text = "\(rank.rank)"
         valueLabel.text = rank.value
         valueChangeLabel.text = "\(rank.rankChange)"

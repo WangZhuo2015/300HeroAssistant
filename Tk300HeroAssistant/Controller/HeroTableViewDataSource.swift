@@ -14,8 +14,7 @@ extension DataViewController:UITableViewDataSource,UITableViewDelegate{
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(HeroDataCellIdentifier) as! HeroTableViewCell
-        cell.heroLabel.text = heroDataArray[indexPath.row].name
-        cell.locateLabel.text = heroDataArray[indexPath.row].locate
+        cell.setContent(heroDataArray[indexPath.row])
         return cell
     }
 }
