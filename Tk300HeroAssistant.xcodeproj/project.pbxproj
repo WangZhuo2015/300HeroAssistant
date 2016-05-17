@@ -706,6 +706,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: xiao lei yang (YQLG8TNPZD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tk300HeroAssistant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.dowhile.Tk300HeroAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -721,6 +722,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: xiao lei yang (YQLG8TNPZD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tk300HeroAssistant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.dowhile.Tk300HeroAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
