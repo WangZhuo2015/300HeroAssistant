@@ -33,6 +33,9 @@
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
 		35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
 		35BCF7581CE8C8F900E30907 /* HeroTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */; };
+		35CB9EE21CEC55120007C47C /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE11CEC55120007C47C /* HeroDetailViewController.swift */; };
+		35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE31CEC5B6D0007C47C /* SkillInfoTableViewCell.swift */; };
+		35CB9EE61CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE51CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift */; };
 		35DCA5CC1CE567730037577B /* PersonalRankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */; };
 		35DCA5CE1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift */; };
 		35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E259D31CE87F2C005AEE4F /* HeroData.swift */; };
@@ -92,6 +95,9 @@
 		35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = Cells/HeroTableViewCell.swift; sourceTree = "<group>"; };
 		35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVDataManager.swift; path = Tk300HeroAssistant/Model/CSVDataManager.swift; sourceTree = SOURCE_ROOT; };
 		35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewDataSource.swift; path = Controller/HeroTableViewDataSource.swift; sourceTree = "<group>"; };
+		35CB9EE11CEC55120007C47C /* HeroDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDetailViewController.swift; path = Controller/HeroDetailViewController.swift; sourceTree = "<group>"; };
+		35CB9EE31CEC5B6D0007C47C /* SkillInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillInfoTableViewCell.swift; path = Cells/SkillInfoTableViewCell.swift; sourceTree = "<group>"; };
+		35CB9EE51CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDetailSkillTableViewDataSource.swift; path = Controller/HeroDetailSkillTableViewDataSource.swift; sourceTree = "<group>"; };
 		35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalRankTableViewCell.swift; path = Cells/PersonalRankTableViewCell.swift; sourceTree = "<group>"; };
 		35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInfoTableViewDataSource.swift; path = Controller/PersonalInfoTableViewDataSource.swift; sourceTree = "<group>"; };
 		35E259D31CE87F2C005AEE4F /* HeroData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroData.swift; path = Tk300HeroAssistant/Model/Data/HeroData.swift; sourceTree = SOURCE_ROOT; };
@@ -189,8 +195,9 @@
 			isa = PBXGroup;
 			children = (
 				35FBA63C1CDF712E00A527B4 /* RankViewController.swift */,
-				35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */,
 				35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */,
+				35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */,
+				35CB9EE01CEC54E50007C47C /* 英雄详情 */,
 			);
 			name = "游戏数据";
 			sourceTree = "<group>";
@@ -243,6 +250,16 @@
 				35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */,
 			);
 			name = Tools;
+			sourceTree = "<group>";
+		};
+		35CB9EE01CEC54E50007C47C /* 英雄详情 */ = {
+			isa = PBXGroup;
+			children = (
+				35CB9EE11CEC55120007C47C /* HeroDetailViewController.swift */,
+				35CB9EE51CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift */,
+				35CB9EE31CEC5B6D0007C47C /* SkillInfoTableViewCell.swift */,
+			);
+			name = "英雄详情";
 			sourceTree = "<group>";
 		};
 		35E259D21CE87EF4005AEE4F /* Data */ = {
@@ -534,12 +551,14 @@
 				3517D6FC1CE0EA70006162BA /* Item.swift in Sources */,
 				3517D7031CE0EDE9006162BA /* Rank.swift in Sources */,
 				35FBA6201CDF523C00A527B4 /* HttpClient.swift in Sources */,
+				35CB9EE21CEC55120007C47C /* HeroDetailViewController.swift in Sources */,
 				35FBA6181CDF51B100A527B4 /* DGRunkeeperSwitch.swift in Sources */,
 				3517D6FE1CE0EA70006162BA /* Match.swift in Sources */,
 				3517D7091CE0EE5F006162BA /* Hero.swift in Sources */,
 				35401A6A1CE830DA00F0EDE2 /* Global.swift in Sources */,
 				35011C601CE03BCC004F7913 /* MainNavigationViewController.swift in Sources */,
 				35FBA6141CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift in Sources */,
+				35CB9EE61CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift in Sources */,
 				3517D6FD1CE0EA70006162BA /* MatchRole.swift in Sources */,
 				350E2C971CE1A96D00DF5216 /* matchDetailTableViewCell.swift in Sources */,
 				3517D7041CE0EDE9006162BA /* Role.swift in Sources */,
@@ -570,6 +589,7 @@
 				35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */,
 				3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */,
 				35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */,
+				35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */,
 				35FBA63D1CDF712E00A527B4 /* RankViewController.swift in Sources */,
 				35FBA6151CDF51B100A527B4 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 			);

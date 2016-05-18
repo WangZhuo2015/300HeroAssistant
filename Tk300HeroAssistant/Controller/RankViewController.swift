@@ -50,4 +50,9 @@ class DataViewController: UIViewController {
     }
     */
 
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let VC = segue.destinationViewController as! HeroDetailViewController
+        VC.hero = heroDataArray[(tableView.indexPathForSelectedRow?.row)!]
+    }
 }
