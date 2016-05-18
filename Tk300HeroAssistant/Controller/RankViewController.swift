@@ -12,16 +12,23 @@ class DataViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var heroDataArray = [HeroData]()
+    var skillDataArray = [SkillData]()
+    
     let HeroDataCellIdentifier = "HeroDataCellIdentifier"
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        HeroDataManager.loadHeroData { (dataArray) in
+        CSVDataManager.loadHeroData { (dataArray) in
             self.heroDataArray = dataArray
             self.tableView.reloadData()
         }
-        
+        CSVDataManager.loadSkillData { (dataArray) in
+            self.skillDataArray = dataArray
+            dataArray.forEach({ (SkillData) in
+                print(SkillData.Information)
+            })
+        }
         
         
         // Do any additional setup after loading the view.

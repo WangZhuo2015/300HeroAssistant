@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		35011C601CE03BCC004F7913 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */; };
 		35011C621CE03C3C004F7913 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35011C611CE03C3C004F7913 /* User.swift */; };
+		350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350CCEDD1CEADBFE00D082EB /* SkillData.swift */; };
+		350CCEE01CEAE30500D082EB /* EquipCombineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350CCEDF1CEAE30500D082EB /* EquipCombineData.swift */; };
 		350E2C971CE1A96D00DF5216 /* matchDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E2C961CE1A96D00DF5216 /* matchDetailTableViewCell.swift */; };
 		350E2C991CE1A99800DF5216 /* matchDetailTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E2C981CE1A99800DF5216 /* matchDetailTableViewDataSource.swift */; };
 		3516C7CD1CE640F3005BF4D8 /* FriendAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3516C7CC1CE640F3005BF4D8 /* FriendAnalyzer.swift */; };
@@ -29,7 +31,7 @@
 		35401A6F1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */; };
 		35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */; };
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
-		35A892BC1CE8B36300FDCCCD /* HeroDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* HeroDataManager.swift */; };
+		35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
 		35BCF7581CE8C8F900E30907 /* HeroTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */; };
 		35DCA5CC1CE567730037577B /* PersonalRankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */; };
 		35DCA5CE1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift */; };
@@ -64,6 +66,8 @@
 /* Begin PBXFileReference section */
 		35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationViewController.swift; path = Controller/MainNavigationViewController.swift; sourceTree = "<group>"; };
 		35011C611CE03C3C004F7913 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Tk300HeroAssistant/Model/User.swift; sourceTree = SOURCE_ROOT; };
+		350CCEDD1CEADBFE00D082EB /* SkillData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillData.swift; path = Tk300HeroAssistant/Model/Data/SkillData.swift; sourceTree = SOURCE_ROOT; };
+		350CCEDF1CEAE30500D082EB /* EquipCombineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipCombineData.swift; path = Tk300HeroAssistant/Model/Data/EquipCombineData.swift; sourceTree = SOURCE_ROOT; };
 		350E2C961CE1A96D00DF5216 /* matchDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = matchDetailTableViewCell.swift; path = Cells/matchDetailTableViewCell.swift; sourceTree = "<group>"; };
 		350E2C981CE1A99800DF5216 /* matchDetailTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = matchDetailTableViewDataSource.swift; path = Controller/matchDetailTableViewDataSource.swift; sourceTree = "<group>"; };
 		3516C7CC1CE640F3005BF4D8 /* FriendAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendAnalyzer.swift; path = Tk300HeroAssistant/Model/FriendAnyalysis/FriendAnalyzer.swift; sourceTree = SOURCE_ROOT; };
@@ -86,7 +90,7 @@
 		35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableViewNetErrorDataSource.swift; path = Tools/UITableViewNetErrorDataSource.swift; sourceTree = "<group>"; };
 		35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchHeaderView.swift; path = Cells/MatchHeaderView.swift; sourceTree = "<group>"; };
 		35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = Cells/HeroTableViewCell.swift; sourceTree = "<group>"; };
-		35A892BB1CE8B36300FDCCCD /* HeroDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDataManager.swift; path = Tk300HeroAssistant/Model/HeroDataManager.swift; sourceTree = SOURCE_ROOT; };
+		35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVDataManager.swift; path = Tk300HeroAssistant/Model/CSVDataManager.swift; sourceTree = SOURCE_ROOT; };
 		35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewDataSource.swift; path = Controller/HeroTableViewDataSource.swift; sourceTree = "<group>"; };
 		35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalRankTableViewCell.swift; path = Cells/PersonalRankTableViewCell.swift; sourceTree = "<group>"; };
 		35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInfoTableViewDataSource.swift; path = Controller/PersonalInfoTableViewDataSource.swift; sourceTree = "<group>"; };
@@ -245,7 +249,8 @@
 			isa = PBXGroup;
 			children = (
 				35E259D31CE87F2C005AEE4F /* HeroData.swift */,
-				35A892BB1CE8B36300FDCCCD /* HeroDataManager.swift */,
+				350CCEDD1CEADBFE00D082EB /* SkillData.swift */,
+				350CCEDF1CEAE30500D082EB /* EquipCombineData.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -340,13 +345,14 @@
 		35FBA6231CDF57DB00A527B4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				35011C611CE03C3C004F7913 /* User.swift */,
+				35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */,
 				35E259D21CE87EF4005AEE4F /* Data */,
 				3516C7CB1CE64094005BF4D8 /* FriendAnalysis */,
 				3517D6E31CE0E6FD006162BA /* MatchDetail */,
 				35011C631CE04028004F7913 /* Match */,
 				35011C5E1CE03616004F7913 /* Rank */,
 				35011C5D1CE03605004F7913 /* Player */,
-				35011C611CE03C3C004F7913 /* User.swift */,
 				35401A691CE830D900F0EDE2 /* Global.swift */,
 			);
 			name = Model;
@@ -546,6 +552,7 @@
 				35FBA5F91CDF4E5C00A527B4 /* AppDelegate.swift in Sources */,
 				350E2C991CE1A99800DF5216 /* matchDetailTableViewDataSource.swift in Sources */,
 				35011C621CE03C3C004F7913 /* User.swift in Sources */,
+				350CCEE01CEAE30500D082EB /* EquipCombineData.swift in Sources */,
 				35FBA63F1CDF714A00A527B4 /* MatchViewController.swift in Sources */,
 				35FBA63B1CDF711800A527B4 /* PersonalInfoViewController.swift in Sources */,
 				35FBA6131CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift in Sources */,
@@ -557,8 +564,9 @@
 				35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */,
 				35FBA6161CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
 				35FBA6171CDF51B100A527B4 /* DGElasticPullToRefreshView.swift in Sources */,
+				350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */,
 				3517D7051CE0EDE9006162BA /* RoleAPIBase.swift in Sources */,
-				35A892BC1CE8B36300FDCCCD /* HeroDataManager.swift in Sources */,
+				35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */,
 				35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */,
 				3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */,
 				35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */,
