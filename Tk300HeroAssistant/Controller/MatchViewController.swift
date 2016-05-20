@@ -31,8 +31,6 @@ class MatchViewController: UIViewController {
         //设置用户切换时间
         userChange()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.userChange), name: userChangedNotification, object: nil)
-        //设置第一次加载的内容
-        loadMatchList(index: &matchIndex,loadMore: false)
         //设置刷新
         self.matchTableView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
             self.matchTableView.mj_header.beginRefreshing()
@@ -40,8 +38,8 @@ class MatchViewController: UIViewController {
             self.matchTableView.mj_header.endRefreshing()
         })
         matchTableView.mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: {
-            self.matchTableView.mj_header.beginRefreshing()
-            self.loadMatchList(index: &self.matchIndex)
+            self.matchTableView.mj_footer.beginRefreshing()
+            self.loadMatchList(index: &self.matchIndex,loadMore: true)
             self.matchTableView.mj_footer.endRefreshing()
         })
         // Do any additional setup after loading the view.
