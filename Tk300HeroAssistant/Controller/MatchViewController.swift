@@ -32,6 +32,7 @@ class MatchViewController: UIViewController {
     }
 
     func loadMatchList(name:String = User.sharedUser.userName,inout index:Int){
+        //TODO -:一次获取详细数据
         ServiceProxy.getBattleList(name, index: 0) { (matchBasicAPIBase, error) in
             guard error == nil else{
                 index = 0

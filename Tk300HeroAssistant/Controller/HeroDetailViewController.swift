@@ -39,11 +39,15 @@ class HeroDetailViewController: UIViewController {
     
     @IBOutlet weak var moveSpeedLabel: UILabel!
     
-    
+    let SkillCellIdentifier = "SkillCellIdentifier"
     var hero:HeroData?{
+        
+        //TODO: -逻辑待优化
         didSet{
             CSVDataManager.loadSkillData { (data) in
-                self.skillArray = data
+                self.skillArray = data.filter({ (item) -> Bool in
+                    item.id == self.hero!.id
+                })
             }
         }
     }
@@ -60,6 +64,8 @@ class HeroDetailViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 44.0
         setContent(hero!)
         
         

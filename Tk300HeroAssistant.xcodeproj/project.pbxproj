@@ -33,6 +33,7 @@
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
 		35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
 		35BCF7581CE8C8F900E30907 /* HeroTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */; };
+		35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB3E051CEE2F2100FED888 /* CSVReader.swift */; };
 		35CB9EE21CEC55120007C47C /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE11CEC55120007C47C /* HeroDetailViewController.swift */; };
 		35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE31CEC5B6D0007C47C /* SkillInfoTableViewCell.swift */; };
 		35CB9EE61CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE51CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift */; };
@@ -95,6 +96,7 @@
 		35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = Cells/HeroTableViewCell.swift; sourceTree = "<group>"; };
 		35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVDataManager.swift; path = Tk300HeroAssistant/Model/CSVDataManager.swift; sourceTree = SOURCE_ROOT; };
 		35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewDataSource.swift; path = Controller/HeroTableViewDataSource.swift; sourceTree = "<group>"; };
+		35CB3E051CEE2F2100FED888 /* CSVReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVReader.swift; path = Tk300HeroAssistant/Model/CSVReader.swift; sourceTree = SOURCE_ROOT; };
 		35CB9EE11CEC55120007C47C /* HeroDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDetailViewController.swift; path = Controller/HeroDetailViewController.swift; sourceTree = "<group>"; };
 		35CB9EE31CEC5B6D0007C47C /* SkillInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillInfoTableViewCell.swift; path = Cells/SkillInfoTableViewCell.swift; sourceTree = "<group>"; };
 		35CB9EE51CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDetailSkillTableViewDataSource.swift; path = Controller/HeroDetailSkillTableViewDataSource.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				35011C611CE03C3C004F7913 /* User.swift */,
+				35CB3E051CEE2F2100FED888 /* CSVReader.swift */,
 				35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */,
 				35E259D21CE87EF4005AEE4F /* Data */,
 				3516C7CB1CE64094005BF4D8 /* FriendAnalysis */,
@@ -586,6 +589,7 @@
 				350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */,
 				3517D7051CE0EDE9006162BA /* RoleAPIBase.swift in Sources */,
 				35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */,
+				35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */,
 				35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */,
 				3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */,
 				35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */,

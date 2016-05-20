@@ -37,7 +37,7 @@ class SkillInfoTableViewCell: UITableViewCell {
 
     func setContent(heroID:String,data:SkillData){
         //没图片总比崩溃了好
-        skillImage.image = UIImage(named: "hero-" + heroID + (data.name ?? "") + (data.id ?? ""))
+        skillImage.image = UIImage(named: "hero-" + heroID + (data.name ?? ""))// + (data.id ?? ""))
         skillNameLabel.text = data.name
         coolingTimeLabel.text = data.冷却时间
         skillMagicUseLabel.text = data.技能消耗
