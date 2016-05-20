@@ -17,6 +17,11 @@ extension HeroViewController:UICollectionViewDelegate,UICollectionViewDataSource
 //        cell.setContent(heroDataArray[indexPath.row])
 //        return cell
 //    }
+    //调整collectionViewCell大小
+    func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize{
+        return CGSizeMake((UIScreen.mainScreen().bounds.width - 50)/4, 100)
+    }
+    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return heroDataArray.count/4 + (( heroDataArray.count%4 == 0 ) ? 0:1)
     }
