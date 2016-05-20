@@ -7,14 +7,26 @@
 //
 
 import UIKit
-extension HeroViewController:UITableViewDataSource,UITableViewDelegate{
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        tableView.tableViewDisplayWith("数据加载ing...", ifNecessaryForRowCount: 0)
-        return heroDataArray.count
+extension HeroViewController:UICollectionViewDelegate,UICollectionViewDataSource{
+//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        tableView.tableViewDisplayWith("数据加载ing...", ifNecessaryForRowCount: 0)
+//        return heroDataArray.count
+//    }
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCellWithIdentifier(HeroDataCellIdentifier) as! HeroTableViewCell
+//        cell.setContent(heroDataArray[indexPath.row])
+//        return cell
+//    }
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return heroDataArray.count/4 + (( heroDataArray.count%4 == 0 ) ? 0:1)
     }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(HeroDataCellIdentifier) as! HeroTableViewCell
-        cell.setContent(heroDataArray[indexPath.row])
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return (section == (heroDataArray.count/4 + (( heroDataArray.count%4 == 0 ) ? 0:1)-1)) ? heroDataArray.count % 4 : 4
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(HeroCollectionViewCellIdentifier, forIndexPath: indexPath) as! HeroCollectionViewCell
+        cell.setContent(heroDataArray[indexPath.section * 4 + indexPath.row ])
         return cell
     }
 }

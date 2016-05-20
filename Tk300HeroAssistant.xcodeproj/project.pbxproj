@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		35011C601CE03BCC004F7913 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */; };
 		35011C621CE03C3C004F7913 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35011C611CE03C3C004F7913 /* User.swift */; };
+		3509932C1CEF116D0079C7E3 /* CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */; };
+		3509932E1CEF11E70079C7E3 /* HeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509932D1CEF11E70079C7E3 /* HeroCollectionViewCell.swift */; };
 		350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350CCEDD1CEADBFE00D082EB /* SkillData.swift */; };
 		350CCEE01CEAE30500D082EB /* EquipCombineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350CCEDF1CEAE30500D082EB /* EquipCombineData.swift */; };
 		350E2C971CE1A96D00DF5216 /* matchDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E2C961CE1A96D00DF5216 /* matchDetailTableViewCell.swift */; };
@@ -70,6 +72,8 @@
 /* Begin PBXFileReference section */
 		35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationViewController.swift; path = Controller/MainNavigationViewController.swift; sourceTree = "<group>"; };
 		35011C611CE03C3C004F7913 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Tk300HeroAssistant/Model/User.swift; sourceTree = SOURCE_ROOT; };
+		3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewExtension.swift; path = Extension/CollectionViewExtension.swift; sourceTree = "<group>"; };
+		3509932D1CEF11E70079C7E3 /* HeroCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroCollectionViewCell.swift; path = Cells/HeroCollectionViewCell.swift; sourceTree = "<group>"; };
 		350CCEDD1CEADBFE00D082EB /* SkillData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillData.swift; path = Tk300HeroAssistant/Model/Data/SkillData.swift; sourceTree = SOURCE_ROOT; };
 		350CCEDF1CEAE30500D082EB /* EquipCombineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipCombineData.swift; path = Tk300HeroAssistant/Model/Data/EquipCombineData.swift; sourceTree = SOURCE_ROOT; };
 		350E2C961CE1A96D00DF5216 /* matchDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = matchDetailTableViewCell.swift; path = Cells/matchDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -174,6 +178,13 @@
 			name = Match;
 			sourceTree = "<group>";
 		};
+		350993311CEF4B610079C7E3 /* 装备数据 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "装备数据";
+			sourceTree = "<group>";
+		};
 		3516C7CB1CE64094005BF4D8 /* FriendAnalysis */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,15 +204,16 @@
 			name = "个人战绩";
 			sourceTree = "<group>";
 		};
-		3517D6D51CE0DE60006162BA /* 游戏数据 */ = {
+		3517D6D51CE0DE60006162BA /* 英雄数据 */ = {
 			isa = PBXGroup;
 			children = (
 				35FBA63C1CDF712E00A527B4 /* HeroViewController.swift */,
 				35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */,
 				35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */,
+				3509932D1CEF11E70079C7E3 /* HeroCollectionViewCell.swift */,
 				35CB9EE01CEC54E50007C47C /* 英雄详情 */,
 			);
-			name = "游戏数据";
+			name = "英雄数据";
 			sourceTree = "<group>";
 		};
 		3517D6D61CE0DE73006162BA /* 个人信息 */ = {
@@ -250,6 +262,7 @@
 			children = (
 				35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */,
 				35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */,
+				3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -310,7 +323,6 @@
 				35FBA6231CDF57DB00A527B4 /* Model */,
 				35FBA6361CDF704000A527B4 /* View */,
 				35FBA6371CDF704B00A527B4 /* Controllers */,
-				35FBA6221CDF523F00A527B4 /* 3rd */,
 				35FBA61D1CDF523C00A527B4 /* Network */,
 				35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */,
 				35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */,
@@ -393,9 +405,11 @@
 		35FBA6371CDF704B00A527B4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				35FBA6221CDF523F00A527B4 /* 3rd */,
 				35FBA6381CDF708900A527B4 /* MainViewController.swift */,
 				3517D6D61CE0DE73006162BA /* 个人信息 */,
-				3517D6D51CE0DE60006162BA /* 游戏数据 */,
+				3517D6D51CE0DE60006162BA /* 英雄数据 */,
+				350993311CEF4B610079C7E3 /* 装备数据 */,
 				3517D6D41CE0DE4F006162BA /* 个人战绩 */,
 				35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */,
 			);
@@ -568,6 +582,7 @@
 				3517D6FF1CE0EA70006162BA /* MatchDetail.swift in Sources */,
 				35DCA5CC1CE567730037577B /* PersonalRankTableViewCell.swift in Sources */,
 				35401A6F1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift in Sources */,
+				3509932C1CEF116D0079C7E3 /* CollectionViewExtension.swift in Sources */,
 				3516C7CD1CE640F3005BF4D8 /* FriendAnalyzer.swift in Sources */,
 				35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */,
 				35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */,
@@ -587,6 +602,7 @@
 				35FBA6161CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
 				35FBA6171CDF51B100A527B4 /* DGElasticPullToRefreshView.swift in Sources */,
 				350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */,
+				3509932E1CEF11E70079C7E3 /* HeroCollectionViewCell.swift in Sources */,
 				3517D7051CE0EDE9006162BA /* RoleAPIBase.swift in Sources */,
 				35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */,
 				35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */,

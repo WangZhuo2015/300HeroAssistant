@@ -9,19 +9,19 @@
 import UIKit
 import SwiftCSV
 class HeroViewController: UIViewController {
-
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     var heroDataArray = [HeroData]()
     var skillDataArray = [SkillData]()
     
     let HeroDataCellIdentifier = "HeroDataCellIdentifier"
+    let HeroCollectionViewCellIdentifier = "HeroCollectionViewCellIdentifier"
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
+        collectionView.dataSource = self
+        collectionView.delegate = self
         CSVDataManager.loadHeroData { (dataArray) in
             self.heroDataArray = dataArray
-            self.tableView.reloadData()
+            self.collectionView.reloadData()
         }
         CSVDataManager.loadSkillData { (dataArray) in
             self.skillDataArray = dataArray
@@ -50,9 +50,10 @@ class HeroViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let VC = segue.destinationViewController as! HeroDetailViewController
-        VC.hero = heroDataArray[(tableView.indexPathForSelectedRow?.row)!]
+        let indexPath = collectionView.indexPathsForSelectedItems()![0]
+        VC.hero = heroDataArray[indexPath.section*4 + indexPath.row]
         VC.skillArray = skillDataArray.filter({ (data) -> Bool in
-            data.id == heroDataArray[(tableView.indexPathForSelectedRow?.row)!].id
+            data.id == heroDataArray[indexPath.section*4 + indexPath.row].id
         })
     }
 }
