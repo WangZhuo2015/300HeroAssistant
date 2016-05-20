@@ -8,7 +8,7 @@
 
 import UIKit
 import SwiftCSV
-class DataViewController: UIViewController {
+class HeroViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var heroDataArray = [HeroData]()

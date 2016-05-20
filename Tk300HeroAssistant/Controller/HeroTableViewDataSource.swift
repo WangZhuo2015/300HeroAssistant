@@ -7,7 +7,7 @@
 //
 
 import UIKit
-extension DataViewController:UITableViewDataSource,UITableViewDelegate{
+extension HeroViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.tableViewDisplayWith("数据加载ing...", ifNecessaryForRowCount: 0)
         return heroDataArray.count

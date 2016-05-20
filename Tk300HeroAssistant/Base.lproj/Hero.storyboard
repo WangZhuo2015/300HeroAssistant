@@ -8,7 +8,7 @@
         <!--排行榜-->
         <scene sceneID="xnf-n9-a9e">
             <objects>
-                <viewController title="排行榜" id="U6e-jK-As5" customClass="DataViewController" customModule="Tk300HeroAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="排行榜" id="U6e-jK-As5" customClass="HeroViewController" customModule="Tk300HeroAssistant" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uti-QL-BCm"/>
                         <viewControllerLayoutGuide type="bottom" id="ikK-71-00d"/>
