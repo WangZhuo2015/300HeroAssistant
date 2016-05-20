@@ -25,9 +25,6 @@ class DataViewController: UIViewController {
         }
         CSVDataManager.loadSkillData { (dataArray) in
             self.skillDataArray = dataArray
-            dataArray.forEach({ (SkillData) in
-                print(SkillData.Information)
-            })
         }
         
         
@@ -54,5 +51,8 @@ class DataViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let VC = segue.destinationViewController as! HeroDetailViewController
         VC.hero = heroDataArray[(tableView.indexPathForSelectedRow?.row)!]
+        VC.skillArray = skillDataArray.filter({ (data) -> Bool in
+            data.id == heroDataArray[(tableView.indexPathForSelectedRow?.row)!].id
+        })
     }
 }

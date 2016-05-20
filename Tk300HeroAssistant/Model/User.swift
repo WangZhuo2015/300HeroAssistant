@@ -15,7 +15,7 @@ class User {
         }
         return Inner.instance!
     }
-    struct Inner {
+    private struct Inner {
         static var instance: User?
         static var token: dispatch_once_t = 0
     }

@@ -10,14 +10,8 @@ import UIKit
 
 class MainNavigationViewController: UINavigationController {
 
-    lazy var loginButton:UIBarButtonItem = {
-        let btn = UIBarButtonItem()
-        btn.title = "切换用户"
-        return btn
-    }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = loginButton
         
         // Do any additional setup after loading the view.
     }

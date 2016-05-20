@@ -20,6 +20,8 @@ class MatchViewController: UIViewController {
         super.viewDidLoad()
         matchTableView.dataSource = self
         matchTableView.delegate = self
+        navigationItem.title = "战绩查询"
+        userChange()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.userChange), name: userChangedNotification, object: nil)
         loadMatchList(index: &matchIndex)
         

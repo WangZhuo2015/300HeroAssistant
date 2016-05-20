@@ -44,15 +44,18 @@ class HeroDetailViewController: UIViewController {
         
         //TODO: -逻辑待优化
         didSet{
-            CSVDataManager.loadSkillData { (data) in
-                self.skillArray = data.filter({ (item) -> Bool in
-                    item.id == self.hero!.id
-                })
-            }
+//            CSVDataManager.loadSkillData { (data) in
+//                self.skillArray = data.filter({ (item) -> Bool in
+//                    item.id == self.hero!.id
+//                })
+//            }
         }
     }
     var skillArray : [SkillData]?{
         didSet{
+            guard tableView != nil else{
+                return
+            }
             tableView.reloadData()
         }
     }
