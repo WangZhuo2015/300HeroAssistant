@@ -11,6 +11,7 @@ target 'Tk300HeroAssistant' do
     pod 'Kingfisher', '~> 2.2'
     pod 'SwiftCSV'
     pod 'MJRefresh'
+    pod 'PKHUD'
 #    pod 'AVOSCloudDynamic'               # 数据存储、短信、云引擎调用等基础服务模块
 #    pod 'AVOSCloudCrashReportingDynamic' # 错误报告模块
 end

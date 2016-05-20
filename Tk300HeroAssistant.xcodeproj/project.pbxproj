@@ -395,9 +395,9 @@
 			isa = PBXGroup;
 			children = (
 				35FBA5FC1CDF4E5C00A527B4 /* Main.storyboard */,
+				35FBA62D1CDF6FE300A527B4 /* Match.storyboard */,
 				35FBA6331CDF703A00A527B4 /* PersonalInfo.storyboard */,
 				35FBA6301CDF701600A527B4 /* Hero.storyboard */,
-				35FBA62D1CDF6FE300A527B4 /* Match.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -408,10 +408,10 @@
 				35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */,
 				35FBA6381CDF708900A527B4 /* MainViewController.swift */,
 				35FBA6221CDF523F00A527B4 /* 3rd */,
+				3517D6D41CE0DE4F006162BA /* 个人战绩 */,
 				3517D6D61CE0DE73006162BA /* 个人信息 */,
 				3517D6D51CE0DE60006162BA /* 英雄数据 */,
 				350993311CEF4B610079C7E3 /* 装备数据 */,
-				3517D6D41CE0DE4F006162BA /* 个人战绩 */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";

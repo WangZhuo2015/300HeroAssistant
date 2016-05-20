@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="126" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ju8-DJ-fWr">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.62745098040000002" green="0.76470588240000004" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MatchCellIdentifier" rowHeight="126" id="e85-uh-V83" customClass="MatchBasicTableViewCell" customModule="Tk300HeroAssistant" customModuleProvider="target">
@@ -145,10 +145,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ju8-DJ-fWr" firstAttribute="centerY" secondItem="DBG-kP-Bji" secondAttribute="centerY" constant="-24.5" id="2le-dv-nct"/>
+                            <constraint firstItem="ju8-DJ-fWr" firstAttribute="centerY" secondItem="DBG-kP-Bji" secondAttribute="centerY" id="2le-dv-nct"/>
                             <constraint firstItem="ju8-DJ-fWr" firstAttribute="width" secondItem="DBG-kP-Bji" secondAttribute="width" id="Cps-7O-vft"/>
                             <constraint firstItem="ju8-DJ-fWr" firstAttribute="centerX" secondItem="DBG-kP-Bji" secondAttribute="centerX" id="urJ-hz-iZR"/>
-                            <constraint firstItem="ju8-DJ-fWr" firstAttribute="height" secondItem="DBG-kP-Bji" secondAttribute="height" constant="-49" id="x8w-Ax-ykN"/>
+                            <constraint firstItem="ju8-DJ-fWr" firstAttribute="height" secondItem="DBG-kP-Bji" secondAttribute="height" id="x8w-Ax-ykN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zxo-sd-iKl"/>

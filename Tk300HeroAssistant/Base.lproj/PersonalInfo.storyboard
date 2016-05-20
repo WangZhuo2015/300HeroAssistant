@@ -84,25 +84,24 @@
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5O-4m-mCO">
-                                            <rect key="frame" x="8" y="66" width="68" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="更新时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5O-4m-mCO">
+                                            <rect key="frame" x="236" y="66" width="68" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhN-Aa-a7S">
-                                            <rect key="frame" x="84" y="66" width="228" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhN-Aa-a7S">
+                                            <rect key="frame" x="312" y="66" width="0.0" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="tdQ-3B-VTa"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.23921568630000001" green="0.47843137250000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstItem="m5O-4m-mCO" firstAttribute="leading" secondItem="prL-Ur-t57" secondAttribute="leading" constant="8" id="1QI-mk-MdN"/>
                                         <constraint firstItem="OhN-Aa-a7S" firstAttribute="centerY" secondItem="m5O-4m-mCO" secondAttribute="centerY" id="Au9-8O-Zpo"/>
                                         <constraint firstItem="dab-Tm-1J4" firstAttribute="top" secondItem="prL-Ur-t57" secondAttribute="top" constant="8" id="GD8-UY-Zi3"/>
                                         <constraint firstItem="dab-Tm-1J4" firstAttribute="leading" secondItem="Hh2-cu-2b4" secondAttribute="trailing" constant="12" id="Gww-CJ-wbT"/>

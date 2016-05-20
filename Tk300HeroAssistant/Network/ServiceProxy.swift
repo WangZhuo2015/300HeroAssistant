@@ -70,7 +70,7 @@ class ServiceProxy{
         playerName:String,
         index:Int,
         complete:(MatchBasicAPIBase: MatchBasicAPIBase?, error: NSError?) -> Void){
-        HttpClient.invoke(getMatchListURL(), parameters: ["name":playerName,"index":index]) { (response, error) in
+        HttpClient.invoke(getMatchListURL(), parameters: ["name":playerName,"index":"\(index)"]) { (response, error) in
             let json = JSON(data: response!)
             complete(MatchBasicAPIBase: MatchBasicAPIBase(fromJson: json), error: error)
         }

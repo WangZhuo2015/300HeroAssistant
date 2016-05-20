@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PKHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Tk300HeroAssistant.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,12 +47,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>515F4EDC5DA714B9976A376DBF6D5A74</key>
+		<key>6847254D016329D4A531D34ED2B6DF81</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6847254D016329D4A531D34ED2B6DF81</key>
+		<key>77F39E8743FDF937D9A07972EE9F4F44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,22 +62,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A42EE6F6C2DF3267598D42DC7C9349F0</key>
+		<key>D0F2B302A9B87B84DA7F6B54CCF497A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D10D5067A5648D0237687E12CA3D4D8F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E12333D71AFE84F83C08AE5173516032</key>
+		<key>E66E3F0DC9E2D55530088113881F53CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E96E13C4D3B5B5FC0651440734C2BF4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ED093D5496C4F21983B955AD31597CAF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6F0516F82D07656D12F1C0716898F73</key>
 		<dict>
 			<key>primary</key>
 			<true/>

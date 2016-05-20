@@ -9,17 +9,13 @@
 import UIKit
 import Alamofire
 import MJRefresh
+import PKHUD
 class MatchViewController: UIViewController {
     @IBOutlet weak var matchTableView: UITableView!
     
     //MatchCell
     let MatchCellIdentifier = "MatchCellIdentifier"
     var matchBasicInfoArray = [List]()
-    var matchIndex:Int = 0{
-        didSet{
-            print("didSet \(matchIndex)")
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,20 +30,19 @@ class MatchViewController: UIViewController {
         //设置刷新
         self.matchTableView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
             self.matchTableView.mj_header.beginRefreshing()
-            self.loadMatchList(index: &self.matchIndex,loadMore: false)
+            self.loadMatchList(loadMore: false)
             self.matchTableView.mj_header.endRefreshing()
         })
         matchTableView.mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: {
             self.matchTableView.mj_footer.beginRefreshing()
-            self.loadMatchList(index: &self.matchIndex,loadMore: true)
+            self.loadMatchList(loadMore: true)
             self.matchTableView.mj_footer.endRefreshing()
         })
         // Do any additional setup after loading the view.
     }
     
     func userChange(){
-        matchIndex = 0
-        loadMatchList(index: &matchIndex,loadMore: false)
+        loadMatchList(loadMore: false)
     }
 
     
@@ -55,28 +50,29 @@ class MatchViewController: UIViewController {
      获取数据方法
      
      - parameter name:     玩家名
-     - parameter index:    index
      - parameter loadMore: 是否加载更多
      */
-    func loadMatchList(name:String = User.sharedUser.userName,inout index:Int,loadMore:Bool = true){
+    func loadMatchList(name:String = User.sharedUser.userName,loadMore:Bool = true){
         //TODO -:一次获取详细数据
         
         //如果是刷新
         if !loadMore {
-            index = 0
             self.matchBasicInfoArray.removeAll()
             matchTableView.reloadData()
         }
-        print(index)
-        ServiceProxy.getBattleList(name, index: index) { (matchBasicAPIBase, error) in
+        ServiceProxy.getBattleList(name, index: matchBasicInfoArray.count) { (matchBasicAPIBase, error) in
             guard error == nil else{
-                index = 0
+                HUD.flash(.LabeledError(title: "连接出错", subtitle: nil),delay: 1)
                 self.matchBasicInfoArray.removeAll()
                 return
             }
+            if matchBasicAPIBase?.list.count == 0{
+                HUD.flash(.LabeledError(title: "没有更多信息", subtitle: nil),delay: 1)
+            }else{
+                HUD.flash(.Success,delay: 0.3)
+            }
             self.matchBasicInfoArray.appendContentsOf((matchBasicAPIBase?.list)!)
             self.matchTableView.reloadData()
-            index += 1
         }
     }
 
