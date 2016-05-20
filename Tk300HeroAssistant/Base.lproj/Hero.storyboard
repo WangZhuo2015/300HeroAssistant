@@ -82,7 +82,7 @@
                             <constraint firstItem="kE2-cs-MWH" firstAttribute="centerY" secondItem="R9x-iT-Fza" secondAttribute="centerY" id="zjP-Po-cOQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0tz-GF-o6c"/>
+                    <navigationItem key="navigationItem" title="英雄" id="0tz-GF-o6c"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Tk300HeroAssistant.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>515F4EDC5DA714B9976A376DBF6D5A74</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6847254D016329D4A531D34ED2B6DF81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>92851FD49D7FF51D778472A71175AE84</key>
+		<key>A42EE6F6C2DF3267598D42DC7C9349F0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A269D0C857C8719676CF54A636F4FA68</key>
+		<key>D10D5067A5648D0237687E12CA3D4D8F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BAAC5382520D657581AD52605C64D122</key>
+		<key>E12333D71AFE84F83C08AE5173516032</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E96E13C4D3B5B5FC0651440734C2BF4D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F9C9B472F29C167DF6D6F5D9320BEFA7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

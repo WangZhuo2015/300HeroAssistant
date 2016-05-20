@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92851FD49D7FF51D778472A71175AE84"
+               BlueprintIdentifier = "E12333D71AFE84F83C08AE5173516032"
                BuildableName = "Pods_Tk300HeroAssistant.framework"
                BlueprintName = "Pods-Tk300HeroAssistant"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "92851FD49D7FF51D778472A71175AE84"
+            BlueprintIdentifier = "E12333D71AFE84F83C08AE5173516032"
             BuildableName = "Pods_Tk300HeroAssistant.framework"
             BlueprintName = "Pods-Tk300HeroAssistant"
             ReferencedContainer = "container:Pods.xcodeproj">
