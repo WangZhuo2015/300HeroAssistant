@@ -45,7 +45,7 @@ class PersonalInfoViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         userChange()
-        let login = UIBarButtonItem(title: "切换账号", style: .Plain , target: self, action: #selector(self.login(_:)))
+        let login = UIBarButtonItem(title: "切换账号", style: .Plain , target: self, action: #selector(self.login))
         self.navigationItem.rightBarButtonItem = login
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: (#selector(PersonalInfoViewController.userChange)), name: userChangedNotification, object: nil)
@@ -97,7 +97,7 @@ class PersonalInfoViewController: UIViewController {
     }
     */
 
-    func login(sender:UIBarButtonItem){
+    func login(){
         let alert = UIAlertController(title: "登录/切换账号", message: "请输入您的游戏ID", preferredStyle: .Alert)
         var usernameTextField: UITextField?
         alert.addTextFieldWithConfigurationHandler {

@@ -57,11 +57,11 @@
 		35FBA6201CDF523C00A527B4 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA61E1CDF523C00A527B4 /* HttpClient.swift */; };
 		35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA61F1CDF523C00A527B4 /* ServiceProxy.swift */; };
 		35FBA62F1CDF6FE300A527B4 /* Match.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA62D1CDF6FE300A527B4 /* Match.storyboard */; };
-		35FBA6321CDF701600A527B4 /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA6301CDF701600A527B4 /* Rank.storyboard */; };
+		35FBA6321CDF701600A527B4 /* Data.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA6301CDF701600A527B4 /* Data.storyboard */; };
 		35FBA6351CDF703A00A527B4 /* PersonalInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA6331CDF703A00A527B4 /* PersonalInfo.storyboard */; };
 		35FBA6391CDF708900A527B4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA6381CDF708900A527B4 /* MainViewController.swift */; };
 		35FBA63B1CDF711800A527B4 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA63A1CDF711800A527B4 /* PersonalInfoViewController.swift */; };
-		35FBA63D1CDF712E00A527B4 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA63C1CDF712E00A527B4 /* RankViewController.swift */; };
+		35FBA63D1CDF712E00A527B4 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA63C1CDF712E00A527B4 /* DataViewController.swift */; };
 		35FBA63F1CDF714A00A527B4 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA63E1CDF714A00A527B4 /* MatchViewController.swift */; };
 		35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA6401CDF717400A527B4 /* MatchDetailViewController.swift */; };
 		C13E5EBB34E60A6D328DFA70 /* Pods_Tk300HeroAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585C009171284DD1558B5230 /* Pods_Tk300HeroAssistant.framework */; };
@@ -123,11 +123,11 @@
 		35FBA61E1CDF523C00A527B4 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		35FBA61F1CDF523C00A527B4 /* ServiceProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProxy.swift; sourceTree = "<group>"; };
 		35FBA62E1CDF6FE300A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Match.storyboard; sourceTree = "<group>"; };
-		35FBA6311CDF701600A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Rank.storyboard; sourceTree = "<group>"; };
+		35FBA6311CDF701600A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Data.storyboard; sourceTree = "<group>"; };
 		35FBA6341CDF703A00A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PersonalInfo.storyboard; sourceTree = "<group>"; };
 		35FBA6381CDF708900A527B4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controller/Main/MainViewController.swift; sourceTree = "<group>"; };
 		35FBA63A1CDF711800A527B4 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInfoViewController.swift; path = Controller/PersonalInfoViewController.swift; sourceTree = "<group>"; };
-		35FBA63C1CDF712E00A527B4 /* RankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankViewController.swift; path = Controller/RankViewController.swift; sourceTree = "<group>"; };
+		35FBA63C1CDF712E00A527B4 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataViewController.swift; path = Controller/DataViewController.swift; sourceTree = "<group>"; };
 		35FBA63E1CDF714A00A527B4 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchViewController.swift; path = Controller/MatchViewController.swift; sourceTree = "<group>"; };
 		35FBA6401CDF717400A527B4 /* MatchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchDetailViewController.swift; path = Controller/MatchDetailViewController.swift; sourceTree = "<group>"; };
 		4FE5B0D7DD464CEA3FF730C0 /* Pods-Tk300HeroAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tk300HeroAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 		3517D6D51CE0DE60006162BA /* 游戏数据 */ = {
 			isa = PBXGroup;
 			children = (
-				35FBA63C1CDF712E00A527B4 /* RankViewController.swift */,
+				35FBA63C1CDF712E00A527B4 /* DataViewController.swift */,
 				35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */,
 				35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */,
 				35CB9EE01CEC54E50007C47C /* 英雄详情 */,
@@ -384,7 +384,7 @@
 			children = (
 				35FBA5FC1CDF4E5C00A527B4 /* Main.storyboard */,
 				35FBA6331CDF703A00A527B4 /* PersonalInfo.storyboard */,
-				35FBA6301CDF701600A527B4 /* Rank.storyboard */,
+				35FBA6301CDF701600A527B4 /* Data.storyboard */,
 				35FBA62D1CDF6FE300A527B4 /* Match.storyboard */,
 			);
 			name = View;
@@ -481,7 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35FBA6321CDF701600A527B4 /* Rank.storyboard in Resources */,
+				35FBA6321CDF701600A527B4 /* Data.storyboard in Resources */,
 				35FBA6031CDF4E5C00A527B4 /* LaunchScreen.storyboard in Resources */,
 				35FBA60B1CDF4EA800A527B4 /* openapi.txt in Resources */,
 				35FBA62F1CDF6FE300A527B4 /* Match.storyboard in Resources */,
@@ -594,7 +594,7 @@
 				3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */,
 				35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */,
 				35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */,
-				35FBA63D1CDF712E00A527B4 /* RankViewController.swift in Sources */,
+				35FBA63D1CDF712E00A527B4 /* DataViewController.swift in Sources */,
 				35FBA6151CDF51B100A527B4 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,12 +626,12 @@
 			name = Match.storyboard;
 			sourceTree = "<group>";
 		};
-		35FBA6301CDF701600A527B4 /* Rank.storyboard */ = {
+		35FBA6301CDF701600A527B4 /* Data.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				35FBA6311CDF701600A527B4 /* Base */,
 			);
-			name = Rank.storyboard;
+			name = Data.storyboard;
 			sourceTree = "<group>";
 		};
 		35FBA6331CDF703A00A527B4 /* PersonalInfo.storyboard */ = {

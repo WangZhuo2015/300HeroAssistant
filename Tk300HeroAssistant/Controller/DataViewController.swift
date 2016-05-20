@@ -1,5 +1,5 @@
 //
-//  RankViewController.swift
+//  DataViewController.swift
 //  Tk300HeroAssistant
 //
 //  Created by 王卓 on 16/5/8.
