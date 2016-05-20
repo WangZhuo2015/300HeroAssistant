@@ -19,7 +19,7 @@ extension HeroViewController:UICollectionViewDelegate,UICollectionViewDataSource
 //    }
     //调整collectionViewCell大小
     func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize{
-        return CGSizeMake((UIScreen.mainScreen().bounds.width - 50)/4, 100)
+        return CGSizeMake((UIScreen.mainScreen().bounds.width - 50)/4, (UIScreen.mainScreen().bounds.width - 50)/4 + 20)
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
