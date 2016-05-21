@@ -41,6 +41,15 @@ class SkillInfoTableViewCell: UITableViewCell {
         if skillImage.image == nil {
             print("不存在的图片\("hero-" + heroID + (data.name ?? "")))")
         }
+        if data.快捷键 == "被动"{
+            skillMagicUseLabel.snp_makeConstraints(closure: { (make) in
+                make.height.equalTo(0)
+            })
+            coolingTimeLabel.snp_makeConstraints(closure: { (make) in
+                make.height.equalTo(0)
+            })
+        }
+        self.layoutIfNeeded()
         skillNameLabel.text = data.name
         coolingTimeLabel.text = data.冷却时间
         skillMagicUseLabel.text = data.技能消耗

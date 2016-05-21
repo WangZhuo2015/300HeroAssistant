@@ -24,7 +24,9 @@ class PersonalInfoViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var winRateLabel: UILabel!
     
+    @IBOutlet weak var winRateProgress: UIProgressView!
     
     //PersonalRankCell
     let PersonalRankCellIdentifier = "PersonalRankCellIdentifier"
@@ -81,6 +83,9 @@ class PersonalInfoViewController: UIViewController {
         allCountLabel.text = "\(role.matchCount)"
         jumpLevelLabel.text = "\(role.jumpValue)"
         updateTimeLabel.text = role.updateTime
+        let winRate = Float( role.winCount ) / Float( role.matchCount )
+        winRateLabel.text = "\(winRate*100)"+"%"
+        winRateProgress.progress = winRate
     }
     
     override func didReceiveMemoryWarning() {

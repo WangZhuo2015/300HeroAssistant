@@ -10,8 +10,35 @@ import UIKit
 import SwiftCSV
 class HeroViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    var heroDataArray = [HeroData]()
+    
+    @IBOutlet weak var filterButton: UIBarButtonItem!
+    
+    var rawHeroDataArray = [HeroData](){
+        didSet{
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+                self.rawHeroDataArray.forEach({ (data) in
+                    self.heroTypes.insert( data.locate! )
+                })
+            })
+            heroType = ""
+        }
+    }
+    var heroDataArray = [HeroData](){
+        didSet{
+            self.collectionView.reloadData()
+        }
+    }
     var skillDataArray = [SkillData]()
+    var heroTypes = Set<String>()
+    var heroType = ""{
+        didSet{
+            heroDataArray.removeAll()
+            self.heroDataArray.appendContentsOf(self.rawHeroDataArray.filter({ (data) -> Bool in
+                guard self.heroType != "" else{ return true }
+                return data.locate == self.heroType
+            }))
+        }
+    }
     
     let HeroDataCellIdentifier = "HeroDataCellIdentifier"
     let HeroCollectionViewCellIdentifier = "HeroCollectionViewCellIdentifier"
@@ -19,11 +46,10 @@ class HeroViewController: UIViewController {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
-        CSVDataManager.loadHeroData { (dataArray) in
-            self.heroDataArray = dataArray
-            self.collectionView.reloadData()
+        CSVDataManager.sharedInstance.loadHeroData { (dataArray) in
+            self.rawHeroDataArray = dataArray
         }
-        CSVDataManager.loadSkillData { (dataArray) in
+        CSVDataManager.sharedInstance.loadSkillData { (dataArray) in
             self.skillDataArray = dataArray
         }
         
@@ -36,6 +62,25 @@ class HeroViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //改变过滤器
+    @IBAction func filterChange(sender: UIBarButtonItem) {
+        let alertSheet = UIAlertController(title: "过滤", message: "选择类型", preferredStyle: .ActionSheet)
+        for type in heroTypes{
+            let action = UIAlertAction(title: type, style: .Default, handler: { (_) in
+                self.heroType = type
+            })
+            alertSheet.addAction(action)
+        }
+        let allAction = UIAlertAction(title: "全部", style: .Default, handler: { (_) in
+            self.heroType = ""
+        })
+        let cancelAction = UIAlertAction(title: "取消", style: .Cancel, handler: { (_) in
+            self.heroType = ""
+        })
+        alertSheet.addAction(allAction)
+        alertSheet.addAction(cancelAction)
+        presentViewController(alertSheet, animated: true,completion: nil)
+    }
 
     /*
     // MARK: - Navigation

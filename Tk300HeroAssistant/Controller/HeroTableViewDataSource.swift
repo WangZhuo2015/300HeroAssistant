@@ -23,7 +23,7 @@ extension HeroViewController:UICollectionViewDelegate,UICollectionViewDataSource
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return heroDataArray.count/4 + (( heroDataArray.count%4 == 0 ) ? 0:1)
+        return heroDataArray.count/4 + (( heroDataArray.count % 4 == 0 ) ? 0:1)
     }
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return (section == (heroDataArray.count/4 + (( heroDataArray.count%4 == 0 ) ? 0:1)-1)) ? heroDataArray.count % 4 : 4

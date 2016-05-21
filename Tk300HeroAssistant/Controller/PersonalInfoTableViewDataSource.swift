@@ -9,7 +9,7 @@
 import UIKit
 extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        tableView.tableViewDisplayWith("查询无结果", ifNecessaryForRowCount: rank.count)
+        tableView.tableViewDisplayWith("Rank榜单无结果", ifNecessaryForRowCount: rank.count)
         return rank.count
     }
     

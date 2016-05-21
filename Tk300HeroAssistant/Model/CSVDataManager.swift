@@ -8,12 +8,30 @@
 
 import Foundation
 class CSVDataManager{
+    static let sharedInstance = CSVDataManager()
+    var heroDataArray:[HeroData]?
+    var skillDataArray:[SkillData]?
     
-    class func loadHeroData(completionHandle:([HeroData])->Void) {
-        CSVReader.loadDataFromCSV("hero data", completionHandle: completionHandle)
+    func loadHeroData(completionHandle:([HeroData])->Void) {
+        if let data = heroDataArray{
+            completionHandle(data)
+        }else{
+            CSVReader.loadDataFromCSV("hero data", completionHandle: { (data:[HeroData]) in
+                self.heroDataArray =  data
+                completionHandle(data)
+            })
+        }
     }
-    class func loadSkillData(completionHandle:([SkillData])->Void) {
-        CSVReader.loadDataFromCSV("skill data", completionHandle: completionHandle)
+    
+    func loadSkillData(completionHandle:([SkillData])->Void) {
+        if let data = skillDataArray{
+            completionHandle(data)
+        }else{
+            CSVReader.loadDataFromCSV("skill data", completionHandle: { (data:[SkillData]) in
+                self.skillDataArray =  data
+                completionHandle(data)
+            })
+        }
     }
     
     class func loadEquipData(completionHandle:([SkillData])->Void) {
