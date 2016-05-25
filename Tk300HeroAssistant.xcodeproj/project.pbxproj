@@ -42,8 +42,6 @@
 		35DCA5CC1CE567730037577B /* PersonalRankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */; };
 		35DCA5CE1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift */; };
 		35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E259D31CE87F2C005AEE4F /* HeroData.swift */; };
-		35E25DAF1CE88306005AEE4F /* hero data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35E259D61CE88304005AEE4F /* hero data.csv */; };
-		35E261841CE88307005AEE4F /* skill data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35E25DAE1CE88306005AEE4F /* skill data.csv */; };
 		35FBA5F91CDF4E5C00A527B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */; };
 		35FBA5FE1CDF4E5C00A527B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA5FC1CDF4E5C00A527B4 /* Main.storyboard */; };
 		35FBA6001CDF4E5C00A527B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */; };
@@ -107,8 +105,6 @@
 		35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalRankTableViewCell.swift; path = Cells/PersonalRankTableViewCell.swift; sourceTree = "<group>"; };
 		35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInfoTableViewDataSource.swift; path = Controller/PersonalInfoTableViewDataSource.swift; sourceTree = "<group>"; };
 		35E259D31CE87F2C005AEE4F /* HeroData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroData.swift; path = Tk300HeroAssistant/Model/Data/HeroData.swift; sourceTree = SOURCE_ROOT; };
-		35E259D61CE88304005AEE4F /* hero data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = "hero data.csv"; sourceTree = "<group>"; };
-		35E25DAE1CE88306005AEE4F /* skill data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = "skill data.csv"; sourceTree = "<group>"; };
 		35FBA5F51CDF4E5C00A527B4 /* 星尘盒子 for 300英雄.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "星尘盒子 for 300英雄.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35FBA5FD1CDF4E5C00A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -287,15 +283,6 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
-		35E259D51CE88304005AEE4F /* LocalData */ = {
-			isa = PBXGroup;
-			children = (
-				35E259D61CE88304005AEE4F /* hero data.csv */,
-				35E25DAE1CE88306005AEE4F /* skill data.csv */,
-			);
-			path = LocalData;
-			sourceTree = "<group>";
-		};
 		35FBA5EC1CDF4E5C00A527B4 = {
 			isa = PBXGroup;
 			children = (
@@ -318,7 +305,6 @@
 		35FBA5F71CDF4E5C00A527B4 /* Tk300HeroAssistant */ = {
 			isa = PBXGroup;
 			children = (
-				35E259D51CE88304005AEE4F /* LocalData */,
 				35401A6D1CE839C800F0EDE2 /* Tools */,
 				35FBA6231CDF57DB00A527B4 /* Model */,
 				35FBA6361CDF704000A527B4 /* View */,
@@ -500,10 +486,8 @@
 				35FBA60B1CDF4EA800A527B4 /* openapi.txt in Resources */,
 				35FBA62F1CDF6FE300A527B4 /* Match.storyboard in Resources */,
 				35FBA6001CDF4E5C00A527B4 /* Assets.xcassets in Resources */,
-				35E261841CE88307005AEE4F /* skill data.csv in Resources */,
 				35FBA6351CDF703A00A527B4 /* PersonalInfo.storyboard in Resources */,
 				35FBA5FE1CDF4E5C00A527B4 /* Main.storyboard in Resources */,
-				35E25DAF1CE88306005AEE4F /* hero data.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
