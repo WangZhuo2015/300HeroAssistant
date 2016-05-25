@@ -8,7 +8,7 @@
         <!--Personal Info View Controller-->
         <scene sceneID="2Hf-00-VRc">
             <objects>
-                <viewController id="u8n-1d-fmD" customClass="PersonalInfoViewController" customModule="Tk300HeroAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="u8n-1d-fmD" customClass="PersonalInfoViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pQV-RH-WOO"/>
                         <viewControllerLayoutGuide type="bottom" id="lfS-kk-8Gq"/>
@@ -105,8 +105,8 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zO-xm-Sl4">
-                                            <rect key="frame" x="50" y="65" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zO-xm-Sl4">
+                                            <rect key="frame" x="50" y="65" width="23" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="DKs-hZ-Xzc"/>
                                             </constraints>
@@ -115,8 +115,9 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xl9-9A-iDR">
-                                            <rect key="frame" x="100" y="65" width="212" height="21"/>
-                                            <color key="progressTintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="81" y="65" width="231" height="21"/>
+                                            <color key="progressTintColor" red="0.26809935305376831" green="0.80816500166052896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="trackTintColor" red="1" green="0.42599420528175336" blue="0.50108876679401393" alpha="1" colorSpace="calibratedRGB"/>
                                         </progressView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.23921568630000001" green="0.47843137250000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -154,7 +155,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalRankCellIdentifier" rowHeight="103" id="tGr-tE-sG9" customClass="PersonalRankTableViewCell" customModule="Tk300HeroAssistant" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalRankCellIdentifier" rowHeight="103" id="tGr-tE-sG9" customClass="PersonalRankTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="214" width="320" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tGr-tE-sG9" id="NkU-xp-oIE">

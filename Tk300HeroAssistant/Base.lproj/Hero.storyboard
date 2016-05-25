@@ -9,7 +9,7 @@
         <!--排行榜-->
         <scene sceneID="xnf-n9-a9e">
             <objects>
-                <viewController title="排行榜" id="U6e-jK-As5" customClass="HeroViewController" customModule="Tk300HeroAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="排行榜" id="U6e-jK-As5" customClass="HeroViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uti-QL-BCm"/>
                         <viewControllerLayoutGuide type="bottom" id="ikK-71-00d"/>
@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeroCollectionViewCellIdentifier" id="T4D-Gv-uBc" customClass="HeroCollectionViewCell" customModule="Tk300HeroAssistant" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeroCollectionViewCellIdentifier" id="T4D-Gv-uBc" customClass="HeroCollectionViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="10" y="74" width="80" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -104,7 +104,7 @@
         <!--英雄详情-->
         <scene sceneID="0l4-XO-ch3">
             <objects>
-                <viewController id="iza-V9-Etd" customClass="HeroDetailViewController" customModule="Tk300HeroAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iza-V9-Etd" customClass="HeroDetailViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cg3-hd-48W"/>
                         <viewControllerLayoutGuide type="bottom" id="10t-xE-y28"/>
@@ -342,7 +342,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SkillCellIdentifier" rowHeight="147" id="TO4-50-n9m" customClass="SkillInfoTableViewCell" customModule="Tk300HeroAssistant" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SkillCellIdentifier" rowHeight="147" id="TO4-50-n9m" customClass="SkillInfoTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="330" width="320" height="147"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TO4-50-n9m" id="odW-nO-E9k">

@@ -109,7 +109,7 @@
 		35E259D31CE87F2C005AEE4F /* HeroData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroData.swift; path = Tk300HeroAssistant/Model/Data/HeroData.swift; sourceTree = SOURCE_ROOT; };
 		35E259D61CE88304005AEE4F /* hero data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = "hero data.csv"; sourceTree = "<group>"; };
 		35E25DAE1CE88306005AEE4F /* skill data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = "skill data.csv"; sourceTree = "<group>"; };
-		35FBA5F51CDF4E5C00A527B4 /* Tk300HeroAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tk300HeroAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FBA5F51CDF4E5C00A527B4 /* 星尘盒子 for 300英雄.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "星尘盒子 for 300英雄.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35FBA5FD1CDF4E5C00A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -310,7 +310,7 @@
 		35FBA5F61CDF4E5C00A527B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				35FBA5F51CDF4E5C00A527B4 /* Tk300HeroAssistant.app */,
+				35FBA5F51CDF4E5C00A527B4 /* 星尘盒子 for 300英雄.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -453,7 +453,7 @@
 			);
 			name = Tk300HeroAssistant;
 			productName = Tk300HeroAssistant;
-			productReference = 35FBA5F51CDF4E5C00A527B4 /* Tk300HeroAssistant.app */;
+			productReference = 35FBA5F51CDF4E5C00A527B4 /* 星尘盒子 for 300英雄.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -702,6 +702,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "星尘盒子 for 300英雄";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -741,6 +742,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "星尘盒子 for 300英雄";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -757,7 +759,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.dowhile.Tk300HeroAssistant;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "星尘盒子 for 300英雄";
 				PROVISIONING_PROFILE = "90b90b7e-5eff-4cfc-88f6-f8d7dad24391";
 			};
 			name = Debug;
@@ -773,7 +775,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.dowhile.Tk300HeroAssistant;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "星尘盒子 for 300英雄";
 				PROVISIONING_PROFILE = "90b90b7e-5eff-4cfc-88f6-f8d7dad24391";
 			};
 			name = Release;
