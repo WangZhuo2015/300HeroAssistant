@@ -81,15 +81,14 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(namesArray.count)
-        print(namesArray)
+        tableView.tableViewDisplayWith("无账号", ifNecessaryForRowCount: 1)
         return namesArray.count + 1
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCellWithIdentifier(accountCellIdentifier) as!userAccountTableViewCell
         guard indexPath.row != namesArray.count else{
-            cell.userAccountLabel.text = "add New Account"
+            cell.userAccountLabel.text = "添加新的账号"
             cell.innerView.backgroundColor = UIColor.greenColor()
             cell.editing = true
             return cell
@@ -116,6 +115,11 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
                     self.presentViewController(alert, animated: true, completion: nil)
             })
         }
+    }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        if indexPath.row == namesArray.count {return false}
+        return true
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {

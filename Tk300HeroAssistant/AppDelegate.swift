@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UITabBar.appearance().barTintColor = UIColor(red: 13.0/255, green: 110.0/255, blue: 144.0/255, alpha: 1.0)
         UITabBar.appearance().tintColor = UIColor ( red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0 )
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         //状态栏渲染颜色
         //plist修改
         //UIApplication.sharedApplication().statusBarStyle = .LightContent
