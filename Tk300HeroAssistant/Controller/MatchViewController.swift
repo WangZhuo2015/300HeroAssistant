@@ -52,7 +52,7 @@ class MatchViewController: UIViewController {
      - parameter name:     玩家名
      - parameter loadMore: 是否加载更多
      */
-    func loadMatchList(name:String = User.sharedUser.userName,loadMore:Bool = true){
+    func loadMatchList(name:String = User.sharedUser.userName ?? "",loadMore:Bool = true){
         //TODO -:一次获取详细数据
         
         //如果是刷新

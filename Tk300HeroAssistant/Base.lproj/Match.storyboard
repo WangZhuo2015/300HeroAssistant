@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ylL-fe-lYu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ylL-fe-lYu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -8,7 +8,7 @@
         <!--个人战绩-->
         <scene sceneID="tud-yC-6ua">
             <objects>
-                <viewController title="个人战绩" id="YZA-lk-cfv" customClass="MatchViewController" customModule="Tk300HeroAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="个人战绩" id="YZA-lk-cfv" customClass="MatchViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FPg-yM-wGl"/>
                         <viewControllerLayoutGuide type="bottom" id="R7F-a9-b82"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.62745098040000002" green="0.76470588240000004" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MatchCellIdentifier" rowHeight="126" id="e85-uh-V83" customClass="MatchBasicTableViewCell" customModule="Tk300HeroAssistant" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MatchCellIdentifier" rowHeight="126" id="e85-uh-V83" customClass="MatchBasicTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="320" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e85-uh-V83" id="oVc-fK-3Yc">
@@ -165,7 +165,7 @@
         <!--Match Detail View Controller-->
         <scene sceneID="Tyy-P6-la9">
             <objects>
-                <viewController id="ftT-R1-tRq" customClass="MatchDetailViewController" customModule="Tk300HeroAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ftT-R1-tRq" customClass="MatchDetailViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="32Q-Le-9Vm"/>
                         <viewControllerLayoutGuide type="bottom" id="Ady-YD-zId"/>
@@ -244,8 +244,38 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="matchDetailCellIdentifier" rowHeight="322" id="Kqu-m4-s9f" customClass="matchDetailTableViewCell" customModule="Tk300HeroAssistant" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="228" width="320" height="322"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aui-bU-ztL">
+                                        <rect key="frame" x="0.0" y="228" width="320" height="323"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aui-bU-ztL" id="FZw-fg-3rU">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="323"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6X-6n-G3r">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+                                                    <color key="backgroundColor" red="0.75538862179487176" green="0.75538862179487176" blue="0.75538862179487176" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="101" id="GVb-th-dJM"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sA-4W-F2F">
+                                                    <rect key="frame" x="0.0" y="103" width="320" height="220"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="p6X-6n-G3r" firstAttribute="centerX" secondItem="FZw-fg-3rU" secondAttribute="centerX" id="6Vg-3T-TXZ"/>
+                                                <constraint firstItem="p6X-6n-G3r" firstAttribute="width" secondItem="FZw-fg-3rU" secondAttribute="width" id="6ZS-uY-bw7"/>
+                                                <constraint firstItem="7sA-4W-F2F" firstAttribute="top" secondItem="p6X-6n-G3r" secondAttribute="bottom" constant="2" id="EvJ-XI-eOX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7sA-4W-F2F" secondAttribute="bottom" constant="-8" id="Jvh-wl-xAz"/>
+                                                <constraint firstItem="7sA-4W-F2F" firstAttribute="width" secondItem="p6X-6n-G3r" secondAttribute="width" id="Sgf-xW-sKZ"/>
+                                                <constraint firstItem="7sA-4W-F2F" firstAttribute="centerX" secondItem="FZw-fg-3rU" secondAttribute="centerX" id="bLY-AN-NOE"/>
+                                                <constraint firstAttribute="topMargin" secondItem="p6X-6n-G3r" secondAttribute="top" constant="8" id="jQ6-Kh-r6n"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="matchDetailCellIdentifier" rowHeight="322" id="Kqu-m4-s9f" customClass="matchDetailTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="551" width="320" height="322"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kqu-m4-s9f" id="RGp-Y1-uxn">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="322"/>

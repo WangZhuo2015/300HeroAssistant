@@ -28,6 +28,7 @@ class PersonalInfoViewController: UIViewController {
     
     @IBOutlet weak var winRateProgress: UIProgressView!
     
+    @IBOutlet weak var changeAccountButton: UIBarButtonItem!
     //PersonalRankCell
     let PersonalRankCellIdentifier = "PersonalRankCellIdentifier"
     var rank = [Rank](){
@@ -47,8 +48,8 @@ class PersonalInfoViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         userChange()
-        let login = UIBarButtonItem(title: "切换账号", style: .Plain , target: self, action: #selector(self.login))
-        self.navigationItem.rightBarButtonItem = login
+        //let login = UIBarButtonItem(title: "切换账号", style: .Plain , target: self, action: #selector(self.login))
+        //self.navigationItem.rightBarButtonItem = login
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: (#selector(PersonalInfoViewController.userChange)), name: userChangedNotification, object: nil)
         loadPlayerBasicInfoWithName()
@@ -63,7 +64,7 @@ class PersonalInfoViewController: UIViewController {
         loadPlayerBasicInfoWithName()
     }
     
-    func loadPlayerBasicInfoWithName(name:String = User.sharedUser.userName){
+    func loadPlayerBasicInfoWithName(name:String = User.sharedUser.userName ?? ""){
         ServiceProxy.getPlayerBasicInfo(name) { (playerInfo, error) in
             guard error == nil else{
                 self.rank.removeAll()
@@ -101,36 +102,4 @@ class PersonalInfoViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    func login(){
-        let alert = UIAlertController(title: "登录/切换账号", message: "请输入您的游戏ID", preferredStyle: .Alert)
-        var usernameTextField: UITextField?
-        alert.addTextFieldWithConfigurationHandler {
-            (txtUsername) -> Void in
-            usernameTextField = txtUsername
-            usernameTextField!.placeholder = "<Your username here>"
-        }
-        let cancelAction = UIAlertAction(title: "取消", style: .Cancel, handler: nil)
-        let loginAction = UIAlertAction(
-        title: "登录", style: UIAlertActionStyle.Default) {
-            (action) -> Void in
-            usernameTextField?.resignFirstResponder()
-            ServiceProxy.isIDvalid((usernameTextField?.text)!, complete: { (result, reason, error) in
-                if result{
-                    User.sharedUser.setUserName((usernameTextField?.text)!)
-                    NSUserDefaults.standardUserDefaults().setObject(User.sharedUser.userName, forKey: "userName")
-                    NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: userChangedNotification, object: nil))
-                }
-                else{
-                    let alert = UIAlertController(title: "切换失败", message: reason, preferredStyle: .Alert)
-                    alert.addAction(UIAlertAction(title: "好的", style: .Cancel, handler: nil))
-                    self.presentViewController(alert, animated: true, completion: nil)
-                }
-            })
-            
-        }
-        alert.addAction(loginAction)
-        alert.addAction(cancelAction)
-        self.presentViewController(alert, animated: true, completion: nil)
-    }
 }
