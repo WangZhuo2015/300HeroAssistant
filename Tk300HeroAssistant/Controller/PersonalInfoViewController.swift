@@ -38,9 +38,7 @@ class PersonalInfoViewController: UIViewController {
     }
     var role:Role?{
         didSet{
-            if let roleContent = role{
-                setRoleContent(roleContent)
-            }
+            setRoleContent(role)
         }
     }
     override func viewDidLoad() {
@@ -77,14 +75,19 @@ class PersonalInfoViewController: UIViewController {
     }
 
     
-    func setRoleContent(role:Role){
+    func setRoleContent(role:Role?){
         //roleNameLabel.text = role.roleName
-        roleLevelLabel.text = "\(role.roleLevel)"
-        winCountLabel.text = "\(role.winCount)"
-        allCountLabel.text = "\(role.matchCount)"
-        jumpLevelLabel.text = "\(role.jumpValue)"
-        updateTimeLabel.text = role.updateTime
-        let winRate = Float( role.winCount ) / Float( role.matchCount )
+        roleLevelLabel.text = "\(role?.roleLevel ?? 0)"
+        winCountLabel.text = "\(role?.winCount ?? 0)"
+        allCountLabel.text = "\(role?.matchCount ?? 0)"
+        jumpLevelLabel.text = "\(role?.jumpValue ?? 0)"
+        updateTimeLabel.text = role?.updateTime
+        guard role != nil else{
+            winRateLabel.text = "0"+"%"
+            winRateProgress.progress = 0
+            return
+        }
+        let winRate = Float( role!.winCount ) / Float( role!.matchCount )
         winRateLabel.text = "\(winRate*100)"+"%"
         winRateProgress.progress = winRate
     }

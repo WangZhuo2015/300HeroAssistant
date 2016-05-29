@@ -32,12 +32,13 @@ class User {
     }
     func setUserName(name:String?){
         userName = name
+        NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: userChangedNotification, object: nil))
         if let settinName = name{
             if !storedNames.contains(settinName){
                 storedNames.append(settinName)
             }
+            NSUserDefaults.standardUserDefaults().setObject(User.sharedUser.userName, forKey: "userName")
         }
-        NSUserDefaults.standardUserDefaults().setObject(User.sharedUser.userName, forKey: "userName")
     }
     func getNames() -> [String]{
         return storedNames
@@ -53,7 +54,6 @@ class User {
         ServiceProxy.isIDvalid(name, complete: { (result, reason, error) in
             if result{
                 User.sharedUser.setUserName(name)
-                NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: userChangedNotification, object: nil))
                 successHandle()
             }
             else{failHandle(reaon: reason)}

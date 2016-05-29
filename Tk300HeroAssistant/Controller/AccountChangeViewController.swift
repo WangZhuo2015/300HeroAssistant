@@ -89,10 +89,10 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
         let cell = tableView.dequeueReusableCellWithIdentifier(accountCellIdentifier) as!userAccountTableViewCell
         guard indexPath.row != namesArray.count else{
             cell.userAccountLabel.text = "添加新的账号"
-            cell.innerView.backgroundColor = UIColor.greenColor()
-            cell.editing = true
+            cell.innerView.backgroundColor = UIColor ( red: 0.3673, green: 0.8866, blue: 0.1082, alpha: 1.0 )
             return cell
         }
+        cell.innerView.backgroundColor = UIColor(red: 6/255, green: 123/255, blue: 165/255, alpha: 1)
         cell.accessoryType = .None
         if namesArray[indexPath.row] == User.sharedUser.userName {
             cell.accessoryType = .Checkmark

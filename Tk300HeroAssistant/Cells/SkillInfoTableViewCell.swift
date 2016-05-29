@@ -37,7 +37,8 @@ class SkillInfoTableViewCell: UITableViewCell {
 
     func setContent(heroID:String,data:SkillData){
         //没图片总比崩溃了好
-        skillImage.image = UIImage(named: "hero-" + heroID + (data.name ?? ""))// + (data.id ?? ""))
+        let image = data.name?.stringByReplacingOccurrencesOfString("/",withString: "or")
+        skillImage.image = UIImage(named: "hero-" + heroID + (image ?? ""))// + (data.id ?? ""))
         if skillImage.image == nil {
             print("不存在的图片\("hero-" + heroID + (data.name ?? "")))")
         }
