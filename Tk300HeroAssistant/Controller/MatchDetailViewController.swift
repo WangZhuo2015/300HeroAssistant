@@ -50,7 +50,7 @@ class MatchDetailViewController: UIViewController {
         matchTypeLabel.text = match.matchType == 1 ? "竞技场" : "战场"
         matchDateLabel.text = match.matchDate
         matchScoreLabel.text = "\(match.winSideKill) / \(match.loseSideKill)"
-        matchDurationLabel.text = "\(match.usedTime)秒"
+        matchDurationLabel.text = "\(match.usedTime % 60)分钟 \(match.usedTime/60)秒"
     }
     /*
     // MARK: - Navigation
