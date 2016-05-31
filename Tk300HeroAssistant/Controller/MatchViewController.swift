@@ -42,6 +42,7 @@ class MatchViewController: UIViewController {
     }
     
     func userChange(){
+        self.navigationController?.popToRootViewControllerAnimated(false)
         loadMatchList(loadMore: false)
     }
 

@@ -12,7 +12,7 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if User.sharedUser.userName == ""{
+        if User.sharedUser.userName == nil{
             self.selectedIndex = (self.viewControllers?.count)! - 1
         }
         // Do any additional setup after loading the view.
