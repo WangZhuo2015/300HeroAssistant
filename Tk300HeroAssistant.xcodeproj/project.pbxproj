@@ -31,6 +31,10 @@
 		35401A6A1CE830DA00F0EDE2 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A691CE830D900F0EDE2 /* Global.swift */; };
 		35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */; };
 		35401A6F1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */; };
+		354BC70C1CFD5233001E046C /* equipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC70B1CFD5233001E046C /* equipmentViewController.swift */; };
+		354BC7101CFD5334001E046C /* 合成所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70D1CFD5334001E046C /* 合成所需.csv */; };
+		354BC7121CFD5334001E046C /* object data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70F1CFD5334001E046C /* object data.csv */; };
+		354BC7141CFD534F001E046C /* EquipmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7131CFD534F001E046C /* EquipmentData.swift */; };
 		35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */; };
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
 		35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
@@ -100,6 +104,10 @@
 		35401A691CE830D900F0EDE2 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Tk300HeroAssistant/Model/Global.swift; sourceTree = SOURCE_ROOT; };
 		35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewExtension.swift; path = Extension/TableViewExtension.swift; sourceTree = "<group>"; };
 		35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableViewNetErrorDataSource.swift; path = Tools/UITableViewNetErrorDataSource.swift; sourceTree = "<group>"; };
+		354BC70B1CFD5233001E046C /* equipmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = equipmentViewController.swift; path = Controller/equipmentViewController.swift; sourceTree = "<group>"; };
+		354BC70D1CFD5334001E046C /* 合成所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = "合成所需.csv"; sourceTree = "<group>"; };
+		354BC70F1CFD5334001E046C /* object data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "object data.csv"; sourceTree = "<group>"; };
+		354BC7131CFD534F001E046C /* EquipmentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentData.swift; path = Tk300HeroAssistant/Model/Data/EquipmentData.swift; sourceTree = SOURCE_ROOT; };
 		35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchHeaderView.swift; path = Cells/MatchHeaderView.swift; sourceTree = "<group>"; };
 		35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = Cells/HeroTableViewCell.swift; sourceTree = "<group>"; };
 		35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVDataManager.swift; path = Tk300HeroAssistant/Model/CSVDataManager.swift; sourceTree = SOURCE_ROOT; };
@@ -189,6 +197,7 @@
 		350993311CEF4B610079C7E3 /* 装备数据 */ = {
 			isa = PBXGroup;
 			children = (
+				354BC70B1CFD5233001E046C /* equipmentViewController.swift */,
 			);
 			name = "装备数据";
 			sourceTree = "<group>";
@@ -294,6 +303,7 @@
 				35E259D31CE87F2C005AEE4F /* HeroData.swift */,
 				350CCEDD1CEADBFE00D082EB /* SkillData.swift */,
 				350CCEDF1CEAE30500D082EB /* EquipCombineData.swift */,
+				354BC7131CFD534F001E046C /* EquipmentData.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -303,6 +313,8 @@
 			children = (
 				35F2CA6C1CFB53B50046B653 /* hero data.csv */,
 				35F2CA6D1CFB53B50046B653 /* skill data.csv */,
+				354BC70D1CFD5334001E046C /* 合成所需.csv */,
+				354BC70F1CFD5334001E046C /* object data.csv */,
 			);
 			name = LocalData;
 			sourceTree = "<group>";
@@ -510,7 +522,9 @@
 				35FBA6321CDF701600A527B4 /* Hero.storyboard in Resources */,
 				35FBA6031CDF4E5C00A527B4 /* LaunchScreen.storyboard in Resources */,
 				35FBA60B1CDF4EA800A527B4 /* openapi.txt in Resources */,
+				354BC7121CFD5334001E046C /* object data.csv in Resources */,
 				35FBA62F1CDF6FE300A527B4 /* Match.storyboard in Resources */,
+				354BC7101CFD5334001E046C /* 合成所需.csv in Resources */,
 				35F2CA711CFB57060046B653 /* Bugs in Resources */,
 				35FBA6001CDF4E5C00A527B4 /* Assets.xcassets in Resources */,
 				35FBA6351CDF703A00A527B4 /* PersonalInfo.storyboard in Resources */,
@@ -610,11 +624,13 @@
 				35FBA6131CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift in Sources */,
 				3517D70A1CE0EE5F006162BA /* List.swift in Sources */,
 				35BCF7581CE8C8F900E30907 /* HeroTableViewDataSource.swift in Sources */,
+				354BC70C1CFD5233001E046C /* equipmentViewController.swift in Sources */,
 				3517D70B1CE0EE5F006162BA /* MatchBasicAPIBase.swift in Sources */,
 				35FBA6391CDF708900A527B4 /* MainViewController.swift in Sources */,
 				35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */,
 				35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */,
 				35FBA6161CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
+				354BC7141CFD534F001E046C /* EquipmentData.swift in Sources */,
 				35FBA6171CDF51B100A527B4 /* DGElasticPullToRefreshView.swift in Sources */,
 				350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */,
 				3509932E1CEF11E70079C7E3 /* HeroCollectionViewCell.swift in Sources */,

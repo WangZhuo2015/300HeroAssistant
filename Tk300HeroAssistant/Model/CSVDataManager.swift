@@ -11,6 +11,9 @@ class CSVDataManager{
     static let sharedInstance = CSVDataManager()
     var heroDataArray:[HeroData]?
     var skillDataArray:[SkillData]?
+    var equipmentDataArray:[EquipmentData]?
+    
+    
     
     func loadHeroData(completionHandle:([HeroData])->Void) {
         if let data = heroDataArray{
@@ -34,8 +37,8 @@ class CSVDataManager{
         }
     }
     
-    class func loadEquipData(completionHandle:([SkillData])->Void) {
-        CSVReader.loadDataFromCSV("equip data", completionHandle: completionHandle)
+    class func loadEquipData(completionHandle:([EquipmentData])->Void) {
+        CSVReader.loadDataFromCSV("object data", completionHandle: completionHandle)
     }
     
     

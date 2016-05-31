@@ -28,16 +28,23 @@ class MatchViewController: UIViewController {
         userChange()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.userChange), name: userChangedNotification, object: nil)
         //设置刷新
-        self.matchTableView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
+        let header = MJRefreshNormalHeader(refreshingBlock: {
             self.matchTableView.mj_header.beginRefreshing()
             self.loadMatchList(loadMore: false)
             self.matchTableView.mj_header.endRefreshing()
         })
-        matchTableView.mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: {
+        header.stateLabel.textColor = UIColor.whiteColor()
+        header.lastUpdatedTimeLabel.textColor = UIColor.whiteColor()
+        //TODO: 箭头颜色
+        self.matchTableView.mj_header = header
+        
+        let footer = MJRefreshAutoNormalFooter(refreshingBlock: {
             self.matchTableView.mj_footer.beginRefreshing()
             self.loadMatchList(loadMore: true)
             self.matchTableView.mj_footer.endRefreshing()
         })
+        footer.stateLabel.textColor = UIColor.whiteColor()
+        matchTableView.mj_footer = footer
         // Do any additional setup after loading the view.
     }
     
