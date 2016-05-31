@@ -10,7 +10,6 @@ import Foundation
 class EquipmentData: NSObject {
     var id: String?
     var name: String?
-    var 总价: String?
     var 售价: String?
     var 属性: String?
     var 装备技能: String?

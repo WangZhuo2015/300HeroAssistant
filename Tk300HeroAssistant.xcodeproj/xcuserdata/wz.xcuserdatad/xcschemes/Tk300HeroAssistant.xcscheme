@@ -38,6 +38,16 @@
                ReferencedContainer = "container:Tk300HeroAssistant.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "354BC7261CFD5827001E046C"
+               BuildableName = "&#x661f;&#x5c18;&#x76d2;&#x5b50; for 300&#x82f1;&#x96c4;Tests.xctest"
+               BlueprintName = "&#x661f;&#x5c18;&#x76d2;&#x5b50; for 300&#x82f1;&#x96c4;Tests"
+               ReferencedContainer = "container:Tk300HeroAssistant.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

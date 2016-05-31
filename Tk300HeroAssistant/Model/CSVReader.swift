@@ -19,8 +19,8 @@ class CSVReader {
         var dataArray = [T]()
         //异步读取
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-            let heroPath = NSBundle.mainBundle().pathForResource(fileName, ofType: "csv")
-            let csvURL = NSURL(fileURLWithPath: heroPath!)
+            let filePath = NSBundle.mainBundle().pathForResource(fileName, ofType: "csv")
+            let csvURL = NSURL(fileURLWithPath: filePath!)
             let csv = try! CSV(url: csvURL)
             for row in csv.rows{
                 let data = T()

@@ -31,10 +31,25 @@
 		35401A6A1CE830DA00F0EDE2 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A691CE830D900F0EDE2 /* Global.swift */; };
 		35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */; };
 		35401A6F1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */; };
-		354BC70C1CFD5233001E046C /* equipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC70B1CFD5233001E046C /* equipmentViewController.swift */; };
+		354BC70C1CFD5233001E046C /* EquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC70B1CFD5233001E046C /* EquipmentViewController.swift */; };
 		354BC7101CFD5334001E046C /* 合成所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70D1CFD5334001E046C /* 合成所需.csv */; };
 		354BC7121CFD5334001E046C /* object data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70F1CFD5334001E046C /* object data.csv */; };
 		354BC7141CFD534F001E046C /* EquipmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7131CFD534F001E046C /* EquipmentData.swift */; };
+		354BC73D1CFD59B9001E046C /* Tk300HeroAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC73C1CFD59B9001E046C /* Tk300HeroAssistantTests.swift */; };
+		354BC7441CFD59DE001E046C /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
+		354BC7451CFD59DF001E046C /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB3E051CEE2F2100FED888 /* CSVReader.swift */; };
+		354BC7461CFD59E4001E046C /* object data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70F1CFD5334001E046C /* object data.csv */; };
+		354BC7471CFD59E6001E046C /* 合成所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70D1CFD5334001E046C /* 合成所需.csv */; };
+		354BC7481CFD59E9001E046C /* hero data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA6C1CFB53B50046B653 /* hero data.csv */; };
+		354BC7491CFD59E9001E046C /* skill data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA6D1CFB53B50046B653 /* skill data.csv */; };
+		354BC74A1CFD59EE001E046C /* HeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E259D31CE87F2C005AEE4F /* HeroData.swift */; };
+		354BC74B1CFD59EE001E046C /* SkillData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350CCEDD1CEADBFE00D082EB /* SkillData.swift */; };
+		354BC74C1CFD59EE001E046C /* EquipCombineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350CCEDF1CEAE30500D082EB /* EquipCombineData.swift */; };
+		354BC74D1CFD59EE001E046C /* EquipmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7131CFD534F001E046C /* EquipmentData.swift */; };
+		354BC7501CFD5C0A001E046C /* Equipment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 354BC74E1CFD5C0A001E046C /* Equipment.storyboard */; };
+		354BC7521CFDBB65001E046C /* EquipmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7511CFDBB65001E046C /* EquipmentCollectionViewCell.swift */; };
+		354BC7541CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */; };
+		354BC7561CFDC63A001E046C /* EquipmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */; };
 		35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */; };
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
 		35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
@@ -75,7 +90,18 @@
 		35FBA63F1CDF714A00A527B4 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA63E1CDF714A00A527B4 /* MatchViewController.swift */; };
 		35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA6401CDF717400A527B4 /* MatchDetailViewController.swift */; };
 		C13E5EBB34E60A6D328DFA70 /* Pods_Tk300HeroAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585C009171284DD1558B5230 /* Pods_Tk300HeroAssistant.framework */; };
+		F77315AD4CA110A79D0C9C01 /* Pods_Tk300HeroAssistantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374FF767C7559DF8950E22E0 /* Pods_Tk300HeroAssistantTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		354BC73F1CFD59B9001E046C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35FBA5ED1CDF4E5C00A527B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35FBA5F41CDF4E5C00A527B4;
+			remoteInfo = Tk300HeroAssistant;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationViewController.swift; path = Controller/MainNavigationViewController.swift; sourceTree = "<group>"; };
@@ -99,15 +125,20 @@
 		3517D7081CE0EE5F006162BA /* MatchBasicAPIBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchBasicAPIBase.swift; path = Tk300HeroAssistant/Model/Match/MatchBasicAPIBase.swift; sourceTree = SOURCE_ROOT; };
 		3517D70C1CE0F2FA006162BA /* MatchTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchTableViewDataSource.swift; path = Controller/MatchTableViewDataSource.swift; sourceTree = "<group>"; };
 		3517D70E1CE0F38D006162BA /* MatchBasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchBasicTableViewCell.swift; path = Cells/MatchBasicTableViewCell.swift; sourceTree = "<group>"; };
-		35401A611CE82C5700F0EDE2 /* Tk300HeroAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tk300HeroAssistantTests.swift; sourceTree = "<group>"; };
-		35401A631CE82C5700F0EDE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35401A691CE830D900F0EDE2 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Tk300HeroAssistant/Model/Global.swift; sourceTree = SOURCE_ROOT; };
 		35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewExtension.swift; path = Extension/TableViewExtension.swift; sourceTree = "<group>"; };
 		35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableViewNetErrorDataSource.swift; path = Tools/UITableViewNetErrorDataSource.swift; sourceTree = "<group>"; };
-		354BC70B1CFD5233001E046C /* equipmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = equipmentViewController.swift; path = Controller/equipmentViewController.swift; sourceTree = "<group>"; };
+		354BC70B1CFD5233001E046C /* EquipmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentViewController.swift; path = Controller/EquipmentViewController.swift; sourceTree = "<group>"; };
 		354BC70D1CFD5334001E046C /* 合成所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = "合成所需.csv"; sourceTree = "<group>"; };
 		354BC70F1CFD5334001E046C /* object data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "object data.csv"; sourceTree = "<group>"; };
 		354BC7131CFD534F001E046C /* EquipmentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentData.swift; path = Tk300HeroAssistant/Model/Data/EquipmentData.swift; sourceTree = SOURCE_ROOT; };
+		354BC73A1CFD59B9001E046C /* Tk300HeroAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tk300HeroAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		354BC73C1CFD59B9001E046C /* Tk300HeroAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tk300HeroAssistantTests.swift; sourceTree = "<group>"; };
+		354BC73E1CFD59B9001E046C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		354BC74F1CFD5C0A001E046C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Equipment.storyboard; sourceTree = "<group>"; };
+		354BC7511CFDBB65001E046C /* EquipmentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentCollectionViewCell.swift; path = Cells/EquipmentCollectionViewCell.swift; sourceTree = "<group>"; };
+		354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentCollectionViewDataSource.swift; path = Controller/EquipmentCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentDetailViewController.swift; path = Controller/EquipmentDetailViewController.swift; sourceTree = "<group>"; };
 		35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchHeaderView.swift; path = Cells/MatchHeaderView.swift; sourceTree = "<group>"; };
 		35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = Cells/HeroTableViewCell.swift; sourceTree = "<group>"; };
 		35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVDataManager.swift; path = Tk300HeroAssistant/Model/CSVDataManager.swift; sourceTree = SOURCE_ROOT; };
@@ -150,12 +181,23 @@
 		35FBA63C1CDF712E00A527B4 /* HeroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroViewController.swift; path = Controller/HeroViewController.swift; sourceTree = "<group>"; };
 		35FBA63E1CDF714A00A527B4 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchViewController.swift; path = Controller/MatchViewController.swift; sourceTree = "<group>"; };
 		35FBA6401CDF717400A527B4 /* MatchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchDetailViewController.swift; path = Controller/MatchDetailViewController.swift; sourceTree = "<group>"; };
+		374FF767C7559DF8950E22E0 /* Pods_Tk300HeroAssistantTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tk300HeroAssistantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE5B0D7DD464CEA3FF730C0 /* Pods-Tk300HeroAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tk300HeroAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		585C009171284DD1558B5230 /* Pods_Tk300HeroAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tk300HeroAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DD9FE52B9322672F49A4CD /* Pods-Tk300HeroAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tk300HeroAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		C43BA7A3B4646A8F9AFA230D /* Pods-Tk300HeroAssistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tk300HeroAssistantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tk300HeroAssistantTests/Pods-Tk300HeroAssistantTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0814C54755BCF3CC2A0C09 /* Pods-Tk300HeroAssistantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tk300HeroAssistantTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tk300HeroAssistantTests/Pods-Tk300HeroAssistantTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		354BC7371CFD59B9001E046C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77315AD4CA110A79D0C9C01 /* Pods_Tk300HeroAssistantTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35FBA5F21CDF4E5C00A527B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,7 +239,10 @@
 		350993311CEF4B610079C7E3 /* 装备数据 */ = {
 			isa = PBXGroup;
 			children = (
-				354BC70B1CFD5233001E046C /* equipmentViewController.swift */,
+				354BC70B1CFD5233001E046C /* EquipmentViewController.swift */,
+				354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */,
+				354BC7511CFDBB65001E046C /* EquipmentCollectionViewCell.swift */,
+				354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */,
 			);
 			name = "装备数据";
 			sourceTree = "<group>";
@@ -268,23 +313,23 @@
 			name = "详情";
 			sourceTree = "<group>";
 		};
-		35401A601CE82C5700F0EDE2 /* Tk300HeroAssistantTests */ = {
-			isa = PBXGroup;
-			children = (
-				35401A611CE82C5700F0EDE2 /* Tk300HeroAssistantTests.swift */,
-				35401A631CE82C5700F0EDE2 /* Info.plist */,
-			);
-			path = Tk300HeroAssistantTests;
-			sourceTree = "<group>";
-		};
 		35401A6D1CE839C800F0EDE2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 				35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */,
-				35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */,
 				3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */,
+				35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */,
 			);
 			name = Tools;
+			sourceTree = "<group>";
+		};
+		354BC73B1CFD59B9001E046C /* Tk300HeroAssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				354BC73C1CFD59B9001E046C /* Tk300HeroAssistantTests.swift */,
+				354BC73E1CFD59B9001E046C /* Info.plist */,
+			);
+			path = Tk300HeroAssistantTests;
 			sourceTree = "<group>";
 		};
 		35CB9EE01CEC54E50007C47C /* 英雄详情 */ = {
@@ -323,7 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				35FBA5F71CDF4E5C00A527B4 /* Tk300HeroAssistant */,
-				35401A601CE82C5700F0EDE2 /* Tk300HeroAssistantTests */,
+				354BC73B1CFD59B9001E046C /* Tk300HeroAssistantTests */,
 				35FBA5F61CDF4E5C00A527B4 /* Products */,
 				A1388203D4ECF9FC2670C31D /* Pods */,
 				90F405ABAACB4228BE2038C3 /* Frameworks */,
@@ -334,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				35FBA5F51CDF4E5C00A527B4 /* 星尘盒子 for 300英雄.app */,
+				354BC73A1CFD59B9001E046C /* Tk300HeroAssistantTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -420,8 +466,9 @@
 			children = (
 				35FBA5FC1CDF4E5C00A527B4 /* Main.storyboard */,
 				35FBA62D1CDF6FE300A527B4 /* Match.storyboard */,
-				35FBA6331CDF703A00A527B4 /* PersonalInfo.storyboard */,
 				35FBA6301CDF701600A527B4 /* Hero.storyboard */,
+				354BC74E1CFD5C0A001E046C /* Equipment.storyboard */,
+				35FBA6331CDF703A00A527B4 /* PersonalInfo.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -444,6 +491,7 @@
 			isa = PBXGroup;
 			children = (
 				585C009171284DD1558B5230 /* Pods_Tk300HeroAssistant.framework */,
+				374FF767C7559DF8950E22E0 /* Pods_Tk300HeroAssistantTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -453,6 +501,8 @@
 			children = (
 				4FE5B0D7DD464CEA3FF730C0 /* Pods-Tk300HeroAssistant.debug.xcconfig */,
 				A2DD9FE52B9322672F49A4CD /* Pods-Tk300HeroAssistant.release.xcconfig */,
+				C43BA7A3B4646A8F9AFA230D /* Pods-Tk300HeroAssistantTests.debug.xcconfig */,
+				FB0814C54755BCF3CC2A0C09 /* Pods-Tk300HeroAssistantTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -460,6 +510,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		354BC7391CFD59B9001E046C /* Tk300HeroAssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 354BC7411CFD59B9001E046C /* Build configuration list for PBXNativeTarget "Tk300HeroAssistantTests" */;
+			buildPhases = (
+				E3634CE40716B3607A8B72BD /* 📦 Check Pods Manifest.lock */,
+				354BC7361CFD59B9001E046C /* Sources */,
+				354BC7371CFD59B9001E046C /* Frameworks */,
+				354BC7381CFD59B9001E046C /* Resources */,
+				70D6D284B3C1DBB9F577A6F3 /* 📦 Embed Pods Frameworks */,
+				5156A7F7F722F3FD6DE47523 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				354BC7401CFD59B9001E046C /* PBXTargetDependency */,
+			);
+			name = Tk300HeroAssistantTests;
+			productName = Tk300HeroAssistantTests;
+			productReference = 354BC73A1CFD59B9001E046C /* Tk300HeroAssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		35FBA5F41CDF4E5C00A527B4 /* Tk300HeroAssistant */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35FBA6071CDF4E5C00A527B4 /* Build configuration list for PBXNativeTarget "Tk300HeroAssistant" */;
@@ -490,6 +561,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = SherryTeam;
 				TargetAttributes = {
+					354BC7391CFD59B9001E046C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 35FBA5F41CDF4E5C00A527B4;
+					};
 					35FBA5F41CDF4E5C00A527B4 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 3HX94AXZ2B;
@@ -510,11 +585,23 @@
 			projectRoot = "";
 			targets = (
 				35FBA5F41CDF4E5C00A527B4 /* Tk300HeroAssistant */,
+				354BC7391CFD59B9001E046C /* Tk300HeroAssistantTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		354BC7381CFD59B9001E046C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354BC7481CFD59E9001E046C /* hero data.csv in Resources */,
+				354BC7491CFD59E9001E046C /* skill data.csv in Resources */,
+				354BC7471CFD59E6001E046C /* 合成所需.csv in Resources */,
+				354BC7461CFD59E4001E046C /* object data.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35FBA5F31CDF4E5C00A527B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,6 +613,7 @@
 				35FBA62F1CDF6FE300A527B4 /* Match.storyboard in Resources */,
 				354BC7101CFD5334001E046C /* 合成所需.csv in Resources */,
 				35F2CA711CFB57060046B653 /* Bugs in Resources */,
+				354BC7501CFD5C0A001E046C /* Equipment.storyboard in Resources */,
 				35FBA6001CDF4E5C00A527B4 /* Assets.xcassets in Resources */,
 				35FBA6351CDF703A00A527B4 /* PersonalInfo.storyboard in Resources */,
 				35FBA5FE1CDF4E5C00A527B4 /* Main.storyboard in Resources */,
@@ -537,6 +625,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5156A7F7F722F3FD6DE47523 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tk300HeroAssistantTests/Pods-Tk300HeroAssistantTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70D6D284B3C1DBB9F577A6F3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tk300HeroAssistantTests/Pods-Tk300HeroAssistantTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AC6CF727BCF18C30A9F2424F /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -567,6 +685,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E3634CE40716B3607A8B72BD /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		F25799642AFC6BE177C39ECA /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -585,6 +718,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		354BC7361CFD59B9001E046C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354BC7441CFD59DE001E046C /* CSVDataManager.swift in Sources */,
+				354BC74A1CFD59EE001E046C /* HeroData.swift in Sources */,
+				354BC73D1CFD59B9001E046C /* Tk300HeroAssistantTests.swift in Sources */,
+				354BC7451CFD59DF001E046C /* CSVReader.swift in Sources */,
+				354BC74C1CFD59EE001E046C /* EquipCombineData.swift in Sources */,
+				354BC74B1CFD59EE001E046C /* SkillData.swift in Sources */,
+				354BC74D1CFD59EE001E046C /* EquipmentData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35FBA5F11CDF4E5C00A527B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -604,6 +751,7 @@
 				35011C601CE03BCC004F7913 /* MainNavigationViewController.swift in Sources */,
 				35FBA6141CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift in Sources */,
 				35CB9EE61CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift in Sources */,
+				354BC7541CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift in Sources */,
 				3517D6FD1CE0EA70006162BA /* MatchRole.swift in Sources */,
 				350E2C971CE1A96D00DF5216 /* matchDetailTableViewCell.swift in Sources */,
 				3517D7041CE0EDE9006162BA /* Role.swift in Sources */,
@@ -614,7 +762,9 @@
 				3516C7CD1CE640F3005BF4D8 /* FriendAnalyzer.swift in Sources */,
 				35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */,
 				35E9D02E1CF96F68004170BE /* userAccountTableViewCell.swift in Sources */,
+				354BC7561CFDC63A001E046C /* EquipmentDetailViewController.swift in Sources */,
 				35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */,
+				354BC7521CFDBB65001E046C /* EquipmentCollectionViewCell.swift in Sources */,
 				35FBA5F91CDF4E5C00A527B4 /* AppDelegate.swift in Sources */,
 				350E2C991CE1A99800DF5216 /* matchDetailTableViewDataSource.swift in Sources */,
 				35011C621CE03C3C004F7913 /* User.swift in Sources */,
@@ -624,7 +774,7 @@
 				35FBA6131CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift in Sources */,
 				3517D70A1CE0EE5F006162BA /* List.swift in Sources */,
 				35BCF7581CE8C8F900E30907 /* HeroTableViewDataSource.swift in Sources */,
-				354BC70C1CFD5233001E046C /* equipmentViewController.swift in Sources */,
+				354BC70C1CFD5233001E046C /* EquipmentViewController.swift in Sources */,
 				3517D70B1CE0EE5F006162BA /* MatchBasicAPIBase.swift in Sources */,
 				35FBA6391CDF708900A527B4 /* MainViewController.swift in Sources */,
 				35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */,
@@ -649,7 +799,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		354BC7401CFD59B9001E046C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35FBA5F41CDF4E5C00A527B4 /* Tk300HeroAssistant */;
+			targetProxy = 354BC73F1CFD59B9001E046C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		354BC74E1CFD5C0A001E046C /* Equipment.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				354BC74F1CFD5C0A001E046C /* Base */,
+			);
+			name = Equipment.storyboard;
+			sourceTree = "<group>";
+		};
 		35FBA5FC1CDF4E5C00A527B4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -693,6 +859,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		354BC7421CFD59B9001E046C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43BA7A3B4646A8F9AFA230D /* Pods-Tk300HeroAssistantTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tk300HeroAssistantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherryTeam.Tk300HeroAssistantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/星尘盒子 for 300英雄.app/星尘盒子 for 300英雄";
+			};
+			name = Debug;
+		};
+		354BC7431CFD59B9001E046C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0814C54755BCF3CC2A0C09 /* Pods-Tk300HeroAssistantTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tk300HeroAssistantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SherryTeam.Tk300HeroAssistantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/星尘盒子 for 300英雄.app/星尘盒子 for 300英雄";
+			};
+			name = Release;
+		};
 		35FBA6051CDF4E5C00A527B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -815,6 +1007,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		354BC7411CFD59B9001E046C /* Build configuration list for PBXNativeTarget "Tk300HeroAssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				354BC7421CFD59B9001E046C /* Debug */,
+				354BC7431CFD59B9001E046C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		35FBA5F01CDF4E5C00A527B4 /* Build configuration list for PBXProject "Tk300HeroAssistant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

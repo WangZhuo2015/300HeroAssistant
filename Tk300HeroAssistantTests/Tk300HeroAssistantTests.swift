@@ -2,12 +2,12 @@
 //  Tk300HeroAssistantTests.swift
 //  Tk300HeroAssistantTests
 //
-//  Created by 王卓 on 16/5/15.
+//  Created by 王卓 on 16/5/31.
 //  Copyright © 2016年 SherryTeam. All rights reserved.
 //
 
 import XCTest
-
+import SwiftCSV
 class Tk300HeroAssistantTests: XCTestCase {
     
     override func setUp() {
@@ -21,6 +21,10 @@ class Tk300HeroAssistantTests: XCTestCase {
     }
     
     func testExample() {
+        CSVDataManager.loadEquipData { (data) in
+            XCTAssert(data.count != 0)
+            print(data)
+        }
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

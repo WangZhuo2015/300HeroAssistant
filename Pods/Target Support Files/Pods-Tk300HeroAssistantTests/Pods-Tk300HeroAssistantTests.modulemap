@@ -1,0 +1,6 @@
+framework module Pods_Tk300HeroAssistantTests {
+  umbrella header "Pods-Tk300HeroAssistantTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

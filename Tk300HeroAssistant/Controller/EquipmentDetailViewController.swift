@@ -1,5 +1,5 @@
 //
-//  equipmentViewController.swift
+//  EquipmentDetailViewController.swift
 //  Tk300HeroAssistant
 //
 //  Created by 王卓 on 16/5/31.
@@ -8,11 +8,23 @@
 
 import UIKit
 
-class equipmentViewController: UIViewController {
+class EquipmentDetailViewController: UIViewController {
 
+    @IBOutlet weak var equipmentImage: UIImageView!
+    
+    @IBOutlet weak var equipmentName: UILabel!
+    
+    @IBOutlet weak var equipmentAttributeLabel: UILabel!
+    
+    @IBOutlet weak var equipmentSkillLabel: UILabel!
+    
+    @IBOutlet weak var equipmentPriceLabel: UILabel!
+    
+    var currentEquipment:EquipmentData?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setContent(currentEquipment!)
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +34,12 @@ class equipmentViewController: UIViewController {
     }
     
 
+    func setContent(equipmentData:EquipmentData){
+        equipmentImage.image = UIImage(named: equipmentData.id!)
+        equipmentName.text = equipmentData.name
+        equipmentSkillLabel.text = equipmentData.装备技能
+        equipmentPriceLabel.text = equipmentData.售价
+    }
     /*
     // MARK: - Navigation
 
