@@ -60,8 +60,14 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="q6a-bk-8DL" secondAttribute="height" multiplier="1:1" id="ocC-Zd-R6s"/>
                                                             </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dMU-e7-z4j">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="equipment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dMU-e7-z4j">
                                                             <rect key="frame" x="0.0" y="80" width="80" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -84,9 +90,9 @@
                                             <constraint firstItem="tvi-nx-b1T" firstAttribute="centerY" secondItem="acE-21-oPY" secondAttribute="centerY" id="fP6-1r-ZZL"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="equipmentImage" destination="q6a-bk-8DL" id="Qcf-gM-3PK"/>
-                                            <outlet property="equipmentLabel" destination="dMU-e7-z4j" id="B1g-Jc-CKg"/>
-                                            <segue destination="4gZ-ex-XUd" kind="push" id="ace-U0-s8X"/>
+                                            <outlet property="equipmentImage" destination="q6a-bk-8DL" id="jON-vH-h0N"/>
+                                            <outlet property="equipmentLabel" destination="dMU-e7-z4j" id="mJt-Vv-Jht"/>
+                                            <segue destination="4gZ-ex-XUd" kind="push" id="EVj-xy-4Ft"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

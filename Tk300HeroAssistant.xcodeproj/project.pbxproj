@@ -36,7 +36,6 @@
 		354BC7121CFD5334001E046C /* object data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70F1CFD5334001E046C /* object data.csv */; };
 		354BC7141CFD534F001E046C /* EquipmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7131CFD534F001E046C /* EquipmentData.swift */; };
 		354BC73D1CFD59B9001E046C /* Tk300HeroAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC73C1CFD59B9001E046C /* Tk300HeroAssistantTests.swift */; };
-		354BC7441CFD59DE001E046C /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
 		354BC7451CFD59DF001E046C /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB3E051CEE2F2100FED888 /* CSVReader.swift */; };
 		354BC7461CFD59E4001E046C /* object data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70F1CFD5334001E046C /* object data.csv */; };
 		354BC7471CFD59E6001E046C /* 合成所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70D1CFD5334001E046C /* 合成所需.csv */; };
@@ -50,6 +49,7 @@
 		354BC7521CFDBB65001E046C /* EquipmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7511CFDBB65001E046C /* EquipmentCollectionViewCell.swift */; };
 		354BC7541CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */; };
 		354BC7561CFDC63A001E046C /* EquipmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */; };
+		354BC7581CFDE615001E046C /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
 		35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */; };
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
 		35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
@@ -722,12 +722,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				354BC7441CFD59DE001E046C /* CSVDataManager.swift in Sources */,
 				354BC74A1CFD59EE001E046C /* HeroData.swift in Sources */,
 				354BC73D1CFD59B9001E046C /* Tk300HeroAssistantTests.swift in Sources */,
 				354BC7451CFD59DF001E046C /* CSVReader.swift in Sources */,
 				354BC74C1CFD59EE001E046C /* EquipCombineData.swift in Sources */,
 				354BC74B1CFD59EE001E046C /* SkillData.swift in Sources */,
+				354BC7581CFDE615001E046C /* CSVDataManager.swift in Sources */,
 				354BC74D1CFD59EE001E046C /* EquipmentData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

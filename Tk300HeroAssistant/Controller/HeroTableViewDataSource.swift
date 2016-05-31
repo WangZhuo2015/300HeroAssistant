@@ -14,7 +14,7 @@ extension HeroViewController:UICollectionViewDelegate,UICollectionViewDataSource
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        collectionView.collectionViewDisplayWith("数据加载ing", ifNecessaryForRowCount: 0)
+        collectionView.collectionViewDisplayWith("数据加载ing", ifNecessaryForRowCount: heroDataArray.count)
         return heroDataArray.count/4 + (( heroDataArray.count % 4 == 0 ) ? 0:1)
     }
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

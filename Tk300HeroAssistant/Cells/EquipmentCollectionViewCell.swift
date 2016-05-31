@@ -16,10 +16,8 @@ class EquipmentCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        equipmentImage.layer.cornerRadius = 10
-        equipmentImage.layer.masksToBounds = true
-        //heroImage.layer.borderWidth = 3
-        //layer.borderColor = UIColor.cyanColor().CGColor
+//        assert(equipmentLabel != nil,"equipmentLabel is nil")
+//        assert(equipmentImage != nil,"equipmentImage is nil")
     }
     
     func setContent(equipment:EquipmentData){

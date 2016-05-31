@@ -17,8 +17,6 @@ class HeroCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         heroImage.layer.cornerRadius = 10
         heroImage.layer.masksToBounds = true
-        //heroImage.layer.borderWidth = 3
-        //layer.borderColor = UIColor.cyanColor().CGColor
     }
     
     func setContent(hero:HeroData){

@@ -68,6 +68,6 @@ class EquipmentViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let VC = segue.destinationViewController as! EquipmentDetailViewController
         let indexPath = collectionView.indexPathsForSelectedItems()![0]
-        VC.currentEquipment = equipmentDataArray[indexPath.row]
+        VC.currentEquipment = equipmentDataArray[indexPath.section * 4 + indexPath.row]
     }
 }
