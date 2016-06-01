@@ -342,7 +342,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SkillCellIdentifier" rowHeight="147" id="TO4-50-n9m" customClass="SkillInfoTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SkillCellIdentifier" rowHeight="147" id="TO4-50-n9m" customClass="SkillInfoTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="330" width="320" height="147"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TO4-50-n9m" id="odW-nO-E9k">
@@ -466,11 +466,11 @@
             </objects>
             <point key="canvasLocation" x="879" y="-514"/>
         </scene>
-        <!--英雄-->
+        <!--Navigation Controller-->
         <scene sceneID="7ZF-DB-6GC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="apD-qf-zYg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="英雄" image="英雄" selectedImage="英雄" id="svl-67-pcg"/>
+                    <tabBarItem key="tabBarItem" title="" id="svl-67-pcg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dEg-bU-ljj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -486,7 +486,4 @@
             <point key="canvasLocation" x="-38" y="-514"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="英雄" width="30" height="34"/>
-    </resources>
 </document>

@@ -50,6 +50,7 @@
 		354BC7541CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */; };
 		354BC7561CFDC63A001E046C /* EquipmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */; };
 		354BC7581CFDE615001E046C /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
+		358B36E21CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */; };
 		35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */; };
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
 		35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
@@ -139,6 +140,7 @@
 		354BC7511CFDBB65001E046C /* EquipmentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentCollectionViewCell.swift; path = Cells/EquipmentCollectionViewCell.swift; sourceTree = "<group>"; };
 		354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentCollectionViewDataSource.swift; path = Controller/EquipmentCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentDetailViewController.swift; path = Controller/EquipmentDetailViewController.swift; sourceTree = "<group>"; };
+		358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentSearchBarDelegate.swift; path = Controller/EquipmentSearchBarDelegate.swift; sourceTree = "<group>"; };
 		35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchHeaderView.swift; path = Cells/MatchHeaderView.swift; sourceTree = "<group>"; };
 		35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = Cells/HeroTableViewCell.swift; sourceTree = "<group>"; };
 		35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVDataManager.swift; path = Tk300HeroAssistant/Model/CSVDataManager.swift; sourceTree = SOURCE_ROOT; };
@@ -243,6 +245,7 @@
 				354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */,
 				354BC7511CFDBB65001E046C /* EquipmentCollectionViewCell.swift */,
 				354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */,
+				358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */,
 			);
 			name = "装备数据";
 			sourceTree = "<group>";
@@ -774,6 +777,7 @@
 				35FBA6131CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift in Sources */,
 				3517D70A1CE0EE5F006162BA /* List.swift in Sources */,
 				35BCF7581CE8C8F900E30907 /* HeroTableViewDataSource.swift in Sources */,
+				358B36E21CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift in Sources */,
 				354BC70C1CFD5233001E046C /* EquipmentViewController.swift in Sources */,
 				3517D70B1CE0EE5F006162BA /* MatchBasicAPIBase.swift in Sources */,
 				35FBA6391CDF708900A527B4 /* MainViewController.swift in Sources */,

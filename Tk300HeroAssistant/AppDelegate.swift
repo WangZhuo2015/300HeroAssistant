@@ -23,14 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        AVOSCloud.setApplicationId("vVdcroPswvf8ye5ha57yIoQL-gzGzoHsz", clientKey: "LYYA7TRfLU9CfmRYQ0v4BmP7")
 //        AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         //导航栏颜色
-        UINavigationBar.appearance().barTintColor = UIColor(red: 13.0/255, green: 110.0/255, blue: 144.0/255, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 9.2/255, green: 52.5/255, blue: 73.6/255, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor ( red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0 )
         if let barFont = UIFont(name: "PingFangSC-Regular", size: 22.0) {
             UINavigationBar.appearance().titleTextAttributes =
                 [NSForegroundColorAttributeName:UIColor.whiteColor(), NSFontAttributeName:barFont]
         }
         
-        UITabBar.appearance().barTintColor = UIColor(red: 13.0/255, green: 110.0/255, blue: 144.0/255, alpha: 1.0)
+        UITabBar.appearance().barTintColor = UIColor(red: 9.2/255, green: 52.5/255, blue: 73.6/255, alpha: 1.0)
         UITabBar.appearance().tintColor = UIColor ( red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0 )
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         //状态栏渲染颜色

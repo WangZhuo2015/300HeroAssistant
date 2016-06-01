@@ -22,6 +22,8 @@ class MatchViewController: UIViewController {
         //设置TableView
         matchTableView.dataSource = self
         matchTableView.delegate = self
+
+
         //设置导航栏
         navigationItem.title = "战绩查询"
         //设置用户切换时间

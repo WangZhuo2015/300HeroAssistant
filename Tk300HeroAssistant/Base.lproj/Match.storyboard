@@ -738,11 +738,11 @@
             </objects>
             <point key="canvasLocation" x="459" y="566"/>
         </scene>
-        <!--战绩-->
+        <!--Navigation Controller-->
         <scene sceneID="qGx-f1-O1i">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ylL-fe-lYu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="战绩" image="战绩" selectedImage="战绩" id="zaO-92-jyz"/>
+                    <tabBarItem key="tabBarItem" title="" id="zaO-92-jyz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wBc-Ym-QiS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -766,6 +766,5 @@
         <image name="killHelp" width="20" height="20"/>
         <image name="rook" width="20" height="20"/>
         <image name="win" width="50" height="50"/>
-        <image name="战绩" width="32" height="32"/>
     </resources>
 </document>

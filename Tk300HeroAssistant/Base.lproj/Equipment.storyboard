@@ -35,8 +35,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Cwh-IO-LMy">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="aoY-3E-sCO"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P6P-jq-5v7">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="-4" y="64" width="328" height="504"/>
                                 <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jws-kh-b4J">
                                     <size key="itemSize" width="80" height="100"/>
@@ -46,7 +53,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EquipmentCollectionViewCellIdentifier" id="acE-21-oPY" customClass="EquipmentCollectionViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="74" width="80" height="100"/>
+                                        <rect key="frame" x="10" y="10" width="80" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
@@ -100,17 +107,28 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="P6P-jq-5v7" firstAttribute="centerX" secondItem="4th-qU-HlW" secondAttribute="centerX" id="HrC-le-hFU"/>
-                            <constraint firstItem="P6P-jq-5v7" firstAttribute="height" secondItem="4th-qU-HlW" secondAttribute="height" id="JZt-hy-flQ"/>
-                            <constraint firstItem="P6P-jq-5v7" firstAttribute="width" secondItem="4th-qU-HlW" secondAttribute="width" id="KdA-Bj-ZaO"/>
-                            <constraint firstItem="P6P-jq-5v7" firstAttribute="centerY" secondItem="4th-qU-HlW" secondAttribute="centerY" id="d1l-RH-QjA"/>
+                            <constraint firstItem="P6P-jq-5v7" firstAttribute="leading" secondItem="4th-qU-HlW" secondAttribute="leadingMargin" constant="-20" id="7Im-jr-zIo"/>
+                            <constraint firstItem="P6P-jq-5v7" firstAttribute="top" secondItem="Cwh-IO-LMy" secondAttribute="bottom" id="CcQ-xo-J0d"/>
+                            <constraint firstItem="Cwh-IO-LMy" firstAttribute="top" secondItem="rhr-TJ-PnZ" secondAttribute="bottom" constant="-44" id="XMV-6B-PvY"/>
+                            <constraint firstItem="Cwh-IO-LMy" firstAttribute="width" secondItem="4th-qU-HlW" secondAttribute="width" id="gE5-Bq-Onm"/>
+                            <constraint firstItem="P6P-jq-5v7" firstAttribute="bottom" secondItem="4th-qU-HlW" secondAttribute="bottomMargin" id="hzz-iP-qia"/>
+                            <constraint firstItem="Cwh-IO-LMy" firstAttribute="centerX" secondItem="4th-qU-HlW" secondAttribute="centerX" id="pIX-N5-hUV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P6P-jq-5v7" secondAttribute="trailing" constant="-20" id="vRC-BM-EXb"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="装备" id="dzU-6a-ei0"/>
-                    <navigationItem key="navigationItem" id="slF-Qy-PyH"/>
+                    <navigationItem key="navigationItem" title="装备" id="slF-Qy-PyH">
+                        <barButtonItem key="rightBarButtonItem" title="搜索" id="1qV-b7-dU0">
+                            <connections>
+                                <action selector="searchTapped:" destination="0oQ-qB-RJL" id="T1x-Qh-1XL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="P6P-jq-5v7" id="C7E-Bo-Ua2"/>
+                        <outlet property="searchBar" destination="Cwh-IO-LMy" id="DGu-BH-XuT"/>
+                        <outlet property="searchBarHeight" destination="aoY-3E-sCO" id="CcO-kS-hsf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cac-eY-4bT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -139,29 +157,29 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="装备名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XM-D9-K0w">
                                 <rect key="frame" x="104" y="72" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="效果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYT-uI-gQG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="效果" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYT-uI-gQG">
                                 <rect key="frame" x="104" y="101" width="208" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="技能" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-RS-Obf">
                                 <rect key="frame" x="16" y="160" width="292" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zef-Mk-Aup">
                                 <rect key="frame" x="278" y="72" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="ohH-WM-B72" secondAttribute="leading" id="479-Zy-rBD"/>
                             <constraint firstItem="GYT-uI-gQG" firstAttribute="top" secondItem="3XM-D9-K0w" secondAttribute="bottom" constant="8" id="601-0S-rxs"/>
@@ -190,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3s-1O-3gE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="339" y="336"/>
+            <point key="canvasLocation" x="386" y="336"/>
         </scene>
     </scenes>
 </document>

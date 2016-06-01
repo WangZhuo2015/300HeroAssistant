@@ -155,7 +155,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalRankCellIdentifier" rowHeight="103" id="tGr-tE-sG9" customClass="PersonalRankTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PersonalRankCellIdentifier" rowHeight="103" id="tGr-tE-sG9" customClass="PersonalRankTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="214" width="320" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tGr-tE-sG9" id="NkU-xp-oIE">
@@ -410,7 +410,7 @@
         <scene sceneID="mtN-fa-bq8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sdr-eG-pcB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="个人" image="个人" selectedImage="个人" id="K9J-Nv-VeU">
+                    <tabBarItem key="tabBarItem" title="个人" id="K9J-Nv-VeU">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -428,7 +428,4 @@
             <point key="canvasLocation" x="-38" y="112"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="个人" width="40" height="40"/>
-    </resources>
 </document>
