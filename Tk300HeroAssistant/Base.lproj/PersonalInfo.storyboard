@@ -343,7 +343,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="accountCellIdentifier" editingAccessoryType="checkmark" rowHeight="60" id="BgF-qi-NzX" customClass="userAccountTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="accountCellIdentifier" rowHeight="60" id="BgF-qi-NzX" customClass="userAccountTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="164" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BgF-qi-NzX" id="ftW-3L-x6V">
@@ -395,7 +395,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NaG-Rl-dkI">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="P6v-l8-qnl"/>
+                        <barButtonItem key="rightBarButtonItem" title="编辑" id="P6v-l8-qnl">
+                            <connections>
+                                <action selector="editAccountTableView:" destination="IUx-77-6ZR" id="WeE-KA-IVb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="currentUserLabel" destination="K1a-1B-MDI" id="gGl-6Y-Ddg"/>

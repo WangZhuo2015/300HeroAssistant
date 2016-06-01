@@ -16,6 +16,7 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
     let accountCellIdentifier = "accountCellIdentifier"
     let addNewAccountCellIdentifier = "addNewAccountCellIdentifier"
     
+    var canEditAccounts:Bool = false
     var namesArray:[String] {
         get{
             return User.sharedUser.getNames()
@@ -54,6 +55,13 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
     func userChange(){
         currentUserLabel.text = User.sharedUser.userName
     }
+    
+    @IBAction func editAccountTableView(sender: UIBarButtonItem) {
+        sender.title = canEditAccounts ? "完成":"编辑"
+        canEditAccounts = !canEditAccounts
+        self.tableView.setEditing(canEditAccounts, animated: canEditAccounts)
+    }
+    
     func login(){
         let alert = UIAlertController(title: "登录/切换账号", message: "请输入您的游戏ID", preferredStyle: .Alert)
         var usernameTextField: UITextField?

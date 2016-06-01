@@ -92,6 +92,9 @@ class PersonalInfoViewController: UIViewController {
         winRateProgress.progress = winRate
     }
     
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

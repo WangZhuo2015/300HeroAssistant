@@ -24,7 +24,13 @@ extension MatchDetailViewController:UITableViewDataSource,UITableViewDelegate{
         }
     }
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 28))
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 28))
+        label.backgroundColor = UIColor(red: 9.2/255, green: 52.5/255, blue: 73.6/255, alpha: 1.0)
+        label.textColor = UIColor.whiteColor()
+        label.center = view.center
+        label.text = {
         switch section {
         case 0:
             return "    Winner"
@@ -32,8 +38,21 @@ extension MatchDetailViewController:UITableViewDataSource,UITableViewDelegate{
             return "    Loser"
         default:
             return "    error"
-        }
+        }}()
+        view.addSubview(label)
+        return label
     }
+    
+//    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        switch section {
+//        case 0:
+//            return "    Winner"
+//        case 1:
+//            return "    Loser"
+//        default:
+//            return "    error"
+//        }
+//    }
 //    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 //        //let view = tableView.dequeueReusableHeaderFooterViewWithIdentifier()// UIView()//frame: CGRect(x: 0,y: 0,width: 300,height: 30))
 //        let label = UILabel()

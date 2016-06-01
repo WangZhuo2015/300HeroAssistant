@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tk300HeroAssistant/Cells/matchDetailTableViewCell.swift"
-            timestampString = "485018982.046172"
+            timestampString = "486493138.018215"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "matchDetailTableViewCell"
             landmarkType = "3">
          </BreakpointContent>

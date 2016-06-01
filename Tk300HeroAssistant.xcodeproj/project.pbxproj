@@ -64,7 +64,6 @@
 		35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E259D31CE87F2C005AEE4F /* HeroData.swift */; };
 		35E9D02C1CF96F11004170BE /* AccountChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9D02B1CF96F11004170BE /* AccountChangeViewController.swift */; };
 		35E9D02E1CF96F68004170BE /* userAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9D02D1CF96F68004170BE /* userAccountTableViewCell.swift */; };
-		35E9D0301CF97E54004170BE /* AddNewAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9D02F1CF97E54004170BE /* AddNewAccountTableViewCell.swift */; };
 		35F2CA6E1CFB53B50046B653 /* hero data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA6C1CFB53B50046B653 /* hero data.csv */; };
 		35F2CA6F1CFB53B50046B653 /* skill data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA6D1CFB53B50046B653 /* skill data.csv */; };
 		35F2CA711CFB57060046B653 /* Bugs in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA701CFB57060046B653 /* Bugs */; };
@@ -154,7 +153,6 @@
 		35E259D31CE87F2C005AEE4F /* HeroData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroData.swift; path = Tk300HeroAssistant/Model/Data/HeroData.swift; sourceTree = SOURCE_ROOT; };
 		35E9D02B1CF96F11004170BE /* AccountChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountChangeViewController.swift; path = Controller/AccountChangeViewController.swift; sourceTree = "<group>"; };
 		35E9D02D1CF96F68004170BE /* userAccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = userAccountTableViewCell.swift; path = Cells/userAccountTableViewCell.swift; sourceTree = "<group>"; };
-		35E9D02F1CF97E54004170BE /* AddNewAccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddNewAccountTableViewCell.swift; path = Cells/AddNewAccountTableViewCell.swift; sourceTree = "<group>"; };
 		35F2CA6C1CFB53B50046B653 /* hero data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "hero data.csv"; path = "LocalData/hero data.csv"; sourceTree = "<group>"; };
 		35F2CA6D1CFB53B50046B653 /* skill data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "skill data.csv"; path = "LocalData/skill data.csv"; sourceTree = "<group>"; };
 		35F2CA701CFB57060046B653 /* Bugs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bugs; sourceTree = "<group>"; };
@@ -289,7 +287,6 @@
 				35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift */,
 				35E9D02B1CF96F11004170BE /* AccountChangeViewController.swift */,
 				35E9D02D1CF96F68004170BE /* userAccountTableViewCell.swift */,
-				35E9D02F1CF97E54004170BE /* AddNewAccountTableViewCell.swift */,
 			);
 			name = "个人信息";
 			sourceTree = "<group>";
@@ -793,7 +790,6 @@
 				35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */,
 				35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */,
 				3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */,
-				35E9D0301CF97E54004170BE /* AddNewAccountTableViewCell.swift in Sources */,
 				35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */,
 				35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */,
 				35FBA63D1CDF712E00A527B4 /* HeroViewController.swift in Sources */,

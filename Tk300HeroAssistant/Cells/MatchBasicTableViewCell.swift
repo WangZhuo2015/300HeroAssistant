@@ -23,6 +23,9 @@ class MatchBasicTableViewCell: UITableViewCell {
     
     @IBOutlet weak var innerView: UIView!
     
+    @IBOutlet weak var playerInnerView: UIView!
+    
+    
     var matchData:(Int,Int,Int)?{
         didSet{
             if let data = matchData{
@@ -51,6 +54,18 @@ class MatchBasicTableViewCell: UITableViewCell {
         self.playerName.text = User.sharedUser.userName
         self.matchDate.text = matchBasic.matchDate
         self.matchResult.text = matchResToStr(matchBasic.result)
+        
+        switch matchBasic.result {
+        case 1:
+            playerInnerView.backgroundColor = UIColor ( red: 0.8782, green: 0.3069, blue: 0.2787, alpha: 1.0 )
+        case 2:
+            playerInnerView.backgroundColor = UIColor ( red: 0.5193, green: 0.9076, blue: 0.4013, alpha: 1.0 )
+        case 3:
+            playerInnerView.backgroundColor = UIColor ( red: 0.884, green: 0.6607, blue: 0.3519, alpha: 1.0 )
+        default:
+            playerInnerView.backgroundColor = UIColor ( red: 0.2794, green: 0.8725, blue: 0.8918, alpha: 1.0 )
+        }
+        
         self.matchType.text = "竞技场"
     }
     func matchResToStr(res:Int)->String?{

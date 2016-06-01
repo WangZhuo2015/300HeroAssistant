@@ -30,19 +30,19 @@ class matchDetailTableViewCell: UITableViewCell {
     
     @IBOutlet weak var kdaLabel: UILabel!
     
-    @IBOutlet weak var winCountLabel: UILabel!
-    
-    @IBOutlet weak var allMatchCountLabel: UILabel!
+    //@IBOutlet weak var winRateLabel: UILabel!
     
     @IBOutlet var equipImages: [UIImageView]!
     
     @IBOutlet var skillImages: [UIImageView]!
     
-    @IBOutlet weak var winOrLoseImage: UIImageView!
+    //@IBOutlet weak var winOrLoseImage: UIImageView!
     
     @IBOutlet weak var innerView: UIView!
     
     @IBOutlet weak var playerInnerView: UIView!
+    
+    
     
     func setRoleCell(role:MatchRole){
         playerNameLabel.text = role.roleName
@@ -54,13 +54,11 @@ class matchDetailTableViewCell: UITableViewCell {
         moneyLabel.text = "\(role.totalMoney)"
         eloLabel.text = "\(role.eLO)"
         kdaLabel.text = "\(role.kDA)"
-        winCountLabel.text = "\(role.winCount)"
-        allMatchCountLabel.text = "\(role.matchCount)"
-        
+        //winRateLabel.text = "\(Double(role.winCount)/Double(role.matchCount))"
         if role.result == 1{
-            winOrLoseImage.image = UIImage(named: "win")
+            playerInnerView.backgroundColor = UIColor ( red: 0.8782, green: 0.3069, blue: 0.2787, alpha: 1.0 )
         }else{
-            winOrLoseImage.image = UIImage(named: "lose")
+            playerInnerView.backgroundColor = UIColor ( red: 0.5193, green: 0.9076, blue: 0.4013, alpha: 1.0 )
         }
         playerImage.kf_setImageWithURL(NSURL(string: "http://300report.jumpw.com/static/images/"+role.hero.iconFile)!)
         //防止空格
