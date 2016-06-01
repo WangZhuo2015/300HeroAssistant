@@ -11,7 +11,7 @@ import UIKit
 class MatchBasicTableViewCell: UITableViewCell {
     @IBOutlet weak var matchType: UILabel!
 
-    @IBOutlet weak var heroLevel: UILabel!
+    @IBOutlet weak var matchDataLabel: UILabel!
     
     @IBOutlet weak var matchResult: UILabel!
     
@@ -19,12 +19,17 @@ class MatchBasicTableViewCell: UITableViewCell {
     
     @IBOutlet weak var matchImage: UIImageView!
     
-    @IBOutlet weak var heroName: UILabel!
+    @IBOutlet weak var playerName: UILabel!
     
     @IBOutlet weak var innerView: UIView!
     
-    
-    
+    var matchData:(Int,Int,Int)?{
+        didSet{
+            if let data = matchData{
+                matchDataLabel.text = ("\(data.0)\\\(data.1)\\\(data.2)")
+            }
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         innerView.layer.cornerRadius = 6
@@ -42,8 +47,8 @@ class MatchBasicTableViewCell: UITableViewCell {
     
     func setContent(matchBasic:List){
         self.matchImage.kf_setImageWithURL(NSURL(string: "http://300report.jumpw.com/static/images/"+matchBasic.hero.iconFile)!)
-        self.heroLevel.text = "\(matchBasic.heroLevel)"
-        self.heroName.text = matchBasic.hero.name
+//        self.heroName.text = matchBasic.hero.name
+        self.playerName.text = User.sharedUser.userName
         self.matchDate.text = matchBasic.matchDate
         self.matchResult.text = matchResToStr(matchBasic.result)
         self.matchType.text = "竞技场"

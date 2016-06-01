@@ -32,11 +32,15 @@ class MatchDetailViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        ServiceProxy.getMatchDetail(matchID) { (matchDetail, error) in
-            self.matchData = (matchDetail?.match)
-            self.setMatchInfo(self.matchData!)
-            self.tableView.reloadData()
+        guard matchData != nil else{
+            ServiceProxy.getMatchDetail(matchID) { (matchDetail, error) in
+                self.matchData = (matchDetail?.match)
+                self.setMatchInfo(self.matchData!)
+                self.tableView.reloadData()
+            }
+            return
         }
+        self.tableView.reloadData()
         // Do any additional setup after loading the view.
     }
 
