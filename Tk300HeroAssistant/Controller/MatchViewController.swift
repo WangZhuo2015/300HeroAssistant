@@ -15,8 +15,40 @@ class MatchViewController: UIViewController {
     
     //MatchCell
     let MatchCellIdentifier = "MatchCellIdentifier"
-    var matchBasicInfoArray = [List]()
-    
+    var matchBasicInfoArray = [List](){
+        didSet{
+            var count = 0
+            matchBasicInfoArray.forEach { (item) in
+                if matchDetailDownload.indexForKey(item.matchID) == nil{
+                    downloadMatchDetail(item.matchID, completehandle: { (match) in
+                        if let detail = match{
+                            self.matchDetailDownload[item.matchID] = detail
+                        }
+                        self.matchTableView.reloadData()
+                        //self.matchTableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:count,inSection: 0)], withRowAnimation: .None)
+                    })
+                    
+                }
+                count += 1
+            }
+        }
+    }
+    var matchDetailDownload = [Int:Match?](){
+        didSet{
+            matchDetailDownload.forEach { (id,match) in
+                if matchPlayerData.indexForKey(id) == nil{
+                    var allRoles = [MatchRole]()
+                    if let data = match{
+                        allRoles.appendContentsOf(data.loseSide)
+                        allRoles.appendContentsOf(data.winSide)
+                        let role = allRoles.filter{$0.roleName == User.sharedUser.userName}[0]
+                        matchPlayerData[id] = (role.killCount,role.deathCount,role.assistCount)
+                    }
+                }
+            }
+        }
+    }
+    var matchPlayerData = [Int:(Int,Int,Int)]()
     override func viewDidLoad() {
         super.viewDidLoad()
         //设置TableView
@@ -89,16 +121,16 @@ class MatchViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let vc = segue.destinationViewController as! MatchDetailViewController
         vc.matchID = matchBasicInfoArray [matchTableView.indexPathForSelectedRow!.row].matchID
+        vc.matchData = matchDetailDownload[vc.matchID]!
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func downloadMatchDetail(matchID:Int,completehandle:(Match?)->Void){
+        ServiceProxy.getMatchDetail(matchID) { (matchDetail, error) in
+            if error == nil{
+                completehandle(matchDetail?.match)
+            }else{
+                completehandle(nil)
+            }
+        }
     }
-    */
-
 }

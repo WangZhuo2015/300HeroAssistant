@@ -40,6 +40,7 @@ class MatchDetailViewController: UIViewController {
             }
             return
         }
+        self.setMatchInfo(self.matchData!)
         self.tableView.reloadData()
         // Do any additional setup after loading the view.
     }

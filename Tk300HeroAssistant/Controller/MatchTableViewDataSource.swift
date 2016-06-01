@@ -18,6 +18,7 @@ extension MatchViewController:UITableViewDataSource,UITableViewDelegate{
         let cell = tableView.dequeueReusableCellWithIdentifier(MatchCellIdentifier) as! MatchBasicTableViewCell
         let item  = matchBasicInfoArray[indexPath.row]
         cell.setContent(item)
+        cell.matchData = matchPlayerData[matchBasicInfoArray[indexPath.row].matchID]
         return cell
     }
 }
