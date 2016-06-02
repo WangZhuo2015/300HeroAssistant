@@ -30,7 +30,7 @@ class matchDetailTableViewCell: UITableViewCell {
     
     @IBOutlet weak var kdaLabel: UILabel!
     
-    //@IBOutlet weak var winRateLabel: UILabel!
+    @IBOutlet weak var winRateLabel: UILabel!
     
     @IBOutlet var equipImages: [UIImageView]!
     
@@ -54,7 +54,7 @@ class matchDetailTableViewCell: UITableViewCell {
         moneyLabel.text = "\(role.totalMoney)"
         eloLabel.text = "\(role.eLO)"
         kdaLabel.text = "\(role.kDA)"
-        //winRateLabel.text = "\(Double(role.winCount)/Double(role.matchCount))"
+        winRateLabel.text = String.init(format: "%.1lf", Double(role.winCount)/Double(role.matchCount)*100)+"%"
         if role.result == 1{
             playerInnerView.backgroundColor = UIColor ( red: 0.8782, green: 0.3069, blue: 0.2787, alpha: 1.0 )
         }else{

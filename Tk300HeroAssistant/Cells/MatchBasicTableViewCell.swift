@@ -66,7 +66,7 @@ class MatchBasicTableViewCell: UITableViewCell {
             playerInnerView.backgroundColor = UIColor ( red: 0.2794, green: 0.8725, blue: 0.8918, alpha: 1.0 )
         }
         
-        self.matchType.text = "竞技场"
+        self.matchType.text = matchBasic.matchType == 1 ? "竞技场":"战场"
     }
     func matchResToStr(res:Int)->String?{
         switch res {
