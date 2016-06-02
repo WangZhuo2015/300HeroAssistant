@@ -167,7 +167,7 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 排行" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAY-mf-k5c">
                                                             <rect key="frame" x="0.0" y="0.0" width="304" height="34"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" red="0.20528522133827209" green="0.59513360261917114" blue="0.49505996704101562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="24"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -245,7 +245,7 @@
                                                 <constraint firstItem="ggP-RE-01O" firstAttribute="leading" secondItem="NkU-xp-oIE" secondAttribute="leadingMargin" id="tUP-XF-6MD"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.62745098040000002" green="0.76470588240000004" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.054901960784313725" green="0.40392156862745099" blue="0.58039215686274515" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="innerView" destination="ggP-RE-01O" id="ogF-84-BP1"/>
                                             <outlet property="rankLabel" destination="943-B5-ro5" id="Oiy-xL-ex3"/>

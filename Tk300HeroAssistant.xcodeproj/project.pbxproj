@@ -976,7 +976,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FE5B0D7DD464CEA3FF730C0 /* Pods-Tk300HeroAssistant.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tk300HeroAssistant/Info.plist;
@@ -992,7 +991,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2DD9FE52B9322672F49A4CD /* Pods-Tk300HeroAssistant.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tk300HeroAssistant/Info.plist;
