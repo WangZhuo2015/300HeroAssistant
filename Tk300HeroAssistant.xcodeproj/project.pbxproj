@@ -48,6 +48,8 @@
 		354BC7541CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */; };
 		354BC7561CFDC63A001E046C /* EquipmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */; };
 		354BC7581CFDE615001E046C /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
+		355306E51D040E9600065CDA /* 合成所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 355306E31D040E9600065CDA /* 合成所需.csv */; };
+		355306E61D040E9600065CDA /* 进阶所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 355306E41D040E9600065CDA /* 进阶所需.csv */; };
 		358B36E21CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */; };
 		35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */; };
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
@@ -136,6 +138,8 @@
 		354BC7511CFDBB65001E046C /* EquipmentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentCollectionViewCell.swift; path = Cells/EquipmentCollectionViewCell.swift; sourceTree = "<group>"; };
 		354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentCollectionViewDataSource.swift; path = Controller/EquipmentCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentDetailViewController.swift; path = Controller/EquipmentDetailViewController.swift; sourceTree = "<group>"; };
+		355306E31D040E9600065CDA /* 合成所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "合成所需.csv"; sourceTree = "<group>"; };
+		355306E41D040E9600065CDA /* 进阶所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "进阶所需.csv"; sourceTree = "<group>"; };
 		358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentSearchBarDelegate.swift; path = Controller/EquipmentSearchBarDelegate.swift; sourceTree = "<group>"; };
 		35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchHeaderView.swift; path = Cells/MatchHeaderView.swift; sourceTree = "<group>"; };
 		35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = Cells/HeroTableViewCell.swift; sourceTree = "<group>"; };
@@ -353,6 +357,8 @@
 		35F2CA6B1CFB53A70046B653 /* LocalData */ = {
 			isa = PBXGroup;
 			children = (
+				355306E31D040E9600065CDA /* 合成所需.csv */,
+				355306E41D040E9600065CDA /* 进阶所需.csv */,
 				35F2CA6C1CFB53B50046B653 /* hero data.csv */,
 				35F2CA6D1CFB53B50046B653 /* skill data.csv */,
 				354BC70F1CFD5334001E046C /* object data.csv */,
@@ -601,6 +607,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				355306E51D040E9600065CDA /* 合成所需.csv in Resources */,
 				35FBA6321CDF701600A527B4 /* Hero.storyboard in Resources */,
 				35FBA6031CDF4E5C00A527B4 /* LaunchScreen.storyboard in Resources */,
 				35FBA60B1CDF4EA800A527B4 /* openapi.txt in Resources */,
@@ -613,6 +620,7 @@
 				35FBA5FE1CDF4E5C00A527B4 /* Main.storyboard in Resources */,
 				35F2CA6E1CFB53B50046B653 /* hero data.csv in Resources */,
 				35F2CA6F1CFB53B50046B653 /* skill data.csv in Resources */,
+				355306E61D040E9600065CDA /* 进阶所需.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

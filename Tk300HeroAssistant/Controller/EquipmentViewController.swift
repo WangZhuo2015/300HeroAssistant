@@ -50,7 +50,7 @@ class EquipmentViewController: UIViewController {
         
         
         
-        CSVDataManager.loadEquipData { (data) in
+        CSVDataManager.sharedInstance.loadEquipData { (data) in
             self.rawEquipmentDataArray = data//.sort{ (Int($0.售价!)! + Int($1.售价!)!)>0}
             self.equipmentDataArray = data
             // Do any additional setup after loading the view.

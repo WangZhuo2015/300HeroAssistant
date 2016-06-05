@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         if let name = NSUserDefaults.standardUserDefaults().objectForKey("userName") as? String{
             User.sharedUser.setUserName(name)
+            CSVDataManager.sharedInstance.loadEquipData{_ in }
+            CSVDataManager.sharedInstance.loadHeroData{_ in }
+            CSVDataManager.sharedInstance.loadSkillData{_ in }
         }
         //初始化LeanCloud
         // applicationId 即 App Id，clientKey 是 App Key。

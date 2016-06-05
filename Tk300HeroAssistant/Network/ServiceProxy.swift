@@ -37,7 +37,6 @@ class ServiceProxy{
         complete:(PlayerInfo: RoleAPIBase?, error: NSError?) -> Void){
         HttpClient.invoke(getPlayerBasicInfoURL(), parameters: ["name":playerName]) { (response, error) in
             let json = JSON(data: response!)
-            print(json)
             complete(PlayerInfo: RoleAPIBase(fromJson:json), error: error)
         }
     }
