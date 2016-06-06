@@ -20,11 +20,23 @@ class EquipmentDetailViewController: UIViewController {
     
     @IBOutlet weak var equipmentPriceLabel: UILabel!
     
+    @IBOutlet weak var combineScrollView: HorizontalMenuScrollView!
+    
+    @IBOutlet weak var subEquipmentScrollView: HorizontalMenuScrollView!
+    
     var currentEquipment:EquipmentData?
+    
+//    var itemSelect:((index:Int)->Void) = { index in
+//        self()
+//    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = currentEquipment?.name
         setContent(currentEquipment!)
+        combineScrollView.setContent(currentEquipment?.进阶物品id ?? [])
+        subEquipmentScrollView.setContent(currentEquipment?.所需物品id ?? [])
         // Do any additional setup after loading the view.
     }
 

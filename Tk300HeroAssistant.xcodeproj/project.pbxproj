@@ -50,6 +50,7 @@
 		354BC7581CFDE615001E046C /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
 		355306E51D040E9600065CDA /* 合成所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 355306E31D040E9600065CDA /* 合成所需.csv */; };
 		355306E61D040E9600065CDA /* 进阶所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 355306E41D040E9600065CDA /* 进阶所需.csv */; };
+		355306EA1D0428A500065CDA /* HorizontalMenuScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355306E91D0428A500065CDA /* HorizontalMenuScrollView.swift */; };
 		358B36E21CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */; };
 		35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */; };
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
@@ -140,6 +141,7 @@
 		354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentDetailViewController.swift; path = Controller/EquipmentDetailViewController.swift; sourceTree = "<group>"; };
 		355306E31D040E9600065CDA /* 合成所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "合成所需.csv"; sourceTree = "<group>"; };
 		355306E41D040E9600065CDA /* 进阶所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "进阶所需.csv"; sourceTree = "<group>"; };
+		355306E91D0428A500065CDA /* HorizontalMenuScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalMenuScrollView.swift; path = View/HorizontalMenuScrollView.swift; sourceTree = "<group>"; };
 		358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentSearchBarDelegate.swift; path = Controller/EquipmentSearchBarDelegate.swift; sourceTree = "<group>"; };
 		35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchHeaderView.swift; path = Cells/MatchHeaderView.swift; sourceTree = "<group>"; };
 		35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = Cells/HeroTableViewCell.swift; sourceTree = "<group>"; };
@@ -243,10 +245,18 @@
 				354BC70B1CFD5233001E046C /* EquipmentViewController.swift */,
 				354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */,
 				354BC7511CFDBB65001E046C /* EquipmentCollectionViewCell.swift */,
+				351112541D051E6D004C58AF /* 装备详情 */,
+			);
+			name = "装备数据";
+			sourceTree = "<group>";
+		};
+		351112541D051E6D004C58AF /* 装备详情 */ = {
+			isa = PBXGroup;
+			children = (
 				354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */,
 				358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */,
 			);
-			name = "装备数据";
+			name = "装备详情";
 			sourceTree = "<group>";
 		};
 		3516C7CB1CE64094005BF4D8 /* FriendAnalysis */ = {
@@ -466,6 +476,7 @@
 		35FBA6361CDF704000A527B4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				355306E91D0428A500065CDA /* HorizontalMenuScrollView.swift */,
 				35FBA5FC1CDF4E5C00A527B4 /* Main.storyboard */,
 				35FBA62D1CDF6FE300A527B4 /* Match.storyboard */,
 				35FBA6301CDF701600A527B4 /* Hero.storyboard */,
@@ -791,6 +802,7 @@
 				35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */,
 				35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */,
 				35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */,
+				355306EA1D0428A500065CDA /* HorizontalMenuScrollView.swift in Sources */,
 				3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */,
 				35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */,
 				35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */,
