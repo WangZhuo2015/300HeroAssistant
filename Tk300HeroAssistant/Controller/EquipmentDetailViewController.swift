@@ -37,6 +37,16 @@ class EquipmentDetailViewController: UIViewController {
         setContent(currentEquipment!)
         combineScrollView.setContent(currentEquipment?.进阶物品id ?? [])
         subEquipmentScrollView.setContent(currentEquipment?.所需物品id ?? [])
+        //******************************************
+        combineScrollView.userInteractionEnabled = true
+        subEquipmentScrollView.userInteractionEnabled = true
+        //******************************************
+        combineScrollView.didSelectItem = { index in
+            let equipmentDetailVC = EquipmentDetailViewController()
+            self.navigationController?.pushViewController(equipmentDetailVC, animated: true)
+            equipmentDetailVC.setContent(CSVDataManager.sharedInstance.getEquipmentInfoByID(index)!)
+            equipmentDetailVC.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "返回全部装备", style: .Plain, target: self, action: #selector(EquipmentDetailViewController.popToRoot))
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -52,6 +62,10 @@ class EquipmentDetailViewController: UIViewController {
         equipmentAttributeLabel.text = equipmentData.属性
         equipmentSkillLabel.text = equipmentData.装备技能
         equipmentPriceLabel.text = equipmentData.售价
+    }
+    
+    func popToRoot(){
+        self.navigationController?.popToRootViewControllerAnimated(true)
     }
     /*
     // MARK: - Navigation
