@@ -24,6 +24,11 @@ class EquipmentDetailViewController: UIViewController {
     
     @IBOutlet weak var subEquipmentScrollView: HorizontalMenuScrollView!
     
+    @IBOutlet weak var combineLabel: UIButton!
+    
+    @IBOutlet weak var subEquipmentLabel: UIButton!
+    
+    
     var currentEquipment:EquipmentData?
     
 //    var itemSelect:((index:Int)->Void) = { index in
@@ -37,6 +42,8 @@ class EquipmentDetailViewController: UIViewController {
         setContent(currentEquipment!)
         combineScrollView.setContent(currentEquipment?.进阶物品id ?? [])
         subEquipmentScrollView.setContent(currentEquipment?.所需物品id ?? [])
+        if currentEquipment?.进阶物品id == nil {combineLabel.hidden = true}
+        if currentEquipment?.所需物品id == nil {subEquipmentLabel.hidden = true}
         //******************************************
         combineScrollView.userInteractionEnabled = true
         subEquipmentScrollView.userInteractionEnabled = true

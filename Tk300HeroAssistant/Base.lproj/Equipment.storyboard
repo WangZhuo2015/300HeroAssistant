@@ -247,12 +247,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="SFC-ON-hds"/>
                     <connections>
+                        <outlet property="combineLabel" destination="2SS-1r-fNo" id="DJg-hU-V7d"/>
                         <outlet property="combineScrollView" destination="73d-mI-vRN" id="lQK-e1-MFi"/>
                         <outlet property="equipmentAttributeLabel" destination="GYT-uI-gQG" id="fGc-iB-Son"/>
                         <outlet property="equipmentImage" destination="ohH-WM-B72" id="jr0-nm-Wif"/>
                         <outlet property="equipmentName" destination="3XM-D9-K0w" id="Puo-p9-eCx"/>
                         <outlet property="equipmentPriceLabel" destination="zef-Mk-Aup" id="4i6-e5-2QR"/>
                         <outlet property="equipmentSkillLabel" destination="Cil-RS-Obf" id="qLS-Kn-zhj"/>
+                        <outlet property="subEquipmentLabel" destination="IGb-ya-0IU" id="g62-Bo-vGg"/>
                         <outlet property="subEquipmentScrollView" destination="8SN-cm-gwx" id="PoW-m8-Mof"/>
                     </connections>
                 </viewController>

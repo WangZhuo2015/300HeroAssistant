@@ -63,26 +63,6 @@ class EquipmentViewController: UIViewController {
     }
     
 
-    
-//    //改变过滤器
-//    @IBAction func filterChange(sender: UIBarButtonItem) {
-//        let alertSheet = UIAlertController(title: "过滤", message: "选择类型", preferredStyle: .ActionSheet)
-//        for type in equipmentTypes{
-//            let action = UIAlertAction(title: type, style: .Default, handler: { (_) in
-//                self.heroType = type
-//            })
-//            alertSheet.addAction(action)
-//        }
-//        let allAction = UIAlertAction(title: "全部", style: .Default, handler: { (_) in
-//            self.heroType = ""
-//        })
-//        let cancelAction = UIAlertAction(title: "取消", style: .Cancel, handler: { (_) in
-//            self.heroType = ""
-//        })
-//        alertSheet.addAction(allAction)
-//        alertSheet.addAction(cancelAction)
-//        presentViewController(alertSheet, animated: true,completion: nil)
-//    }
 
     /*
     // MARK: - Navigation
