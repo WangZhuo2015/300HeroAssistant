@@ -8,32 +8,53 @@
 
 import Foundation
 class DataAnalyzer {
+    //单例
     //static let sharedInstance = DataAnalyzer()
-    var userName = ""
+    //delegate
+    var delegate:DataAnalyzerDelegate?
+    //用户名
+    internal var userName = ""{
+        didSet{
+            loadAllData()
+        }
+    }
+    //详情列表
     var battleDatailList = [Int:MatchDetail]()
+    //战绩列表
     var battleList = [Int:List]()
+    //是否已经读取列表
     var alreadyLoadList = false{
         didSet{
+            guard alreadyLoadList != oldValue else{return}
             if alreadyLoadList == true{
+                delegate?.alreadyLoadList?()
                 loadALlBattleDetail()
             }else{
                 battleDatailList.removeAll()
+                heroBattle.removeAll()
+                friend.removeAll()
             }
         }
     }
-    init(name:String){
-        userName = name
+    var alreadyLoadDetail = false{
+        didSet{
+            guard alreadyLoadDetail != oldValue else{return}
+            if alreadyLoadDetail == true{
+                delegate?.alreadyLoadDetail?()
+                battleDatailList.forEach{print($0.1.match.matchDate)}
+            }else{
+                heroBattle.removeAll()
+            }
+        }
     }
     
-    
-    
-    func loadAllData(){
-        battleList.removeAll()
+    internal func loadAllData(){
         loadListData()
     }
-    
-    func loadListData() {
+    //加载对应name的数据
+    private func loadListData() {
         alreadyLoadList = false
+        alreadyLoadDetail = false
         ServiceProxy.getBattleList(userName ?? "", index: battleList.count) { (MatchBasicAPIBase, error) in
             MatchBasicAPIBase?.list.forEach{self.battleList[$0.matchID] = $0}
             if MatchBasicAPIBase?.list.count != 0{self.loadListData()}
@@ -41,33 +62,38 @@ class DataAnalyzer {
         }
     }
     
-    func loadALlBattleDetail(){
+    //获取每一场的详情
+    private func loadALlBattleDetail(){
+        print( "详情已读取\(battleList.count)条")
         battleList.forEach {loadBattleData(id: $0.0)}
+        alreadyLoadDetail = true
     }
-    func loadBattleData(id id:Int) {
+    /**
+     获取战绩详情
+     
+     - parameter id: 比赛ID
+     */
+    private func loadBattleData(id id:Int) {
         ServiceProxy.getMatchDetail(id) { (MatchDetail, error) in
             guard error == nil else{return}
             self.battleDatailList[id] = MatchDetail
         }
-        
-        ServiceProxy.getBattleList(userName ?? "", index: battleList.count) { (MatchBasicAPIBase, error) in
-            MatchBasicAPIBase?.list.forEach{self.battleList[$0.matchID] = $0}
-            if MatchBasicAPIBase?.list.count != 0{self.loadListData()}
-        }
     }
+    
+    
     //英雄胜率
 
-    var heroBattle = [Hero:HeroWinRate]()
-    func calculateHeroWinRate(data:[Int:List],compeltionHandle:([HeroWinRate])->Void){
+    var heroBattle = [Int:HeroWinRate]()
+    func calculateHeroWinRate(compeltionHandle:([HeroWinRate])->Void){
         battleList.forEach { (item) in
-            if heroBattle[item.1.hero] == nil{
-                heroBattle[item.1.hero] = HeroWinRate(hero: item.1.hero, win: 0, lose: 0, count: 0)
+            if heroBattle[item.1.hero.iD] == nil{
+                heroBattle[item.1.hero.iD] = HeroWinRate(hero: item.1.hero, win: 0, lose: 0, count: 0)
             }
-            heroBattle[item.1.hero]?.count += 1
+            heroBattle[item.1.hero.iD]?.count += 1
             if item.1.result == 1{
-                heroBattle[item.1.hero]?.win += 1
+                heroBattle[item.1.hero.iD]?.win += 1
             }else if item.1.result == 2{
-                heroBattle[item.1.hero]?.lose += 1
+                heroBattle[item.1.hero.iD]?.lose += 1
             }
         }
         let array = heroBattle.map{ return $0.1 }.sort{ $0.rate > $1.rate }
@@ -94,14 +120,15 @@ class DataAnalyzer {
                 }
             })
         }
-        
-        
     }
     
     //carry率
 }
-
-
+@objc
+protocol DataAnalyzerDelegate {
+    optional func alreadyLoadDetail()
+    optional func alreadyLoadList()
+}
 
 
 struct Player:Hashable,Equatable {

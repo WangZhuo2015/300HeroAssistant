@@ -24,6 +24,7 @@ class PersonalRankTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         innerView.layer.cornerRadius = 5
+        innerView.layer.masksToBounds = true
         // Initialization code
     }
 

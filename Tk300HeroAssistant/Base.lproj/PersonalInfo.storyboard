@@ -155,8 +155,46 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MenuTableViewCellIdentifier" rowHeight="57" id="ARC-zb-Pw5" customClass="MenuTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="214" width="320" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ARC-zb-Pw5" id="xGy-SE-QQR">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05X-zu-tca">
+                                                    <rect key="frame" x="8" y="8" width="304" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高级分析功能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJE-ce-o4o">
+                                                            <rect key="frame" x="8" y="8" width="108" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.20528522133827209" green="0.59513360261917114" blue="0.49505996704101562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="dJE-ce-o4o" firstAttribute="top" secondItem="05X-zu-tca" secondAttribute="top" constant="8" id="XV8-Js-hLi"/>
+                                                        <constraint firstItem="dJE-ce-o4o" firstAttribute="leading" secondItem="05X-zu-tca" secondAttribute="leading" constant="8" id="btc-nA-N7x"/>
+                                                        <constraint firstAttribute="bottom" secondItem="dJE-ce-o4o" secondAttribute="bottom" constant="10" id="l3u-p3-fJf"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="05X-zu-tca" firstAttribute="bottom" secondItem="xGy-SE-QQR" secondAttribute="bottomMargin" id="R8I-IO-ZN5"/>
+                                                <constraint firstItem="05X-zu-tca" firstAttribute="top" secondItem="xGy-SE-QQR" secondAttribute="topMargin" id="YlQ-M8-S4q"/>
+                                                <constraint firstItem="05X-zu-tca" firstAttribute="leading" secondItem="xGy-SE-QQR" secondAttribute="leadingMargin" id="fHc-bJ-3he"/>
+                                                <constraint firstItem="05X-zu-tca" firstAttribute="trailing" secondItem="xGy-SE-QQR" secondAttribute="trailingMargin" id="hKz-kh-fxc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="itemBackgroundView" destination="05X-zu-tca" id="jYJ-QP-Euw"/>
+                                            <outlet property="menuItemLabel" destination="dJE-ce-o4o" id="WZo-Zy-JNY"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PersonalRankCellIdentifier" rowHeight="103" id="tGr-tE-sG9" customClass="PersonalRankTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="214" width="320" height="103"/>
+                                        <rect key="frame" x="0.0" y="271" width="320" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tGr-tE-sG9" id="NkU-xp-oIE">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
@@ -269,7 +307,7 @@
                     <navigationItem key="navigationItem" id="YO8-Qy-nUX">
                         <barButtonItem key="rightBarButtonItem" title="账号切换" id="NDL-se-rNm">
                             <connections>
-                                <segue destination="IUx-77-6ZR" kind="push" id="oT8-4g-2Ch"/>
+                                <segue destination="IUx-77-6ZR" kind="push" identifier="accountManageSegue" id="oT8-4g-2Ch"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -285,6 +323,7 @@
                         <outlet property="winCountLabel" destination="WP0-9P-0kX" id="4aW-TT-Py0"/>
                         <outlet property="winRateLabel" destination="0zO-xm-Sl4" id="tcx-AA-F1a"/>
                         <outlet property="winRateProgress" destination="Xl9-9A-iDR" id="WLa-zC-NZZ"/>
+                        <segue destination="jd4-uD-QnS" kind="push" identifier="advancedAnalysisSegue" id="4ha-io-uep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIo-Mn-8vM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -409,7 +448,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Leb-nw-eRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908" y="112"/>
+            <point key="canvasLocation" x="508" y="-731"/>
         </scene>
         <!--个人-->
         <scene sceneID="mtN-fa-bq8">
@@ -431,6 +470,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBX-qS-eVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-38" y="112"/>
+        </scene>
+        <!--AdvancedAnalysis-->
+        <scene sceneID="ADk-mv-5PW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdvancedAnalysis" id="jd4-uD-QnS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HFf-s3-c8t"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYE-0N-gqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="-731"/>
         </scene>
     </scenes>
 </document>

@@ -31,6 +31,8 @@ class PersonalInfoViewController: UIViewController {
     @IBOutlet weak var changeAccountButton: UIBarButtonItem!
     //PersonalRankCell
     let PersonalRankCellIdentifier = "PersonalRankCellIdentifier"
+    let advancedAnalysisSegue = "advancedAnalysisSegue"
+    let MenuTableViewCellIdentifier = "MenuTableViewCellIdentifier"
     var rank = [Rank](){
         didSet{
             self.tableView.reloadData()
