@@ -90,5 +90,101 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tk300HeroAssistant/Controller/AdvancedAnalysis/AdvancedAnalysisMainTableViewController.swift"
+            timestampString = "487272114.691433"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "alreadyLoadDetail()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x661f;&#x5c18;&#x76d2;&#x5b50;_for_300&#x82f1;&#x96c4;.AdvancedAnalysisMainTableViewController.alreadyLoadDetail () -&gt; ()"
+                  moduleName = "&#x661f;&#x5c18;&#x76d2;&#x5b50; for 300&#x82f1;&#x96c4;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wz/Develop/300HeroAssistant/Tk300HeroAssistant/Controller/AdvancedAnalysis/AdvancedAnalysisMainTableViewController.swift"
+                  timestampString = "487273068.539941"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x661f;&#x5c18;&#x76d2;&#x5b50;_for_300&#x82f1;&#x96c4;.AdvancedAnalysisMainTableViewController.(alreadyLoadDetail () -&gt; ()).(closure #1)"
+                  moduleName = "&#x661f;&#x5c18;&#x76d2;&#x5b50; for 300&#x82f1;&#x96c4;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wz/Develop/300HeroAssistant/Tk300HeroAssistant/Controller/AdvancedAnalysis/AdvancedAnalysisMainTableViewController.swift"
+                  timestampString = "487273068.540086"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tk300HeroAssistant/AdvancedAnalyzer/DataAnalyzer.swift"
+            timestampString = "487273067.430568"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "loadALlBattleDetail()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x661f;&#x5c18;&#x76d2;&#x5b50;_for_300&#x82f1;&#x96c4;.DataAnalyzer.(loadALlBattleDetail in _70EA21BE2CA3C993F7A3B4B26B017A73) () -&gt; ()"
+                  moduleName = "&#x661f;&#x5c18;&#x76d2;&#x5b50; for 300&#x82f1;&#x96c4;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wz/Develop/300HeroAssistant/Tk300HeroAssistant/AdvancedAnalyzer/DataAnalyzer.swift"
+                  timestampString = "487273068.544978"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "461">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x661f;&#x5c18;&#x76d2;&#x5b50;_for_300&#x82f1;&#x96c4;.DataAnalyzer.((loadALlBattleDetail in _70EA21BE2CA3C993F7A3B4B26B017A73) () -&gt; ()).(closure #1)"
+                  moduleName = "&#x661f;&#x5c18;&#x76d2;&#x5b50; for 300&#x82f1;&#x96c4;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wz/Develop/300HeroAssistant/Tk300HeroAssistant/AdvancedAnalyzer/DataAnalyzer.swift"
+                  timestampString = "487273068.54511"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

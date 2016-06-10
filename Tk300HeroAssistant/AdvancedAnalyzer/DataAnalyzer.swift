@@ -19,7 +19,13 @@ class DataAnalyzer {
         }
     }
     //详情列表
-    var battleDatailList = [Int:MatchDetail]()
+    var battleDatailList = [Int:MatchDetail](){
+        didSet{
+            if battleDatailList.count == battleList.count{
+                alreadyLoadDetail = true
+            }
+        }
+    }
     //战绩列表
     var battleList = [Int:List]()
     //是否已经读取列表
@@ -41,9 +47,9 @@ class DataAnalyzer {
             guard alreadyLoadDetail != oldValue else{return}
             if alreadyLoadDetail == true{
                 delegate?.alreadyLoadDetail?()
-                battleDatailList.forEach{print($0.1.match.matchDate)}
             }else{
                 heroBattle.removeAll()
+                friend.removeAll()
             }
         }
     }
@@ -64,9 +70,10 @@ class DataAnalyzer {
     
     //获取每一场的详情
     private func loadALlBattleDetail(){
-        print( "详情已读取\(battleList.count)条")
+        print( "列表已读取\(battleList.count)条")
         battleList.forEach {loadBattleData(id: $0.0)}
-        alreadyLoadDetail = true
+        print( "详情已读取\(battleDatailList.count)条")
+        //alreadyLoadDetail = true
     }
     /**
      获取战绩详情
@@ -75,7 +82,6 @@ class DataAnalyzer {
      */
     private func loadBattleData(id id:Int) {
         ServiceProxy.getMatchDetail(id) { (MatchDetail, error) in
-            guard error == nil else{return}
             self.battleDatailList[id] = MatchDetail
         }
     }
@@ -102,7 +108,7 @@ class DataAnalyzer {
     
     //开黑分析
     var friend = [Player:Int]()
-    func analysisFriend(){
+    func analysisFriend(compeltionHandle:([(Player,Int)])->Void){
         battleDatailList.forEach { (item) in
             var side = [MatchRole]()
             if item.1.match.winSide.map({ (role) -> String in
@@ -114,15 +120,17 @@ class DataAnalyzer {
             }
             side.map{Player($0)}.forEach({ (role) in
                 if (friend[role] == nil){
-                    friend[role] = 0
+                    friend[role] = 1
                 }else{
                     friend[role]! += 1
                 }
             })
         }
+        compeltionHandle(friend.map{($0.0,$0.1)}.sort{$0.1>$1.1}.filter{$0.0.playerName != userName })
     }
     
     //carry率
+    var carryRate = []
 }
 @objc
 protocol DataAnalyzerDelegate {

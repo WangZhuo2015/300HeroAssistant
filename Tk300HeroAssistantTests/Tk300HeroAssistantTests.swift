@@ -23,7 +23,6 @@ class Tk300HeroAssistantTests: XCTestCase {
     func testExample() {
         CSVDataManager.loadEquipData { (data) in
             XCTAssert(data.count != 0)
-            print(data)
         }
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

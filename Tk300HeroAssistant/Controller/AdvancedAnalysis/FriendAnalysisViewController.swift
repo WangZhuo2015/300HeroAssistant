@@ -1,5 +1,5 @@
 //
-//  HeroWinRateViewController.swift
+//  FriendAnalysisViewController.swift
 //  Tk300HeroAssistant
 //
 //  Created by 王卓 on 16/6/10.
@@ -8,18 +8,17 @@
 
 import UIKit
 
-class HeroWinRateViewController: UIViewController {
+class FriendAnalysisViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var data: [HeroWinRate]?
-    let HeroWinRateCellIdentifier = "HeroWinRateCellIdentifier"
+    var data: [(Player,Int)]?
+    let FriendAnalysisCellIdentifier = "FriendAnalysisCellIdentifier"
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         // Do any additional setup after loading the view.
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

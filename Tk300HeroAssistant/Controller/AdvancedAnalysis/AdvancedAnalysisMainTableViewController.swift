@@ -11,11 +11,14 @@ import UIKit
 class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyzerDelegate {
 
     var dataAnalyzer = DataAnalyzer()
-    let HeroWinRateSegue: String = "HeroWinRateSegue"
+    let HeroWinRateSegue = "HeroWinRateSegue"
+    let friendAnalysisSegue = "friendAnalysisSegue"
     var heroBattle: [HeroWinRate]?
+    var friend:[(Player,Int)]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView()
         dataAnalyzer.userName = User.sharedUser.userName ?? ""
         dataAnalyzer.delegate = self
         
@@ -27,11 +30,12 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
     }
     
     func alreadyLoadList() {
+        dataAnalyzer.calculateHeroWinRate { self.heroBattle = $0 }
         tableView.reloadData()
     }
     func alreadyLoadDetail() {
         tableView.reloadData()
-        dataAnalyzer.calculateHeroWinRate { self.heroBattle = $0 }
+        dataAnalyzer.analysisFriend{ self.friend = $0 }
     }
 
     override func didReceiveMemoryWarning() {
@@ -103,6 +107,9 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
         case HeroWinRateSegue:
             let viewController = segue.destinationViewController as! HeroWinRateViewController
             viewController.data = self.heroBattle ?? []
+        case friendAnalysisSegue:
+            let viewController = segue.destinationViewController as! FriendAnalysisViewController
+            viewController.data = self.friend ?? []
         default:
             break
         }
