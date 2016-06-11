@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-class MainViewController: UITabBarController {
+import StoreKit
+class MainViewController: UITabBarController,SKStoreProductViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +17,12 @@ class MainViewController: UITabBarController {
             self.selectedIndex = (self.viewControllers?.count)! - 1
         }
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if useCounter() > 5 && !isEvaluated(){
+            reviewThisApp()
+        }
     }
     
     func loadAllViewController(){
@@ -67,13 +73,50 @@ class MainViewController: UITabBarController {
         self.selectedIndex = 0
     }
 
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func isEvaluated()->Bool{
+        return NSUserDefaults.standardUserDefaults().boolForKey("haveEvaluated")
     }
     
-
+    func reviewThisApp(){
+        let alert = UIAlertController(title: "App评价", message: "喜欢这款App吗?来评价一下吧!", preferredStyle: .Alert)
+        let goToEvaluate = UIAlertAction(title: "去评价", style: .Default) { (action) in
+            self.evaluate()
+        }
+        let cancel = UIAlertAction(title: "取消", style: .Cancel,handler: nil)
+        alert.addAction(goToEvaluate)
+        alert.addAction(cancel)
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func useCounter()->Int{
+        var count = NSUserDefaults.standardUserDefaults().integerForKey("useCount")
+        count += 1
+        NSUserDefaults.standardUserDefaults().setInteger(count, forKey: "useCount")
+        print("App已使用\(count)次")
+        return count
+    }
+    
+    func evaluate(){
+        //初始化控制器
+        let storeProductViewContorller = SKStoreProductViewController()
+        //设置代理请求为当前控制器本身
+        storeProductViewContorller.delegate = self
+        //加载一个新的视图展示
+        storeProductViewContorller.loadProductWithParameters([SKStoreProductParameterITunesItemIdentifier:"1114391519"]) { (result,error) in
+            if error != nil{
+                print(error)
+            }else{
+                //模态弹出appstore
+                self.presentViewController(storeProductViewContorller, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    
+    func productViewControllerDidFinish(viewController: SKStoreProductViewController) {
+        loadAllViewController()
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "haveEvaluated")
+    }
     /*
     // MARK: - Navigation
 
