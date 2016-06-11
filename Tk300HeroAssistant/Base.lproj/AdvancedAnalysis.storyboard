@@ -296,19 +296,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kqd-eF-fB6">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="36" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kqd-eF-fB6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendAnalysisCellIdentifier" id="PQi-tJ-ZiQ" customClass="FriendAnalysisTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="72" width="320" height="36"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PQi-tJ-ZiQ" id="abP-IW-hb7">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q40-Zc-GXf">
-                                                    <rect key="frame" x="8" y="8" width="304" height="28"/>
+                                                    <rect key="frame" x="8" y="4" width="304" height="28"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cn-fG-yDg">
                                                             <rect key="frame" x="8" y="4" width="43" height="21"/>
@@ -334,8 +334,8 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="Q40-Zc-GXf" firstAttribute="top" secondItem="abP-IW-hb7" secondAttribute="topMargin" id="2b1-lT-Mgn"/>
-                                                <constraint firstItem="Q40-Zc-GXf" firstAttribute="bottom" secondItem="abP-IW-hb7" secondAttribute="bottomMargin" id="KBP-bD-39Q"/>
+                                                <constraint firstItem="Q40-Zc-GXf" firstAttribute="top" secondItem="abP-IW-hb7" secondAttribute="topMargin" constant="-4" id="2b1-lT-Mgn"/>
+                                                <constraint firstItem="Q40-Zc-GXf" firstAttribute="bottom" secondItem="abP-IW-hb7" secondAttribute="bottomMargin" constant="4" id="KBP-bD-39Q"/>
                                                 <constraint firstItem="Q40-Zc-GXf" firstAttribute="leading" secondItem="abP-IW-hb7" secondAttribute="leadingMargin" id="MVL-kA-2HO"/>
                                                 <constraint firstItem="Q40-Zc-GXf" firstAttribute="trailing" secondItem="abP-IW-hb7" secondAttribute="trailingMargin" id="h5Q-Ym-mKD"/>
                                             </constraints>

@@ -22,7 +22,7 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
             break
         }
         let cell = tableView.dequeueReusableCellWithIdentifier(PersonalRankCellIdentifier) as! PersonalRankTableViewCell
-        cell.setCellContent(rank[indexPath.row])
+        cell.setCellContent(rank[indexPath.row - 1])
         return cell
     }
     

@@ -23,6 +23,11 @@ class SkillInfoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var skillInfoLabel: UILabel!
     
+    @IBOutlet weak var magicTitleLabel: UILabel!
+    
+    @IBOutlet weak var coolingTitleLabel: UILabel!
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -42,19 +47,36 @@ class SkillInfoTableViewCell: UITableViewCell {
         if skillImage.image == nil {
             print("不存在的图片\("hero-" + heroID + (data.name ?? "")))")
         }
+        
         if data.快捷键 == "被动"{
-            skillMagicUseLabel.snp_makeConstraints(closure: { (make) in
-                make.height.equalTo(0)
-            })
-            coolingTimeLabel.snp_makeConstraints(closure: { (make) in
-                make.height.equalTo(0)
-            })
+            setLayout(true)
+        }else{
+            setLayout(false)
         }
         self.layoutIfNeeded()
         skillNameLabel.text = data.name
         coolingTimeLabel.text = data.冷却时间
         skillMagicUseLabel.text = data.技能消耗
-        skillKeyLabel.text = data.快捷键
+        skillKeyLabel.text = "  \(data.快捷键!)  "
         skillInfoLabel.text = data.Information
+    }
+    
+    func setLayout(hide:Bool){
+        skillMagicUseLabel.hidden = hide
+        coolingTimeLabel.hidden = hide
+        magicTitleLabel.hidden = hide
+        coolingTitleLabel.hidden = hide
+        magicTitleLabel.snp_updateConstraints(closure: { (make) in
+            make.height.equalTo(hide ? 0 : 24)
+        })
+        coolingTitleLabel.snp_updateConstraints(closure: { (make) in
+            make.height.equalTo(hide ? 0 : 24)
+        })
+        skillMagicUseLabel.snp_updateConstraints(closure: { (make) in
+            make.height.equalTo(hide ? 0 : 24)
+        })
+        coolingTimeLabel.snp_updateConstraints(closure: { (make) in
+            make.height.equalTo(hide ? 0 : 24)
+        })
     }
 }
