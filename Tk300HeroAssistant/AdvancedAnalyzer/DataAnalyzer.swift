@@ -62,6 +62,10 @@ class DataAnalyzer {
         alreadyLoadList = false
         alreadyLoadDetail = false
         ServiceProxy.getBattleList(userName ?? "", index: battleList.count) { (MatchBasicAPIBase, error) in
+            guard error == nil else{
+                self.delegate?.errorOccurpty?()
+                return
+            }
             MatchBasicAPIBase?.list.forEach{self.battleList[$0.matchID] = $0}
             if MatchBasicAPIBase?.list.count != 0{self.loadListData()}
             else{ self.alreadyLoadList = true }
@@ -82,6 +86,11 @@ class DataAnalyzer {
      */
     private func loadBattleData(id id:Int) {
         ServiceProxy.getMatchDetail(id) { (MatchDetail, error) in
+            error.debugDescription
+            guard error == nil else{
+                self.delegate?.errorOccurpty?()
+                return
+            }
             self.battleDatailList[id] = MatchDetail
         }
     }
@@ -136,6 +145,7 @@ class DataAnalyzer {
 protocol DataAnalyzerDelegate {
     optional func alreadyLoadDetail()
     optional func alreadyLoadList()
+    optional func errorOccurpty()
 }
 
 

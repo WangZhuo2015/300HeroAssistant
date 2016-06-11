@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import AVOSCloud
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,10 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             CSVDataManager.sharedInstance.loadHeroData{_ in }
             CSVDataManager.sharedInstance.loadSkillData{_ in }
         }
-        //初始化LeanCloud
-        // applicationId 即 App Id，clientKey 是 App Key。
-//        AVOSCloud.setApplicationId("vVdcroPswvf8ye5ha57yIoQL-gzGzoHsz", clientKey: "LYYA7TRfLU9CfmRYQ0v4BmP7")
-//        AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         //导航栏颜色
         UINavigationBar.appearance().barTintColor = UIColor(red: 9.2/255, green: 52.5/255, blue: 73.6/255, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor ( red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0 )

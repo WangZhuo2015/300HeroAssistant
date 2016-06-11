@@ -390,7 +390,7 @@
                                                         <constraint firstAttribute="width" secondItem="V2a-WD-W7s" secondAttribute="height" multiplier="1:1" id="Hv0-sA-eGL"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="技能名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPn-Bt-C3h">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="技能名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="dPn-Bt-C3h">
                                                     <rect key="frame" x="116" y="17" width="60" height="28"/>
                                                     <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -416,7 +416,7 @@
                                                 <constraint firstItem="IIN-xM-cAU" firstAttribute="leading" secondItem="V2a-WD-W7s" secondAttribute="trailing" constant="8" id="Iro-Eq-j8v"/>
                                                 <constraint firstItem="V2a-WD-W7s" firstAttribute="top" secondItem="odW-nO-E9k" secondAttribute="topMargin" constant="8" id="Odk-6B-TaC"/>
                                                 <constraint firstItem="YG2-rH-x6k" firstAttribute="centerY" secondItem="agM-Dl-Vxa" secondAttribute="centerY" id="OlQ-WL-6St"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="YG2-rH-x6k" secondAttribute="trailing" id="R1h-wi-EPV"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="YG2-rH-x6k" secondAttribute="trailing" constant="8" id="R1h-wi-EPV"/>
                                                 <constraint firstItem="EcM-Y3-hLQ" firstAttribute="top" secondItem="agM-Dl-Vxa" secondAttribute="bottom" constant="8" id="VJ9-JK-Zmu"/>
                                                 <constraint firstItem="9SS-CA-Jgv" firstAttribute="leading" secondItem="EcM-Y3-hLQ" secondAttribute="trailing" constant="8" id="avD-Zf-agI"/>
                                                 <constraint firstItem="sWi-xa-FoD" firstAttribute="leading" secondItem="odW-nO-E9k" secondAttribute="leadingMargin" id="cWL-gO-C6U"/>
@@ -424,6 +424,7 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="sWi-xa-FoD" secondAttribute="bottom" constant="8" id="gtt-wA-9zM"/>
                                                 <constraint firstItem="V2a-WD-W7s" firstAttribute="leading" secondItem="odW-nO-E9k" secondAttribute="leadingMargin" id="j9X-eM-Mg0"/>
                                                 <constraint firstItem="9SS-CA-Jgv" firstAttribute="centerY" secondItem="EcM-Y3-hLQ" secondAttribute="centerY" id="lg8-UI-2dE"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="dPn-Bt-C3h" secondAttribute="trailing" constant="8" id="rUW-uE-wjC"/>
                                                 <constraint firstItem="agM-Dl-Vxa" firstAttribute="leading" secondItem="V2a-WD-W7s" secondAttribute="trailing" constant="8" id="rlq-o4-aQn"/>
                                                 <constraint firstItem="sWi-xa-FoD" firstAttribute="trailing" secondItem="odW-nO-E9k" secondAttribute="trailingMargin" id="sPZ-n1-i3G"/>
                                                 <constraint firstItem="dPn-Bt-C3h" firstAttribute="leading" secondItem="IIN-xM-cAU" secondAttribute="trailing" constant="8" id="so5-wT-ghO"/>

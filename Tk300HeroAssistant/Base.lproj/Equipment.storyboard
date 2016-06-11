@@ -138,7 +138,7 @@
         <!--Equipment Detail View Controller-->
         <scene sceneID="XLK-rF-a8j">
             <objects>
-                <viewController id="4gZ-ex-XUd" customClass="EquipmentDetailViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EquipmentDetailViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4gZ-ex-XUd" customClass="EquipmentDetailViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ku7-du-qlK"/>
                         <viewControllerLayoutGuide type="bottom" id="Gh8-4u-9vg"/>

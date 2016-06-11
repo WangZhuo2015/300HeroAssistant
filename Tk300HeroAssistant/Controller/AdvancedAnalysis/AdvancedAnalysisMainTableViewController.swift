@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import PKHUD
 class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyzerDelegate {
 
     var dataAnalyzer = DataAnalyzer()
@@ -22,20 +22,40 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
         dataAnalyzer.userName = User.sharedUser.userName ?? ""
         dataAnalyzer.delegate = self
         
+        
+        setHUD(titleLabelText: nil, subtitleLabelText: nil)
+        PKHUD.sharedHUD.show()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    func setHUD(titleLabelText titleLabelText:String?,subtitleLabelText:String?){
+        let view = PKHUDProgressView()
+        view.titleLabel.text = titleLabelText ?? "数据获取中"
+        view.subtitleLabel.text = subtitleLabelText ?? "正在获取比赛列表"
+        PKHUD.sharedHUD.contentView = view
+    }
+    
     
     func alreadyLoadList() {
         dataAnalyzer.calculateHeroWinRate { self.heroBattle = $0 }
+        setHUD(titleLabelText: nil, subtitleLabelText: "正在获取比赛详情")
         tableView.reloadData()
     }
     func alreadyLoadDetail() {
         tableView.reloadData()
-        dataAnalyzer.analysisFriend{ self.friend = $0 }
+        dataAnalyzer.analysisFriend{
+            self.friend = $0
+            PKHUD.sharedHUD.hide(animated: true, completion: nil)
+            HUD.flash(.Success, delay: 0)
+        }
+    }
+    func errorOccurpty() {
+        HUD.flash(.LabeledError(title: "错误", subtitle: "网络异常"), delay: 0) { (animated) in
+            self.navigationController?.popViewControllerAnimated(animated)
+        }
     }
 
     override func didReceiveMemoryWarning() {
