@@ -65,7 +65,7 @@ class EquipmentDetailViewController: UIViewController {
 
     func setContent(equipmentData:EquipmentData){
         equipmentImage.image = UIImage(named: equipmentData.id!)
-        equipmentName.text = equipmentData.name
+        equipmentName.text = " \(equipmentData.name!) "
         equipmentAttributeLabel.text = equipmentData.属性
         equipmentSkillLabel.text = equipmentData.装备技能
         equipmentPriceLabel.text = equipmentData.售价

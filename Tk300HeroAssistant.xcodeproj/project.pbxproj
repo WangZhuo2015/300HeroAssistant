@@ -84,12 +84,6 @@
 		35FBA6001CDF4E5C00A527B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */; };
 		35FBA6031CDF4E5C00A527B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA6011CDF4E5C00A527B4 /* LaunchScreen.storyboard */; };
 		35FBA60B1CDF4EA800A527B4 /* openapi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA60A1CDF4EA800A527B4 /* openapi.txt */; };
-		35FBA6131CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA60D1CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift */; };
-		35FBA6141CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA60E1CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift */; };
-		35FBA6151CDF51B100A527B4 /* DGElasticPullToRefreshLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA60F1CDF51B100A527B4 /* DGElasticPullToRefreshLoadingView.swift */; };
-		35FBA6161CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA6101CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift */; };
-		35FBA6171CDF51B100A527B4 /* DGElasticPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA6111CDF51B100A527B4 /* DGElasticPullToRefreshView.swift */; };
-		35FBA6181CDF51B100A527B4 /* DGRunkeeperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA6121CDF51B100A527B4 /* DGRunkeeperSwitch.swift */; };
 		35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA61B1CDF51BF00A527B4 /* NirKxMenu.m */; };
 		35FBA6201CDF523C00A527B4 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA61E1CDF523C00A527B4 /* HttpClient.swift */; };
 		35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA61F1CDF523C00A527B4 /* ServiceProxy.swift */; };
@@ -188,12 +182,6 @@
 		35FBA6021CDF4E5C00A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35FBA6041CDF4E5C00A527B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35FBA60A1CDF4EA800A527B4 /* openapi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = openapi.txt; path = ../openapi.txt; sourceTree = "<group>"; };
-		35FBA60D1CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshConstants.swift; sourceTree = "<group>"; };
-		35FBA60E1CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshExtensions.swift; sourceTree = "<group>"; };
-		35FBA60F1CDF51B100A527B4 /* DGElasticPullToRefreshLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingView.swift; sourceTree = "<group>"; };
-		35FBA6101CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingViewCircle.swift; sourceTree = "<group>"; };
-		35FBA6111CDF51B100A527B4 /* DGElasticPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshView.swift; sourceTree = "<group>"; };
-		35FBA6121CDF51B100A527B4 /* DGRunkeeperSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGRunkeeperSwitch.swift; sourceTree = "<group>"; };
 		35FBA61A1CDF51BF00A527B4 /* NirKxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NirKxMenu.h; sourceTree = "<group>"; };
 		35FBA61B1CDF51BF00A527B4 /* NirKxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NirKxMenu.m; sourceTree = "<group>"; };
 		35FBA61E1CDF523C00A527B4 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
@@ -267,6 +255,7 @@
 				354BC70B1CFD5233001E046C /* EquipmentViewController.swift */,
 				354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */,
 				354BC7511CFDBB65001E046C /* EquipmentCollectionViewCell.swift */,
+				358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */,
 				351112541D051E6D004C58AF /* 装备详情 */,
 			);
 			name = "装备数据";
@@ -276,7 +265,6 @@
 			isa = PBXGroup;
 			children = (
 				354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */,
-				358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */,
 			);
 			name = "装备详情";
 			sourceTree = "<group>";
@@ -346,6 +334,7 @@
 		35401A6D1CE839C800F0EDE2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				35FBA6221CDF523F00A527B4 /* 3rd */,
 				35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */,
 				3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */,
 				35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */,
@@ -493,19 +482,6 @@
 			path = Tk300HeroAssistant;
 			sourceTree = "<group>";
 		};
-		35FBA60C1CDF51B100A527B4 /* DGElasticPullToRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				35FBA60D1CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift */,
-				35FBA60E1CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift */,
-				35FBA60F1CDF51B100A527B4 /* DGElasticPullToRefreshLoadingView.swift */,
-				35FBA6101CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift */,
-				35FBA6111CDF51B100A527B4 /* DGElasticPullToRefreshView.swift */,
-				35FBA6121CDF51B100A527B4 /* DGRunkeeperSwitch.swift */,
-			);
-			path = DGElasticPullToRefresh;
-			sourceTree = "<group>";
-		};
 		35FBA6191CDF51BF00A527B4 /* NirKxMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,7 +505,6 @@
 			isa = PBXGroup;
 			children = (
 				35FBA6191CDF51BF00A527B4 /* NirKxMenu */,
-				35FBA60C1CDF51B100A527B4 /* DGElasticPullToRefresh */,
 			);
 			name = 3rd;
 			sourceTree = "<group>";
@@ -572,7 +547,6 @@
 			children = (
 				35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */,
 				35FBA6381CDF708900A527B4 /* MainViewController.swift */,
-				35FBA6221CDF523F00A527B4 /* 3rd */,
 				3517D6D41CE0DE4F006162BA /* 个人战绩 */,
 				3517D6D61CE0DE73006162BA /* 个人信息 */,
 				3517D6D51CE0DE60006162BA /* 英雄数据 */,
@@ -842,13 +816,11 @@
 				3540E9351D0AEE6D00E0FB66 /* HeroWinRateDataSource.swift in Sources */,
 				35FBA6201CDF523C00A527B4 /* HttpClient.swift in Sources */,
 				35CB9EE21CEC55120007C47C /* HeroDetailViewController.swift in Sources */,
-				35FBA6181CDF51B100A527B4 /* DGRunkeeperSwitch.swift in Sources */,
 				356F9CD21D07FAF00036E8D2 /* DataAnalyzer.swift in Sources */,
 				3517D6FE1CE0EA70006162BA /* Match.swift in Sources */,
 				3517D7091CE0EE5F006162BA /* Hero.swift in Sources */,
 				35401A6A1CE830DA00F0EDE2 /* Global.swift in Sources */,
 				35011C601CE03BCC004F7913 /* MainNavigationViewController.swift in Sources */,
-				35FBA6141CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift in Sources */,
 				35CB9EE61CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift in Sources */,
 				354BC7541CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift in Sources */,
 				3517D6FD1CE0EA70006162BA /* MatchRole.swift in Sources */,
@@ -872,7 +844,6 @@
 				350CCEE01CEAE30500D082EB /* EquipCombineData.swift in Sources */,
 				35FBA63F1CDF714A00A527B4 /* MatchViewController.swift in Sources */,
 				35FBA63B1CDF711800A527B4 /* PersonalInfoViewController.swift in Sources */,
-				35FBA6131CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift in Sources */,
 				3517D70A1CE0EE5F006162BA /* List.swift in Sources */,
 				35BCF7581CE8C8F900E30907 /* HeroTableViewDataSource.swift in Sources */,
 				358B36E21CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift in Sources */,
@@ -884,9 +855,7 @@
 				3540E93E1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift in Sources */,
 				35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */,
 				35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */,
-				35FBA6161CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
 				354BC7141CFD534F001E046C /* EquipmentData.swift in Sources */,
-				35FBA6171CDF51B100A527B4 /* DGElasticPullToRefreshView.swift in Sources */,
 				3540E92C1D0AEB0900E0FB66 /* AdvancedAnalysisViewController.swift in Sources */,
 				350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */,
 				3509932E1CEF11E70079C7E3 /* HeroCollectionViewCell.swift in Sources */,
@@ -899,7 +868,6 @@
 				35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */,
 				35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */,
 				35FBA63D1CDF712E00A527B4 /* HeroViewController.swift in Sources */,
-				35FBA6151CDF51B100A527B4 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

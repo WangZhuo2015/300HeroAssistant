@@ -57,6 +57,14 @@ class EquipmentViewController: UIViewController {
         }
     }
 
+    override func viewDidAppear(animated: Bool) {
+        searchBar.snp_updateConstraints(closure: { (make) in
+            searchBarHidden ? make.top.equalTo((self.navigationController?.navigationBar.snp_bottom)!).offset(-44) : make.top.equalTo((self.navigationController?.navigationBar.snp_bottom)!).offset(0)
+        })
+        searchBar.setNeedsLayout()
+        searchBar.layoutIfNeeded()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
