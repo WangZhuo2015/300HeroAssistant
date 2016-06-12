@@ -20,7 +20,7 @@ class MainViewController: UITabBarController,SKStoreProductViewControllerDelegat
     }
     
     override func viewDidAppear(animated: Bool) {
-        if useCounter() > 5 && !isEvaluated(){
+        if AppManager.appUseCountUp() > 5 && !AppManager.isEvaluated(){
             reviewThisApp()
         }
     }
@@ -73,28 +73,24 @@ class MainViewController: UITabBarController,SKStoreProductViewControllerDelegat
         self.selectedIndex = 0
     }
 
-    func isEvaluated()->Bool{
-        return NSUserDefaults.standardUserDefaults().boolForKey("haveEvaluated")
-    }
+    
     
     func reviewThisApp(){
-        let alert = UIAlertController(title: "App评价", message: "喜欢这款App吗?来评价一下吧!", preferredStyle: .Alert)
-        let goToEvaluate = UIAlertAction(title: "去评价", style: .Default) { (action) in
+        let alert = UIAlertController(title: "快来评价吧ヽ(･ω･｡)ﾉ", message: "喜欢这款App吗?来评价一下吧!", preferredStyle: .Alert)
+        let goToEvaluate = UIAlertAction(title: "去评价*~(￣▽￣)~*", style: .Default) { (action) in
             self.evaluate()
         }
-        let cancel = UIAlertAction(title: "取消", style: .Cancel,handler: nil)
+        let refuse = UIAlertAction(title: "残忍地拒绝( •̥́ ˍ •̀)", style: .Default) { (action) in
+            AppManager.evaluated()
+        }
+        let cancel = UIAlertAction(title: "以后再说", style: .Cancel,handler: nil)
         alert.addAction(goToEvaluate)
+        alert.addAction(refuse)
         alert.addAction(cancel)
         presentViewController(alert, animated: true, completion: nil)
     }
     
-    func useCounter()->Int{
-        var count = NSUserDefaults.standardUserDefaults().integerForKey("useCount")
-        count += 1
-        NSUserDefaults.standardUserDefaults().setInteger(count, forKey: "useCount")
-        print("App已使用\(count)次")
-        return count
-    }
+
     
     func evaluate(){
         //初始化控制器
@@ -115,7 +111,7 @@ class MainViewController: UITabBarController,SKStoreProductViewControllerDelegat
     
     func productViewControllerDidFinish(viewController: SKStoreProductViewController) {
         loadAllViewController()
-        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "haveEvaluated")
+        AppManager.evaluated()
     }
     /*
     // MARK: - Navigation

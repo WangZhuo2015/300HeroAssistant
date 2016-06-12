@@ -45,11 +45,11 @@ class EquipmentDetailViewController: UIViewController {
         if currentEquipment?.进阶物品id == nil {combineLabel.hidden = true}
         if currentEquipment?.所需物品id == nil {subEquipmentLabel.hidden = true}
         combineScrollView.didSelectItem = { index in
-            let storyBoard = UIStoryboard(name: "Equipment", bundle: NSBundle.mainBundle())
-            let equipmentDetailVC = storyBoard.instantiateViewControllerWithIdentifier("EquipmentDetailViewControllerID") as! EquipmentDetailViewController
-            equipmentDetailVC.setContent(CSVDataManager.sharedInstance.getEquipmentInfoByID(index)!)
-            equipmentDetailVC.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "返回全部装备", style: .Plain, target: self, action: #selector(EquipmentDetailViewController.popToRoot))
-            self.navigationController?.pushViewController(equipmentDetailVC, animated: true)
+//            let storyBoard = UIStoryboard(name: "Equipment", bundle: NSBundle.mainBundle())
+//            let equipmentDetailVC = storyBoard.instantiateViewControllerWithIdentifier("EquipmentDetailViewControllerID") as! EquipmentDetailViewController
+//            equipmentDetailVC.setContent(CSVDataManager.sharedInstance.getEquipmentInfoByID(index)!)
+//            equipmentDetailVC.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "返回全部装备", style: .Plain, target: self, action: #selector(EquipmentDetailViewController.popToRoot))
+//            self.navigationController?.pushViewController(equipmentDetailVC, animated: true)
         }
         // Do any additional setup after loading the view.
     }

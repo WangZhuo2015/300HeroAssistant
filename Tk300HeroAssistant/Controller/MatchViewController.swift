@@ -84,6 +84,10 @@ class MatchViewController: UIViewController {
     
     func userChange(){
         self.navigationController?.popToRootViewControllerAnimated(false)
+        let name = UIBarButtonItem(title: "  " + (User.sharedUser.userName ?? ""), style: .Done, target: nil, action: nil)
+        name.tintColor = UIColor.whiteColor()
+        name.enabled = false
+        navigationItem.leftBarButtonItem = name
         loadMatchList(loadMore: false)
     }
 

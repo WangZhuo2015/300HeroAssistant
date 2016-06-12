@@ -37,8 +37,6 @@ class DataAnalyzer {
                 loadALlBattleDetail()
             }else{
                 battleDatailList.removeAll()
-                heroBattle.removeAll()
-                friend.removeAll()
             }
         }
     }
@@ -47,9 +45,6 @@ class DataAnalyzer {
             guard alreadyLoadDetail != oldValue else{return}
             if alreadyLoadDetail == true{
                 delegate?.alreadyLoadDetail?()
-            }else{
-                heroBattle.removeAll()
-                friend.removeAll()
             }
         }
     }
@@ -96,10 +91,13 @@ class DataAnalyzer {
     }
     
     
-    //英雄胜率
-
-    var heroBattle = [Int:HeroWinRate]()
+    /**
+     英雄胜率
+     
+     - parameter compeltionHandle: 回调函数
+     */
     func calculateHeroWinRate(compeltionHandle:([HeroWinRate])->Void){
+        var heroBattle = [Int:HeroWinRate]()
         battleList.forEach { (item) in
             if heroBattle[item.1.hero.iD] == nil{
                 heroBattle[item.1.hero.iD] = HeroWinRate(hero: item.1.hero, win: 0, lose: 0, count: 0)
@@ -116,8 +114,8 @@ class DataAnalyzer {
     }
     
     //开黑分析
-    var friend = [Player:Int]()
     func analysisFriend(compeltionHandle:([(Player,Int)])->Void){
+        var friend = [Player:Int]()
         battleDatailList.forEach { (item) in
             var side = [MatchRole]()
             if item.1.match.winSide.map({ (role) -> String in
@@ -139,7 +137,29 @@ class DataAnalyzer {
     }
     
     //carry率
-    var carryRate = []
+    
+    func carryRateAnalysis(compeltionHandle:(match:[Match],carry:Int,all:Int)->Void){
+        //carry场数
+        var carry = 0
+        var carryMatch = [Match]()
+        battleDatailList.forEach { (item) in
+            var side = [MatchRole]()
+            if item.1.match.winSide.map({ (role) -> String in
+                return role.roleName
+            }).contains(userName){
+                side.appendContentsOf(item.1.match.winSide)
+            }else{
+                side.appendContentsOf(item.1.match.loseSide)
+            }
+            side.sortInPlace{ $0.kDA > $1.kDA }
+            
+            if side[0].roleName == userName{
+                carry += 1
+                carryMatch.append(item.1.match)
+            }
+        }
+        compeltionHandle(match: carryMatch,carry: carry,all: battleDatailList.count)
+    }
 }
 @objc
 protocol DataAnalyzerDelegate {

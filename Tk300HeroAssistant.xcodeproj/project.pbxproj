@@ -28,6 +28,7 @@
 		3517D70B1CE0EE5F006162BA /* MatchBasicAPIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D7081CE0EE5F006162BA /* MatchBasicAPIBase.swift */; };
 		3517D70D1CE0F2FA006162BA /* MatchTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D70C1CE0F2FA006162BA /* MatchTableViewDataSource.swift */; };
 		3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D70E1CE0F38D006162BA /* MatchBasicTableViewCell.swift */; };
+		351910641D0DCD0300FB0F0C /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351910631D0DCD0300FB0F0C /* AppManager.swift */; };
 		35401A6A1CE830DA00F0EDE2 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A691CE830D900F0EDE2 /* Global.swift */; };
 		35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */; };
 		35401A6F1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */; };
@@ -62,6 +63,7 @@
 		355306EA1D0428A500065CDA /* HorizontalMenuScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355306E91D0428A500065CDA /* HorizontalMenuScrollView.swift */; };
 		356015341D0B2B5F006467E4 /* FriendAnalysisDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356015331D0B2B5F006467E4 /* FriendAnalysisDataSource.swift */; };
 		356F9CD21D07FAF00036E8D2 /* DataAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F9CD11D07FAF00036E8D2 /* DataAnalyzer.swift */; };
+		357758F71D0BF68B00CB0E55 /* IAPPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357758F61D0BF68B00CB0E55 /* IAPPart.swift */; };
 		358B36E21CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */; };
 		35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */; };
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
@@ -131,6 +133,7 @@
 		3517D7081CE0EE5F006162BA /* MatchBasicAPIBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchBasicAPIBase.swift; path = Tk300HeroAssistant/Model/Match/MatchBasicAPIBase.swift; sourceTree = SOURCE_ROOT; };
 		3517D70C1CE0F2FA006162BA /* MatchTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchTableViewDataSource.swift; path = Controller/MatchTableViewDataSource.swift; sourceTree = "<group>"; };
 		3517D70E1CE0F38D006162BA /* MatchBasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchBasicTableViewCell.swift; path = Cells/MatchBasicTableViewCell.swift; sourceTree = "<group>"; };
+		351910631D0DCD0300FB0F0C /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppManager.swift; path = Tk300HeroAssistant/Model/AppManager.swift; sourceTree = SOURCE_ROOT; };
 		35401A691CE830D900F0EDE2 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Tk300HeroAssistant/Model/Global.swift; sourceTree = SOURCE_ROOT; };
 		35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewExtension.swift; path = Extension/TableViewExtension.swift; sourceTree = "<group>"; };
 		35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableViewNetErrorDataSource.swift; path = Tools/UITableViewNetErrorDataSource.swift; sourceTree = "<group>"; };
@@ -158,6 +161,7 @@
 		355306E91D0428A500065CDA /* HorizontalMenuScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalMenuScrollView.swift; path = View/HorizontalMenuScrollView.swift; sourceTree = "<group>"; };
 		356015331D0B2B5F006467E4 /* FriendAnalysisDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendAnalysisDataSource.swift; path = Controller/AdvancedAnalysis/FriendAnalysisDataSource.swift; sourceTree = "<group>"; };
 		356F9CD11D07FAF00036E8D2 /* DataAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataAnalyzer.swift; path = Tk300HeroAssistant/AdvancedAnalyzer/DataAnalyzer.swift; sourceTree = SOURCE_ROOT; };
+		357758F61D0BF68B00CB0E55 /* IAPPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IAPPart.swift; path = Controller/AdvancedAnalysis/IAPPart.swift; sourceTree = "<group>"; };
 		358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentSearchBarDelegate.swift; path = Controller/EquipmentSearchBarDelegate.swift; sourceTree = "<group>"; };
 		35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchHeaderView.swift; path = Cells/MatchHeaderView.swift; sourceTree = "<group>"; };
 		35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = Cells/HeroTableViewCell.swift; sourceTree = "<group>"; };
@@ -372,6 +376,7 @@
 				35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift */,
 				35E9D02D1CF96F68004170BE /* userAccountTableViewCell.swift */,
 				3540E9371D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift */,
+				357758F61D0BF68B00CB0E55 /* IAPPart.swift */,
 			);
 			name = "基本";
 			sourceTree = "<group>";
@@ -523,6 +528,7 @@
 				35011C5E1CE03616004F7913 /* Rank */,
 				35011C5D1CE03605004F7913 /* Player */,
 				35401A691CE830D900F0EDE2 /* Global.swift */,
+				351910631D0DCD0300FB0F0C /* AppManager.swift */,
 			);
 			name = Model;
 			path = Network;
@@ -811,6 +817,7 @@
 				3540E93C1D0B15C000E0FB66 /* FriendAnalysisViewController.swift in Sources */,
 				35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */,
 				3540E9331D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift in Sources */,
+				351910641D0DCD0300FB0F0C /* AppManager.swift in Sources */,
 				3517D6FC1CE0EA70006162BA /* Item.swift in Sources */,
 				3517D7031CE0EDE9006162BA /* Rank.swift in Sources */,
 				3540E9351D0AEE6D00E0FB66 /* HeroWinRateDataSource.swift in Sources */,
@@ -830,6 +837,7 @@
 				35DCA5CC1CE567730037577B /* PersonalRankTableViewCell.swift in Sources */,
 				3540E92E1D0AEBE700E0FB66 /* AdvancedAnalysisMainTableViewController.swift in Sources */,
 				35401A6F1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift in Sources */,
+				357758F71D0BF68B00CB0E55 /* IAPPart.swift in Sources */,
 				3509932C1CEF116D0079C7E3 /* CollectionViewExtension.swift in Sources */,
 				3516C7CD1CE640F3005BF4D8 /* FriendAnalyzer.swift in Sources */,
 				35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */,

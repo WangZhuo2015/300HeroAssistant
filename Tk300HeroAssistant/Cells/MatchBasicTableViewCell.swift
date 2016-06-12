@@ -51,7 +51,7 @@ class MatchBasicTableViewCell: UITableViewCell {
     func setContent(matchBasic:List){
         self.matchImage.kf_setImageWithURL(NSURL(string: "http://300report.jumpw.com/static/images/"+matchBasic.hero.iconFile)!)
 //        self.heroName.text = matchBasic.hero.name
-        self.playerName.text = User.sharedUser.userName
+        self.playerName.text = matchBasic.hero.name//User.sharedUser.userName
         self.matchDate.text = matchBasic.matchDate
         self.matchResult.text = matchResToStr(matchBasic.result)
         let color = matchResToColor(matchBasic.result)

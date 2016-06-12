@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import StoreKit
 class PersonalInfoViewController: UIViewController {
 
     //@IBOutlet weak var roleNameLabel: UILabel!
@@ -33,6 +33,13 @@ class PersonalInfoViewController: UIViewController {
     let PersonalRankCellIdentifier = "PersonalRankCellIdentifier"
     let advancedAnalysisSegue = "advancedAnalysisSegue"
     let MenuTableViewCellIdentifier = "MenuTableViewCellIdentifier"
+    
+    /// App内购
+    
+    let VERIFY_RECEIPT_URL = "https://buy.itunes.apple.com/verifyReceipt"
+    let ITMS_SANDBOX_VERIFY_RECEIPT_URL = "https://sandbox.itunes.apple.com/verifyReceipt"
+    var productDict:NSMutableDictionary!
+    let productID = "00001"
     var rank = [Rank](){
         didSet{
             self.tableView.reloadData()
@@ -53,8 +60,15 @@ class PersonalInfoViewController: UIViewController {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: (#selector(PersonalInfoViewController.userChange)), name: userChangedNotification, object: nil)
         loadPlayerBasicInfoWithName()
+        
+        SKPaymentQueue.defaultQueue().addTransactionObserver(self)
         // Do any additional setup after loading the view.
     }
+    
+    deinit{
+        SKPaymentQueue.defaultQueue().removeTransactionObserver(self)
+    }
+    
     func userChange(){
         guard User.sharedUser.userName != "" else{
             self.navigationItem.title = "个人信息"

@@ -102,11 +102,11 @@
                                             <segue destination="gLi-6l-1Us" kind="push" identifier="friendAnalysisSegue" id="nwg-9w-LS3"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mAE-YK-5v0">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="mAE-YK-5v0">
                                         <rect key="frame" x="0.0" y="88" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mAE-YK-5v0" id="KcC-oB-9W6">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carry率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO4-da-pDg">
@@ -122,6 +122,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="j2H-EK-ztG" kind="push" id="rgp-Kb-CEZ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -136,6 +139,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCg-Nv-wkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1304" y="-731"/>
+        </scene>
+        <!--Carry分析-->
+        <scene sceneID="fBi-8U-JbD">
+            <objects>
+                <viewController id="j2H-EK-ztG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8lu-QA-QFz"/>
+                        <viewControllerLayoutGuide type="bottom" id="VEE-e5-6YO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bd0-U9-B44">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XLI-VN-PdJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="UdJ-vy-odt">
+                                    <rect key="frame" x="0.0" y="44" width="320" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XLI-VN-PdJ" firstAttribute="height" secondItem="Bd0-U9-B44" secondAttribute="height" id="KIj-WS-gBa"/>
+                            <constraint firstItem="XLI-VN-PdJ" firstAttribute="centerX" secondItem="Bd0-U9-B44" secondAttribute="centerX" id="mcR-2e-kAI"/>
+                            <constraint firstItem="XLI-VN-PdJ" firstAttribute="width" secondItem="Bd0-U9-B44" secondAttribute="width" id="otv-AX-1dq"/>
+                            <constraint firstItem="XLI-VN-PdJ" firstAttribute="centerY" secondItem="Bd0-U9-B44" secondAttribute="centerY" id="y9S-Gw-K16"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Carry分析" id="Jcf-Us-1qw"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUV-cH-oic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2021" y="-1454"/>
         </scene>
         <!--英雄胜率分析-->
         <scene sceneID="ErM-dn-kB4">
@@ -152,6 +192,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dOH-Rz-RZN">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.054901960784313725" green="0.40392156862745099" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HeroWinRateCellIdentifier" rowHeight="100" id="c88-fB-xOQ" customClass="HeroWinRateTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="102" width="320" height="100"/>
@@ -299,6 +340,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="36" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kqd-eF-fB6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FriendAnalysisCellIdentifier" id="PQi-tJ-ZiQ" customClass="FriendAnalysisTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="320" height="36"/>
@@ -364,7 +406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AXR-Tt-ce6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1736" y="-1179"/>
+            <point key="canvasLocation" x="1666" y="-1454"/>
         </scene>
     </scenes>
 </document>
