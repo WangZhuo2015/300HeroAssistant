@@ -12,7 +12,7 @@ import PKHUD
 extension PersonalInfoViewController:SKProductsRequestDelegate,SKPaymentTransactionObserver{
     func buyButton(){
         if SKPaymentQueue.canMakePayments() {
-            let set = NSSet(array: ["00001"])
+            let set = NSSet(array: ["AdvancedFunctionPackage"])
             requestProducts(set)
         }else{
             print("不允许IAP")
@@ -67,7 +67,7 @@ extension PersonalInfoViewController:SKProductsRequestDelegate,SKPaymentTransact
      */
     internal func afterRequestProducts(){
         //商品列表请求成功
-        purchaseProduct("00001")
+        purchaseProduct("AdvancedFunctionPackage")
         //HUD.flash(.LabeledProgress(title: "购买中ing", subtitle: "请等待"))
     }
     

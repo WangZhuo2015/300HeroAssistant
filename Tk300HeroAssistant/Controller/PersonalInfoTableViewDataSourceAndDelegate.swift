@@ -49,13 +49,13 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
                 let buyIAP = UIAlertAction(title: "购买", style: .Default) { (action) in
                     //dispatch_async(dispatch_get_main_queue()) {
                         //perform code
-                        self.requestProducts(NSSet(array: ["00001"]))
+                        self.requestProducts(NSSet(array: ["AdvancedFunctionPackage"]))
                     //}
                 }
                 let restoreIAP = UIAlertAction(title: "恢复购买", style: .Default) { (action) in
                     //dispatch_async(dispatch_get_main_queue()) {
                         //perform code
-                        self.restoreProducts("00001")
+                        self.restoreProducts("AdvancedFunctionPackage")
                     //}
                 }
                 let cancel = UIAlertAction(title: "取消", style: .Cancel,handler: nil)

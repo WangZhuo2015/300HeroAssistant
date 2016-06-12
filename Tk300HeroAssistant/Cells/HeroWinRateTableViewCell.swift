@@ -35,7 +35,7 @@ class HeroWinRateTableViewCell: UITableViewCell {
         heroName.text = data.hero.name
         allCountLabel.text = "\(data.count)"
         winCountLabel.text = "\(data.win)"
-        winRateLabel.text = String(format: "%.3F%", 100*Double(data.win)/Double(data.count)) + "%"
+        winRateLabel.text = String(format: "%.2F%", 100*Double(data.win)/Double(data.count)) + "%"
     }
 
 }
