@@ -33,7 +33,6 @@
 		35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */; };
 		35401A6F1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */; };
 		3540E9281D0AD1F600E0FB66 /* AdvancedAnalysis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3540E9261D0AD1F600E0FB66 /* AdvancedAnalysis.storyboard */; };
-		3540E92C1D0AEB0900E0FB66 /* AdvancedAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E92B1D0AEB0900E0FB66 /* AdvancedAnalysisViewController.swift */; };
 		3540E92E1D0AEBE700E0FB66 /* AdvancedAnalysisMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E92D1D0AEBE700E0FB66 /* AdvancedAnalysisMainTableViewController.swift */; };
 		3540E9301D0AEC1400E0FB66 /* HeroWinRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E92F1D0AEC1400E0FB66 /* HeroWinRateViewController.swift */; };
 		3540E9331D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E9321D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift */; };
@@ -138,7 +137,6 @@
 		35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewExtension.swift; path = Extension/TableViewExtension.swift; sourceTree = "<group>"; };
 		35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableViewNetErrorDataSource.swift; path = Tools/UITableViewNetErrorDataSource.swift; sourceTree = "<group>"; };
 		3540E9271D0AD1F600E0FB66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AdvancedAnalysis.storyboard; sourceTree = "<group>"; };
-		3540E92B1D0AEB0900E0FB66 /* AdvancedAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdvancedAnalysisViewController.swift; path = Controller/AdvancedAnalysis/AdvancedAnalysisViewController.swift; sourceTree = "<group>"; };
 		3540E92D1D0AEBE700E0FB66 /* AdvancedAnalysisMainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdvancedAnalysisMainTableViewController.swift; path = Controller/AdvancedAnalysis/AdvancedAnalysisMainTableViewController.swift; sourceTree = "<group>"; };
 		3540E92F1D0AEC1400E0FB66 /* HeroWinRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroWinRateViewController.swift; path = Controller/AdvancedAnalysis/HeroWinRateViewController.swift; sourceTree = "<group>"; };
 		3540E9321D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroWinRateTableViewCell.swift; path = Cells/HeroWinRateTableViewCell.swift; sourceTree = "<group>"; };
@@ -349,7 +347,6 @@
 		3540E9291D0AEAB800E0FB66 /* 高级分析功能 */ = {
 			isa = PBXGroup;
 			children = (
-				3540E92B1D0AEB0900E0FB66 /* AdvancedAnalysisViewController.swift */,
 				3540E92D1D0AEBE700E0FB66 /* AdvancedAnalysisMainTableViewController.swift */,
 				3540E9391D0B0D7400E0FB66 /* 开黑分析 */,
 				3540E92A1D0AEAC500E0FB66 /* 英雄胜率分析 */,
@@ -864,7 +861,6 @@
 				35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */,
 				35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */,
 				354BC7141CFD534F001E046C /* EquipmentData.swift in Sources */,
-				3540E92C1D0AEB0900E0FB66 /* AdvancedAnalysisViewController.swift in Sources */,
 				350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */,
 				3509932E1CEF11E70079C7E3 /* HeroCollectionViewCell.swift in Sources */,
 				3517D7051CE0EDE9006162BA /* RoleAPIBase.swift in Sources */,

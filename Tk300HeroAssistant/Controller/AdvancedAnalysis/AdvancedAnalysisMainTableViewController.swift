@@ -21,15 +21,17 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
         tableView.tableFooterView = UIView()
         dataAnalyzer.userName = User.sharedUser.userName ?? ""
         dataAnalyzer.delegate = self
-        
+        guard User.sharedUser.userName != nil else{
+            HUD.flash(.LabeledError(title: "数据获取失败", subtitle: "无用户"), delay: 0, completion: { (bool) in
+                self.navigationController?.popViewControllerAnimated(true)
+            })
+            return
+        }
         
         setHUD(titleLabelText: nil, subtitleLabelText: nil)
         PKHUD.sharedHUD.show()
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.clearsSelectionOnViewWillAppear = false
     }
     func setHUD(titleLabelText titleLabelText:String?,subtitleLabelText:String?){
         let view = PKHUDProgressView()
@@ -39,6 +41,7 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
     }
     
     
+    //MARK: -DataAnalyzer Delegate Motheds
     func alreadyLoadList() {
         dataAnalyzer.calculateHeroWinRate { self.heroBattle = $0 }
         setHUD(titleLabelText: nil, subtitleLabelText: "正在获取比赛详情")
@@ -72,7 +75,7 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 2
     }
 
     /*

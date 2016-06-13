@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.tableViewDisplayWith("Rank榜单无结果", ifNecessaryForRowCount: rank.count)
@@ -43,6 +44,10 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
             //performSegueWithIdentifier(advancedAnalysisSegue, sender: nil)
             //内购添加
             if AppManager.haveBoughtIAP(){
+                guard User.sharedUser.userName != nil else{
+                    HUD.flash(.LabeledError(title: "数据获取失败", subtitle: "无用户"), delay: 1, completion: nil)
+                    return
+                }
                 performSegueWithIdentifier(advancedAnalysisSegue, sender: nil)
             }else{
                 let alert = UIAlertController(title: "高级功能包", message: "要购买高级功能包吗", preferredStyle: .Alert)
