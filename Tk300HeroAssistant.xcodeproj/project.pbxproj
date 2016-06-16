@@ -306,7 +306,6 @@
 			isa = PBXGroup;
 			children = (
 				3540E9361D0AF65000E0FB66 /* 基本 */,
-				3540E9291D0AEAB800E0FB66 /* 高级分析功能 */,
 			);
 			name = "个人信息";
 			sourceTree = "<group>";
@@ -550,6 +549,7 @@
 			children = (
 				35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */,
 				35FBA6381CDF708900A527B4 /* MainViewController.swift */,
+				3540E9291D0AEAB800E0FB66 /* 高级分析功能 */,
 				3517D6D41CE0DE4F006162BA /* 个人战绩 */,
 				3517D6D61CE0DE73006162BA /* 个人信息 */,
 				3517D6D51CE0DE60006162BA /* 英雄数据 */,
