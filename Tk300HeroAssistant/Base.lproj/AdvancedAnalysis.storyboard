@@ -9,7 +9,7 @@
         <!--高级分析-->
         <scene sceneID="zyi-Db-9nm">
             <objects>
-                <viewController id="Pb5-EV-1bX" customClass="AdvancedAnalysisViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pb5-EV-1bX" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nO1-6q-nWT"/>
                         <viewControllerLayoutGuide type="bottom" id="BpW-s5-JSz"/>
@@ -53,7 +53,7 @@
                         <sections>
                             <tableViewSection id="l8G-7g-p3o">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="eLf-bT-oyx">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="eLf-bT-oyx">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eLf-bT-oyx" id="7H5-Tu-8Xg">
@@ -78,7 +78,7 @@
                                             <segue destination="eAi-XQ-j0t" kind="push" identifier="HeroWinRateSegue" id="8gJ-79-ai9"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="dFM-0o-gqD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="dFM-0o-gqD">
                                         <rect key="frame" x="0.0" y="44" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dFM-0o-gqD" id="VNf-KY-kMT">
@@ -102,7 +102,7 @@
                                             <segue destination="gLi-6l-1Us" kind="push" identifier="friendAnalysisSegue" id="nwg-9w-LS3"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="zr2-zH-ylQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="zr2-zH-ylQ">
                                         <rect key="frame" x="0.0" y="88" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zr2-zH-ylQ" id="dOF-vb-4Ky">
@@ -492,7 +492,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="piN-1d-sfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1304" y="-1454"/>
+            <point key="canvasLocation" x="1304" y="-1919"/>
         </scene>
         <!--匹配分析-->
         <scene sceneID="IIb-nQ-bWV">

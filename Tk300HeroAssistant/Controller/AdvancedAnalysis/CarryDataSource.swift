@@ -21,4 +21,12 @@ extension CarryAnalysisViewController:UITableViewDataSource,UITableViewDelegate{
         cell.matchData = matchPlayerData[matchBasicInfoArray[indexPath.row].matchID]
         return cell
     }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let storyBoard = UIStoryboard(name: "Match", bundle: nil)
+        let viewController = storyBoard.instantiateViewControllerWithIdentifier("MatchDetailViewController")as! MatchDetailViewController
+        let matchID = matchBasicInfoArray[indexPath.row].matchID
+        viewController.matchData = matchDetail[matchID]!
+        viewController.matchID = matchID
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }

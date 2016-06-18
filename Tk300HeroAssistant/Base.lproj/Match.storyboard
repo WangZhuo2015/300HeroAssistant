@@ -155,7 +155,7 @@
         <!--Match Detail View Controller-->
         <scene sceneID="Tyy-P6-la9">
             <objects>
-                <viewController id="ftT-R1-tRq" customClass="MatchDetailViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MatchDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ftT-R1-tRq" customClass="MatchDetailViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="32Q-Le-9Vm"/>
                         <viewControllerLayoutGuide type="bottom" id="Ady-YD-zId"/>
