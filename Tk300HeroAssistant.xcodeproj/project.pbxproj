@@ -72,6 +72,23 @@
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
 		35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
 		35BCF7581CE8C8F900E30907 /* HeroTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */; };
+		35C811821D15A7940017A0F5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35C811651D15A7940017A0F5 /* Info.plist */; };
+		35C811831D15A7940017A0F5 /* LCHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C811671D15A7940017A0F5 /* LCHttpClient.m */; };
+		35C811841D15A7940017A0F5 /* LCUserFeedbackAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C811691D15A7940017A0F5 /* LCUserFeedbackAgent.m */; };
+		35C811851D15A7940017A0F5 /* LCUserFeedbackImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8116B1D15A7940017A0F5 /* LCUserFeedbackImageViewController.m */; };
+		35C811861D15A7940017A0F5 /* LCUserFeedbackReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8116D1D15A7940017A0F5 /* LCUserFeedbackReply.m */; };
+		35C811871D15A7940017A0F5 /* LCUserFeedbackReplyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C811701D15A7940017A0F5 /* LCUserFeedbackReplyCell.m */; };
+		35C811881D15A7940017A0F5 /* LCUserFeedbackThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C811721D15A7940017A0F5 /* LCUserFeedbackThread.m */; };
+		35C811891D15A7940017A0F5 /* LCUserFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C811751D15A7940017A0F5 /* LCUserFeedbackViewController.m */; };
+		35C8118A1D15A7940017A0F5 /* LCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C811771D15A7940017A0F5 /* LCUtils.m */; };
+		35C8118B1D15A7940017A0F5 /* feedback_add_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C8117A1D15A7940017A0F5 /* feedback_add_image@2x.png */; };
+		35C8118C1D15A7940017A0F5 /* feedback_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C8117B1D15A7940017A0F5 /* feedback_back@2x.png */; };
+		35C8118D1D15A7940017A0F5 /* feedback_bg_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C8117C1D15A7940017A0F5 /* feedback_bg_1@2x.png */; };
+		35C8118E1D15A7940017A0F5 /* feedback_bg_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C8117D1D15A7940017A0F5 /* feedback_bg_2@2x.png */; };
+		35C8118F1D15A7940017A0F5 /* feedback_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C8117E1D15A7940017A0F5 /* feedback_btn@2x.png */; };
+		35C811901D15A7940017A0F5 /* feedback_btn_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C8117F1D15A7940017A0F5 /* feedback_btn_new@2x.png */; };
+		35C811911D15A7940017A0F5 /* feedback_warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C811801D15A7940017A0F5 /* feedback_warning@2x.png */; };
+		35C811921D15A7940017A0F5 /* LeanCloudFeedback.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35C811811D15A7940017A0F5 /* LeanCloudFeedback.strings */; };
 		35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB3E051CEE2F2100FED888 /* CSVReader.swift */; };
 		35CB9EE21CEC55120007C47C /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE11CEC55120007C47C /* HeroDetailViewController.swift */; };
 		35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE31CEC5B6D0007C47C /* SkillInfoTableViewCell.swift */; };
@@ -175,6 +192,35 @@
 		35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = Cells/HeroTableViewCell.swift; sourceTree = "<group>"; };
 		35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVDataManager.swift; path = Tk300HeroAssistant/Model/CSVDataManager.swift; sourceTree = SOURCE_ROOT; };
 		35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewDataSource.swift; path = Controller/HeroTableViewDataSource.swift; sourceTree = "<group>"; };
+		35C811621D15A7610017A0F5 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		35C811651D15A7940017A0F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C811661D15A7940017A0F5 /* LCHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHttpClient.h; sourceTree = "<group>"; };
+		35C811671D15A7940017A0F5 /* LCHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHttpClient.m; sourceTree = "<group>"; };
+		35C811681D15A7940017A0F5 /* LCUserFeedbackAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackAgent.h; sourceTree = "<group>"; };
+		35C811691D15A7940017A0F5 /* LCUserFeedbackAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserFeedbackAgent.m; sourceTree = "<group>"; };
+		35C8116A1D15A7940017A0F5 /* LCUserFeedbackImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackImageViewController.h; sourceTree = "<group>"; };
+		35C8116B1D15A7940017A0F5 /* LCUserFeedbackImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserFeedbackImageViewController.m; sourceTree = "<group>"; };
+		35C8116C1D15A7940017A0F5 /* LCUserFeedbackReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackReply.h; sourceTree = "<group>"; };
+		35C8116D1D15A7940017A0F5 /* LCUserFeedbackReply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserFeedbackReply.m; sourceTree = "<group>"; };
+		35C8116E1D15A7940017A0F5 /* LCUserFeedbackReply_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackReply_Internal.h; sourceTree = "<group>"; };
+		35C8116F1D15A7940017A0F5 /* LCUserFeedbackReplyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackReplyCell.h; sourceTree = "<group>"; };
+		35C811701D15A7940017A0F5 /* LCUserFeedbackReplyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserFeedbackReplyCell.m; sourceTree = "<group>"; };
+		35C811711D15A7940017A0F5 /* LCUserFeedbackThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackThread.h; sourceTree = "<group>"; };
+		35C811721D15A7940017A0F5 /* LCUserFeedbackThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserFeedbackThread.m; sourceTree = "<group>"; };
+		35C811731D15A7940017A0F5 /* LCUserFeedbackThread_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackThread_Internal.h; sourceTree = "<group>"; };
+		35C811741D15A7940017A0F5 /* LCUserFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackViewController.h; sourceTree = "<group>"; };
+		35C811751D15A7940017A0F5 /* LCUserFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserFeedbackViewController.m; sourceTree = "<group>"; };
+		35C811761D15A7940017A0F5 /* LCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUtils.h; sourceTree = "<group>"; };
+		35C811771D15A7940017A0F5 /* LCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUtils.m; sourceTree = "<group>"; };
+		35C811781D15A7940017A0F5 /* LeanCloudFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeanCloudFeedback.h; sourceTree = "<group>"; };
+		35C8117A1D15A7940017A0F5 /* feedback_add_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_add_image@2x.png"; sourceTree = "<group>"; };
+		35C8117B1D15A7940017A0F5 /* feedback_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_back@2x.png"; sourceTree = "<group>"; };
+		35C8117C1D15A7940017A0F5 /* feedback_bg_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_bg_1@2x.png"; sourceTree = "<group>"; };
+		35C8117D1D15A7940017A0F5 /* feedback_bg_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_bg_2@2x.png"; sourceTree = "<group>"; };
+		35C8117E1D15A7940017A0F5 /* feedback_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_btn@2x.png"; sourceTree = "<group>"; };
+		35C8117F1D15A7940017A0F5 /* feedback_btn_new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_btn_new@2x.png"; sourceTree = "<group>"; };
+		35C811801D15A7940017A0F5 /* feedback_warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_warning@2x.png"; sourceTree = "<group>"; };
+		35C811811D15A7940017A0F5 /* LeanCloudFeedback.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = LeanCloudFeedback.strings; sourceTree = "<group>"; };
 		35CB3E051CEE2F2100FED888 /* CSVReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVReader.swift; path = Tk300HeroAssistant/Model/CSVReader.swift; sourceTree = SOURCE_ROOT; };
 		35CB9EE11CEC55120007C47C /* HeroDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDetailViewController.swift; path = Controller/HeroDetailViewController.swift; sourceTree = "<group>"; };
 		35CB9EE31CEC5B6D0007C47C /* SkillInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillInfoTableViewCell.swift; path = Cells/SkillInfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -437,6 +483,57 @@
 			name = AdvancedAnalysis;
 			sourceTree = "<group>";
 		};
+		35C811631D15A76C0017A0F5 /* 3rdLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				35C811641D15A7940017A0F5 /* LeanCloudFeedback */,
+			);
+			name = 3rdLibraries;
+			sourceTree = "<group>";
+		};
+		35C811641D15A7940017A0F5 /* LeanCloudFeedback */ = {
+			isa = PBXGroup;
+			children = (
+				35C811651D15A7940017A0F5 /* Info.plist */,
+				35C811661D15A7940017A0F5 /* LCHttpClient.h */,
+				35C811671D15A7940017A0F5 /* LCHttpClient.m */,
+				35C811681D15A7940017A0F5 /* LCUserFeedbackAgent.h */,
+				35C811691D15A7940017A0F5 /* LCUserFeedbackAgent.m */,
+				35C8116A1D15A7940017A0F5 /* LCUserFeedbackImageViewController.h */,
+				35C8116B1D15A7940017A0F5 /* LCUserFeedbackImageViewController.m */,
+				35C8116C1D15A7940017A0F5 /* LCUserFeedbackReply.h */,
+				35C8116D1D15A7940017A0F5 /* LCUserFeedbackReply.m */,
+				35C8116E1D15A7940017A0F5 /* LCUserFeedbackReply_Internal.h */,
+				35C8116F1D15A7940017A0F5 /* LCUserFeedbackReplyCell.h */,
+				35C811701D15A7940017A0F5 /* LCUserFeedbackReplyCell.m */,
+				35C811711D15A7940017A0F5 /* LCUserFeedbackThread.h */,
+				35C811721D15A7940017A0F5 /* LCUserFeedbackThread.m */,
+				35C811731D15A7940017A0F5 /* LCUserFeedbackThread_Internal.h */,
+				35C811741D15A7940017A0F5 /* LCUserFeedbackViewController.h */,
+				35C811751D15A7940017A0F5 /* LCUserFeedbackViewController.m */,
+				35C811761D15A7940017A0F5 /* LCUtils.h */,
+				35C811771D15A7940017A0F5 /* LCUtils.m */,
+				35C811781D15A7940017A0F5 /* LeanCloudFeedback.h */,
+				35C811791D15A7940017A0F5 /* resources */,
+			);
+			path = LeanCloudFeedback;
+			sourceTree = "<group>";
+		};
+		35C811791D15A7940017A0F5 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				35C8117A1D15A7940017A0F5 /* feedback_add_image@2x.png */,
+				35C8117B1D15A7940017A0F5 /* feedback_back@2x.png */,
+				35C8117C1D15A7940017A0F5 /* feedback_bg_1@2x.png */,
+				35C8117D1D15A7940017A0F5 /* feedback_bg_2@2x.png */,
+				35C8117E1D15A7940017A0F5 /* feedback_btn@2x.png */,
+				35C8117F1D15A7940017A0F5 /* feedback_btn_new@2x.png */,
+				35C811801D15A7940017A0F5 /* feedback_warning@2x.png */,
+				35C811811D15A7940017A0F5 /* LeanCloudFeedback.strings */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		35CB9EE01CEC54E50007C47C /* 英雄详情 */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,6 +596,8 @@
 				35FBA6361CDF704000A527B4 /* View */,
 				35FBA6371CDF704B00A527B4 /* Controllers */,
 				35FBA61D1CDF523C00A527B4 /* Network */,
+				35C811631D15A76C0017A0F5 /* 3rdLibraries */,
+				35C811621D15A7610017A0F5 /* Bridging-Header.h */,
 				35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */,
 				35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */,
 				35FBA6011CDF4E5C00A527B4 /* LaunchScreen.storyboard */,
@@ -710,20 +809,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C811821D15A7940017A0F5 /* Info.plist in Resources */,
+				35C8118B1D15A7940017A0F5 /* feedback_add_image@2x.png in Resources */,
 				355306E51D040E9600065CDA /* 合成所需.csv in Resources */,
 				35FBA6321CDF701600A527B4 /* Hero.storyboard in Resources */,
 				35FBA6031CDF4E5C00A527B4 /* LaunchScreen.storyboard in Resources */,
 				35FBA60B1CDF4EA800A527B4 /* openapi.txt in Resources */,
 				354BC7121CFD5334001E046C /* object data.csv in Resources */,
+				35C8118E1D15A7940017A0F5 /* feedback_bg_2@2x.png in Resources */,
 				35FBA62F1CDF6FE300A527B4 /* Match.storyboard in Resources */,
 				35F2CA711CFB57060046B653 /* Bugs in Resources */,
 				354BC7501CFD5C0A001E046C /* Equipment.storyboard in Resources */,
+				35C8118F1D15A7940017A0F5 /* feedback_btn@2x.png in Resources */,
 				35FBA6001CDF4E5C00A527B4 /* Assets.xcassets in Resources */,
+				35C811921D15A7940017A0F5 /* LeanCloudFeedback.strings in Resources */,
 				35FBA6351CDF703A00A527B4 /* PersonalInfo.storyboard in Resources */,
 				3540E9281D0AD1F600E0FB66 /* AdvancedAnalysis.storyboard in Resources */,
 				35FBA5FE1CDF4E5C00A527B4 /* Main.storyboard in Resources */,
 				35F2CA6E1CFB53B50046B653 /* hero data.csv in Resources */,
+				35C811901D15A7940017A0F5 /* feedback_btn_new@2x.png in Resources */,
+				35C8118D1D15A7940017A0F5 /* feedback_bg_1@2x.png in Resources */,
 				35F2CA6F1CFB53B50046B653 /* skill data.csv in Resources */,
+				35C8118C1D15A7940017A0F5 /* feedback_back@2x.png in Resources */,
+				35C811911D15A7940017A0F5 /* feedback_warning@2x.png in Resources */,
 				355306E61D040E9600065CDA /* 进阶所需.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -843,13 +951,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				35DCA5CE1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift in Sources */,
+				35C811851D15A7940017A0F5 /* LCUserFeedbackImageViewController.m in Sources */,
 				3517D70D1CE0F2FA006162BA /* MatchTableViewDataSource.swift in Sources */,
 				35E9D02C1CF96F11004170BE /* AccountChangeViewController.swift in Sources */,
+				35C811871D15A7940017A0F5 /* LCUserFeedbackReplyCell.m in Sources */,
 				3540E93C1D0B15C000E0FB66 /* FriendAnalysisViewController.swift in Sources */,
 				35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */,
 				3540E9331D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift in Sources */,
 				351910641D0DCD0300FB0F0C /* AppManager.swift in Sources */,
 				3517D6FC1CE0EA70006162BA /* Item.swift in Sources */,
+				35C811891D15A7940017A0F5 /* LCUserFeedbackViewController.m in Sources */,
 				3517D7031CE0EDE9006162BA /* Rank.swift in Sources */,
 				3501B28A1D153F5400EB136B /* AnalyzerHelper.swift in Sources */,
 				3540E9351D0AEE6D00E0FB66 /* HeroWinRateDataSource.swift in Sources */,
@@ -860,6 +971,7 @@
 				3517D7091CE0EE5F006162BA /* Hero.swift in Sources */,
 				35401A6A1CE830DA00F0EDE2 /* Global.swift in Sources */,
 				35011C601CE03BCC004F7913 /* MainNavigationViewController.swift in Sources */,
+				35C811881D15A7940017A0F5 /* LCUserFeedbackThread.m in Sources */,
 				35CB9EE61CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift in Sources */,
 				354BC7541CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift in Sources */,
 				3517D6FD1CE0EA70006162BA /* MatchRole.swift in Sources */,
@@ -876,6 +988,7 @@
 				35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */,
 				35E9D02E1CF96F68004170BE /* userAccountTableViewCell.swift in Sources */,
 				354BC7561CFDC63A001E046C /* EquipmentDetailViewController.swift in Sources */,
+				35C811841D15A7940017A0F5 /* LCUserFeedbackAgent.m in Sources */,
 				35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */,
 				354BC7521CFDBB65001E046C /* EquipmentCollectionViewCell.swift in Sources */,
 				35FBA5F91CDF4E5C00A527B4 /* AppDelegate.swift in Sources */,
@@ -889,11 +1002,13 @@
 				3517D70A1CE0EE5F006162BA /* List.swift in Sources */,
 				35BCF7581CE8C8F900E30907 /* HeroTableViewDataSource.swift in Sources */,
 				358B36E21CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift in Sources */,
+				35C8118A1D15A7940017A0F5 /* LCUtils.m in Sources */,
 				354BC70C1CFD5233001E046C /* EquipmentViewController.swift in Sources */,
 				3517D70B1CE0EE5F006162BA /* MatchBasicAPIBase.swift in Sources */,
 				3540E9301D0AEC1400E0FB66 /* HeroWinRateViewController.swift in Sources */,
 				35FBA6391CDF708900A527B4 /* MainViewController.swift in Sources */,
 				356015341D0B2B5F006467E4 /* FriendAnalysisDataSource.swift in Sources */,
+				35C811831D15A7940017A0F5 /* LCHttpClient.m in Sources */,
 				3540E93E1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift in Sources */,
 				35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */,
 				35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */,
@@ -908,6 +1023,7 @@
 				35FD3BAC1D145C6B0048343D /* CarryDataSource.swift in Sources */,
 				355306EA1D0428A500065CDA /* HorizontalMenuScrollView.swift in Sources */,
 				3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */,
+				35C811861D15A7940017A0F5 /* LCUserFeedbackReply.m in Sources */,
 				35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */,
 				3501B2821D153B8500EB136B /* HeroBattleListViewController.swift in Sources */,
 				35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */,
@@ -1111,6 +1227,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.dowhile.Tk300HeroAssistant;
 				PRODUCT_NAME = "星尘盒子 for 300英雄";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tk300HeroAssistant/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -1127,6 +1244,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.dowhile.Tk300HeroAssistant;
 				PRODUCT_NAME = "星尘盒子 for 300英雄";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tk300HeroAssistant/Bridging-Header.h";
 			};
 			name = Release;
 		};

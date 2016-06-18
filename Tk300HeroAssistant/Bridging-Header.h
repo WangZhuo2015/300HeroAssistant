@@ -7,4 +7,4 @@
 //
 #import <AVOSCloud/AVOSCloud.h>
 #import <AVOSCloudCrashReporting/AVOSCloudCrashReporting.h>
-#import <LeanCloudFeedback/LeanCloudFeedback.h>
+#import "LeanCloudFeedback/LeanCloudFeedback.h"

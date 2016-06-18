@@ -19,6 +19,10 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier(MenuTableViewCellIdentifier) as! MenuTableViewCell
             return cell
+        case 0:
+            let cell = tableView.dequeueReusableCellWithIdentifier(MenuTableViewCellIdentifier) as! MenuTableViewCell
+            cell.menuItemLabel.text = "反馈意见"
+            return cell
         default:
             break
         }
@@ -29,7 +33,7 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         switch indexPath.row {
-        case 0:
+        case 0...1:
             return 57
         default:
             break
@@ -69,6 +73,11 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
 //                alert.addAction(cancel)
 //                presentViewController(alert, animated: true, completion: nil)
 //            }
+        case 1:
+            let agent = LCUserFeedbackAgent.sharedInstance
+            agent().showConversations(self, title: "用户反馈", contact: "热心用户")
+            //agent().showConversations("提点意见","热心用户")
+            performSegueWithIdentifier(advancedAnalysisSegue, sender: nil)
         default:
             break
         }
