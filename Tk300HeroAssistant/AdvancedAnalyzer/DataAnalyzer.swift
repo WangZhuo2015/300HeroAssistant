@@ -9,7 +9,7 @@
 import Foundation
 class DataAnalyzer {
     //单例
-    //static let sharedInstance = DataAnalyzer()
+    static let sharedInstance = DataAnalyzer()
     //delegate
     var delegate:DataAnalyzerDelegate?
     //用户名

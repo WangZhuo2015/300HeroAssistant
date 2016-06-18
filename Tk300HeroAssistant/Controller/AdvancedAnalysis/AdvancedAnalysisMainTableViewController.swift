@@ -10,7 +10,7 @@ import UIKit
 import PKHUD
 class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyzerDelegate {
 
-    var dataAnalyzer = DataAnalyzer()
+    var dataAnalyzer = DataAnalyzer.sharedInstance
     let HeroWinRateSegue = "HeroWinRateSegue"
     let friendAnalysisSegue = "friendAnalysisSegue"
     let carryAnalysisSegue = "carryAnalysisSegue"

@@ -346,7 +346,7 @@
             </objects>
             <point key="canvasLocation" x="2009" y="-1454"/>
         </scene>
-        <!--英雄胜率分析-->
+        <!--英雄胜率-->
         <scene sceneID="ErM-dn-kB4">
             <objects>
                 <viewController id="eAi-XQ-j0t" customClass="HeroWinRateViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
@@ -358,7 +358,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dOH-Rz-RZN">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dOH-Rz-RZN">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.054901960784313725" green="0.40392156862745099" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -471,6 +471,7 @@
                                             <outlet property="heroName" destination="F15-mB-T6S" id="7y8-UD-VLB"/>
                                             <outlet property="winCountLabel" destination="24D-bS-jDL" id="3n8-gF-Oh3"/>
                                             <outlet property="winRateLabel" destination="WvN-eM-LXg" id="xmF-2b-M8G"/>
+                                            <segue destination="nl0-SX-C9E" kind="push" id="Ohc-Sn-ByI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -484,7 +485,7 @@
                             <constraint firstItem="dOH-Rz-RZN" firstAttribute="centerX" secondItem="WdP-N5-8IK" secondAttribute="centerX" id="xry-46-cB3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="英雄胜率分析" id="Hm6-M7-2SV"/>
+                    <navigationItem key="navigationItem" title="英雄胜率" id="Hm6-M7-2SV"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="dOH-Rz-RZN" id="LmQ-Yh-rR6"/>
@@ -492,7 +493,151 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="piN-1d-sfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1304" y="-1919"/>
+            <point key="canvasLocation" x="1270" y="-2079"/>
+        </scene>
+        <!--Hero Battle List View Controller-->
+        <scene sceneID="0Cz-zR-ik0">
+            <objects>
+                <viewController id="nl0-SX-C9E" customClass="HeroBattleListViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PPa-sK-D0g"/>
+                        <viewControllerLayoutGuide type="bottom" id="q1x-fc-DYl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Loz-Tr-zXO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="111" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ohu-6x-6o7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MatchCellIdentifier" rowHeight="111" id="LAS-Uy-sqy" customClass="MatchBasicTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="320" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LAS-Uy-sqy" id="gJq-cm-G2H">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Je1-FS-xc5">
+                                                    <rect key="frame" x="8" y="8" width="304" height="95"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMY-L2-lX1">
+                                                            <rect key="frame" x="0.0" y="-1" width="304" height="30"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48n-Xh-jzU">
+                                                                    <rect key="frame" x="254" y="4" width="42" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnj-30-OZn">
+                                                                    <rect key="frame" x="8" y="4" width="51" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.24313725489999999" green="0.47450980390000003" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="48n-Xh-jzU" firstAttribute="top" secondItem="PMY-L2-lX1" secondAttribute="top" constant="4" id="AGc-0S-Nh2"/>
+                                                                <constraint firstItem="48n-Xh-jzU" firstAttribute="centerY" secondItem="Lnj-30-OZn" secondAttribute="centerY" id="LHF-W5-Gmt"/>
+                                                                <constraint firstItem="Lnj-30-OZn" firstAttribute="top" secondItem="PMY-L2-lX1" secondAttribute="top" constant="4" id="qzz-en-D58"/>
+                                                                <constraint firstItem="Lnj-30-OZn" firstAttribute="leading" secondItem="PMY-L2-lX1" secondAttribute="leading" constant="8" id="t76-Dw-VQe"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="日期" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc9-fX-U2L">
+                                                            <rect key="frame" x="66" y="63" width="182" height="24"/>
+                                                            <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="17"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vAY-4f-s0l">
+                                                            <rect key="frame" x="8" y="37" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="PSJ-bM-Dad"/>
+                                                                <constraint firstAttribute="width" constant="50" id="yhL-mw-wxH"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="比赛类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4A6-I3-pkJ">
+                                                            <rect key="frame" x="66" y="37" width="68" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYO-cw-zRH">
+                                                            <rect key="frame" x="256" y="59" width="40" height="28"/>
+                                                            <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="20"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="4A6-I3-pkJ" firstAttribute="top" secondItem="vAY-4f-s0l" secondAttribute="top" id="0mn-xv-PXc"/>
+                                                        <constraint firstItem="4A6-I3-pkJ" firstAttribute="leading" secondItem="vAY-4f-s0l" secondAttribute="trailing" constant="8" id="2hp-eB-vFB"/>
+                                                        <constraint firstItem="KYO-cw-zRH" firstAttribute="leading" secondItem="dc9-fX-U2L" secondAttribute="trailing" constant="8" id="3rp-Jn-2ZC"/>
+                                                        <constraint firstAttribute="bottom" secondItem="KYO-cw-zRH" secondAttribute="bottom" constant="8" id="CSW-PL-vnc"/>
+                                                        <constraint firstItem="vAY-4f-s0l" firstAttribute="leading" secondItem="Je1-FS-xc5" secondAttribute="leading" constant="8" id="GIg-oD-obf"/>
+                                                        <constraint firstItem="PMY-L2-lX1" firstAttribute="centerX" secondItem="Je1-FS-xc5" secondAttribute="centerX" id="HWP-nq-ZWA"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KYO-cw-zRH" secondAttribute="trailing" constant="8" id="JoL-Rv-CvH"/>
+                                                        <constraint firstItem="PMY-L2-lX1" firstAttribute="width" secondItem="Je1-FS-xc5" secondAttribute="width" id="VTW-0L-Wzp"/>
+                                                        <constraint firstItem="dc9-fX-U2L" firstAttribute="bottom" secondItem="vAY-4f-s0l" secondAttribute="bottom" id="k20-xD-u37"/>
+                                                        <constraint firstItem="vAY-4f-s0l" firstAttribute="top" secondItem="PMY-L2-lX1" secondAttribute="bottom" constant="8" id="kw7-7c-lAa"/>
+                                                        <constraint firstItem="dc9-fX-U2L" firstAttribute="leading" secondItem="vAY-4f-s0l" secondAttribute="trailing" constant="8" id="m4Q-bg-xM1"/>
+                                                        <constraint firstAttribute="bottom" secondItem="vAY-4f-s0l" secondAttribute="bottom" constant="8" id="ncV-Xd-qOa"/>
+                                                        <constraint firstItem="PMY-L2-lX1" firstAttribute="top" secondItem="Je1-FS-xc5" secondAttribute="top" constant="-1" id="rax-RX-l0F"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 竞技场" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfO-zr-A4S">
+                                                    <rect key="frame" x="150" y="45" width="56" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="48n-Xh-jzU" secondAttribute="trailing" constant="8" id="9ca-Bh-fJ1"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Je1-FS-xc5" secondAttribute="bottom" id="BGZ-CW-NfC"/>
+                                                <constraint firstItem="mfO-zr-A4S" firstAttribute="leading" secondItem="4A6-I3-pkJ" secondAttribute="trailing" constant="8" id="Cu0-we-KkN"/>
+                                                <constraint firstAttribute="topMargin" secondItem="Je1-FS-xc5" secondAttribute="top" id="EKT-1E-2rb"/>
+                                                <constraint firstItem="Je1-FS-xc5" firstAttribute="centerY" secondItem="gJq-cm-G2H" secondAttribute="centerY" id="SN6-6z-cHY"/>
+                                                <constraint firstItem="mfO-zr-A4S" firstAttribute="centerY" secondItem="4A6-I3-pkJ" secondAttribute="centerY" id="Tgu-B5-Czc"/>
+                                                <constraint firstItem="Je1-FS-xc5" firstAttribute="centerX" secondItem="gJq-cm-G2H" secondAttribute="centerX" id="VaW-7V-jp4"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Je1-FS-xc5" secondAttribute="trailing" id="ZDh-L7-bJf"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="Je1-FS-xc5" secondAttribute="leading" id="jRs-6J-fud"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="innerView" destination="Je1-FS-xc5" id="vVX-2d-TnP"/>
+                                            <outlet property="matchDataLabel" destination="48n-Xh-jzU" id="Dl0-iG-rfa"/>
+                                            <outlet property="matchDate" destination="dc9-fX-U2L" id="tsu-aX-FVi"/>
+                                            <outlet property="matchImage" destination="vAY-4f-s0l" id="Phm-Bo-SHH"/>
+                                            <outlet property="matchResult" destination="KYO-cw-zRH" id="v5h-xA-f9Z"/>
+                                            <outlet property="matchType" destination="mfO-zr-A4S" id="ke4-Dl-mc5"/>
+                                            <outlet property="playerInnerView" destination="PMY-L2-lX1" id="kp9-kx-pF8"/>
+                                            <outlet property="playerName" destination="Lnj-30-OZn" id="3U9-q8-fxi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ohu-6x-6o7" firstAttribute="height" secondItem="Loz-Tr-zXO" secondAttribute="height" id="1ST-sb-ERt"/>
+                            <constraint firstItem="ohu-6x-6o7" firstAttribute="centerX" secondItem="Loz-Tr-zXO" secondAttribute="centerX" id="3fI-gt-P2Z"/>
+                            <constraint firstItem="ohu-6x-6o7" firstAttribute="centerY" secondItem="Loz-Tr-zXO" secondAttribute="centerY" id="bap-cd-56I"/>
+                            <constraint firstItem="ohu-6x-6o7" firstAttribute="width" secondItem="Loz-Tr-zXO" secondAttribute="width" id="trd-N1-Afm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5bb-oM-Ml5"/>
+                    <connections>
+                        <outlet property="tableView" destination="ohu-6x-6o7" id="nyQ-g3-nI0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSg-lu-sEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1666" y="-2079"/>
         </scene>
         <!--匹配分析-->
         <scene sceneID="IIb-nQ-bWV">

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		35011C601CE03BCC004F7913 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */; };
 		35011C621CE03C3C004F7913 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35011C611CE03C3C004F7913 /* User.swift */; };
+		3501B2821D153B8500EB136B /* HeroBattleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501B2811D153B8500EB136B /* HeroBattleListViewController.swift */; };
+		3501B2841D153B9A00EB136B /* HeroBattleListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501B2831D153B9A00EB136B /* HeroBattleListDataSource.swift */; };
+		3501B2881D153F2500EB136B /* HeroWinRateAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501B2871D153F2500EB136B /* HeroWinRateAnalyzer.swift */; };
+		3501B28A1D153F5400EB136B /* AnalyzerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501B2891D153F5400EB136B /* AnalyzerHelper.swift */; };
 		3509932C1CEF116D0079C7E3 /* CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */; };
 		3509932E1CEF11E70079C7E3 /* HeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509932D1CEF11E70079C7E3 /* HeroCollectionViewCell.swift */; };
 		350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350CCEDD1CEADBFE00D082EB /* SkillData.swift */; };
@@ -115,6 +119,10 @@
 /* Begin PBXFileReference section */
 		35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationViewController.swift; path = Controller/MainNavigationViewController.swift; sourceTree = "<group>"; };
 		35011C611CE03C3C004F7913 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Tk300HeroAssistant/Model/User.swift; sourceTree = SOURCE_ROOT; };
+		3501B2811D153B8500EB136B /* HeroBattleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroBattleListViewController.swift; path = Controller/AdvancedAnalysis/HeroBattleListViewController.swift; sourceTree = "<group>"; };
+		3501B2831D153B9A00EB136B /* HeroBattleListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroBattleListDataSource.swift; path = Controller/AdvancedAnalysis/HeroBattleListDataSource.swift; sourceTree = "<group>"; };
+		3501B2871D153F2500EB136B /* HeroWinRateAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroWinRateAnalyzer.swift; path = Tk300HeroAssistant/AdvancedAnalyzer/HeroWinRateAnalyzer.swift; sourceTree = SOURCE_ROOT; };
+		3501B2891D153F5400EB136B /* AnalyzerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnalyzerHelper.swift; path = Tk300HeroAssistant/AdvancedAnalyzer/AnalyzerHelper.swift; sourceTree = SOURCE_ROOT; };
 		3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewExtension.swift; path = Extension/CollectionViewExtension.swift; sourceTree = "<group>"; };
 		3509932D1CEF11E70079C7E3 /* HeroCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroCollectionViewCell.swift; path = Cells/HeroCollectionViewCell.swift; sourceTree = "<group>"; };
 		350CCEDD1CEADBFE00D082EB /* SkillData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillData.swift; path = Tk300HeroAssistant/Model/Data/SkillData.swift; sourceTree = SOURCE_ROOT; };
@@ -255,6 +263,15 @@
 			name = Match;
 			sourceTree = "<group>";
 		};
+		3501B2801D153A5900EB136B /* 每局详情 */ = {
+			isa = PBXGroup;
+			children = (
+				3501B2811D153B8500EB136B /* HeroBattleListViewController.swift */,
+				3501B2831D153B9A00EB136B /* HeroBattleListDataSource.swift */,
+			);
+			name = "每局详情";
+			sourceTree = "<group>";
+		};
 		350993311CEF4B610079C7E3 /* 装备数据 */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +381,7 @@
 				3540E92F1D0AEC1400E0FB66 /* HeroWinRateViewController.swift */,
 				3540E9321D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift */,
 				3540E9341D0AEE6D00E0FB66 /* HeroWinRateDataSource.swift */,
+				3501B2801D153A5900EB136B /* 每局详情 */,
 			);
 			name = "英雄胜率分析";
 			sourceTree = "<group>";
@@ -413,6 +431,8 @@
 			isa = PBXGroup;
 			children = (
 				356F9CD11D07FAF00036E8D2 /* DataAnalyzer.swift */,
+				3501B2871D153F2500EB136B /* HeroWinRateAnalyzer.swift */,
+				3501B2891D153F5400EB136B /* AnalyzerHelper.swift */,
 			);
 			name = AdvancedAnalysis;
 			sourceTree = "<group>";
@@ -831,6 +851,7 @@
 				351910641D0DCD0300FB0F0C /* AppManager.swift in Sources */,
 				3517D6FC1CE0EA70006162BA /* Item.swift in Sources */,
 				3517D7031CE0EDE9006162BA /* Rank.swift in Sources */,
+				3501B28A1D153F5400EB136B /* AnalyzerHelper.swift in Sources */,
 				3540E9351D0AEE6D00E0FB66 /* HeroWinRateDataSource.swift in Sources */,
 				35FBA6201CDF523C00A527B4 /* HttpClient.swift in Sources */,
 				35CB9EE21CEC55120007C47C /* HeroDetailViewController.swift in Sources */,
@@ -864,6 +885,7 @@
 				350CCEE01CEAE30500D082EB /* EquipCombineData.swift in Sources */,
 				35FBA63F1CDF714A00A527B4 /* MatchViewController.swift in Sources */,
 				35FBA63B1CDF711800A527B4 /* PersonalInfoViewController.swift in Sources */,
+				3501B2841D153B9A00EB136B /* HeroBattleListDataSource.swift in Sources */,
 				3517D70A1CE0EE5F006162BA /* List.swift in Sources */,
 				35BCF7581CE8C8F900E30907 /* HeroTableViewDataSource.swift in Sources */,
 				358B36E21CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift in Sources */,
@@ -879,6 +901,7 @@
 				350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */,
 				3509932E1CEF11E70079C7E3 /* HeroCollectionViewCell.swift in Sources */,
 				3517D7051CE0EDE9006162BA /* RoleAPIBase.swift in Sources */,
+				3501B2881D153F2500EB136B /* HeroWinRateAnalyzer.swift in Sources */,
 				35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */,
 				35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */,
 				35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */,
@@ -886,6 +909,7 @@
 				355306EA1D0428A500065CDA /* HorizontalMenuScrollView.swift in Sources */,
 				3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */,
 				35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */,
+				3501B2821D153B8500EB136B /* HeroBattleListViewController.swift in Sources */,
 				35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */,
 				35FBA63D1CDF712E00A527B4 /* HeroViewController.swift in Sources */,
 			);
