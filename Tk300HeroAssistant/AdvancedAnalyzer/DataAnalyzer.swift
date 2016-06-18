@@ -138,10 +138,11 @@ class DataAnalyzer {
     
     //carry率
     
-    func carryRateAnalysis(compeltionHandle:(match:[Match],carry:Int,all:Int)->Void){
+    func carryRateAnalysis(compeltionHandle:(match:[Int:Match],list:[Int:List],carry:Int,all:Int)->Void){
         //carry场数
         var carry = 0
-        var carryMatch = [Match]()
+        var carryMatch = [Int:Match]()
+        var carryList = [Int:List]()
         battleDatailList.forEach { (item) in
             var side = [MatchRole]()
             if item.1.match.winSide.map({ (role) -> String in
@@ -155,10 +156,11 @@ class DataAnalyzer {
             
             if side[0].roleName == userName{
                 carry += 1
-                carryMatch.append(item.1.match)
+                carryMatch[item.0] = item.1.match
             }
         }
-        compeltionHandle(match: carryMatch,carry: carry,all: battleDatailList.count)
+        battleList.filter{carryMatch.keys.contains($0.0)}.forEach{carryList[$0.0] = $0.1}
+        compeltionHandle(match: carryMatch,list: carryList,carry: carry,all: battleDatailList.count)
     }
 }
 @objc

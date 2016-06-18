@@ -96,6 +96,8 @@
 		35FBA63D1CDF712E00A527B4 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA63C1CDF712E00A527B4 /* HeroViewController.swift */; };
 		35FBA63F1CDF714A00A527B4 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA63E1CDF714A00A527B4 /* MatchViewController.swift */; };
 		35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA6401CDF717400A527B4 /* MatchDetailViewController.swift */; };
+		35FD3BAA1D145C570048343D /* CarryAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD3BA91D145C570048343D /* CarryAnalysisViewController.swift */; };
+		35FD3BAC1D145C6B0048343D /* CarryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD3BAB1D145C6B0048343D /* CarryDataSource.swift */; };
 		C13E5EBB34E60A6D328DFA70 /* Pods_Tk300HeroAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585C009171284DD1558B5230 /* Pods_Tk300HeroAssistant.framework */; };
 		F77315AD4CA110A79D0C9C01 /* Pods_Tk300HeroAssistantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374FF767C7559DF8950E22E0 /* Pods_Tk300HeroAssistantTests.framework */; };
 /* End PBXBuildFile section */
@@ -196,6 +198,8 @@
 		35FBA63C1CDF712E00A527B4 /* HeroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroViewController.swift; path = Controller/HeroViewController.swift; sourceTree = "<group>"; };
 		35FBA63E1CDF714A00A527B4 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchViewController.swift; path = Controller/MatchViewController.swift; sourceTree = "<group>"; };
 		35FBA6401CDF717400A527B4 /* MatchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchDetailViewController.swift; path = Controller/MatchDetailViewController.swift; sourceTree = "<group>"; };
+		35FD3BA91D145C570048343D /* CarryAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarryAnalysisViewController.swift; path = Controller/AdvancedAnalysis/CarryAnalysisViewController.swift; sourceTree = "<group>"; };
+		35FD3BAB1D145C6B0048343D /* CarryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarryDataSource.swift; path = Controller/AdvancedAnalysis/CarryDataSource.swift; sourceTree = "<group>"; };
 		374FF767C7559DF8950E22E0 /* Pods_Tk300HeroAssistantTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tk300HeroAssistantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE5B0D7DD464CEA3FF730C0 /* Pods-Tk300HeroAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tk300HeroAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		585C009171284DD1558B5230 /* Pods_Tk300HeroAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tk300HeroAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -349,6 +353,7 @@
 				3540E92D1D0AEBE700E0FB66 /* AdvancedAnalysisMainTableViewController.swift */,
 				3540E9391D0B0D7400E0FB66 /* 开黑分析 */,
 				3540E92A1D0AEAC500E0FB66 /* 英雄胜率分析 */,
+				35FD3BA81D145A990048343D /* Carry分析 */,
 			);
 			name = "高级分析功能";
 			sourceTree = "<group>";
@@ -556,6 +561,15 @@
 				350993311CEF4B610079C7E3 /* 装备数据 */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		35FD3BA81D145A990048343D /* Carry分析 */ = {
+			isa = PBXGroup;
+			children = (
+				35FD3BA91D145C570048343D /* CarryAnalysisViewController.swift */,
+				35FD3BAB1D145C6B0048343D /* CarryDataSource.swift */,
+			);
+			name = "Carry分析";
 			sourceTree = "<group>";
 		};
 		90F405ABAACB4228BE2038C3 /* Frameworks */ = {
@@ -837,6 +851,7 @@
 				357758F71D0BF68B00CB0E55 /* IAPPart.swift in Sources */,
 				3509932C1CEF116D0079C7E3 /* CollectionViewExtension.swift in Sources */,
 				3516C7CD1CE640F3005BF4D8 /* FriendAnalyzer.swift in Sources */,
+				35FD3BAA1D145C570048343D /* CarryAnalysisViewController.swift in Sources */,
 				35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */,
 				35E9D02E1CF96F68004170BE /* userAccountTableViewCell.swift in Sources */,
 				354BC7561CFDC63A001E046C /* EquipmentDetailViewController.swift in Sources */,
@@ -867,6 +882,7 @@
 				35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */,
 				35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */,
 				35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */,
+				35FD3BAC1D145C6B0048343D /* CarryDataSource.swift in Sources */,
 				355306EA1D0428A500065CDA /* HorizontalMenuScrollView.swift in Sources */,
 				3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */,
 				35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */,

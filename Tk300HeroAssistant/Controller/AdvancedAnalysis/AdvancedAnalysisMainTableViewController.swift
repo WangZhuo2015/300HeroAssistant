@@ -13,9 +13,13 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
     var dataAnalyzer = DataAnalyzer()
     let HeroWinRateSegue = "HeroWinRateSegue"
     let friendAnalysisSegue = "friendAnalysisSegue"
+    let carryAnalysisSegue = "carryAnalysisSegue"
+    
     var heroBattle: [HeroWinRate]?
     var friend:[(Player,Int)]?
-    
+    var carryMatch: [Int:Match]?
+    var carryBattleCount:(carry:Int,all:Int)?
+    var carryList: [Int:List]?
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
@@ -51,9 +55,15 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
         tableView.reloadData()
         dataAnalyzer.analysisFriend{
             self.friend = $0
-            PKHUD.sharedHUD.hide(animated: true, completion: nil)
-            HUD.flash(.Success, delay: 0)
+            self.dataAnalyzer.carryRateAnalysis { (match, list, carry, all) in
+                self.carryMatch = match
+                self.carryList = list
+                self.carryBattleCount = (carry,all)
+                PKHUD.sharedHUD.hide(animated: true, completion: nil)
+                HUD.flash(.Success, delay: 0)
+            }
         }
+        
     }
     func errorOccurpty() {
         HUD.flash(.LabeledError(title: "错误", subtitle: "网络异常"), delay: 0) { (animated) in
@@ -68,10 +78,10 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
+//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 1
+//    }
 
 //    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        // #warning Incomplete implementation, return the number of rows
@@ -133,6 +143,11 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
         case friendAnalysisSegue:
             let viewController = segue.destinationViewController as! FriendAnalysisViewController
             viewController.data = self.friend ?? []
+        case carryAnalysisSegue:
+            let viewController = segue.destinationViewController as! CarryAnalysisViewController
+            viewController.matchDetail = self.carryMatch!
+            viewController.matchBasicInfoDic = carryList!
+            viewController.carryBattleCount = self.carryBattleCount
         default:
             break
         }

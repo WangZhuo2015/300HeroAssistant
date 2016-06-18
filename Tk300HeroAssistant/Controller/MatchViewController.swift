@@ -25,9 +25,7 @@ class MatchViewController: UIViewController {
                             self.matchDetailDownload[item.matchID] = detail
                         }
                         self.matchTableView.reloadData()
-                        //self.matchTableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:count,inSection: 0)], withRowAnimation: .None)
                     })
-                    
                 }
                 count += 1
             }
