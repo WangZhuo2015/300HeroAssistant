@@ -29,4 +29,11 @@ class AppManager {
         return count
     }
     
+    static func getUUID()->String?{
+        return NSUserDefaults.standardUserDefaults().stringForKey("UUID")
+    }
+    
+    static func setUUID(UUID:String){
+        return NSUserDefaults.standardUserDefaults().setObject(UUID, forKey: "UUID")
+    }
 }

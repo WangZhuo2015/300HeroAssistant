@@ -17,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AVOSCloudCrashReporting.enable()
         AVOSCloud.setApplicationId("McTRN6wWrpJ3h4JKIH6h4pKA-gzGzoHsz", clientKey: "RtFCOng84Rwka4w1S3uBIDo2")
         AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        if AppManager.getUUID() == nil{
+            let UUIDRef = CFUUIDCreate(kCFAllocatorDefault)
+            let UUID = String(CFUUIDCreateString(kCFAllocatorDefault, UUIDRef))
+            AppManager.setUUID(UUID)
+        }
         if let name = NSUserDefaults.standardUserDefaults().objectForKey("userName") as? String{
             User.sharedUser.setUserName(name)
             CSVDataManager.sharedInstance.loadEquipData{_ in }

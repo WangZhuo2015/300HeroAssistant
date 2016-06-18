@@ -248,8 +248,9 @@ static CGFloat const kSendButtonWidth = 60;
 #pragma mark - util
 
 - (void)alertWithTitle:(NSString *)title message:(NSString *)message {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
-    [alertView show];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle: UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alert animated:true completion:nil];
 }
 
 - (BOOL)filterError:(NSError *)error {
