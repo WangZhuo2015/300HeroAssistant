@@ -11,17 +11,13 @@ import PKHUD
 extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.tableViewDisplayWith("Rank榜单无结果", ifNecessaryForRowCount: rank.count)
-        return rank.count + 2
+        return rank.count + 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier(MenuTableViewCellIdentifier) as! MenuTableViewCell
-            return cell
-        case 1:
-            let cell = tableView.dequeueReusableCellWithIdentifier(MenuTableViewCellIdentifier) as! MenuTableViewCell
-            cell.menuItemLabel.text = "反馈意见"
             return cell
         default:
             break
@@ -33,7 +29,7 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         switch indexPath.row {
-        case 0...1:
+        case 0:
             return 57
         default:
             break
@@ -74,15 +70,6 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
                 alert.addAction(cancel)
                 presentViewController(alert, animated: true, completion: nil)
             }
-        case 1:
-            let feedbackViewController = LCUserFeedbackViewController()
-            feedbackViewController.navigationBarStyle = LCUserFeedbackNavigationBarStyleBlue
-            feedbackViewController.contactHeaderHidden = true
-            feedbackViewController.presented = true
-            feedbackViewController.feedbackTitle = "用户反馈"
-            let navigationController = UINavigationController(rootViewController: feedbackViewController)
-            feedbackViewController.contact = AppManager.getUUID()
-            presentViewController(navigationController, animated: true, completion: nil)
         default:
             break
         }

@@ -55,8 +55,8 @@ class PersonalInfoViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         userChange()
-        //let login = UIBarButtonItem(title: "切换账号", style: .Plain , target: self, action: #selector(self.login))
-        //self.navigationItem.rightBarButtonItem = login
+        let feedback = UIBarButtonItem(title: "用户反馈", style: .Plain , target: self, action: #selector(self.feedback))
+        self.navigationItem.leftBarButtonItem = feedback
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: (#selector(PersonalInfoViewController.userChange)), name: userChangedNotification, object: nil)
         loadPlayerBasicInfoWithName()
@@ -108,6 +108,16 @@ class PersonalInfoViewController: UIViewController {
         winRateProgress.progress = winRate
     }
     
+    func feedback(){
+        let feedbackViewController = LCUserFeedbackViewController()
+        feedbackViewController.navigationBarStyle = LCUserFeedbackNavigationBarStyleBlue
+        feedbackViewController.contactHeaderHidden = true
+        feedbackViewController.presented = true
+        feedbackViewController.feedbackTitle = "用户反馈"
+        let navigationController = UINavigationController(rootViewController: feedbackViewController)
+        feedbackViewController.contact = AppManager.getUUID()
+        presentViewController(navigationController, animated: true, completion: nil)
+    }
     
     
     
