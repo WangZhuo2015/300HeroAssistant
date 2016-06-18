@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (3.4.0)
+  - AVOSCloud (3.3.3)
+  - AVOSCloudCrashReporting (3.3.3):
+    - AVOSCloud
   - Kingfisher (2.4.1)
   - MJRefresh (3.1.0)
   - PKHUD (3.1.0)
@@ -9,6 +12,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AVOSCloud
+  - AVOSCloudCrashReporting
   - Kingfisher (~> 2.2)
   - MJRefresh
   - PKHUD
@@ -18,6 +23,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  AVOSCloud: dcd8a24c219971400146fe09638d218cfc8bb7f1
+  AVOSCloudCrashReporting: 2714371af4e7ac01fe005279428a0020a2233ec1
   Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   PKHUD: 4167eccdb1b3a892fd80ce2b51cb6ba412a889ab
@@ -25,6 +32,6 @@ SPEC CHECKSUMS:
   SwiftCSV: 8b64b738fc54567d229acb17ce6d584e0dd27560
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: c403961156d360a52639c1339e49521837836ff8
+PODFILE CHECKSUM: 2764df0fd2f073405436b9ef5bb50a1d1ae87fe5
 
 COCOAPODS: 1.0.0
