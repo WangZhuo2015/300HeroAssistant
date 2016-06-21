@@ -44,6 +44,7 @@
 		3540E9381D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E9371D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift */; };
 		3540E93C1D0B15C000E0FB66 /* FriendAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E93B1D0B15C000E0FB66 /* FriendAnalysisViewController.swift */; };
 		3540E93E1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E93D1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift */; };
+		3547D7C71D19BA77005C47A9 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3547D7C61D19BA77005C47A9 /* PlayerDetailViewController.swift */; };
 		354BC70C1CFD5233001E046C /* EquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC70B1CFD5233001E046C /* EquipmentViewController.swift */; };
 		354BC7121CFD5334001E046C /* object data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70F1CFD5334001E046C /* object data.csv */; };
 		354BC7141CFD534F001E046C /* EquipmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7131CFD534F001E046C /* EquipmentData.swift */; };
@@ -171,6 +172,7 @@
 		3540E9371D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdvancedAnalysisMenuTableViewCell.swift; path = Cells/AdvancedAnalysisMenuTableViewCell.swift; sourceTree = "<group>"; };
 		3540E93B1D0B15C000E0FB66 /* FriendAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendAnalysisViewController.swift; path = Controller/AdvancedAnalysis/FriendAnalysisViewController.swift; sourceTree = "<group>"; };
 		3540E93D1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendAnalysisTableViewCell.swift; path = Cells/FriendAnalysisTableViewCell.swift; sourceTree = "<group>"; };
+		3547D7C61D19BA77005C47A9 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerDetailViewController.swift; path = Controller/AdvancedAnalysis/PlayerDetailViewController.swift; sourceTree = "<group>"; };
 		354BC70B1CFD5233001E046C /* EquipmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentViewController.swift; path = Controller/EquipmentViewController.swift; sourceTree = "<group>"; };
 		354BC70F1CFD5334001E046C /* object data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "object data.csv"; sourceTree = "<group>"; };
 		354BC7131CFD534F001E046C /* EquipmentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentData.swift; path = Tk300HeroAssistant/Model/Data/EquipmentData.swift; sourceTree = SOURCE_ROOT; };
@@ -449,6 +451,7 @@
 		3540E9391D0B0D7400E0FB66 /* 开黑分析 */ = {
 			isa = PBXGroup;
 			children = (
+				3547D7C51D19BA56005C47A9 /* 玩家详情 */,
 				3540E93B1D0B15C000E0FB66 /* FriendAnalysisViewController.swift */,
 				3540E93D1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift */,
 				356015331D0B2B5F006467E4 /* FriendAnalysisDataSource.swift */,
@@ -462,6 +465,14 @@
 				35E9D02B1CF96F11004170BE /* AccountChangeViewController.swift */,
 			);
 			name = "账号切换";
+			sourceTree = "<group>";
+		};
+		3547D7C51D19BA56005C47A9 /* 玩家详情 */ = {
+			isa = PBXGroup;
+			children = (
+				3547D7C61D19BA77005C47A9 /* PlayerDetailViewController.swift */,
+			);
+			name = "玩家详情";
 			sourceTree = "<group>";
 		};
 		354BC73B1CFD59B9001E046C /* Tk300HeroAssistantTests */ = {
@@ -958,6 +969,7 @@
 				3540E93C1D0B15C000E0FB66 /* FriendAnalysisViewController.swift in Sources */,
 				35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */,
 				3540E9331D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift in Sources */,
+				3547D7C71D19BA77005C47A9 /* PlayerDetailViewController.swift in Sources */,
 				351910641D0DCD0300FB0F0C /* AppManager.swift in Sources */,
 				3517D6FC1CE0EA70006162BA /* Item.swift in Sources */,
 				35C811891D15A7940017A0F5 /* LCUserFeedbackViewController.m in Sources */,

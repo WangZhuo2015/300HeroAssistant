@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Pb5-EV-1bX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Pb5-EV-1bX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -344,7 +344,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lUV-cH-oic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2009" y="-1454"/>
+            <point key="canvasLocation" x="2101" y="-812"/>
         </scene>
         <!--英雄胜率-->
         <scene sceneID="ErM-dn-kB4">
@@ -699,6 +699,7 @@
                                         <connections>
                                             <outlet property="playCountLabel" destination="aYZ-i3-9LA" id="AHo-Po-ah7"/>
                                             <outlet property="playerNameLabel" destination="9Cn-fG-yDg" id="8ON-Kp-bil"/>
+                                            <segue destination="EDF-rx-t3D" kind="push" id="mXF-Ag-DSX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -720,7 +721,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AXR-Tt-ce6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666" y="-1454"/>
+            <point key="canvasLocation" x="2101" y="-1438"/>
+        </scene>
+        <!--Player Detail View Controller-->
+        <scene sceneID="XFQ-6R-onV">
+            <objects>
+                <viewController id="EDF-rx-t3D" customClass="PlayerDetailViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PkL-Nq-dFx"/>
+                        <viewControllerLayoutGuide type="bottom" id="RuG-zl-vEe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oU1-1l-U04">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qfU-mq-lfC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="8me-My-xsO">
+                                    <rect key="frame" x="0.0" y="44" width="320" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qfU-mq-lfC" firstAttribute="centerY" secondItem="oU1-1l-U04" secondAttribute="centerY" id="Dqa-p4-HE4"/>
+                            <constraint firstItem="qfU-mq-lfC" firstAttribute="height" secondItem="oU1-1l-U04" secondAttribute="height" id="SEv-jN-zmw"/>
+                            <constraint firstItem="qfU-mq-lfC" firstAttribute="width" secondItem="oU1-1l-U04" secondAttribute="width" id="ghi-sE-Pk7"/>
+                            <constraint firstItem="qfU-mq-lfC" firstAttribute="centerX" secondItem="oU1-1l-U04" secondAttribute="centerX" id="iU4-tz-SSz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4C2-2Y-H8z"/>
+                    <connections>
+                        <outlet property="headerView" destination="8me-My-xsO" id="fsX-nM-kIF"/>
+                        <outlet property="tableView" destination="qfU-mq-lfC" id="U39-u0-oOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dnR-6n-FX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2480" y="-1438"/>
         </scene>
     </scenes>
 </document>
