@@ -13,6 +13,9 @@ class MainViewController: UITabBarController,SKStoreProductViewControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         loadAllViewController()
+        if AppManager.appUseCountUp() > 5 && !AppManager.isEvaluated(){
+            reviewThisApp()
+        }
         if User.sharedUser.userName == nil{
             self.selectedIndex = (self.viewControllers?.count)! - 1
         }
@@ -20,8 +23,16 @@ class MainViewController: UITabBarController,SKStoreProductViewControllerDelegat
     }
     
     override func viewDidAppear(animated: Bool) {
-        if AppManager.appUseCountUp() > 5 && !AppManager.isEvaluated(){
-            reviewThisApp()
+        super.viewDidAppear(animated)
+        LCUserFeedbackAgent.sharedInstance().countUnreadFeedbackThreadsWithBlock { (number, error) in
+            guard error != nil || number != 0 else{
+                // 网络出错了，不设置红点
+                ((self.viewControllers?.last as! UINavigationController).viewControllers.first as! PersonalInfoViewController).removeNewMessage()
+                self.viewControllers?.last?.tabBarItem.badgeValue = nil
+                return
+            }
+            self.viewControllers?.last?.tabBarItem.badgeValue = "\(number)"
+            ((self.viewControllers?.last as! UINavigationController).viewControllers.first as! PersonalInfoViewController).recieveNewMessage()
         }
     }
     

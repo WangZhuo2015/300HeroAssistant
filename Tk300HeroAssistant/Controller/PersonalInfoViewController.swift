@@ -29,6 +29,7 @@ class PersonalInfoViewController: UIViewController {
     @IBOutlet weak var winRateProgress: UIProgressView!
     
     @IBOutlet weak var changeAccountButton: UIBarButtonItem!
+    let feedbackButton = UIBarButtonItem()
     //PersonalRankCell
     let PersonalRankCellIdentifier = "PersonalRankCellIdentifier"
     let advancedAnalysisSegue = "advancedAnalysisSegue"
@@ -55,8 +56,10 @@ class PersonalInfoViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         userChange()
-        let feedback = UIBarButtonItem(title: "用户反馈", style: .Plain , target: self, action: #selector(self.feedback))
-        self.navigationItem.leftBarButtonItem = feedback
+        feedbackButton.title = "用户反馈"
+        feedbackButton.target = self
+        feedbackButton.action = #selector(PersonalInfoViewController.feedback)
+        self.navigationItem.leftBarButtonItem = feedbackButton
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: (#selector(PersonalInfoViewController.userChange)), name: userChangedNotification, object: nil)
         loadPlayerBasicInfoWithName()
@@ -64,6 +67,11 @@ class PersonalInfoViewController: UIViewController {
         SKPaymentQueue.defaultQueue().addTransactionObserver(self)
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     
     deinit{
         SKPaymentQueue.defaultQueue().removeTransactionObserver(self)
@@ -119,6 +127,28 @@ class PersonalInfoViewController: UIViewController {
         presentViewController(navigationController, animated: true, completion: nil)
     }
     
+    func recieveNewMessage(){
+//        let animation = CABasicAnimation(keyPath: "opacity")
+//        animation.fromValue = 1.0
+//        
+//        animation.toValue = 0.0
+//        
+//        animation.autoreverses = true
+//        
+//        animation.duration = 1
+//        
+//        animation.repeatCount = Float.infinity
+//        
+//        animation.removedOnCompletion = true
+//        
+//        animation.fillMode = kCAFillModeForwards
+        feedbackButton.title = "新的回复"
+        feedbackButton.tintColor = UIColor.redColor()
+    }
+    func removeNewMessage(){
+        feedbackButton.title = "用户反馈"
+        feedbackButton.tintColor = UIColor.whiteColor()
+    }
     
     
     override func didReceiveMemoryWarning() {

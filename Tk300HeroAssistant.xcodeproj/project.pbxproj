@@ -250,7 +250,7 @@
 		35FBA6311CDF701600A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Hero.storyboard; sourceTree = "<group>"; };
 		35FBA6341CDF703A00A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PersonalInfo.storyboard; sourceTree = "<group>"; };
 		35FBA6381CDF708900A527B4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controller/Main/MainViewController.swift; sourceTree = "<group>"; };
-		35FBA63A1CDF711800A527B4 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInfoViewController.swift; path = Controller/PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		35FBA63A1CDF711800A527B4 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInfoViewController.swift; path = Controller/PersonalInfoViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		35FBA63C1CDF712E00A527B4 /* HeroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroViewController.swift; path = Controller/HeroViewController.swift; sourceTree = "<group>"; };
 		35FBA63E1CDF714A00A527B4 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchViewController.swift; path = Controller/MatchViewController.swift; sourceTree = "<group>"; };
 		35FBA6401CDF717400A527B4 /* MatchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchDetailViewController.swift; path = Controller/MatchDetailViewController.swift; sourceTree = "<group>"; };
@@ -374,6 +374,7 @@
 		3517D6D61CE0DE73006162BA /* 个人信息 */ = {
 			isa = PBXGroup;
 			children = (
+				35FBA63A1CDF711800A527B4 /* PersonalInfoViewController.swift */,
 				3540E9361D0AF65000E0FB66 /* 基本 */,
 			);
 			name = "个人信息";
@@ -438,7 +439,6 @@
 			isa = PBXGroup;
 			children = (
 				3540E93A1D0B0E0300E0FB66 /* 账号切换 */,
-				35FBA63A1CDF711800A527B4 /* PersonalInfoViewController.swift */,
 				35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */,
 				35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift */,
 				35E9D02D1CF96F68004170BE /* userAccountTableViewCell.swift */,
