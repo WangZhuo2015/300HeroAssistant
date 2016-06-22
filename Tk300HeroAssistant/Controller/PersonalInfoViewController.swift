@@ -40,7 +40,6 @@ class PersonalInfoViewController: UIViewController {
     let VERIFY_RECEIPT_URL = "https://buy.itunes.apple.com/verifyReceipt"
     let ITMS_SANDBOX_VERIFY_RECEIPT_URL = "https://sandbox.itunes.apple.com/verifyReceipt"
     var productDict:NSMutableDictionary!
-    let productID = "00001"
     var rank = [Rank](){
         didSet{
             self.tableView.reloadData()
@@ -56,7 +55,10 @@ class PersonalInfoViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         userChange()
-        feedbackButton.title = "用户反馈"
+        //防止已有
+        if feedbackButton.title == nil {
+            feedbackButton.title = "用户反馈"
+        }
         feedbackButton.target = self
         feedbackButton.action = #selector(PersonalInfoViewController.feedback)
         self.navigationItem.leftBarButtonItem = feedbackButton
@@ -143,7 +145,7 @@ class PersonalInfoViewController: UIViewController {
 //        
 //        animation.fillMode = kCAFillModeForwards
         feedbackButton.title = "新的回复"
-        feedbackButton.tintColor = UIColor.redColor()
+        feedbackButton.tintColor = UIColor ( red: 1.0, green: 0.4039, blue: 0.4957, alpha: 1.0 )
     }
     func removeNewMessage(){
         feedbackButton.title = "用户反馈"

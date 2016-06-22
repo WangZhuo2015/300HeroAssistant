@@ -9,9 +9,11 @@
 import UIKit
 import StoreKit
 class MainViewController: UITabBarController,SKStoreProductViewControllerDelegate {
-
+    var timer: NSTimer?
     override func viewDidLoad() {
         super.viewDidLoad()
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0*30, target: self, selector: #selector(self.checkNewMessage), userInfo: nil, repeats: true)
+        timer!.fire()
         loadAllViewController()
         if AppManager.appUseCountUp() > 5 && !AppManager.isEvaluated(){
             reviewThisApp()
@@ -24,16 +26,14 @@ class MainViewController: UITabBarController,SKStoreProductViewControllerDelegat
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        LCUserFeedbackAgent.sharedInstance().countUnreadFeedbackThreadsWithBlock { (number, error) in
-            guard error != nil || number != 0 else{
-                // 网络出错了，不设置红点
-                ((self.viewControllers?.last as! UINavigationController).viewControllers.first as! PersonalInfoViewController).removeNewMessage()
-                self.viewControllers?.last?.tabBarItem.badgeValue = nil
-                return
-            }
-            self.viewControllers?.last?.tabBarItem.badgeValue = "\(number)"
-            ((self.viewControllers?.last as! UINavigationController).viewControllers.first as! PersonalInfoViewController).recieveNewMessage()
-        }
+        //timer.fireDate = NSDate.distantFuture()
+        timer?.fireDate = NSDate.distantPast()
+        timer!.fire()
+    }
+    
+    deinit{
+        timer?.invalidate()
+        timer = nil
     }
     
     func loadAllViewController(){
@@ -119,6 +119,18 @@ class MainViewController: UITabBarController,SKStoreProductViewControllerDelegat
         }
     }
     
+    func checkNewMessage(){
+        LCUserFeedbackAgent.sharedInstance().countUnreadFeedbackThreadsWithBlock { (number, error) in
+            guard error != nil || number != 0 else{
+                // 网络出错了，不设置红点
+                ((self.viewControllers?.last as! UINavigationController).viewControllers.first as! PersonalInfoViewController).removeNewMessage()
+                self.viewControllers?.last?.tabBarItem.badgeValue = nil
+                return
+            }
+            self.viewControllers?.last?.tabBarItem.badgeValue = "\(number)"
+            ((self.viewControllers?.last as! UINavigationController).viewControllers.first as! PersonalInfoViewController).recieveNewMessage()
+        }
+    }
     
     func productViewControllerDidFinish(viewController: SKStoreProductViewController) {
         loadAllViewController()
