@@ -34,8 +34,6 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
         
         setHUD(titleLabelText: nil, subtitleLabelText: nil)
         PKHUD.sharedHUD.show()
-        // Uncomment the following line to preserve selection between presentations
-        self.clearsSelectionOnViewWillAppear = false
     }
     func setHUD(titleLabelText titleLabelText:String?,subtitleLabelText:String?){
         let view = PKHUDProgressView()

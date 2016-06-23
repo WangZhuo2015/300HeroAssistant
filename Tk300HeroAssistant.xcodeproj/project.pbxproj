@@ -756,6 +756,7 @@
 				35FBA5F31CDF4E5C00A527B4 /* Resources */,
 				AC6CF727BCF18C30A9F2424F /* 📦 Embed Pods Frameworks */,
 				B7DA3539B62C5293FC5C2A82 /* 📦 Copy Pods Resources */,
+				354532B81D1BA9EA005DD40E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -850,6 +851,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		354532B81D1BA9EA005DD40E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "leancloud upload_symbol \\\n-f \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\" \\\n-i \"McTRN6wWrpJ3h4JKIH6h4pKA-gzGzoHsz\" \\\n-k \"RtFCOng84Rwka4w1S3uBIDo2\"";
+		};
 		5156A7F7F722F3FD6DE47523 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
