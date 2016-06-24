@@ -756,7 +756,7 @@
 				35FBA5F31CDF4E5C00A527B4 /* Resources */,
 				AC6CF727BCF18C30A9F2424F /* 📦 Embed Pods Frameworks */,
 				B7DA3539B62C5293FC5C2A82 /* 📦 Copy Pods Resources */,
-				354532B81D1BA9EA005DD40E /* ShellScript */,
+				354532B81D1BA9EA005DD40E /* LeanCloud符号文件上传 */,
 			);
 			buildRules = (
 			);
@@ -851,13 +851,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		354532B81D1BA9EA005DD40E /* ShellScript */ = {
+		354532B81D1BA9EA005DD40E /* LeanCloud符号文件上传 */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "LeanCloud符号文件上传";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
