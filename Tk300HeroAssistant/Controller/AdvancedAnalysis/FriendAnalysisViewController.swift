@@ -12,12 +12,21 @@ class FriendAnalysisViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var data: [(Player,Int)]?
+    let pageName = "FriendAnalysisViewController"
     let FriendAnalysisCellIdentifier = "FriendAnalysisCellIdentifier"
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
 
     override func didReceiveMemoryWarning() {

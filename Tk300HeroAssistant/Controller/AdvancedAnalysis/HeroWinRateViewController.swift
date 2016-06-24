@@ -13,12 +13,21 @@ class HeroWinRateViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var data: [HeroWinRate]?
     //var matchData: [Match]
+    let pageName = "HeroWinRateViewController"
     let HeroWinRateCellIdentifier = "HeroWinRateCellIdentifier"
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
     
 

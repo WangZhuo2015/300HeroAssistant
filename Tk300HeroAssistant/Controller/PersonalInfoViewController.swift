@@ -30,6 +30,8 @@ class PersonalInfoViewController: UIViewController {
     
     @IBOutlet weak var changeAccountButton: UIBarButtonItem!
     let feedbackButton = UIBarButtonItem()
+    let pageName = "PersonalInfoViewController"
+    
     //PersonalRankCell
     let PersonalRankCellIdentifier = "PersonalRankCellIdentifier"
     let advancedAnalysisSegue = "advancedAnalysisSegue"
@@ -71,7 +73,11 @@ class PersonalInfoViewController: UIViewController {
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
     
     

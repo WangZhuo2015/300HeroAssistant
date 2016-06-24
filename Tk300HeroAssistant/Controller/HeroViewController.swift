@@ -12,6 +12,7 @@ class HeroViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var filterButton: UIBarButtonItem!
+    let pageName = "HeroViewController"
     
     var rawHeroDataArray = [HeroData](){
         didSet{
@@ -56,6 +57,15 @@ class HeroViewController: UIViewController {
         
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
 
     override func didReceiveMemoryWarning() {

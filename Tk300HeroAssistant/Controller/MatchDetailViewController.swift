@@ -25,6 +25,7 @@ class MatchDetailViewController: UIViewController {
     @IBOutlet weak var matchScoreLabel: UILabel!
     
     var matchID = 0
+    let pageName = "MatchDetailViewController"
     let matchDetailCellIdentifier = "matchDetailCellIdentifier"
     var matchData:Match?
     
@@ -43,6 +44,14 @@ class MatchDetailViewController: UIViewController {
         self.setMatchInfo(self.matchData!)
         self.tableView.reloadData()
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
 
     override func didReceiveMemoryWarning() {

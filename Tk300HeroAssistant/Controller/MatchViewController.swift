@@ -12,6 +12,7 @@ import MJRefresh
 import PKHUD
 class MatchViewController: UIViewController {
     @IBOutlet weak var matchTableView: UITableView!
+    let pageName = "MatchViewController"
     
     //MatchCell
     let MatchCellIdentifier = "MatchCellIdentifier"
@@ -78,6 +79,15 @@ class MatchViewController: UIViewController {
         footer.stateLabel.textColor = UIColor.whiteColor()
         matchTableView.mj_footer = footer
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
     
     func userChange(){

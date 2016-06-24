@@ -13,6 +13,8 @@ class EquipmentViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     @IBOutlet weak var searchBarHeight: NSLayoutConstraint!
+    let pageName = "EquipmentViewController"
+    
     var searchBarHidden: Bool = true{
         didSet{
             if searchBarHidden {
@@ -55,6 +57,15 @@ class EquipmentViewController: UIViewController {
             self.equipmentDataArray = data
             // Do any additional setup after loading the view.
         }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
 
     override func viewDidAppear(animated: Bool) {

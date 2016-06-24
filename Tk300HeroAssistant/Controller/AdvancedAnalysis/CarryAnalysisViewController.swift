@@ -15,7 +15,7 @@ class CarryAnalysisViewController: UIViewController {
     @IBOutlet weak var carryRateLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
-    
+    let pageName = "CarryAnalysisViewController"
     let MatchCellIdentifier = "MatchCellIdentifier"
     var matchBasicInfoArray =  [List]()
     var matchBasicInfoDic = [Int:List]()
@@ -47,6 +47,14 @@ class CarryAnalysisViewController: UIViewController {
         }
         matchBasicInfoArray = matchBasicInfoDic.map{$1}
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
 
     override func didReceiveMemoryWarning() {

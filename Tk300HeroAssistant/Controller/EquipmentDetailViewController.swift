@@ -27,7 +27,7 @@ class EquipmentDetailViewController: UIViewController {
     @IBOutlet weak var combineLabel: UIButton!
     
     @IBOutlet weak var subEquipmentLabel: UIButton!
-    
+    let pageName = "EquipmentDetailViewController"
     let EquipmentDetailViewControllerID = "EquipmentDetailViewControllerID"
     var currentEquipment:EquipmentData?
     
@@ -52,6 +52,14 @@ class EquipmentDetailViewController: UIViewController {
 //            self.navigationController?.pushViewController(equipmentDetailVC, animated: true)
         }
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
 
     override func didReceiveMemoryWarning() {

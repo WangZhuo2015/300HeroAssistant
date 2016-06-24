@@ -20,7 +20,6 @@ class MainViewController: UITabBarController,SKStoreProductViewControllerDelegat
             self.selectedIndex = (self.viewControllers?.count)! - 1
         }
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0*30, target: self, selector: #selector(self.checkNewMessage), userInfo: nil, repeats: true)
-        timer!.fire()
         // Do any additional setup after loading the view.
     }
     

@@ -9,7 +9,7 @@
 import UIKit
 import PKHUD
 class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyzerDelegate {
-
+    let pageName = "AdvancedAnalysisMainTableViewController"
     var dataAnalyzer = DataAnalyzer.sharedInstance
     let HeroWinRateSegue = "HeroWinRateSegue"
     let friendAnalysisSegue = "friendAnalysisSegue"
@@ -34,6 +34,15 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
         
         setHUD(titleLabelText: nil, subtitleLabelText: nil)
         PKHUD.sharedHUD.show()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
     func setHUD(titleLabelText titleLabelText:String?,subtitleLabelText:String?){
         let view = PKHUDProgressView()
