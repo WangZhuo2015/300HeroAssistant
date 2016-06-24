@@ -12,8 +12,6 @@ class MainViewController: UITabBarController,SKStoreProductViewControllerDelegat
     var timer: NSTimer?
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0*30, target: self, selector: #selector(self.checkNewMessage), userInfo: nil, repeats: true)
-        timer!.fire()
         loadAllViewController()
         if AppManager.appUseCountUp() > 5 && !AppManager.isEvaluated(){
             reviewThisApp()
@@ -21,6 +19,8 @@ class MainViewController: UITabBarController,SKStoreProductViewControllerDelegat
         if User.sharedUser.userName == nil{
             self.selectedIndex = (self.viewControllers?.count)! - 1
         }
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0*30, target: self, selector: #selector(self.checkNewMessage), userInfo: nil, repeats: true)
+        timer!.fire()
         // Do any additional setup after loading the view.
     }
     
