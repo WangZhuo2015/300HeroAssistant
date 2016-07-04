@@ -6,6 +6,7 @@ PODS:
   - Kingfisher (2.4.1)
   - MJRefresh (3.1.0)
   - PKHUD (3.1.0)
+  - ReachabilitySwift (2.3.3)
   - SnapKit (0.21.0)
   - SwiftCSV (0.3.2)
   - SwiftyJSON (2.3.2)
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - Kingfisher (~> 2.2)
   - MJRefresh
   - PKHUD
+  - ReachabilitySwift
   - SnapKit
   - SwiftCSV
   - SwiftyJSON
@@ -28,10 +30,11 @@ SPEC CHECKSUMS:
   Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   PKHUD: 4167eccdb1b3a892fd80ce2b51cb6ba412a889ab
+  ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793
   SnapKit: 2756fe24b706367af224c9c508d2f9166d03354c
   SwiftCSV: 8b64b738fc54567d229acb17ce6d584e0dd27560
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 2764df0fd2f073405436b9ef5bb50a1d1ae87fe5
+PODFILE CHECKSUM: 05eadb022031d4ec084d94319a5a1a436bb9c3a8
 
 COCOAPODS: 1.0.0
