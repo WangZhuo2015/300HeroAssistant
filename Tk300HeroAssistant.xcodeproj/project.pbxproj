@@ -33,6 +33,7 @@
 		3517D70D1CE0F2FA006162BA /* MatchTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D70C1CE0F2FA006162BA /* MatchTableViewDataSource.swift */; };
 		3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D70E1CE0F38D006162BA /* MatchBasicTableViewCell.swift */; };
 		351910641D0DCD0300FB0F0C /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351910631D0DCD0300FB0F0C /* AppManager.swift */; };
+		353AF3221D2ACBED00822044 /* CrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353AF3211D2ACBED00822044 /* CrashViewController.swift */; };
 		35401A6A1CE830DA00F0EDE2 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A691CE830D900F0EDE2 /* Global.swift */; };
 		35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */; };
 		35401A6F1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */; };
@@ -161,6 +162,7 @@
 		3517D70C1CE0F2FA006162BA /* MatchTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchTableViewDataSource.swift; path = Controller/MatchTableViewDataSource.swift; sourceTree = "<group>"; };
 		3517D70E1CE0F38D006162BA /* MatchBasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchBasicTableViewCell.swift; path = Cells/MatchBasicTableViewCell.swift; sourceTree = "<group>"; };
 		351910631D0DCD0300FB0F0C /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppManager.swift; path = Tk300HeroAssistant/Model/AppManager.swift; sourceTree = SOURCE_ROOT; };
+		353AF3211D2ACBED00822044 /* CrashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrashViewController.swift; path = Controller/Test/CrashViewController.swift; sourceTree = "<group>"; };
 		35401A691CE830D900F0EDE2 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Tk300HeroAssistant/Model/Global.swift; sourceTree = SOURCE_ROOT; };
 		35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewExtension.swift; path = Extension/TableViewExtension.swift; sourceTree = "<group>"; };
 		35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableViewNetErrorDataSource.swift; path = Tools/UITableViewNetErrorDataSource.swift; sourceTree = "<group>"; };
@@ -400,6 +402,14 @@
 				35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */,
 			);
 			name = "详情";
+			sourceTree = "<group>";
+		};
+		353AF3201D2ACBCB00822044 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				353AF3211D2ACBED00822044 /* CrashViewController.swift */,
+			);
+			name = Test;
 			sourceTree = "<group>";
 		};
 		35401A6D1CE839C800F0EDE2 /* Tools */ = {
@@ -682,6 +692,7 @@
 		35FBA6371CDF704B00A527B4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				353AF3201D2ACBCB00822044 /* Test */,
 				35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */,
 				35FBA6381CDF708900A527B4 /* MainViewController.swift */,
 				3540E9291D0AEAB800E0FB66 /* 高级分析功能 */,
@@ -1044,6 +1055,7 @@
 				3509932E1CEF11E70079C7E3 /* HeroCollectionViewCell.swift in Sources */,
 				3517D7051CE0EDE9006162BA /* RoleAPIBase.swift in Sources */,
 				3501B2881D153F2500EB136B /* HeroWinRateAnalyzer.swift in Sources */,
+				353AF3221D2ACBED00822044 /* CrashViewController.swift in Sources */,
 				35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */,
 				35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */,
 				35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */,
@@ -1248,6 +1260,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = Tk300HeroAssistant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1265,6 +1278,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = Tk300HeroAssistant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
