@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        AVOSCloud.registerForRemoteNotification()
         AVOSCloudCrashReporting.enable()
         AVOSCloud.setApplicationId("McTRN6wWrpJ3h4JKIH6h4pKA-gzGzoHsz", clientKey: "RtFCOng84Rwka4w1S3uBIDo2")
         AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
@@ -47,6 +48,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Override point for customization after application launch.
         return true
+    }
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        AVOSCloud.handleRemoteNotificationsWithDeviceToken(deviceToken)
     }
 
     func applicationWillResignActive(application: UIApplication) {
