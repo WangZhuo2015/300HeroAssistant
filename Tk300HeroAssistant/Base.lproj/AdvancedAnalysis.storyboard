@@ -126,6 +126,30 @@
                                             <segue destination="j2H-EK-ztG" kind="push" identifier="carryAnalysisSegue" id="DhN-OJ-uH7"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="HgH-YT-9lv">
+                                        <rect key="frame" x="0.0" y="132" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HgH-YT-9lv" id="BEU-x4-SL1">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="崩溃测试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8d-Mh-8pK">
+                                                    <rect key="frame" x="8" y="11" width="68" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="d8d-Mh-8pK" secondAttribute="leading" id="P0l-2J-fu3"/>
+                                                <constraint firstItem="d8d-Mh-8pK" firstAttribute="centerY" secondItem="BEU-x4-SL1" secondAttribute="centerY" id="xAE-I2-5mD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="CfU-hh-DSF" kind="push" id="Y7N-r1-kNQ"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -139,6 +163,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCg-Nv-wkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1304" y="-731"/>
+        </scene>
+        <!--Crash View Controller-->
+        <scene sceneID="13g-3A-CdS">
+            <objects>
+                <viewController id="CfU-hh-DSF" customClass="CrashViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zAw-PV-TNW"/>
+                        <viewControllerLayoutGuide type="bottom" id="3xc-B5-093"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0EZ-bb-K5C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yM6-dZ-Aht"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MJ7-Fk-1es" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304" y="-88"/>
         </scene>
         <!--Carry统计-->
         <scene sceneID="fBi-8U-JbD">
