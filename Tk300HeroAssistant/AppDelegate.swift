@@ -14,22 +14,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        //注册推送
         AVOSCloud.registerForRemoteNotification()
+        //开启崩溃报告收集
         AVOSCloudCrashReporting.enable()
+        //注册ID
         AVOSCloud.setApplicationId("McTRN6wWrpJ3h4JKIH6h4pKA-gzGzoHsz", clientKey: "RtFCOng84Rwka4w1S3uBIDo2")
         AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-        
+        //记录UDID
         if AppManager.getUUID() == nil{
             let UUIDRef = CFUUIDCreate(kCFAllocatorDefault)
             let UUID = String(CFUUIDCreateString(kCFAllocatorDefault, UUIDRef))
             AppManager.setUUID(UUID)
         }
+        //设置用户名
         if let name = NSUserDefaults.standardUserDefaults().objectForKey("userName") as? String{
             User.sharedUser.setUserName(name)
-            CSVDataManager.sharedInstance.loadEquipData{_ in }
-            CSVDataManager.sharedInstance.loadHeroData{_ in }
-            CSVDataManager.sharedInstance.loadSkillData{_ in }
         }
+        CSVDataManager.sharedInstance.loadEquipData{_ in }
+        CSVDataManager.sharedInstance.loadHeroData{_ in }
+        CSVDataManager.sharedInstance.loadSkillData{_ in }
+        
         //外观相关设置
         setApplicationApperance()
 

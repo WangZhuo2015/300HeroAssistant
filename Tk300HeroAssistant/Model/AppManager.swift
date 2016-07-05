@@ -13,12 +13,21 @@ class AppManager {
     }
     static func boughtIAP(){
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "boughtIAP")
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
+    static func buyCountPlusOne(){
+        //购买量计数
+        let buyIAPLog = AVObject.init(className: "buyIAPLog")
+        buyIAPLog.setObject("ture", forKey: "购买成功")
+        buyIAPLog.setObject(AppManager.getUUID(), forKey: "UUID")
+        buyIAPLog.saveInBackground()
     }
     static func isEvaluated()->Bool{
         return NSUserDefaults.standardUserDefaults().boolForKey("haveEvaluated")
     }
     static func evaluated(){
-        return NSUserDefaults.standardUserDefaults().setBool(true, forKey: "haveEvaluated")
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "haveEvaluated")
+        NSUserDefaults.standardUserDefaults().synchronize()
     }
     
     static func appUseCountUp()->Int{

@@ -330,9 +330,6 @@
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杀敌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDI-Mh-h9e">
                                                             <rect key="frame" x="79" y="151" width="28" height="17"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="28" id="oex-v2-DPb"/>
-                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -404,9 +401,6 @@
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="建筑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7g-b8-Ggm">
                                                             <rect key="frame" x="185" y="151" width="28" height="17"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="28" id="M3G-mQ-9FE"/>
-                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -450,7 +444,7 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="装备" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rob-7G-wgP">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="装备" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="rob-7G-wgP">
                                                             <rect key="frame" x="8" y="62" width="34" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -582,7 +576,7 @@
                                                         <constraint firstItem="3ev-CS-EFn" firstAttribute="leading" secondItem="DTj-M6-Ppd" secondAttribute="trailing" constant="8" id="ctx-AS-53b"/>
                                                         <constraint firstAttribute="trailing" secondItem="eao-gw-bIY" secondAttribute="trailing" constant="15" id="dIO-lN-2s1"/>
                                                         <constraint firstItem="eao-gw-bIY" firstAttribute="leading" secondItem="dca-sN-I1R" secondAttribute="trailing" constant="8" id="dbv-G6-Qup"/>
-                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="o3S-lg-XJw" secondAttribute="trailing" constant="10" id="djw-26-UEt"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="o3S-lg-XJw" secondAttribute="trailing" constant="8" id="djw-26-UEt"/>
                                                         <constraint firstItem="DTj-M6-Ppd" firstAttribute="leading" secondItem="U3c-S5-9tP" secondAttribute="leading" constant="8" id="eO2-k0-ASY"/>
                                                         <constraint firstItem="3EJ-0h-5sT" firstAttribute="leading" secondItem="FSl-uI-Ir4" secondAttribute="trailing" constant="8" id="ecD-nx-EHY"/>
                                                         <constraint firstItem="EZ5-m0-T1Y" firstAttribute="top" secondItem="rob-7G-wgP" secondAttribute="bottom" constant="20" id="glY-tu-ivZ"/>

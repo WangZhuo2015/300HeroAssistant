@@ -76,7 +76,9 @@ extension PersonalInfoViewController:SKProductsRequestDelegate,SKPaymentTransact
      */
     internal func productPurchased(transaction: SKPaymentTransaction){
         AppManager.boughtIAP()
-        HUD.flash(.LabeledSuccess(title: "成功", subtitle: "购买成功"))
+        AppManager.buyCountPlusOne()
+        PKHUD.sharedHUD.hide()
+        HUD.flash(.LabeledSuccess(title: "成功", subtitle: "购买成功"),delay: 1)
         //重写方法，购买成功
     }
     
@@ -84,6 +86,7 @@ extension PersonalInfoViewController:SKProductsRequestDelegate,SKPaymentTransact
      商品购买失败后的方法
      */
     internal func productFailed(transaction: SKPaymentTransaction){
+        PKHUD.sharedHUD.hide()
         HUD.flash(.LabeledError(title: "错误", subtitle: "购买失败"),delay: 1)
         //重写方法，购买失败
     }
@@ -93,19 +96,23 @@ extension PersonalInfoViewController:SKProductsRequestDelegate,SKPaymentTransact
      */
     internal func productRestored(transaction: SKPaymentTransaction){
         AppManager.boughtIAP()
-        HUD.flash(.LabeledSuccess(title: "成功", subtitle: "内购恢复成功"))
+        PKHUD.sharedHUD.hide()
+        HUD.flash(.LabeledSuccess(title: "成功", subtitle: "内购恢复成功"),delay: 1)
         //重写方法，重复购买
     }
     
     internal func productPurchasing(transaction: SKPaymentTransaction){
-        HUD.flash(.LabeledProgress(title: "购买中ing", subtitle: "正在购买"))
+        PKHUD.sharedHUD.hide()
+        HUD.flash(.LabeledProgress(title: "购买中ing", subtitle: "正在购买"),delay: 1)
         //商品购买正在处理
     }
     internal func productDeferred(transaction: SKPaymentTransaction){
+        PKHUD.sharedHUD.hide()
         //商品购买推迟
     }
     
     internal func productRestoreFailed(error: NSError){
+        PKHUD.sharedHUD.hide()
         HUD.flash(.LabeledError(title: "错误", subtitle: "恢复购买失败"),delay: 1)
         //恢复内购失败
     }

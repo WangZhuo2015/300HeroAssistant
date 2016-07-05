@@ -42,34 +42,38 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
         switch indexPath.row {
         case 0:
             //内购取消
-            performSegueWithIdentifier(advancedAnalysisSegue, sender: nil)
+            //performSegueWithIdentifier(advancedAnalysisSegue, sender: nil)
             //内购添加
-//            if AppManager.haveBoughtIAP(){
-//                guard User.sharedUser.userName != nil else{
-//                    HUD.flash(.LabeledError(title: "数据获取失败", subtitle: "无用户"), delay: 1, completion: nil)
-//                    return
-//                }
-//                performSegueWithIdentifier(advancedAnalysisSegue, sender: nil)
-//            }else{
-//                let alert = UIAlertController(title: "高级功能包", message: "要购买高级功能包吗", preferredStyle: .Alert)
-//                let buyIAP = UIAlertAction(title: "购买", style: .Default) { (action) in
-//                    //dispatch_async(dispatch_get_main_queue()) {
-//                        //perform code
-//                        self.requestProducts(NSSet(array: ["AdvancedFunctionPackage"]))
-//                    //}
-//                }
-//                let restoreIAP = UIAlertAction(title: "恢复购买", style: .Default) { (action) in
-//                    //dispatch_async(dispatch_get_main_queue()) {
-//                        //perform code
-//                        self.restoreProducts("AdvancedFunctionPackage")
-//                    //}
-//                }
-//                let cancel = UIAlertAction(title: "取消", style: .Cancel,handler: nil)
-//                alert.addAction(buyIAP)
-//                alert.addAction(restoreIAP)
-//                alert.addAction(cancel)
-//                presentViewController(alert, animated: true, completion: nil)
-//            }
+            if AppManager.haveBoughtIAP(){
+                guard User.sharedUser.userName != nil else{
+                    HUD.flash(.LabeledError(title: "数据获取失败", subtitle: "无用户"), delay: 1, completion: nil)
+                    return
+                }
+                performSegueWithIdentifier(advancedAnalysisSegue, sender: nil)
+            }else{
+                let alert = UIAlertController(title: "高级功能包", message: "要购买高级功能包吗", preferredStyle: .Alert)
+                let buyIAP = UIAlertAction(title: "购买", style: .Default) { (action) in
+                    //dispatch_async(dispatch_get_main_queue()) {
+                        //perform code
+                    PKHUD.sharedHUD.contentView = PKHUDProgressView()
+                    PKHUD.sharedHUD.show()
+                    self.requestProducts(NSSet(array: ["AdvancedFunctionPackage"]))
+                    //}
+                }
+                let restoreIAP = UIAlertAction(title: "恢复购买", style: .Default) { (action) in
+                    //dispatch_async(dispatch_get_main_queue()) {
+                        //perform code
+                    PKHUD.sharedHUD.contentView = PKHUDProgressView()
+                    PKHUD.sharedHUD.show()
+                    self.restoreProducts("AdvancedFunctionPackage")
+                    //}
+                }
+                let cancel = UIAlertAction(title: "取消", style: .Cancel,handler: nil)
+                alert.addAction(buyIAP)
+                alert.addAction(restoreIAP)
+                alert.addAction(cancel)
+                presentViewController(alert, animated: true, completion: nil)
+            }
         default:
             break
         }

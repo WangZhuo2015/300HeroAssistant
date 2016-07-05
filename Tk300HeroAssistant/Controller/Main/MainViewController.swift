@@ -120,7 +120,7 @@ class MainViewController: UITabBarController,SKStoreProductViewControllerDelegat
     
     func checkNewMessage(){
         LCUserFeedbackAgent.sharedInstance().countUnreadFeedbackThreadsWithBlock { (number, error) in
-            guard error != nil || number != 0 else{
+            guard error != nil && number != 0 else{
                 // 网络出错了，不设置红点
                 ((self.viewControllers?.last as! UINavigationController).viewControllers.first as! PersonalInfoViewController).removeNewMessage()
                 self.viewControllers?.last?.tabBarItem.badgeValue = nil
