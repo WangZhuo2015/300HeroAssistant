@@ -21,7 +21,7 @@ class EquipmentCollectionViewCell: UICollectionViewCell {
     func setContent(equipment:EquipmentData){
         equipmentLabel.text = equipment.name
         equipmentImage.image = UIImage(named: equipment.id!)
-        equipmentImage.layer.shouldRasterize = true
+        //equipmentImage.layer.shouldRasterize = true
     }
 
 }

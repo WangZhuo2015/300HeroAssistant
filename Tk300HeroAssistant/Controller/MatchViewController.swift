@@ -18,6 +18,7 @@ class MatchViewController: UIViewController {
     let MatchCellIdentifier = "MatchCellIdentifier"
     var matchBasicInfoArray = [List](){
         didSet{
+            matchTableView.mj_footer?.hidden = matchBasicInfoArray.count == 0
             var count = 0
             matchBasicInfoArray.forEach { (item) in
                 if matchDetailDownload.indexForKey(item.matchID) == nil{
@@ -78,6 +79,7 @@ class MatchViewController: UIViewController {
         })
         footer.stateLabel.textColor = UIColor.whiteColor()
         matchTableView.mj_footer = footer
+        matchTableView.mj_footer.hidden = matchBasicInfoArray.count == 0
         // Do any additional setup after loading the view.
     }
     
