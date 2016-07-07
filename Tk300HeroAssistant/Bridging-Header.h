@@ -6,5 +6,5 @@
 //  Copyright © 2016年 SherryTeam. All rights reserved.
 //
 #import <AVOSCloud/AVOSCloud.h>
-#import <AVOSCloudCrashReporting/AVOSCloudCrashReporting.h>
+//#import <AVOSCloudCrashReporting/AVOSCloudCrashReporting.h>
 #import "LeanCloudFeedback/LeanCloudFeedback.h"

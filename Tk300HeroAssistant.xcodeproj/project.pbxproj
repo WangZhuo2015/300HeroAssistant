@@ -767,7 +767,7 @@
 				35FBA5F31CDF4E5C00A527B4 /* Resources */,
 				AC6CF727BCF18C30A9F2424F /* 📦 Embed Pods Frameworks */,
 				B7DA3539B62C5293FC5C2A82 /* 📦 Copy Pods Resources */,
-				354532B81D1BA9EA005DD40E /* LeanCloud符号文件上传 */,
+				354BA04D1D2E9CC300A2C045 /* Fabric Crash Report */,
 			);
 			buildRules = (
 			);
@@ -862,19 +862,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		354532B81D1BA9EA005DD40E /* LeanCloud符号文件上传 */ = {
+		354BA04D1D2E9CC300A2C045 /* Fabric Crash Report */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "LeanCloud符号文件上传";
+			name = "Fabric Crash Report";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "leancloud upload_symbol \\\n-f \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\" \\\n-i \"McTRN6wWrpJ3h4JKIH6h4pKA-gzGzoHsz\" \\\n-k \"RtFCOng84Rwka4w1S3uBIDo2\"";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 337959c28d91bd9a09da5d5f52a2c069b995d2aa d41bede1e426e1eb32d9b6722b08b6c01893f13f03de64a4f9b3385116f56713";
 		};
 		5156A7F7F722F3FD6DE47523 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //注册推送
         AVOSCloud.registerForRemoteNotification()
         //开启崩溃报告收集
-        AVOSCloudCrashReporting.enable()
+        Fabric.with([Crashlytics.self])
+        //AVOSCloudCrashReporting.enable()
         //注册ID
         AVOSCloud.setApplicationId("McTRN6wWrpJ3h4JKIH6h4pKA-gzGzoHsz", clientKey: "RtFCOng84Rwka4w1S3uBIDo2")
         AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
