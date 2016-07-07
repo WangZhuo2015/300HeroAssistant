@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Crashlytics
 class CrashViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -16,8 +16,9 @@ class CrashViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     func carsh(){
-        let pointer:CVaListPointer = CVaListPointer(_fromUnsafeMutablePointer: UnsafeMutablePointer<Void>(nil))
-        NSException.raise(NSGenericException, format: "只是测试，模拟一条崩溃信息。", arguments: pointer)
+        Crashlytics.sharedInstance().crash()
+        //let pointer:CVaListPointer = CVaListPointer(_fromUnsafeMutablePointer: UnsafeMutablePointer<Void>(nil))
+        //NSException.raise(NSGenericException, format: "只是测试，模拟一条崩溃信息。", arguments: pointer)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
