@@ -25,22 +25,9 @@ extension MatchDetailViewController:UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 28))
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 28))
-        label.backgroundColor = UIColor(red: 9.2/255, green: 52.5/255, blue: 73.6/255, alpha: 1.0)
-        label.textColor = UIColor.whiteColor()
-        label.center = view.center
-        label.text = {
-        switch section {
-        case 0:
-            return "    Winner"
-        case 1:
-            return "    Loser"
-        default:
-            return "    error"
-        }}()
-        view.addSubview(label)
-        return label
+        let view = MatchHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 28))
+        view.setContent(section, kill: 0, assistant: 0, dead: 0, money: 0)
+        return view
     }
     
     

@@ -12,6 +12,8 @@ class CrashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let crash = UIBarButtonItem(title: "Crash", style: .Done, target: self, action: Selector("selector"))
+        self.navigationItem.rightBarButtonItem = crash
         performSelector(#selector(CrashViewController.carsh),withObject: nil,afterDelay: 3)
         // Do any additional setup after loading the view.
     }

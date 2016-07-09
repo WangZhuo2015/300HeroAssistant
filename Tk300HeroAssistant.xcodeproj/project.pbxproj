@@ -103,6 +103,7 @@
 		35F2CA6E1CFB53B50046B653 /* hero data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA6C1CFB53B50046B653 /* hero data.csv */; };
 		35F2CA6F1CFB53B50046B653 /* skill data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA6D1CFB53B50046B653 /* skill data.csv */; };
 		35F2CA711CFB57060046B653 /* Bugs in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA701CFB57060046B653 /* Bugs */; };
+		35F4C2781D31011700A44787 /* ApplicationColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F4C2771D31011700A44787 /* ApplicationColorManager.swift */; };
 		35FBA5F91CDF4E5C00A527B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */; };
 		35FBA5FE1CDF4E5C00A527B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA5FC1CDF4E5C00A527B4 /* Main.storyboard */; };
 		35FBA6001CDF4E5C00A527B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */; };
@@ -237,6 +238,7 @@
 		35F2CA6C1CFB53B50046B653 /* hero data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "hero data.csv"; path = "LocalData/hero data.csv"; sourceTree = "<group>"; };
 		35F2CA6D1CFB53B50046B653 /* skill data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "skill data.csv"; path = "LocalData/skill data.csv"; sourceTree = "<group>"; };
 		35F2CA701CFB57060046B653 /* Bugs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bugs; sourceTree = "<group>"; };
+		35F4C2771D31011700A44787 /* ApplicationColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationColorManager.swift; path = Tk300HeroAssistant/ApplicationColorManager.swift; sourceTree = SOURCE_ROOT; };
 		35FBA5F51CDF4E5C00A527B4 /* 星尘盒子 for 300英雄.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "星尘盒子 for 300英雄.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35FBA5FD1CDF4E5C00A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -670,6 +672,7 @@
 				35011C5D1CE03605004F7913 /* Player */,
 				35401A691CE830D900F0EDE2 /* Global.swift */,
 				351910631D0DCD0300FB0F0C /* AppManager.swift */,
+				35F4C2771D31011700A44787 /* ApplicationColorManager.swift */,
 			);
 			name = Model;
 			path = Network;
@@ -795,6 +798,11 @@
 					35FBA5F41CDF4E5C00A527B4 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 3HX94AXZ2B;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -991,6 +999,7 @@
 				35C811851D15A7940017A0F5 /* LCUserFeedbackImageViewController.m in Sources */,
 				3517D70D1CE0F2FA006162BA /* MatchTableViewDataSource.swift in Sources */,
 				35E9D02C1CF96F11004170BE /* AccountChangeViewController.swift in Sources */,
+				35F4C2781D31011700A44787 /* ApplicationColorManager.swift in Sources */,
 				35C811871D15A7940017A0F5 /* LCUserFeedbackReplyCell.m in Sources */,
 				3540E93C1D0B15C000E0FB66 /* FriendAnalysisViewController.swift in Sources */,
 				35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */,

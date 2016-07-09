@@ -334,7 +334,7 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cions" translatesAutoresizingMaskIntoConstraints="NO" id="PQZ-s6-W3k">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="PQZ-s6-W3k">
                                                             <rect key="frame" x="156" y="207" width="21" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="21" id="aXZ-Sf-igf"/>
@@ -729,8 +729,8 @@
     </scenes>
     <resources>
         <image name="buBing" width="20" height="20"/>
-        <image name="cions" width="20" height="20"/>
-        <image name="death" width="20" height="20"/>
+        <image name="coins" width="46" height="49"/>
+        <image name="death" width="48" height="49"/>
         <image name="kill" width="20" height="20"/>
         <image name="killHelp" width="20" height="20"/>
         <image name="rook" width="20" height="20"/>
