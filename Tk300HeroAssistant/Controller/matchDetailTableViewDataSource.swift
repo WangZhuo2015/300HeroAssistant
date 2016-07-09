@@ -26,7 +26,22 @@ extension MatchDetailViewController:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = MatchHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 28))
-        view.setContent(section, kill: 0, assistant: 0, dead: 0, money: 0)
+        switch section {
+        case 0:
+            view.setContent(
+                section, kill: matchData?.winSideKill,
+                assistant: matchData?.winSideAssistant,
+                death: matchData?.winSideDeath,
+                money: matchData?.winSideMoney)
+        case 1:
+            view.setContent(
+                section, kill: matchData?.loseSideKill,
+                assistant: matchData?.loseSideAssistant,
+                death: matchData?.loseSideDeath,money:
+                matchData?.loseSideMoney)
+        default:
+            view.setContent(section, kill: 0, assistant: 0, death: 0, money: 0)
+        }
         return view
     }
     

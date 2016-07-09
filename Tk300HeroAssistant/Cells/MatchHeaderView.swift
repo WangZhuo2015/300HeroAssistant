@@ -17,7 +17,7 @@ class MatchHeaderView: UIView {
         // Drawing code
     }
     */
-    func setContent(section:Int,kill:Int,assistant:Int,dead:Int,money:Int){
+    func setContent(section:Int,kill:Int?,assistant:Int?,death:Int?,money:Int?){
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 28))
         let stackView = UIStackView()
         stackView.alignment = .Center
@@ -31,28 +31,28 @@ class MatchHeaderView: UIView {
         let killLabel = UILabel()
         killLabel.backgroundColor = UIColor.clearColor()
         killLabel.textColor = UIColor.whiteColor()
-        killLabel.text = "0"
+        killLabel.text = "\(kill ?? 0)"
         
         let assistantImage = UIImageView(image: UIImage(named: "killHelp"))
         assistantImage.backgroundColor = UIColor.clearColor()
         let assistantLabel = UILabel()
         assistantLabel.backgroundColor = UIColor.clearColor()
         assistantLabel.textColor = UIColor.whiteColor()
-        assistantLabel.text = "0"
+        assistantLabel.text = "\(assistant ?? 0)"
         
-        let deadImage = UIImageView(image: UIImage(named: "death"))
-        deadImage.backgroundColor = UIColor.clearColor()
-        let deadLabel = UILabel()
-        deadLabel.backgroundColor = UIColor.clearColor()
-        deadLabel.textColor = UIColor.whiteColor()
-        deadLabel.text = "0"
+        let deathImage = UIImageView(image: UIImage(named: "death"))
+        deathImage.backgroundColor = UIColor.clearColor()
+        let deathLabel = UILabel()
+        deathLabel.backgroundColor = UIColor.clearColor()
+        deathLabel.textColor = UIColor.whiteColor()
+        deathLabel.text = "\(death ?? 0)"
         
         let moneyImage = UIImageView(image: UIImage(named: "coins"))
         moneyImage.backgroundColor = UIColor.clearColor()
         let moneyLabel = UILabel()
         moneyLabel.backgroundColor = UIColor.clearColor()
         moneyLabel.textColor = UIColor.whiteColor()
-        moneyLabel.text = "0"
+        moneyLabel.text = "\(money ?? 0)"
         
         self.backgroundColor = ApplicationColorManager.SectionSeparatorColor
         label.textColor = UIColor.whiteColor()
@@ -70,14 +70,14 @@ class MatchHeaderView: UIView {
         stackView.addArrangedSubview(killLabel)
         stackView.addArrangedSubview(assistantImage)
         stackView.addArrangedSubview(assistantLabel)
-        stackView.addArrangedSubview(deadImage)
-        stackView.addArrangedSubview(deadLabel)
+        stackView.addArrangedSubview(deathImage)
+        stackView.addArrangedSubview(deathLabel)
         stackView.addArrangedSubview(moneyImage)
         stackView.addArrangedSubview(moneyLabel)
         self.addSubview(stackView)
         setSquare(killImage,containerView: stackView)
         setSquare(assistantImage,containerView: stackView)
-        setSquare(deadImage,containerView: stackView)
+        setSquare(deathImage,containerView: stackView)
         setSquare(moneyImage,containerView: stackView)
         label.snp_makeConstraints { (make) in
             make.leading.equalTo(8)
