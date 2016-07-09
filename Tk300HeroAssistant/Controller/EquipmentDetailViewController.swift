@@ -31,26 +31,10 @@ class EquipmentDetailViewController: UIViewController {
     let EquipmentDetailViewControllerID = "EquipmentDetailViewControllerID"
     var currentEquipment:EquipmentData?
     
-//    var itemSelect:((index:Int)->Void) = { index in
-//        self()
-//    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = currentEquipment?.name
         setContent(currentEquipment!)
-        combineScrollView.setContent(currentEquipment?.进阶物品id ?? [])
-        subEquipmentScrollView.setContent(currentEquipment?.所需物品id ?? [])
-        if currentEquipment?.进阶物品id == nil {combineLabel.hidden = true}
-        if currentEquipment?.所需物品id == nil {subEquipmentLabel.hidden = true}
-        combineScrollView.didSelectItem = { index in
-//            let storyBoard = UIStoryboard(name: "Equipment", bundle: NSBundle.mainBundle())
-//            let equipmentDetailVC = storyBoard.instantiateViewControllerWithIdentifier("EquipmentDetailViewControllerID") as! EquipmentDetailViewController
-//            equipmentDetailVC.setContent(CSVDataManager.sharedInstance.getEquipmentInfoByID(index)!)
-//            equipmentDetailVC.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "返回全部装备", style: .Plain, target: self, action: #selector(EquipmentDetailViewController.popToRoot))
-//            self.navigationController?.pushViewController(equipmentDetailVC, animated: true)
-        }
+
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(animated: Bool) {
@@ -69,6 +53,20 @@ class EquipmentDetailViewController: UIViewController {
     
 
     func setContent(equipmentData:EquipmentData){
+        self.navigationItem.title = currentEquipment?.name
+        combineScrollView.setContent(currentEquipment?.进阶物品id ?? [])
+        subEquipmentScrollView.setContent(currentEquipment?.所需物品id ?? [])
+        combineLabel.hidden = currentEquipment?.进阶物品id == nil
+        subEquipmentLabel.hidden = currentEquipment?.所需物品id == nil
+        subEquipmentScrollView.didSelectItem = { index in
+            self.currentEquipment = CSVDataManager.sharedInstance.getEquipmentInfoByID(index)!
+            self.setContent(self.currentEquipment!)
+        }
+        combineScrollView.didSelectItem = { index in
+            self.currentEquipment = CSVDataManager.sharedInstance.getEquipmentInfoByID(index)!
+            self.setContent(self.currentEquipment!)
+        }
+        
         equipmentImage.image = UIImage(named: equipmentData.id!)
         equipmentName.text = " \(equipmentData.name!) "
         equipmentAttributeLabel.text = equipmentData.属性

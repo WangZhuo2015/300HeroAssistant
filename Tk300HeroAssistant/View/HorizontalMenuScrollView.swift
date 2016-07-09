@@ -15,6 +15,7 @@ class HorizontalMenuScrollView: UIScrollView {
     let imageSize: CGFloat = 60.0
     var containerView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
     var stackView = UIStackView()
+    var lastArray = [UIView]()
     override func awakeFromNib() {
         addSubview(containerView)
         containerView.snp_makeConstraints { (make) in
@@ -31,6 +32,10 @@ class HorizontalMenuScrollView: UIScrollView {
     }
     
     func setContent(array:[String]){
+        lastArray.forEach({ view in
+            stackView.removeArrangedSubview(view)
+        })
+        lastArray.removeAll()
         guard array.count != 0 else{
             self.snp_updateConstraints(closure: { (make) in
                 make.height.equalTo(0)
@@ -56,6 +61,7 @@ class HorizontalMenuScrollView: UIScrollView {
             imageView.tag = Int(item)!
             imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(HorizontalMenuScrollView.didTapImage(_:))))
             stackView.addArrangedSubview(imageView)
+            lastArray.append(imageView)
         }
     }
     func didTapImage(tap: UITapGestureRecognizer) {

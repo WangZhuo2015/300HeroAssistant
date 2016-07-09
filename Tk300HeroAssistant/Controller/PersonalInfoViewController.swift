@@ -11,6 +11,7 @@ import StoreKit
 class PersonalInfoViewController: UIViewController {
 
     //@IBOutlet weak var roleNameLabel: UILabel!
+    @IBOutlet weak var headerView: UIView!
     
     @IBOutlet weak var roleLevelLabel: UILabel!
     
@@ -57,6 +58,7 @@ class PersonalInfoViewController: UIViewController {
         tableView.bounces = false
         tableView.dataSource = self
         tableView.delegate = self
+        headerView.backgroundColor = ApplicationColorManager.SectionSeparatorColor
         userChange()
         //防止已有
         if feedbackButton.title == nil {

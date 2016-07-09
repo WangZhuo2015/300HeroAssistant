@@ -116,8 +116,8 @@
                                         </label>
                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xl9-9A-iDR">
                                             <rect key="frame" x="81" y="65" width="231" height="21"/>
-                                            <color key="progressTintColor" red="0.26809935305376831" green="0.80816500166052896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="trackTintColor" red="1" green="0.42599420528175336" blue="0.50108876679401393" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="progressTintColor" red="0.36396671060000002" green="1" blue="0.16121846840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="trackTintColor" red="1" green="0.11832172115470196" blue="0.27036592238692336" alpha="1" colorSpace="calibratedRGB"/>
                                         </progressView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -316,6 +316,7 @@
                     <connections>
                         <outlet property="allCountLabel" destination="cPt-2P-Ptc" id="15A-gF-TWB"/>
                         <outlet property="changeAccountButton" destination="NDL-se-rNm" id="UGm-g1-v1G"/>
+                        <outlet property="headerView" destination="prL-Ur-t57" id="C5A-vH-RHV"/>
                         <outlet property="jumpLevelLabel" destination="dab-Tm-1J4" id="OWg-Zz-occ"/>
                         <outlet property="roleLevelLabel" destination="2rf-2n-Z3R" id="iF8-b2-ooF"/>
                         <outlet property="tableView" destination="0i3-wo-iRz" id="gBi-rg-45y"/>
