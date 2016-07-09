@@ -54,6 +54,7 @@ class PersonalInfoViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.bounces = false
         tableView.dataSource = self
         tableView.delegate = self
         userChange()
