@@ -55,6 +55,15 @@ extension MatchDetailViewController:UITableViewDataSource,UITableViewDelegate{
             cell.setRoleCell((matchData?.loseSide[indexPath.row])!)
         default:break
         }
+        if indexPath == myScorePosition{
+            cell.playerNameLabel.shadowColor = UIColor.grayColor()
+            cell.playerNameLabel.shadowOffset = CGSize(width: 1,height: 1)
+            cell.playerNameLabel.font = UIFont(name: "PingFangSC-Semibold", size: 22)
+            let content = NSMutableAttributedString(string:  User.sharedUser.userName!)
+            let contentRange = NSRange(location: 0,length: content.length)
+            content.addAttribute(NSUnderlineStyleAttributeName, value:NSUnderlineStyle.StyleSingle.rawValue, range: contentRange)
+            cell.playerNameLabel.attributedText = content;
+        }
         return cell
     }
 }

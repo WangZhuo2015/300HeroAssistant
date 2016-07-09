@@ -691,11 +691,17 @@
                                 <action selector="sideSelect:" destination="ftT-R1-tRq" eventType="valueChanged" id="jZG-de-VRE"/>
                             </connections>
                         </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="我的战绩" id="h46-Q7-wZd">
+                            <connections>
+                                <action selector="scrollToMyScorePosition:" destination="ftT-R1-tRq" id="evH-pQ-NQb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="detailHeaderView" destination="LGD-GL-M6f" id="Qif-jP-EyE"/>
                         <outlet property="detailTableView" destination="ZGH-LH-6WZ" id="H2S-S8-8g6"/>
+                        <outlet property="headerView" destination="LGD-GL-M6f" id="jTY-3s-kpw"/>
                         <outlet property="matchDateLabel" destination="oWd-cL-9mc" id="c92-qH-HWs"/>
                         <outlet property="matchDurationLabel" destination="I0b-ix-ORO" id="D0s-i8-GLV"/>
                         <outlet property="matchScoreLabel" destination="ebR-Kh-g0y" id="Gvh-Hs-gM8"/>
@@ -729,8 +735,8 @@
     </scenes>
     <resources>
         <image name="buBing" width="20" height="20"/>
-        <image name="coins" width="46" height="49"/>
-        <image name="death" width="48" height="49"/>
+        <image name="coins" width="20" height="20"/>
+        <image name="death" width="20" height="20"/>
         <image name="kill" width="20" height="20"/>
         <image name="killHelp" width="20" height="20"/>
         <image name="rook" width="20" height="20"/>
