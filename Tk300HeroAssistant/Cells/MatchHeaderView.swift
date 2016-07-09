@@ -56,14 +56,19 @@ class MatchHeaderView: UIView {
         
         self.backgroundColor = ApplicationColorManager.SectionSeparatorColor
         label.textColor = UIColor.whiteColor()
+        label.layer.cornerRadius = 10
+        label.layer.masksToBounds = true
         label.text = {
             switch section {
             case 0:
-                return "    Winner"
+                label.backgroundColor = ApplicationColorManager.WinColor
+                return "  胜利方  "
             case 1:
-                return "    Loser"
+                label.backgroundColor = ApplicationColorManager.LoseColor
+                return "  失败方  "
             default:
-                return "    error"
+                label.backgroundColor = UIColor.blackColor()
+                return "  ***错误***  "
             }}()
         self.addSubview(label)
         stackView.addArrangedSubview(killImage)
@@ -82,7 +87,6 @@ class MatchHeaderView: UIView {
         label.snp_makeConstraints { (make) in
             make.leading.equalTo(8)
             make.centerY.equalTo(self)
-            make.width.equalTo(100)
         }
         killImage.snp_makeConstraints { (make) in
             make.width.equalTo(self.snp_height)

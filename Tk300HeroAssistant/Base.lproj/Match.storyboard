@@ -684,8 +684,8 @@
                             <rect key="frame" x="96" y="7" width="128" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
-                                <segment title="Win"/>
-                                <segment title="Lose"/>
+                                <segment title="胜利方"/>
+                                <segment title="失败方"/>
                             </segments>
                             <connections>
                                 <action selector="sideSelect:" destination="ftT-R1-tRq" eventType="valueChanged" id="jZG-de-VRE"/>

@@ -56,11 +56,11 @@ class matchDetailTableViewCell: UITableViewCell {
         kdaLabel.text = "\(role.kDA)"
         winRateLabel.text = String.init(format: "%.1lf", Double(role.winCount)/Double(role.matchCount)*100)+"%"
         if role.result == 1{
-            playerInnerView.backgroundColor = UIColor ( red: 0.25, green: 0.7466, blue: 0.0917, alpha: 1.0 )
+            playerInnerView.backgroundColor = ApplicationColorManager.WinColor
         }else if role.result == 2{
-            playerInnerView.backgroundColor = UIColor ( red: 0.7566, green: 0.1814, blue: 0.1502, alpha: 1.0 )
+            playerInnerView.backgroundColor = ApplicationColorManager.LoseColor
         }else{
-            playerInnerView.backgroundColor = UIColor ( red: 0.8265, green: 0.7457, blue: 0.0, alpha: 1.0 )
+            playerInnerView.backgroundColor = ApplicationColorManager.EscapeColor
         }
         playerImage.kf_setImageWithURL(NSURL(string: "http://300report.jumpw.com/static/images/"+role.hero.iconFile)!)
         //防止空格
