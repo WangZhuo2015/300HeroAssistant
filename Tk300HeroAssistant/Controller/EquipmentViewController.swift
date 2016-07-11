@@ -13,25 +13,13 @@ class EquipmentViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     @IBOutlet weak var searchBarHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var searchBarTop: NSLayoutConstraint!
+    
     let pageName = "EquipmentViewController"
-    
-    var searchBarHidden: Bool = true{
-        didSet{
-            if searchBarHidden {
-                searchBar.resignFirstResponder()
-                equipmentDataArray = rawEquipmentDataArray
-            }else{
-                searchBar.becomeFirstResponder()
-            }
-            searchBar.snp_updateConstraints(closure: { (make) in
-                searchBarHidden ? make.top.equalTo((self.navigationController?.navigationBar.snp_bottom)!).offset(-44) : make.top.equalTo((self.navigationController?.navigationBar.snp_bottom)!).offset(0)
-            })
-            UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
-                self.searchBar.layoutIfNeeded()
-                }, completion: nil)
-        }
-    }
-    
+    var lastScrollOffest:CGFloat = 0.0
+    var topNormalValue: CGFloat = 0.0
+    var topHideValue: CGFloat = 0.0
     
     var rawEquipmentDataArray = [EquipmentData]()
     var equipmentDataArray = [EquipmentData](){
@@ -45,9 +33,12 @@ class EquipmentViewController: UIViewController {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.bounces = false
         searchBar.delegate = self
         searchBar.backgroundColor = UIColor ( red: 0.4627, green: 0.7725, blue: 0.9804, alpha: 1.0 )
-        
+        topHideValue = searchBarTop.constant
+        searchBarTop.constant += 44
+        topNormalValue = searchBarTop.constant
         
         
         
@@ -67,14 +58,6 @@ class EquipmentViewController: UIViewController {
         super.viewDidDisappear(animated)
         AVAnalytics.endLogPageView(pageName)
     }
-
-    override func viewDidAppear(animated: Bool) {
-        searchBar.snp_updateConstraints(closure: { (make) in
-            searchBarHidden ? make.top.equalTo((self.navigationController?.navigationBar.snp_bottom)!).offset(-44) : make.top.equalTo((self.navigationController?.navigationBar.snp_bottom)!).offset(0)
-        })
-        searchBar.setNeedsLayout()
-        searchBar.layoutIfNeeded()
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -92,10 +75,6 @@ class EquipmentViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    @IBAction func searchTapped(sender: UIBarButtonItem) {
-        searchBarHidden = !searchBarHidden
-    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let VC = segue.destinationViewController as! EquipmentDetailViewController

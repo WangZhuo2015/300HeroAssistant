@@ -47,7 +47,7 @@ class HeroViewController: UIViewController {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
-        
+        collectionView.bounces = false
         CSVDataManager.sharedInstance.loadHeroData { (dataArray) in
             self.rawHeroDataArray = dataArray
         }

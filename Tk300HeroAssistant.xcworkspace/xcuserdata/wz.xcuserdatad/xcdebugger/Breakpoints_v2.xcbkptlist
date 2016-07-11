@@ -48,22 +48,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tk300HeroAssistant/Controller/EquipmentViewController.swift"
-            timestampString = "487316080.136242"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "EquipmentViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Tk300HeroAssistant/Controller/AdvancedAnalysis/IAPPart.swift"
             timestampString = "489432451.82905"
             startingColumnNumber = "9223372036854775807"

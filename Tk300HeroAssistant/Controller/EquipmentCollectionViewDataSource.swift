@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-extension EquipmentViewController:UICollectionViewDelegate,UICollectionViewDataSource{
+extension EquipmentViewController:UICollectionViewDelegate,UICollectionViewDataSource,UIScrollViewDelegate{
     //调整collectionViewCell大小
     func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize{
         return CGSizeMake((UIScreen.mainScreen().bounds.width - 50)/4, (UIScreen.mainScreen().bounds.width - 50)/4 + 20)
@@ -26,5 +26,49 @@ extension EquipmentViewController:UICollectionViewDelegate,UICollectionViewDataS
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(EquipmentCollectionViewCellIdentifier, forIndexPath: indexPath) as! EquipmentCollectionViewCell
         cell.setContent(equipmentDataArray[indexPath.section * 4 + indexPath.row ])
         return cell
+    }
+    
+    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        lastScrollOffest = scrollView.contentOffset.y
+        print(scrollView.contentOffset.y)
+    }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+//        guard searchBarTop.constant > topHideValue else{
+//            searchBarTop.constant = topHideValue
+//            return
+//        }
+//        guard searchBarTop.constant > -topNormalValue else{
+//            searchBarTop.constant = topNormalValue
+//            return
+//        }
+        if scrollView.contentOffset.y - lastScrollOffest > 0 && searchBarTop.constant > topHideValue{
+            //隐藏
+            searchBarTop.constant -= scrollView.contentOffset.y - lastScrollOffest
+            if searchBarTop.constant < topHideValue{
+                searchBarTop.constant = topHideValue
+            }
+            searchBar.layoutIfNeeded()
+        }else if scrollView.contentOffset.y - lastScrollOffest < 0 && searchBarTop.constant < topNormalValue{
+            //展现
+            searchBarTop.constant -= scrollView.contentOffset.y - lastScrollOffest
+            if searchBarTop.constant > topNormalValue{
+                searchBarTop.constant = topNormalValue
+            }
+            searchBar.layoutIfNeeded()
+        }
+        lastScrollOffest = scrollView.contentOffset.y
+        print(scrollView.contentOffset.y)
+    }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+//        if scrollView.contentOffset.y - lastScrollOffest < 0 {
+//            searchBarHidden = false
+//            print("显示")
+//        }else if scrollView.contentOffset.y - lastScrollOffest > 0{
+//            searchBarHidden = true
+//            print("不显示")
+//        }
+        lastScrollOffest = scrollView.contentOffset.y
     }
 }

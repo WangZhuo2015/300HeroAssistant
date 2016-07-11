@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OgL-99-wB3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OgL-99-wB3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -117,18 +117,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="装备" id="dzU-6a-ei0"/>
-                    <navigationItem key="navigationItem" title="装备" id="slF-Qy-PyH">
-                        <barButtonItem key="rightBarButtonItem" title="搜索" id="1qV-b7-dU0">
-                            <connections>
-                                <action selector="searchTapped:" destination="0oQ-qB-RJL" id="T1x-Qh-1XL"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="装备" id="slF-Qy-PyH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="P6P-jq-5v7" id="C7E-Bo-Ua2"/>
                         <outlet property="searchBar" destination="Cwh-IO-LMy" id="DGu-BH-XuT"/>
                         <outlet property="searchBarHeight" destination="aoY-3E-sCO" id="CcO-kS-hsf"/>
+                        <outlet property="searchBarTop" destination="XMV-6B-PvY" id="RrE-ti-ghB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cac-eY-4bT" userLabel="First Responder" sceneMemberID="firstResponder"/>
