@@ -17,6 +17,7 @@ class HeroCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         heroImage.layer.cornerRadius = 10
         heroImage.layer.masksToBounds = true
+        //heroImage.layer.shouldRasterize = true
     }
     
     func setContent(hero:HeroData){

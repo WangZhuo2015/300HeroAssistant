@@ -38,7 +38,7 @@ class HeroDetailViewController: UIViewController {
     @IBOutlet weak var attackRangeLabel: UILabel!
     
     @IBOutlet weak var moveSpeedLabel: UILabel!
-    
+    let pageName = "HeroDetailViewController"
     let SkillCellIdentifier = "SkillCellIdentifier"
     var hero:HeroData?{
         
@@ -73,6 +73,14 @@ class HeroDetailViewController: UIViewController {
         
         
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
 
     override func didReceiveMemoryWarning() {

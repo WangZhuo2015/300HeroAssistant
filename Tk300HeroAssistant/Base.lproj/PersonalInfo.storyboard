@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sdr-eG-pcB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sdr-eG-pcB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -116,8 +116,8 @@
                                         </label>
                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xl9-9A-iDR">
                                             <rect key="frame" x="81" y="65" width="231" height="21"/>
-                                            <color key="progressTintColor" red="0.26809935305376831" green="0.80816500166052896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="trackTintColor" red="1" green="0.42599420528175336" blue="0.50108876679401393" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="progressTintColor" red="0.36396671060000002" green="1" blue="0.16121846840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="trackTintColor" red="1" green="0.11832172115470196" blue="0.27036592238692336" alpha="1" colorSpace="calibratedRGB"/>
                                         </progressView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -155,8 +155,46 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MenuTableViewCellIdentifier" rowHeight="57" id="ARC-zb-Pw5" customClass="MenuTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="214" width="320" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ARC-zb-Pw5" id="xGy-SE-QQR">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05X-zu-tca">
+                                                    <rect key="frame" x="8" y="8" width="304" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高级分析功能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJE-ce-o4o">
+                                                            <rect key="frame" x="8" y="8" width="108" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.20528522133827209" green="0.59513360261917114" blue="0.49505996704101562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="dJE-ce-o4o" firstAttribute="top" secondItem="05X-zu-tca" secondAttribute="top" constant="8" id="XV8-Js-hLi"/>
+                                                        <constraint firstItem="dJE-ce-o4o" firstAttribute="leading" secondItem="05X-zu-tca" secondAttribute="leading" constant="8" id="btc-nA-N7x"/>
+                                                        <constraint firstAttribute="bottom" secondItem="dJE-ce-o4o" secondAttribute="bottom" constant="10" id="l3u-p3-fJf"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="05X-zu-tca" firstAttribute="bottom" secondItem="xGy-SE-QQR" secondAttribute="bottomMargin" id="R8I-IO-ZN5"/>
+                                                <constraint firstItem="05X-zu-tca" firstAttribute="top" secondItem="xGy-SE-QQR" secondAttribute="topMargin" id="YlQ-M8-S4q"/>
+                                                <constraint firstItem="05X-zu-tca" firstAttribute="leading" secondItem="xGy-SE-QQR" secondAttribute="leadingMargin" id="fHc-bJ-3he"/>
+                                                <constraint firstItem="05X-zu-tca" firstAttribute="trailing" secondItem="xGy-SE-QQR" secondAttribute="trailingMargin" id="hKz-kh-fxc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="itemBackgroundView" destination="05X-zu-tca" id="jYJ-QP-Euw"/>
+                                            <outlet property="menuItemLabel" destination="dJE-ce-o4o" id="WZo-Zy-JNY"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PersonalRankCellIdentifier" rowHeight="103" id="tGr-tE-sG9" customClass="PersonalRankTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="214" width="320" height="103"/>
+                                        <rect key="frame" x="0.0" y="271" width="320" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tGr-tE-sG9" id="NkU-xp-oIE">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
@@ -197,7 +235,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPK-zE-Vkk">
-                                                            <rect key="frame" x="214" y="42" width="60" height="21"/>
+                                                            <rect key="frame" x="236" y="42" width="60" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="jty-Ea-Ema"/>
                                                             </constraints>
@@ -206,7 +244,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="排名变动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kQ-9W-dEY">
-                                                            <rect key="frame" x="138" y="42" width="68" height="21"/>
+                                                            <rect key="frame" x="160" y="42" width="68" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -230,10 +268,11 @@
                                                         <constraint firstItem="943-B5-ro5" firstAttribute="top" secondItem="kTC-13-rjq" secondAttribute="top" id="IIV-Fv-Xeq"/>
                                                         <constraint firstItem="EJd-dC-wxA" firstAttribute="top" secondItem="kTC-13-rjq" secondAttribute="bottom" id="LrU-I5-5Tl"/>
                                                         <constraint firstItem="EJd-dC-wxA" firstAttribute="leading" secondItem="ggP-RE-01O" secondAttribute="leading" constant="8" id="MIH-lJ-vZG"/>
-                                                        <constraint firstItem="8kQ-9W-dEY" firstAttribute="leading" secondItem="943-B5-ro5" secondAttribute="trailing" constant="8" id="Uyf-cV-N21"/>
+                                                        <constraint firstItem="8kQ-9W-dEY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="943-B5-ro5" secondAttribute="trailing" constant="8" id="Uyf-cV-N21"/>
                                                         <constraint firstItem="kTC-13-rjq" firstAttribute="top" secondItem="EAY-mf-k5c" secondAttribute="bottom" constant="8" id="VQF-9B-nn3"/>
                                                         <constraint firstItem="EAY-mf-k5c" firstAttribute="top" secondItem="ggP-RE-01O" secondAttribute="top" id="WgJ-mb-hfM"/>
                                                         <constraint firstItem="943-B5-ro5" firstAttribute="leading" secondItem="kTC-13-rjq" secondAttribute="trailing" constant="8" id="h4Q-Qk-FV8"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hPK-zE-Vkk" secondAttribute="trailing" constant="8" id="pBH-IF-vKD"/>
                                                         <constraint firstItem="8kQ-9W-dEY" firstAttribute="top" secondItem="943-B5-ro5" secondAttribute="top" id="wCb-Px-adW"/>
                                                     </constraints>
                                                 </view>
@@ -268,7 +307,7 @@
                     <navigationItem key="navigationItem" id="YO8-Qy-nUX">
                         <barButtonItem key="rightBarButtonItem" title="账号切换" id="NDL-se-rNm">
                             <connections>
-                                <segue destination="IUx-77-6ZR" kind="push" id="oT8-4g-2Ch"/>
+                                <segue destination="IUx-77-6ZR" kind="push" identifier="accountManageSegue" id="oT8-4g-2Ch"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -277,6 +316,7 @@
                     <connections>
                         <outlet property="allCountLabel" destination="cPt-2P-Ptc" id="15A-gF-TWB"/>
                         <outlet property="changeAccountButton" destination="NDL-se-rNm" id="UGm-g1-v1G"/>
+                        <outlet property="headerView" destination="prL-Ur-t57" id="C5A-vH-RHV"/>
                         <outlet property="jumpLevelLabel" destination="dab-Tm-1J4" id="OWg-Zz-occ"/>
                         <outlet property="roleLevelLabel" destination="2rf-2n-Z3R" id="iF8-b2-ooF"/>
                         <outlet property="tableView" destination="0i3-wo-iRz" id="gBi-rg-45y"/>
@@ -284,6 +324,7 @@
                         <outlet property="winCountLabel" destination="WP0-9P-0kX" id="4aW-TT-Py0"/>
                         <outlet property="winRateLabel" destination="0zO-xm-Sl4" id="tcx-AA-F1a"/>
                         <outlet property="winRateProgress" destination="Xl9-9A-iDR" id="WLa-zC-NZZ"/>
+                        <segue destination="jd4-uD-QnS" kind="push" identifier="advancedAnalysisSegue" id="4ha-io-uep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIo-Mn-8vM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -408,7 +449,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Leb-nw-eRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908" y="112"/>
+            <point key="canvasLocation" x="508" y="-731"/>
         </scene>
         <!--个人-->
         <scene sceneID="mtN-fa-bq8">
@@ -430,6 +471,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBX-qS-eVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-38" y="112"/>
+        </scene>
+        <!--AdvancedAnalysis-->
+        <scene sceneID="ADk-mv-5PW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdvancedAnalysis" id="jd4-uD-QnS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HFf-s3-c8t"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYE-0N-gqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="-731"/>
         </scene>
     </scenes>
 </document>

@@ -9,6 +9,8 @@
 import UIKit
 
 class MatchDetailViewController: UIViewController {
+    
+    @IBOutlet weak var headerView: UIView!
 
     @IBOutlet weak var detailTableView: UITableView!
     
@@ -25,8 +27,30 @@ class MatchDetailViewController: UIViewController {
     @IBOutlet weak var matchScoreLabel: UILabel!
     
     var matchID = 0
+    let pageName = "MatchDetailViewController"
     let matchDetailCellIdentifier = "matchDetailCellIdentifier"
-    var matchData:Match?
+    var matchData:Match?{
+        //找自己的位置
+        didSet{
+            var count = 0
+            for role in (matchData?.winSide)!{
+                if role.roleName == User.sharedUser.userName{
+                    myScorePosition = NSIndexPath(forRow: count, inSection: 0)
+                    return
+                }
+                count += 1
+            }
+            count = 0
+            for role in (matchData?.loseSide)!{
+                if role.roleName == User.sharedUser.userName{
+                    myScorePosition = NSIndexPath(forRow: count, inSection: 1)
+                    return
+                }
+                count += 1
+            }
+        }
+    }
+    var myScorePosition :NSIndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,9 +64,19 @@ class MatchDetailViewController: UIViewController {
             }
             return
         }
+        headerView.backgroundColor = ApplicationColorManager.SectionSeparatorColor
+        tableView.bounces = false
         self.setMatchInfo(self.matchData!)
         self.tableView.reloadData()
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,6 +106,10 @@ class MatchDetailViewController: UIViewController {
         tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0,inSection: sender.selectedSegmentIndex), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
     }
     
+
+    @IBAction func scrollToMyScorePosition(sender: UIBarButtonItem) {
+        tableView.scrollToRowAtIndexPath(myScorePosition!, atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+    }
     
     
     

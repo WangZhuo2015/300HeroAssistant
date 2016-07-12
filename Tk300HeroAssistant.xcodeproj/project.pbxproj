@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		35011C601CE03BCC004F7913 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */; };
 		35011C621CE03C3C004F7913 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35011C611CE03C3C004F7913 /* User.swift */; };
+		3501B2821D153B8500EB136B /* HeroBattleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501B2811D153B8500EB136B /* HeroBattleListViewController.swift */; };
+		3501B2841D153B9A00EB136B /* HeroBattleListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501B2831D153B9A00EB136B /* HeroBattleListDataSource.swift */; };
+		3501B2881D153F2500EB136B /* HeroWinRateAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501B2871D153F2500EB136B /* HeroWinRateAnalyzer.swift */; };
+		3501B28A1D153F5400EB136B /* AnalyzerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501B2891D153F5400EB136B /* AnalyzerHelper.swift */; };
 		3509932C1CEF116D0079C7E3 /* CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */; };
 		3509932E1CEF11E70079C7E3 /* HeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509932D1CEF11E70079C7E3 /* HeroCollectionViewCell.swift */; };
 		350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350CCEDD1CEADBFE00D082EB /* SkillData.swift */; };
@@ -28,17 +32,26 @@
 		3517D70B1CE0EE5F006162BA /* MatchBasicAPIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D7081CE0EE5F006162BA /* MatchBasicAPIBase.swift */; };
 		3517D70D1CE0F2FA006162BA /* MatchTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D70C1CE0F2FA006162BA /* MatchTableViewDataSource.swift */; };
 		3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517D70E1CE0F38D006162BA /* MatchBasicTableViewCell.swift */; };
+		351910641D0DCD0300FB0F0C /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351910631D0DCD0300FB0F0C /* AppManager.swift */; };
+		353AF3221D2ACBED00822044 /* CrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353AF3211D2ACBED00822044 /* CrashViewController.swift */; };
 		35401A6A1CE830DA00F0EDE2 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A691CE830D900F0EDE2 /* Global.swift */; };
 		35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */; };
 		35401A6F1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */; };
+		3540E9281D0AD1F600E0FB66 /* AdvancedAnalysis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3540E9261D0AD1F600E0FB66 /* AdvancedAnalysis.storyboard */; };
+		3540E92E1D0AEBE700E0FB66 /* AdvancedAnalysisMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E92D1D0AEBE700E0FB66 /* AdvancedAnalysisMainTableViewController.swift */; };
+		3540E9301D0AEC1400E0FB66 /* HeroWinRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E92F1D0AEC1400E0FB66 /* HeroWinRateViewController.swift */; };
+		3540E9331D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E9321D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift */; };
+		3540E9351D0AEE6D00E0FB66 /* HeroWinRateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E9341D0AEE6D00E0FB66 /* HeroWinRateDataSource.swift */; };
+		3540E9381D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E9371D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift */; };
+		3540E93C1D0B15C000E0FB66 /* FriendAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E93B1D0B15C000E0FB66 /* FriendAnalysisViewController.swift */; };
+		3540E93E1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E93D1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift */; };
+		3547D7C71D19BA77005C47A9 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3547D7C61D19BA77005C47A9 /* PlayerDetailViewController.swift */; };
 		354BC70C1CFD5233001E046C /* EquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC70B1CFD5233001E046C /* EquipmentViewController.swift */; };
-		354BC7101CFD5334001E046C /* 合成所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70D1CFD5334001E046C /* 合成所需.csv */; };
 		354BC7121CFD5334001E046C /* object data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70F1CFD5334001E046C /* object data.csv */; };
 		354BC7141CFD534F001E046C /* EquipmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7131CFD534F001E046C /* EquipmentData.swift */; };
 		354BC73D1CFD59B9001E046C /* Tk300HeroAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC73C1CFD59B9001E046C /* Tk300HeroAssistantTests.swift */; };
 		354BC7451CFD59DF001E046C /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB3E051CEE2F2100FED888 /* CSVReader.swift */; };
 		354BC7461CFD59E4001E046C /* object data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70F1CFD5334001E046C /* object data.csv */; };
-		354BC7471CFD59E6001E046C /* 合成所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70D1CFD5334001E046C /* 合成所需.csv */; };
 		354BC7481CFD59E9001E046C /* hero data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA6C1CFB53B50046B653 /* hero data.csv */; };
 		354BC7491CFD59E9001E046C /* skill data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA6D1CFB53B50046B653 /* skill data.csv */; };
 		354BC74A1CFD59EE001E046C /* HeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E259D31CE87F2C005AEE4F /* HeroData.swift */; };
@@ -50,34 +63,52 @@
 		354BC7541CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */; };
 		354BC7561CFDC63A001E046C /* EquipmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */; };
 		354BC7581CFDE615001E046C /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
+		355306E51D040E9600065CDA /* 合成所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 355306E31D040E9600065CDA /* 合成所需.csv */; };
+		355306E61D040E9600065CDA /* 进阶所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 355306E41D040E9600065CDA /* 进阶所需.csv */; };
+		355306EA1D0428A500065CDA /* HorizontalMenuScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355306E91D0428A500065CDA /* HorizontalMenuScrollView.swift */; };
+		356015341D0B2B5F006467E4 /* FriendAnalysisDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356015331D0B2B5F006467E4 /* FriendAnalysisDataSource.swift */; };
+		356F9CD21D07FAF00036E8D2 /* DataAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F9CD11D07FAF00036E8D2 /* DataAnalyzer.swift */; };
+		357758F71D0BF68B00CB0E55 /* IAPPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357758F61D0BF68B00CB0E55 /* IAPPart.swift */; };
 		358B36E21CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */; };
 		35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */; };
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
 		35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
 		35BCF7581CE8C8F900E30907 /* HeroTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */; };
+		35C811821D15A7940017A0F5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35C811651D15A7940017A0F5 /* Info.plist */; };
+		35C811831D15A7940017A0F5 /* LCHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C811671D15A7940017A0F5 /* LCHttpClient.m */; };
+		35C811841D15A7940017A0F5 /* LCUserFeedbackAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C811691D15A7940017A0F5 /* LCUserFeedbackAgent.m */; };
+		35C811851D15A7940017A0F5 /* LCUserFeedbackImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8116B1D15A7940017A0F5 /* LCUserFeedbackImageViewController.m */; };
+		35C811861D15A7940017A0F5 /* LCUserFeedbackReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8116D1D15A7940017A0F5 /* LCUserFeedbackReply.m */; };
+		35C811871D15A7940017A0F5 /* LCUserFeedbackReplyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C811701D15A7940017A0F5 /* LCUserFeedbackReplyCell.m */; };
+		35C811881D15A7940017A0F5 /* LCUserFeedbackThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C811721D15A7940017A0F5 /* LCUserFeedbackThread.m */; };
+		35C811891D15A7940017A0F5 /* LCUserFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C811751D15A7940017A0F5 /* LCUserFeedbackViewController.m */; };
+		35C8118A1D15A7940017A0F5 /* LCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C811771D15A7940017A0F5 /* LCUtils.m */; };
+		35C8118B1D15A7940017A0F5 /* feedback_add_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C8117A1D15A7940017A0F5 /* feedback_add_image@2x.png */; };
+		35C8118C1D15A7940017A0F5 /* feedback_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C8117B1D15A7940017A0F5 /* feedback_back@2x.png */; };
+		35C8118D1D15A7940017A0F5 /* feedback_bg_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C8117C1D15A7940017A0F5 /* feedback_bg_1@2x.png */; };
+		35C8118E1D15A7940017A0F5 /* feedback_bg_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C8117D1D15A7940017A0F5 /* feedback_bg_2@2x.png */; };
+		35C8118F1D15A7940017A0F5 /* feedback_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C8117E1D15A7940017A0F5 /* feedback_btn@2x.png */; };
+		35C811901D15A7940017A0F5 /* feedback_btn_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C8117F1D15A7940017A0F5 /* feedback_btn_new@2x.png */; };
+		35C811911D15A7940017A0F5 /* feedback_warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C811801D15A7940017A0F5 /* feedback_warning@2x.png */; };
+		35C811921D15A7940017A0F5 /* LeanCloudFeedback.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35C811811D15A7940017A0F5 /* LeanCloudFeedback.strings */; };
 		35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB3E051CEE2F2100FED888 /* CSVReader.swift */; };
 		35CB9EE21CEC55120007C47C /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE11CEC55120007C47C /* HeroDetailViewController.swift */; };
 		35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE31CEC5B6D0007C47C /* SkillInfoTableViewCell.swift */; };
 		35CB9EE61CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE51CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift */; };
 		35DCA5CC1CE567730037577B /* PersonalRankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */; };
-		35DCA5CE1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift */; };
+		35DCA5CE1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift */; };
 		35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E259D31CE87F2C005AEE4F /* HeroData.swift */; };
 		35E9D02C1CF96F11004170BE /* AccountChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9D02B1CF96F11004170BE /* AccountChangeViewController.swift */; };
 		35E9D02E1CF96F68004170BE /* userAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9D02D1CF96F68004170BE /* userAccountTableViewCell.swift */; };
 		35F2CA6E1CFB53B50046B653 /* hero data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA6C1CFB53B50046B653 /* hero data.csv */; };
 		35F2CA6F1CFB53B50046B653 /* skill data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA6D1CFB53B50046B653 /* skill data.csv */; };
 		35F2CA711CFB57060046B653 /* Bugs in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA701CFB57060046B653 /* Bugs */; };
+		35F4C2781D31011700A44787 /* ApplicationColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F4C2771D31011700A44787 /* ApplicationColorManager.swift */; };
 		35FBA5F91CDF4E5C00A527B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */; };
 		35FBA5FE1CDF4E5C00A527B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA5FC1CDF4E5C00A527B4 /* Main.storyboard */; };
 		35FBA6001CDF4E5C00A527B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */; };
 		35FBA6031CDF4E5C00A527B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA6011CDF4E5C00A527B4 /* LaunchScreen.storyboard */; };
 		35FBA60B1CDF4EA800A527B4 /* openapi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA60A1CDF4EA800A527B4 /* openapi.txt */; };
-		35FBA6131CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA60D1CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift */; };
-		35FBA6141CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA60E1CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift */; };
-		35FBA6151CDF51B100A527B4 /* DGElasticPullToRefreshLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA60F1CDF51B100A527B4 /* DGElasticPullToRefreshLoadingView.swift */; };
-		35FBA6161CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA6101CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift */; };
-		35FBA6171CDF51B100A527B4 /* DGElasticPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA6111CDF51B100A527B4 /* DGElasticPullToRefreshView.swift */; };
-		35FBA6181CDF51B100A527B4 /* DGRunkeeperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA6121CDF51B100A527B4 /* DGRunkeeperSwitch.swift */; };
 		35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA61B1CDF51BF00A527B4 /* NirKxMenu.m */; };
 		35FBA6201CDF523C00A527B4 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA61E1CDF523C00A527B4 /* HttpClient.swift */; };
 		35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA61F1CDF523C00A527B4 /* ServiceProxy.swift */; };
@@ -89,6 +120,8 @@
 		35FBA63D1CDF712E00A527B4 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA63C1CDF712E00A527B4 /* HeroViewController.swift */; };
 		35FBA63F1CDF714A00A527B4 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA63E1CDF714A00A527B4 /* MatchViewController.swift */; };
 		35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA6401CDF717400A527B4 /* MatchDetailViewController.swift */; };
+		35FD3BAA1D145C570048343D /* CarryAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD3BA91D145C570048343D /* CarryAnalysisViewController.swift */; };
+		35FD3BAC1D145C6B0048343D /* CarryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD3BAB1D145C6B0048343D /* CarryDataSource.swift */; };
 		C13E5EBB34E60A6D328DFA70 /* Pods_Tk300HeroAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585C009171284DD1558B5230 /* Pods_Tk300HeroAssistant.framework */; };
 		F77315AD4CA110A79D0C9C01 /* Pods_Tk300HeroAssistantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374FF767C7559DF8950E22E0 /* Pods_Tk300HeroAssistantTests.framework */; };
 /* End PBXBuildFile section */
@@ -106,6 +139,10 @@
 /* Begin PBXFileReference section */
 		35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationViewController.swift; path = Controller/MainNavigationViewController.swift; sourceTree = "<group>"; };
 		35011C611CE03C3C004F7913 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Tk300HeroAssistant/Model/User.swift; sourceTree = SOURCE_ROOT; };
+		3501B2811D153B8500EB136B /* HeroBattleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroBattleListViewController.swift; path = Controller/AdvancedAnalysis/HeroBattleListViewController.swift; sourceTree = "<group>"; };
+		3501B2831D153B9A00EB136B /* HeroBattleListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroBattleListDataSource.swift; path = Controller/AdvancedAnalysis/HeroBattleListDataSource.swift; sourceTree = "<group>"; };
+		3501B2871D153F2500EB136B /* HeroWinRateAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroWinRateAnalyzer.swift; path = Tk300HeroAssistant/AdvancedAnalyzer/HeroWinRateAnalyzer.swift; sourceTree = SOURCE_ROOT; };
+		3501B2891D153F5400EB136B /* AnalyzerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnalyzerHelper.swift; path = Tk300HeroAssistant/AdvancedAnalyzer/AnalyzerHelper.swift; sourceTree = SOURCE_ROOT; };
 		3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewExtension.swift; path = Extension/CollectionViewExtension.swift; sourceTree = "<group>"; };
 		3509932D1CEF11E70079C7E3 /* HeroCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroCollectionViewCell.swift; path = Cells/HeroCollectionViewCell.swift; sourceTree = "<group>"; };
 		350CCEDD1CEADBFE00D082EB /* SkillData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillData.swift; path = Tk300HeroAssistant/Model/Data/SkillData.swift; sourceTree = SOURCE_ROOT; };
@@ -125,11 +162,21 @@
 		3517D7081CE0EE5F006162BA /* MatchBasicAPIBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchBasicAPIBase.swift; path = Tk300HeroAssistant/Model/Match/MatchBasicAPIBase.swift; sourceTree = SOURCE_ROOT; };
 		3517D70C1CE0F2FA006162BA /* MatchTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchTableViewDataSource.swift; path = Controller/MatchTableViewDataSource.swift; sourceTree = "<group>"; };
 		3517D70E1CE0F38D006162BA /* MatchBasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchBasicTableViewCell.swift; path = Cells/MatchBasicTableViewCell.swift; sourceTree = "<group>"; };
+		351910631D0DCD0300FB0F0C /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppManager.swift; path = Tk300HeroAssistant/Model/AppManager.swift; sourceTree = SOURCE_ROOT; };
+		353AF3211D2ACBED00822044 /* CrashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrashViewController.swift; path = Controller/Test/CrashViewController.swift; sourceTree = "<group>"; };
 		35401A691CE830D900F0EDE2 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Tk300HeroAssistant/Model/Global.swift; sourceTree = SOURCE_ROOT; };
 		35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewExtension.swift; path = Extension/TableViewExtension.swift; sourceTree = "<group>"; };
 		35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableViewNetErrorDataSource.swift; path = Tools/UITableViewNetErrorDataSource.swift; sourceTree = "<group>"; };
+		3540E9271D0AD1F600E0FB66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AdvancedAnalysis.storyboard; sourceTree = "<group>"; };
+		3540E92D1D0AEBE700E0FB66 /* AdvancedAnalysisMainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdvancedAnalysisMainTableViewController.swift; path = Controller/AdvancedAnalysis/AdvancedAnalysisMainTableViewController.swift; sourceTree = "<group>"; };
+		3540E92F1D0AEC1400E0FB66 /* HeroWinRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroWinRateViewController.swift; path = Controller/AdvancedAnalysis/HeroWinRateViewController.swift; sourceTree = "<group>"; };
+		3540E9321D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroWinRateTableViewCell.swift; path = Cells/HeroWinRateTableViewCell.swift; sourceTree = "<group>"; };
+		3540E9341D0AEE6D00E0FB66 /* HeroWinRateDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroWinRateDataSource.swift; path = Controller/AdvancedAnalysis/HeroWinRateDataSource.swift; sourceTree = "<group>"; };
+		3540E9371D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdvancedAnalysisMenuTableViewCell.swift; path = Cells/AdvancedAnalysisMenuTableViewCell.swift; sourceTree = "<group>"; };
+		3540E93B1D0B15C000E0FB66 /* FriendAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendAnalysisViewController.swift; path = Controller/AdvancedAnalysis/FriendAnalysisViewController.swift; sourceTree = "<group>"; };
+		3540E93D1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendAnalysisTableViewCell.swift; path = Cells/FriendAnalysisTableViewCell.swift; sourceTree = "<group>"; };
+		3547D7C61D19BA77005C47A9 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerDetailViewController.swift; path = Controller/AdvancedAnalysis/PlayerDetailViewController.swift; sourceTree = "<group>"; };
 		354BC70B1CFD5233001E046C /* EquipmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentViewController.swift; path = Controller/EquipmentViewController.swift; sourceTree = "<group>"; };
-		354BC70D1CFD5334001E046C /* 合成所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = "合成所需.csv"; sourceTree = "<group>"; };
 		354BC70F1CFD5334001E046C /* object data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "object data.csv"; sourceTree = "<group>"; };
 		354BC7131CFD534F001E046C /* EquipmentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentData.swift; path = Tk300HeroAssistant/Model/Data/EquipmentData.swift; sourceTree = SOURCE_ROOT; };
 		354BC73A1CFD59B9001E046C /* Tk300HeroAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tk300HeroAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,23 +186,59 @@
 		354BC7511CFDBB65001E046C /* EquipmentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentCollectionViewCell.swift; path = Cells/EquipmentCollectionViewCell.swift; sourceTree = "<group>"; };
 		354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentCollectionViewDataSource.swift; path = Controller/EquipmentCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentDetailViewController.swift; path = Controller/EquipmentDetailViewController.swift; sourceTree = "<group>"; };
+		355306E31D040E9600065CDA /* 合成所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "合成所需.csv"; sourceTree = "<group>"; };
+		355306E41D040E9600065CDA /* 进阶所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "进阶所需.csv"; sourceTree = "<group>"; };
+		355306E91D0428A500065CDA /* HorizontalMenuScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalMenuScrollView.swift; path = View/HorizontalMenuScrollView.swift; sourceTree = "<group>"; };
+		356015331D0B2B5F006467E4 /* FriendAnalysisDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendAnalysisDataSource.swift; path = Controller/AdvancedAnalysis/FriendAnalysisDataSource.swift; sourceTree = "<group>"; };
+		356F9CD11D07FAF00036E8D2 /* DataAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataAnalyzer.swift; path = Tk300HeroAssistant/AdvancedAnalyzer/DataAnalyzer.swift; sourceTree = SOURCE_ROOT; };
+		357758F61D0BF68B00CB0E55 /* IAPPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IAPPart.swift; path = Controller/AdvancedAnalysis/IAPPart.swift; sourceTree = "<group>"; };
 		358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentSearchBarDelegate.swift; path = Controller/EquipmentSearchBarDelegate.swift; sourceTree = "<group>"; };
 		35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchHeaderView.swift; path = Cells/MatchHeaderView.swift; sourceTree = "<group>"; };
 		35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = Cells/HeroTableViewCell.swift; sourceTree = "<group>"; };
 		35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVDataManager.swift; path = Tk300HeroAssistant/Model/CSVDataManager.swift; sourceTree = SOURCE_ROOT; };
 		35BCF7571CE8C8F900E30907 /* HeroTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewDataSource.swift; path = Controller/HeroTableViewDataSource.swift; sourceTree = "<group>"; };
+		35C811621D15A7610017A0F5 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		35C811651D15A7940017A0F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C811661D15A7940017A0F5 /* LCHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHttpClient.h; sourceTree = "<group>"; };
+		35C811671D15A7940017A0F5 /* LCHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHttpClient.m; sourceTree = "<group>"; };
+		35C811681D15A7940017A0F5 /* LCUserFeedbackAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackAgent.h; sourceTree = "<group>"; };
+		35C811691D15A7940017A0F5 /* LCUserFeedbackAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserFeedbackAgent.m; sourceTree = "<group>"; };
+		35C8116A1D15A7940017A0F5 /* LCUserFeedbackImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackImageViewController.h; sourceTree = "<group>"; };
+		35C8116B1D15A7940017A0F5 /* LCUserFeedbackImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserFeedbackImageViewController.m; sourceTree = "<group>"; };
+		35C8116C1D15A7940017A0F5 /* LCUserFeedbackReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackReply.h; sourceTree = "<group>"; };
+		35C8116D1D15A7940017A0F5 /* LCUserFeedbackReply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserFeedbackReply.m; sourceTree = "<group>"; };
+		35C8116E1D15A7940017A0F5 /* LCUserFeedbackReply_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackReply_Internal.h; sourceTree = "<group>"; };
+		35C8116F1D15A7940017A0F5 /* LCUserFeedbackReplyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackReplyCell.h; sourceTree = "<group>"; };
+		35C811701D15A7940017A0F5 /* LCUserFeedbackReplyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserFeedbackReplyCell.m; sourceTree = "<group>"; };
+		35C811711D15A7940017A0F5 /* LCUserFeedbackThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackThread.h; sourceTree = "<group>"; };
+		35C811721D15A7940017A0F5 /* LCUserFeedbackThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserFeedbackThread.m; sourceTree = "<group>"; };
+		35C811731D15A7940017A0F5 /* LCUserFeedbackThread_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackThread_Internal.h; sourceTree = "<group>"; };
+		35C811741D15A7940017A0F5 /* LCUserFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserFeedbackViewController.h; sourceTree = "<group>"; };
+		35C811751D15A7940017A0F5 /* LCUserFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserFeedbackViewController.m; sourceTree = "<group>"; };
+		35C811761D15A7940017A0F5 /* LCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUtils.h; sourceTree = "<group>"; };
+		35C811771D15A7940017A0F5 /* LCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUtils.m; sourceTree = "<group>"; };
+		35C811781D15A7940017A0F5 /* LeanCloudFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeanCloudFeedback.h; sourceTree = "<group>"; };
+		35C8117A1D15A7940017A0F5 /* feedback_add_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_add_image@2x.png"; sourceTree = "<group>"; };
+		35C8117B1D15A7940017A0F5 /* feedback_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_back@2x.png"; sourceTree = "<group>"; };
+		35C8117C1D15A7940017A0F5 /* feedback_bg_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_bg_1@2x.png"; sourceTree = "<group>"; };
+		35C8117D1D15A7940017A0F5 /* feedback_bg_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_bg_2@2x.png"; sourceTree = "<group>"; };
+		35C8117E1D15A7940017A0F5 /* feedback_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_btn@2x.png"; sourceTree = "<group>"; };
+		35C8117F1D15A7940017A0F5 /* feedback_btn_new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_btn_new@2x.png"; sourceTree = "<group>"; };
+		35C811801D15A7940017A0F5 /* feedback_warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedback_warning@2x.png"; sourceTree = "<group>"; };
+		35C811811D15A7940017A0F5 /* LeanCloudFeedback.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = LeanCloudFeedback.strings; sourceTree = "<group>"; };
 		35CB3E051CEE2F2100FED888 /* CSVReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVReader.swift; path = Tk300HeroAssistant/Model/CSVReader.swift; sourceTree = SOURCE_ROOT; };
 		35CB9EE11CEC55120007C47C /* HeroDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDetailViewController.swift; path = Controller/HeroDetailViewController.swift; sourceTree = "<group>"; };
 		35CB9EE31CEC5B6D0007C47C /* SkillInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillInfoTableViewCell.swift; path = Cells/SkillInfoTableViewCell.swift; sourceTree = "<group>"; };
 		35CB9EE51CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDetailSkillTableViewDataSource.swift; path = Controller/HeroDetailSkillTableViewDataSource.swift; sourceTree = "<group>"; };
 		35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalRankTableViewCell.swift; path = Cells/PersonalRankTableViewCell.swift; sourceTree = "<group>"; };
-		35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInfoTableViewDataSource.swift; path = Controller/PersonalInfoTableViewDataSource.swift; sourceTree = "<group>"; };
+		35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInfoTableViewDataSourceAndDelegate.swift; path = Controller/PersonalInfoTableViewDataSourceAndDelegate.swift; sourceTree = "<group>"; };
 		35E259D31CE87F2C005AEE4F /* HeroData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroData.swift; path = Tk300HeroAssistant/Model/Data/HeroData.swift; sourceTree = SOURCE_ROOT; };
 		35E9D02B1CF96F11004170BE /* AccountChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountChangeViewController.swift; path = Controller/AccountChangeViewController.swift; sourceTree = "<group>"; };
 		35E9D02D1CF96F68004170BE /* userAccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = userAccountTableViewCell.swift; path = Cells/userAccountTableViewCell.swift; sourceTree = "<group>"; };
 		35F2CA6C1CFB53B50046B653 /* hero data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "hero data.csv"; path = "LocalData/hero data.csv"; sourceTree = "<group>"; };
 		35F2CA6D1CFB53B50046B653 /* skill data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "skill data.csv"; path = "LocalData/skill data.csv"; sourceTree = "<group>"; };
 		35F2CA701CFB57060046B653 /* Bugs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bugs; sourceTree = "<group>"; };
+		35F4C2771D31011700A44787 /* ApplicationColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationColorManager.swift; path = Tk300HeroAssistant/ApplicationColorManager.swift; sourceTree = SOURCE_ROOT; };
 		35FBA5F51CDF4E5C00A527B4 /* 星尘盒子 for 300英雄.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "星尘盒子 for 300英雄.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35FBA5FD1CDF4E5C00A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -163,12 +246,6 @@
 		35FBA6021CDF4E5C00A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35FBA6041CDF4E5C00A527B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35FBA60A1CDF4EA800A527B4 /* openapi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = openapi.txt; path = ../openapi.txt; sourceTree = "<group>"; };
-		35FBA60D1CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshConstants.swift; sourceTree = "<group>"; };
-		35FBA60E1CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshExtensions.swift; sourceTree = "<group>"; };
-		35FBA60F1CDF51B100A527B4 /* DGElasticPullToRefreshLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingView.swift; sourceTree = "<group>"; };
-		35FBA6101CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingViewCircle.swift; sourceTree = "<group>"; };
-		35FBA6111CDF51B100A527B4 /* DGElasticPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshView.swift; sourceTree = "<group>"; };
-		35FBA6121CDF51B100A527B4 /* DGRunkeeperSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGRunkeeperSwitch.swift; sourceTree = "<group>"; };
 		35FBA61A1CDF51BF00A527B4 /* NirKxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NirKxMenu.h; sourceTree = "<group>"; };
 		35FBA61B1CDF51BF00A527B4 /* NirKxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NirKxMenu.m; sourceTree = "<group>"; };
 		35FBA61E1CDF523C00A527B4 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
@@ -177,10 +254,12 @@
 		35FBA6311CDF701600A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Hero.storyboard; sourceTree = "<group>"; };
 		35FBA6341CDF703A00A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PersonalInfo.storyboard; sourceTree = "<group>"; };
 		35FBA6381CDF708900A527B4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controller/Main/MainViewController.swift; sourceTree = "<group>"; };
-		35FBA63A1CDF711800A527B4 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInfoViewController.swift; path = Controller/PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		35FBA63A1CDF711800A527B4 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInfoViewController.swift; path = Controller/PersonalInfoViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		35FBA63C1CDF712E00A527B4 /* HeroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroViewController.swift; path = Controller/HeroViewController.swift; sourceTree = "<group>"; };
 		35FBA63E1CDF714A00A527B4 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchViewController.swift; path = Controller/MatchViewController.swift; sourceTree = "<group>"; };
 		35FBA6401CDF717400A527B4 /* MatchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchDetailViewController.swift; path = Controller/MatchDetailViewController.swift; sourceTree = "<group>"; };
+		35FD3BA91D145C570048343D /* CarryAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarryAnalysisViewController.swift; path = Controller/AdvancedAnalysis/CarryAnalysisViewController.swift; sourceTree = "<group>"; };
+		35FD3BAB1D145C6B0048343D /* CarryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarryDataSource.swift; path = Controller/AdvancedAnalysis/CarryDataSource.swift; sourceTree = "<group>"; };
 		374FF767C7559DF8950E22E0 /* Pods_Tk300HeroAssistantTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tk300HeroAssistantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE5B0D7DD464CEA3FF730C0 /* Pods-Tk300HeroAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tk300HeroAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tk300HeroAssistant/Pods-Tk300HeroAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		585C009171284DD1558B5230 /* Pods_Tk300HeroAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tk300HeroAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,16 +315,33 @@
 			name = Match;
 			sourceTree = "<group>";
 		};
+		3501B2801D153A5900EB136B /* 每局详情 */ = {
+			isa = PBXGroup;
+			children = (
+				3501B2811D153B8500EB136B /* HeroBattleListViewController.swift */,
+				3501B2831D153B9A00EB136B /* HeroBattleListDataSource.swift */,
+			);
+			name = "每局详情";
+			sourceTree = "<group>";
+		};
 		350993311CEF4B610079C7E3 /* 装备数据 */ = {
 			isa = PBXGroup;
 			children = (
 				354BC70B1CFD5233001E046C /* EquipmentViewController.swift */,
 				354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */,
 				354BC7511CFDBB65001E046C /* EquipmentCollectionViewCell.swift */,
-				354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */,
 				358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */,
+				351112541D051E6D004C58AF /* 装备详情 */,
 			);
 			name = "装备数据";
+			sourceTree = "<group>";
+		};
+		351112541D051E6D004C58AF /* 装备详情 */ = {
+			isa = PBXGroup;
+			children = (
+				354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */,
+			);
+			name = "装备详情";
 			sourceTree = "<group>";
 		};
 		3516C7CB1CE64094005BF4D8 /* FriendAnalysis */ = {
@@ -283,10 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				35FBA63A1CDF711800A527B4 /* PersonalInfoViewController.swift */,
-				35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */,
-				35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift */,
-				35E9D02B1CF96F11004170BE /* AccountChangeViewController.swift */,
-				35E9D02D1CF96F68004170BE /* userAccountTableViewCell.swift */,
+				3540E9361D0AF65000E0FB66 /* 基本 */,
 			);
 			name = "个人信息";
 			sourceTree = "<group>";
@@ -313,14 +406,85 @@
 			name = "详情";
 			sourceTree = "<group>";
 		};
+		353AF3201D2ACBCB00822044 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				353AF3211D2ACBED00822044 /* CrashViewController.swift */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
 		35401A6D1CE839C800F0EDE2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				35FBA6221CDF523F00A527B4 /* 3rd */,
 				35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */,
 				3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */,
 				35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */,
 			);
 			name = Tools;
+			sourceTree = "<group>";
+		};
+		3540E9291D0AEAB800E0FB66 /* 高级分析功能 */ = {
+			isa = PBXGroup;
+			children = (
+				3540E92D1D0AEBE700E0FB66 /* AdvancedAnalysisMainTableViewController.swift */,
+				3540E9391D0B0D7400E0FB66 /* 开黑分析 */,
+				3540E92A1D0AEAC500E0FB66 /* 英雄胜率分析 */,
+				35FD3BA81D145A990048343D /* Carry分析 */,
+			);
+			name = "高级分析功能";
+			sourceTree = "<group>";
+		};
+		3540E92A1D0AEAC500E0FB66 /* 英雄胜率分析 */ = {
+			isa = PBXGroup;
+			children = (
+				3540E92F1D0AEC1400E0FB66 /* HeroWinRateViewController.swift */,
+				3540E9321D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift */,
+				3540E9341D0AEE6D00E0FB66 /* HeroWinRateDataSource.swift */,
+				3501B2801D153A5900EB136B /* 每局详情 */,
+			);
+			name = "英雄胜率分析";
+			sourceTree = "<group>";
+		};
+		3540E9361D0AF65000E0FB66 /* 基本 */ = {
+			isa = PBXGroup;
+			children = (
+				3540E93A1D0B0E0300E0FB66 /* 账号切换 */,
+				35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */,
+				35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift */,
+				35E9D02D1CF96F68004170BE /* userAccountTableViewCell.swift */,
+				3540E9371D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift */,
+				357758F61D0BF68B00CB0E55 /* IAPPart.swift */,
+			);
+			name = "基本";
+			sourceTree = "<group>";
+		};
+		3540E9391D0B0D7400E0FB66 /* 开黑分析 */ = {
+			isa = PBXGroup;
+			children = (
+				3547D7C51D19BA56005C47A9 /* 玩家详情 */,
+				3540E93B1D0B15C000E0FB66 /* FriendAnalysisViewController.swift */,
+				3540E93D1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift */,
+				356015331D0B2B5F006467E4 /* FriendAnalysisDataSource.swift */,
+			);
+			name = "开黑分析";
+			sourceTree = "<group>";
+		};
+		3540E93A1D0B0E0300E0FB66 /* 账号切换 */ = {
+			isa = PBXGroup;
+			children = (
+				35E9D02B1CF96F11004170BE /* AccountChangeViewController.swift */,
+			);
+			name = "账号切换";
+			sourceTree = "<group>";
+		};
+		3547D7C51D19BA56005C47A9 /* 玩家详情 */ = {
+			isa = PBXGroup;
+			children = (
+				3547D7C61D19BA77005C47A9 /* PlayerDetailViewController.swift */,
+			);
+			name = "玩家详情";
 			sourceTree = "<group>";
 		};
 		354BC73B1CFD59B9001E046C /* Tk300HeroAssistantTests */ = {
@@ -330,6 +494,67 @@
 				354BC73E1CFD59B9001E046C /* Info.plist */,
 			);
 			path = Tk300HeroAssistantTests;
+			sourceTree = "<group>";
+		};
+		356F9CD01D07FA750036E8D2 /* AdvancedAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				356F9CD11D07FAF00036E8D2 /* DataAnalyzer.swift */,
+				3501B2871D153F2500EB136B /* HeroWinRateAnalyzer.swift */,
+				3501B2891D153F5400EB136B /* AnalyzerHelper.swift */,
+			);
+			name = AdvancedAnalysis;
+			sourceTree = "<group>";
+		};
+		35C811631D15A76C0017A0F5 /* 3rdLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				35C811641D15A7940017A0F5 /* LeanCloudFeedback */,
+			);
+			name = 3rdLibraries;
+			sourceTree = "<group>";
+		};
+		35C811641D15A7940017A0F5 /* LeanCloudFeedback */ = {
+			isa = PBXGroup;
+			children = (
+				35C811651D15A7940017A0F5 /* Info.plist */,
+				35C811661D15A7940017A0F5 /* LCHttpClient.h */,
+				35C811671D15A7940017A0F5 /* LCHttpClient.m */,
+				35C811681D15A7940017A0F5 /* LCUserFeedbackAgent.h */,
+				35C811691D15A7940017A0F5 /* LCUserFeedbackAgent.m */,
+				35C8116A1D15A7940017A0F5 /* LCUserFeedbackImageViewController.h */,
+				35C8116B1D15A7940017A0F5 /* LCUserFeedbackImageViewController.m */,
+				35C8116C1D15A7940017A0F5 /* LCUserFeedbackReply.h */,
+				35C8116D1D15A7940017A0F5 /* LCUserFeedbackReply.m */,
+				35C8116E1D15A7940017A0F5 /* LCUserFeedbackReply_Internal.h */,
+				35C8116F1D15A7940017A0F5 /* LCUserFeedbackReplyCell.h */,
+				35C811701D15A7940017A0F5 /* LCUserFeedbackReplyCell.m */,
+				35C811711D15A7940017A0F5 /* LCUserFeedbackThread.h */,
+				35C811721D15A7940017A0F5 /* LCUserFeedbackThread.m */,
+				35C811731D15A7940017A0F5 /* LCUserFeedbackThread_Internal.h */,
+				35C811741D15A7940017A0F5 /* LCUserFeedbackViewController.h */,
+				35C811751D15A7940017A0F5 /* LCUserFeedbackViewController.m */,
+				35C811761D15A7940017A0F5 /* LCUtils.h */,
+				35C811771D15A7940017A0F5 /* LCUtils.m */,
+				35C811781D15A7940017A0F5 /* LeanCloudFeedback.h */,
+				35C811791D15A7940017A0F5 /* resources */,
+			);
+			path = LeanCloudFeedback;
+			sourceTree = "<group>";
+		};
+		35C811791D15A7940017A0F5 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				35C8117A1D15A7940017A0F5 /* feedback_add_image@2x.png */,
+				35C8117B1D15A7940017A0F5 /* feedback_back@2x.png */,
+				35C8117C1D15A7940017A0F5 /* feedback_bg_1@2x.png */,
+				35C8117D1D15A7940017A0F5 /* feedback_bg_2@2x.png */,
+				35C8117E1D15A7940017A0F5 /* feedback_btn@2x.png */,
+				35C8117F1D15A7940017A0F5 /* feedback_btn_new@2x.png */,
+				35C811801D15A7940017A0F5 /* feedback_warning@2x.png */,
+				35C811811D15A7940017A0F5 /* LeanCloudFeedback.strings */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 		35CB9EE01CEC54E50007C47C /* 英雄详情 */ = {
@@ -356,9 +581,10 @@
 		35F2CA6B1CFB53A70046B653 /* LocalData */ = {
 			isa = PBXGroup;
 			children = (
+				355306E31D040E9600065CDA /* 合成所需.csv */,
+				355306E41D040E9600065CDA /* 进阶所需.csv */,
 				35F2CA6C1CFB53B50046B653 /* hero data.csv */,
 				35F2CA6D1CFB53B50046B653 /* skill data.csv */,
-				354BC70D1CFD5334001E046C /* 合成所需.csv */,
 				354BC70F1CFD5334001E046C /* object data.csv */,
 			);
 			name = LocalData;
@@ -393,6 +619,8 @@
 				35FBA6361CDF704000A527B4 /* View */,
 				35FBA6371CDF704B00A527B4 /* Controllers */,
 				35FBA61D1CDF523C00A527B4 /* Network */,
+				35C811631D15A76C0017A0F5 /* 3rdLibraries */,
+				35C811621D15A7610017A0F5 /* Bridging-Header.h */,
 				35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */,
 				35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */,
 				35FBA6011CDF4E5C00A527B4 /* LaunchScreen.storyboard */,
@@ -400,19 +628,6 @@
 				35F2CA701CFB57060046B653 /* Bugs */,
 			);
 			path = Tk300HeroAssistant;
-			sourceTree = "<group>";
-		};
-		35FBA60C1CDF51B100A527B4 /* DGElasticPullToRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				35FBA60D1CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift */,
-				35FBA60E1CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift */,
-				35FBA60F1CDF51B100A527B4 /* DGElasticPullToRefreshLoadingView.swift */,
-				35FBA6101CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift */,
-				35FBA6111CDF51B100A527B4 /* DGElasticPullToRefreshView.swift */,
-				35FBA6121CDF51B100A527B4 /* DGRunkeeperSwitch.swift */,
-			);
-			path = DGElasticPullToRefresh;
 			sourceTree = "<group>";
 		};
 		35FBA6191CDF51BF00A527B4 /* NirKxMenu */ = {
@@ -438,7 +653,6 @@
 			isa = PBXGroup;
 			children = (
 				35FBA6191CDF51BF00A527B4 /* NirKxMenu */,
-				35FBA60C1CDF51B100A527B4 /* DGElasticPullToRefresh */,
 			);
 			name = 3rd;
 			sourceTree = "<group>";
@@ -446,6 +660,7 @@
 		35FBA6231CDF57DB00A527B4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				356F9CD01D07FA750036E8D2 /* AdvancedAnalysis */,
 				35011C611CE03C3C004F7913 /* User.swift */,
 				35CB3E051CEE2F2100FED888 /* CSVReader.swift */,
 				35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */,
@@ -456,6 +671,8 @@
 				35011C5E1CE03616004F7913 /* Rank */,
 				35011C5D1CE03605004F7913 /* Player */,
 				35401A691CE830D900F0EDE2 /* Global.swift */,
+				351910631D0DCD0300FB0F0C /* AppManager.swift */,
+				35F4C2771D31011700A44787 /* ApplicationColorManager.swift */,
 			);
 			name = Model;
 			path = Network;
@@ -464,11 +681,13 @@
 		35FBA6361CDF704000A527B4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				355306E91D0428A500065CDA /* HorizontalMenuScrollView.swift */,
 				35FBA5FC1CDF4E5C00A527B4 /* Main.storyboard */,
 				35FBA62D1CDF6FE300A527B4 /* Match.storyboard */,
 				35FBA6301CDF701600A527B4 /* Hero.storyboard */,
 				354BC74E1CFD5C0A001E046C /* Equipment.storyboard */,
 				35FBA6331CDF703A00A527B4 /* PersonalInfo.storyboard */,
+				3540E9261D0AD1F600E0FB66 /* AdvancedAnalysis.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -476,15 +695,25 @@
 		35FBA6371CDF704B00A527B4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				353AF3201D2ACBCB00822044 /* Test */,
 				35011C5F1CE03BCC004F7913 /* MainNavigationViewController.swift */,
 				35FBA6381CDF708900A527B4 /* MainViewController.swift */,
-				35FBA6221CDF523F00A527B4 /* 3rd */,
+				3540E9291D0AEAB800E0FB66 /* 高级分析功能 */,
 				3517D6D41CE0DE4F006162BA /* 个人战绩 */,
 				3517D6D61CE0DE73006162BA /* 个人信息 */,
 				3517D6D51CE0DE60006162BA /* 英雄数据 */,
 				350993311CEF4B610079C7E3 /* 装备数据 */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		35FD3BA81D145A990048343D /* Carry分析 */ = {
+			isa = PBXGroup;
+			children = (
+				35FD3BA91D145C570048343D /* CarryAnalysisViewController.swift */,
+				35FD3BAB1D145C6B0048343D /* CarryDataSource.swift */,
+			);
+			name = "Carry分析";
 			sourceTree = "<group>";
 		};
 		90F405ABAACB4228BE2038C3 /* Frameworks */ = {
@@ -541,6 +770,7 @@
 				35FBA5F31CDF4E5C00A527B4 /* Resources */,
 				AC6CF727BCF18C30A9F2424F /* 📦 Embed Pods Frameworks */,
 				B7DA3539B62C5293FC5C2A82 /* 📦 Copy Pods Resources */,
+				354BA04D1D2E9CC300A2C045 /* Fabric Crash Report */,
 			);
 			buildRules = (
 			);
@@ -568,6 +798,11 @@
 					35FBA5F41CDF4E5C00A527B4 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 3HX94AXZ2B;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -597,7 +832,6 @@
 			files = (
 				354BC7481CFD59E9001E046C /* hero data.csv in Resources */,
 				354BC7491CFD59E9001E046C /* skill data.csv in Resources */,
-				354BC7471CFD59E6001E046C /* 合成所需.csv in Resources */,
 				354BC7461CFD59E4001E046C /* object data.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,25 +840,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C811821D15A7940017A0F5 /* Info.plist in Resources */,
+				35C8118B1D15A7940017A0F5 /* feedback_add_image@2x.png in Resources */,
+				355306E51D040E9600065CDA /* 合成所需.csv in Resources */,
 				35FBA6321CDF701600A527B4 /* Hero.storyboard in Resources */,
 				35FBA6031CDF4E5C00A527B4 /* LaunchScreen.storyboard in Resources */,
 				35FBA60B1CDF4EA800A527B4 /* openapi.txt in Resources */,
 				354BC7121CFD5334001E046C /* object data.csv in Resources */,
+				35C8118E1D15A7940017A0F5 /* feedback_bg_2@2x.png in Resources */,
 				35FBA62F1CDF6FE300A527B4 /* Match.storyboard in Resources */,
-				354BC7101CFD5334001E046C /* 合成所需.csv in Resources */,
 				35F2CA711CFB57060046B653 /* Bugs in Resources */,
 				354BC7501CFD5C0A001E046C /* Equipment.storyboard in Resources */,
+				35C8118F1D15A7940017A0F5 /* feedback_btn@2x.png in Resources */,
 				35FBA6001CDF4E5C00A527B4 /* Assets.xcassets in Resources */,
+				35C811921D15A7940017A0F5 /* LeanCloudFeedback.strings in Resources */,
 				35FBA6351CDF703A00A527B4 /* PersonalInfo.storyboard in Resources */,
+				3540E9281D0AD1F600E0FB66 /* AdvancedAnalysis.storyboard in Resources */,
 				35FBA5FE1CDF4E5C00A527B4 /* Main.storyboard in Resources */,
 				35F2CA6E1CFB53B50046B653 /* hero data.csv in Resources */,
+				35C811901D15A7940017A0F5 /* feedback_btn_new@2x.png in Resources */,
+				35C8118D1D15A7940017A0F5 /* feedback_bg_1@2x.png in Resources */,
 				35F2CA6F1CFB53B50046B653 /* skill data.csv in Resources */,
+				35C8118C1D15A7940017A0F5 /* feedback_back@2x.png in Resources */,
+				35C811911D15A7940017A0F5 /* feedback_warning@2x.png in Resources */,
+				355306E61D040E9600065CDA /* 进阶所需.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		354BA04D1D2E9CC300A2C045 /* Fabric Crash Report */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fabric Crash Report";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 337959c28d91bd9a09da5d5f52a2c069b995d2aa d41bede1e426e1eb32d9b6722b08b6c01893f13f03de64a4f9b3385116f56713";
+		};
 		5156A7F7F722F3FD6DE47523 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -736,20 +995,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35DCA5CE1CE5B47A0037577B /* PersonalInfoTableViewDataSource.swift in Sources */,
+				35DCA5CE1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift in Sources */,
+				35C811851D15A7940017A0F5 /* LCUserFeedbackImageViewController.m in Sources */,
 				3517D70D1CE0F2FA006162BA /* MatchTableViewDataSource.swift in Sources */,
 				35E9D02C1CF96F11004170BE /* AccountChangeViewController.swift in Sources */,
+				35F4C2781D31011700A44787 /* ApplicationColorManager.swift in Sources */,
+				35C811871D15A7940017A0F5 /* LCUserFeedbackReplyCell.m in Sources */,
+				3540E93C1D0B15C000E0FB66 /* FriendAnalysisViewController.swift in Sources */,
 				35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */,
+				3540E9331D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift in Sources */,
+				3547D7C71D19BA77005C47A9 /* PlayerDetailViewController.swift in Sources */,
+				351910641D0DCD0300FB0F0C /* AppManager.swift in Sources */,
 				3517D6FC1CE0EA70006162BA /* Item.swift in Sources */,
+				35C811891D15A7940017A0F5 /* LCUserFeedbackViewController.m in Sources */,
 				3517D7031CE0EDE9006162BA /* Rank.swift in Sources */,
+				3501B28A1D153F5400EB136B /* AnalyzerHelper.swift in Sources */,
+				3540E9351D0AEE6D00E0FB66 /* HeroWinRateDataSource.swift in Sources */,
 				35FBA6201CDF523C00A527B4 /* HttpClient.swift in Sources */,
 				35CB9EE21CEC55120007C47C /* HeroDetailViewController.swift in Sources */,
-				35FBA6181CDF51B100A527B4 /* DGRunkeeperSwitch.swift in Sources */,
+				356F9CD21D07FAF00036E8D2 /* DataAnalyzer.swift in Sources */,
 				3517D6FE1CE0EA70006162BA /* Match.swift in Sources */,
 				3517D7091CE0EE5F006162BA /* Hero.swift in Sources */,
 				35401A6A1CE830DA00F0EDE2 /* Global.swift in Sources */,
 				35011C601CE03BCC004F7913 /* MainNavigationViewController.swift in Sources */,
-				35FBA6141CDF51B100A527B4 /* DGElasticPullToRefreshExtensions.swift in Sources */,
+				35C811881D15A7940017A0F5 /* LCUserFeedbackThread.m in Sources */,
 				35CB9EE61CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift in Sources */,
 				354BC7541CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift in Sources */,
 				3517D6FD1CE0EA70006162BA /* MatchRole.swift in Sources */,
@@ -757,43 +1026,56 @@
 				3517D7041CE0EDE9006162BA /* Role.swift in Sources */,
 				3517D6FF1CE0EA70006162BA /* MatchDetail.swift in Sources */,
 				35DCA5CC1CE567730037577B /* PersonalRankTableViewCell.swift in Sources */,
+				3540E92E1D0AEBE700E0FB66 /* AdvancedAnalysisMainTableViewController.swift in Sources */,
 				35401A6F1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift in Sources */,
+				357758F71D0BF68B00CB0E55 /* IAPPart.swift in Sources */,
 				3509932C1CEF116D0079C7E3 /* CollectionViewExtension.swift in Sources */,
 				3516C7CD1CE640F3005BF4D8 /* FriendAnalyzer.swift in Sources */,
+				35FD3BAA1D145C570048343D /* CarryAnalysisViewController.swift in Sources */,
 				35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */,
 				35E9D02E1CF96F68004170BE /* userAccountTableViewCell.swift in Sources */,
 				354BC7561CFDC63A001E046C /* EquipmentDetailViewController.swift in Sources */,
+				35C811841D15A7940017A0F5 /* LCUserFeedbackAgent.m in Sources */,
 				35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */,
 				354BC7521CFDBB65001E046C /* EquipmentCollectionViewCell.swift in Sources */,
 				35FBA5F91CDF4E5C00A527B4 /* AppDelegate.swift in Sources */,
 				350E2C991CE1A99800DF5216 /* matchDetailTableViewDataSource.swift in Sources */,
 				35011C621CE03C3C004F7913 /* User.swift in Sources */,
+				3540E9381D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift in Sources */,
 				350CCEE01CEAE30500D082EB /* EquipCombineData.swift in Sources */,
 				35FBA63F1CDF714A00A527B4 /* MatchViewController.swift in Sources */,
 				35FBA63B1CDF711800A527B4 /* PersonalInfoViewController.swift in Sources */,
-				35FBA6131CDF51B100A527B4 /* DGElasticPullToRefreshConstants.swift in Sources */,
+				3501B2841D153B9A00EB136B /* HeroBattleListDataSource.swift in Sources */,
 				3517D70A1CE0EE5F006162BA /* List.swift in Sources */,
 				35BCF7581CE8C8F900E30907 /* HeroTableViewDataSource.swift in Sources */,
 				358B36E21CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift in Sources */,
+				35C8118A1D15A7940017A0F5 /* LCUtils.m in Sources */,
 				354BC70C1CFD5233001E046C /* EquipmentViewController.swift in Sources */,
 				3517D70B1CE0EE5F006162BA /* MatchBasicAPIBase.swift in Sources */,
+				3540E9301D0AEC1400E0FB66 /* HeroWinRateViewController.swift in Sources */,
 				35FBA6391CDF708900A527B4 /* MainViewController.swift in Sources */,
+				356015341D0B2B5F006467E4 /* FriendAnalysisDataSource.swift in Sources */,
+				35C811831D15A7940017A0F5 /* LCHttpClient.m in Sources */,
+				3540E93E1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift in Sources */,
 				35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */,
 				35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */,
-				35FBA6161CDF51B100A527B4 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
 				354BC7141CFD534F001E046C /* EquipmentData.swift in Sources */,
-				35FBA6171CDF51B100A527B4 /* DGElasticPullToRefreshView.swift in Sources */,
 				350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */,
 				3509932E1CEF11E70079C7E3 /* HeroCollectionViewCell.swift in Sources */,
 				3517D7051CE0EDE9006162BA /* RoleAPIBase.swift in Sources */,
+				3501B2881D153F2500EB136B /* HeroWinRateAnalyzer.swift in Sources */,
+				353AF3221D2ACBED00822044 /* CrashViewController.swift in Sources */,
 				35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */,
 				35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */,
 				35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */,
+				35FD3BAC1D145C6B0048343D /* CarryDataSource.swift in Sources */,
+				355306EA1D0428A500065CDA /* HorizontalMenuScrollView.swift in Sources */,
 				3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */,
+				35C811861D15A7940017A0F5 /* LCUserFeedbackReply.m in Sources */,
 				35FBA6411CDF717400A527B4 /* MatchDetailViewController.swift in Sources */,
+				3501B2821D153B8500EB136B /* HeroBattleListViewController.swift in Sources */,
 				35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */,
 				35FBA63D1CDF712E00A527B4 /* HeroViewController.swift in Sources */,
-				35FBA6151CDF51B100A527B4 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,6 +1090,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3540E9261D0AD1F600E0FB66 /* AdvancedAnalysis.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3540E9271D0AD1F600E0FB66 /* Base */,
+			);
+			name = AdvancedAnalysis.storyboard;
+			sourceTree = "<group>";
+		};
 		354BC74E1CFD5C0A001E046C /* Equipment.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -976,14 +1266,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FE5B0D7DD464CEA3FF730C0 /* Pods-Tk300HeroAssistant.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = Tk300HeroAssistant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.dowhile.Tk300HeroAssistant;
 				PRODUCT_NAME = "星尘盒子 for 300英雄";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tk300HeroAssistant/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -991,14 +1284,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2DD9FE52B9322672F49A4CD /* Pods-Tk300HeroAssistant.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = Tk300HeroAssistant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.dowhile.Tk300HeroAssistant;
 				PRODUCT_NAME = "星尘盒子 for 300英雄";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tk300HeroAssistant/Bridging-Header.h";
 			};
 			name = Release;
 		};

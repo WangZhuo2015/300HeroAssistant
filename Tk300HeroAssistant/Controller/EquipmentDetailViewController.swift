@@ -20,12 +20,30 @@ class EquipmentDetailViewController: UIViewController {
     
     @IBOutlet weak var equipmentPriceLabel: UILabel!
     
+    @IBOutlet weak var combineScrollView: HorizontalMenuScrollView!
+    
+    @IBOutlet weak var subEquipmentScrollView: HorizontalMenuScrollView!
+    
+    @IBOutlet weak var combineLabel: UIButton!
+    
+    @IBOutlet weak var subEquipmentLabel: UIButton!
+    let pageName = "EquipmentDetailViewController"
+    let EquipmentDetailViewControllerID = "EquipmentDetailViewControllerID"
     var currentEquipment:EquipmentData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setContent(currentEquipment!)
+
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,11 +53,29 @@ class EquipmentDetailViewController: UIViewController {
     
 
     func setContent(equipmentData:EquipmentData){
+        self.navigationItem.title = currentEquipment?.name
+        combineScrollView.setContent(currentEquipment?.进阶物品id ?? [])
+        subEquipmentScrollView.setContent(currentEquipment?.所需物品id ?? [])
+        combineLabel.hidden = currentEquipment?.进阶物品id == nil
+        subEquipmentLabel.hidden = currentEquipment?.所需物品id == nil
+        subEquipmentScrollView.didSelectItem = { index in
+            self.currentEquipment = CSVDataManager.sharedInstance.getEquipmentInfoByID(index)!
+            self.setContent(self.currentEquipment!)
+        }
+        combineScrollView.didSelectItem = { index in
+            self.currentEquipment = CSVDataManager.sharedInstance.getEquipmentInfoByID(index)!
+            self.setContent(self.currentEquipment!)
+        }
+        
         equipmentImage.image = UIImage(named: equipmentData.id!)
-        equipmentName.text = equipmentData.name
+        equipmentName.text = " \(equipmentData.name!) "
         equipmentAttributeLabel.text = equipmentData.属性
         equipmentSkillLabel.text = equipmentData.装备技能
         equipmentPriceLabel.text = equipmentData.售价
+    }
+    
+    func popToRoot(){
+        self.navigationController?.popToRootViewControllerAnimated(true)
     }
     /*
     // MARK: - Navigation

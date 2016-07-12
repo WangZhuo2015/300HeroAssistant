@@ -13,7 +13,7 @@ extension EquipmentViewController:UISearchBarDelegate{
             equipmentDataArray = rawEquipmentDataArray
         }
         else{
-            equipmentDataArray = rawEquipmentDataArray.filter{($0.name?.hasPrefix(searchText))!}
+            equipmentDataArray = rawEquipmentDataArray.filter{($0.name?.containsString(searchText))!}
         }
     }
 }

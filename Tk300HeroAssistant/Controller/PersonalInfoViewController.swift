@@ -7,10 +7,11 @@
 //
 
 import UIKit
-
+import StoreKit
 class PersonalInfoViewController: UIViewController {
 
     //@IBOutlet weak var roleNameLabel: UILabel!
+    @IBOutlet weak var headerView: UIView!
     
     @IBOutlet weak var roleLevelLabel: UILabel!
     
@@ -29,8 +30,19 @@ class PersonalInfoViewController: UIViewController {
     @IBOutlet weak var winRateProgress: UIProgressView!
     
     @IBOutlet weak var changeAccountButton: UIBarButtonItem!
+    let feedbackButton = UIBarButtonItem()
+    let pageName = "PersonalInfoViewController"
+    
     //PersonalRankCell
     let PersonalRankCellIdentifier = "PersonalRankCellIdentifier"
+    let advancedAnalysisSegue = "advancedAnalysisSegue"
+    let MenuTableViewCellIdentifier = "MenuTableViewCellIdentifier"
+    
+    /// App内购
+    
+    let VERIFY_RECEIPT_URL = "https://buy.itunes.apple.com/verifyReceipt"
+    let ITMS_SANDBOX_VERIFY_RECEIPT_URL = "https://sandbox.itunes.apple.com/verifyReceipt"
+    var productDict:NSMutableDictionary!
     var rank = [Rank](){
         didSet{
             self.tableView.reloadData()
@@ -43,16 +55,39 @@ class PersonalInfoViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.bounces = false
         tableView.dataSource = self
         tableView.delegate = self
+        headerView.backgroundColor = ApplicationColorManager.SectionSeparatorColor
         userChange()
-        //let login = UIBarButtonItem(title: "切换账号", style: .Plain , target: self, action: #selector(self.login))
-        //self.navigationItem.rightBarButtonItem = login
+        //防止已有
+        if feedbackButton.title == nil {
+            feedbackButton.title = "用户反馈"
+        }
+        feedbackButton.target = self
+        feedbackButton.action = #selector(PersonalInfoViewController.feedback)
+        self.navigationItem.leftBarButtonItem = feedbackButton
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: (#selector(PersonalInfoViewController.userChange)), name: userChangedNotification, object: nil)
         loadPlayerBasicInfoWithName()
+        
+        SKPaymentQueue.defaultQueue().addTransactionObserver(self)
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
+    }
+    
+    
+    deinit{
+        SKPaymentQueue.defaultQueue().removeTransactionObserver(self)
+    }
+    
     func userChange(){
         guard User.sharedUser.userName != "" else{
             self.navigationItem.title = "个人信息"
@@ -92,7 +127,39 @@ class PersonalInfoViewController: UIViewController {
         winRateProgress.progress = winRate
     }
     
+    func feedback(){
+        let feedbackViewController = LCUserFeedbackViewController()
+        feedbackViewController.navigationBarStyle = LCUserFeedbackNavigationBarStyleBlue
+        feedbackViewController.contactHeaderHidden = true
+        feedbackViewController.presented = true
+        feedbackViewController.feedbackTitle = "用户反馈"
+        let navigationController = UINavigationController(rootViewController: feedbackViewController)
+        feedbackViewController.contact = AppManager.getUUID()
+        presentViewController(navigationController, animated: true, completion: nil)
+    }
     
+    func recieveNewMessage(){
+//        let animation = CABasicAnimation(keyPath: "opacity")
+//        animation.fromValue = 1.0
+//        
+//        animation.toValue = 0.0
+//        
+//        animation.autoreverses = true
+//        
+//        animation.duration = 1
+//        
+//        animation.repeatCount = Float.infinity
+//        
+//        animation.removedOnCompletion = true
+//        
+//        animation.fillMode = kCAFillModeForwards
+        feedbackButton.title = "新的回复"
+        feedbackButton.tintColor = UIColor ( red: 1.0, green: 0.4039, blue: 0.4957, alpha: 1.0 )
+    }
+    func removeNewMessage(){
+        feedbackButton.title = "用户反馈"
+        feedbackButton.tintColor = UIColor.whiteColor()
+    }
     
     
     override func didReceiveMemoryWarning() {

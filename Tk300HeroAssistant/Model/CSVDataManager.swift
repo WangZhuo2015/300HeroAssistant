@@ -9,13 +9,16 @@
 import Foundation
 class CSVDataManager{
     static let sharedInstance = CSVDataManager()
-    var heroDataArray:[HeroData]?
-    var skillDataArray:[SkillData]?
-    var equipmentDataArray:[EquipmentData]?
+    private var heroDataArray:[HeroData]?
+    private var skillDataArray:[SkillData]?
+    private var equipmentDataArray:[EquipmentData]?{
+        get{
+            return equipmentDataDictionary?.values.map({$0}).sort({Int($0.0.售价!) < Int( $0.1.售价!)})
+        }
+    }
+    private var equipmentDataDictionary:[String:EquipmentData]?
     
-    
-    
-    func loadHeroData(completionHandle:([HeroData])->Void) {
+    internal func loadHeroData(completionHandle:([HeroData])->Void) {
         if let data = heroDataArray{
             completionHandle(data)
         }else{
@@ -26,7 +29,7 @@ class CSVDataManager{
         }
     }
     
-    func loadSkillData(completionHandle:([SkillData])->Void) {
+    internal func loadSkillData(completionHandle:([SkillData])->Void) {
         if let data = skillDataArray{
             completionHandle(data)
         }else{
@@ -37,19 +40,30 @@ class CSVDataManager{
         }
     }
     
-    class func loadEquipData(completionHandle:([EquipmentData])->Void) {
-        CSVReader.loadDataFromCSV("object data", completionHandle: completionHandle)
-//        CSVReader.loadDataFromCSV("object data") { (data:[EquipmentData]) in
-//            for item in data{
-//                var lastestRange = item.装备技能!.range
-//                while let range = item.装备技能?.rangeOfString("\n?唯一", options: [.RegularExpressionSearch], range:lastestRange, locale: nil){
-//                    lastestRange = range.endIndex...item.装备技能!.endIndex
-//                    item.装备技能?.insert("\n", atIndex: range.startIndex)
-//                    print(item.装备技能)
-//                }
-//            }
-//            completionHandle(data)
-//        }
+    internal func loadEquipData(completionHandle:([EquipmentData])->Void) {
+        //CSVReader.loadDataFromCSV("object data", completionHandle: completionHandle)
+        if equipmentDataDictionary != nil{
+            completionHandle(equipmentDataArray!)
+        }else{
+            CSVDataManager.sharedInstance.loadEquipmentDataDictionary { (dic) in
+                self.equipmentDataDictionary = dic
+                completionHandle(dic.map{$0.1}.sort({Int($0.0.售价!) < Int( $0.1.售价!)}))
+            }
+        }
+    }
+    
+    internal func getEquipmentInfoByID(id:String)->EquipmentData?{
+        return equipmentDataDictionary![id]
+    }
+    
+    
+    
+    private func loadEquipmentDataDictionary(completionHandle:([String:EquipmentData])->Void) {
+        CSVReader.loadComplexDataFromCSV("object data", keyName: "id") { (objectDictionary: [String:EquipmentData]) in
+            CSVReader.loadComplexDataFromCSV("合成所需", keyName: "id", orginalDictionary: objectDictionary, arrayAttributeName: ["所需物品id"], completionHandle: { (combineDictionary) in
+                CSVReader.loadComplexDataFromCSV("进阶所需", keyName: "id", orginalDictionary: combineDictionary, arrayAttributeName: ["进阶物品id"], completionHandle: completionHandle)
+            })
+        }
     }
     
     

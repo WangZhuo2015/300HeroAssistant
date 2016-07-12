@@ -13,5 +13,6 @@ class EquipmentData: NSObject {
     var 售价: String?
     var 属性: String?
     var 装备技能: String?
-    var subEquipment:[String]?
+    var 所需物品id:[String]?
+    var 进阶物品id:[String]?
 }

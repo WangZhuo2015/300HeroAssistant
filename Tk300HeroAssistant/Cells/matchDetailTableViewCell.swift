@@ -46,6 +46,8 @@ class matchDetailTableViewCell: UITableViewCell {
     
     func setRoleCell(role:MatchRole){
         playerNameLabel.text = role.roleName
+        playerNameLabel.font = UIFont(name: "PingFangSC-Regular", size: 16)
+        playerNameLabel.shadowOffset = CGSize(width: 0,height: 0)
         killCountLabel.text = "\(role.killCount)"
         deathCountLabel.text = "\(role.deathCount)"
         assistCountLabel.text = "\(role.assistCount)"
@@ -56,11 +58,17 @@ class matchDetailTableViewCell: UITableViewCell {
         kdaLabel.text = "\(role.kDA)"
         winRateLabel.text = String.init(format: "%.1lf", Double(role.winCount)/Double(role.matchCount)*100)+"%"
         if role.result == 1{
-            playerInnerView.backgroundColor = UIColor ( red: 0.8782, green: 0.3069, blue: 0.2787, alpha: 1.0 )
+            playerInnerView.backgroundColor = ApplicationColorManager.WinColor
+        }else if role.result == 2{
+            playerInnerView.backgroundColor = ApplicationColorManager.LoseColor
         }else{
-            playerInnerView.backgroundColor = UIColor ( red: 0.5193, green: 0.9076, blue: 0.4013, alpha: 1.0 )
+            playerInnerView.backgroundColor = ApplicationColorManager.EscapeColor
         }
         playerImage.kf_setImageWithURL(NSURL(string: "http://300report.jumpw.com/static/images/"+role.hero.iconFile)!)
+        playerImage.layer.borderWidth = 1
+        playerImage.backgroundColor = UIColor.lightGrayColor()
+        playerImage.layer.borderColor = UIColor.lightGrayColor().CGColor
+        playerImage.layer.masksToBounds = true
         //防止空格
         role.equip = role.equip.filter { (item) -> Bool in
             item.iconFile != ""

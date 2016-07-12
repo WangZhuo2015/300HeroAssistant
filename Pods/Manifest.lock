@@ -1,30 +1,43 @@
 PODS:
-  - Alamofire (3.4.0)
+  - Alamofire (3.4.1)
+  - AVOSCloud (3.3.5)
+  - Crashlytics (3.7.2):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
   - Kingfisher (2.4.1)
-  - MJRefresh (3.1.0)
-  - PKHUD (3.1.0)
-  - SnapKit (0.21.0)
+  - MJRefresh (3.1.9)
+  - PKHUD (3.2.1)
+  - ReachabilitySwift (2.3.3)
+  - SnapKit (0.21.1)
   - SwiftCSV (0.3.2)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire
+  - AVOSCloud
+  - Crashlytics
+  - Fabric
   - Kingfisher (~> 2.2)
   - MJRefresh
   - PKHUD
+  - ReachabilitySwift
   - SnapKit
   - SwiftCSV
   - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  AVOSCloud: 1fe170768bee7e05bc3ea86e38d5bddb105cb957
+  Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
-  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
-  PKHUD: 4167eccdb1b3a892fd80ce2b51cb6ba412a889ab
-  SnapKit: 2756fe24b706367af224c9c508d2f9166d03354c
+  MJRefresh: c5f1f1653e5a1b932c90f78074f2bc86f3f9bd5e
+  PKHUD: 001c11518f125a273ddf026bcc64918423744ea2
+  ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793
+  SnapKit: bbad04cb016c7cead63965f16b00c09318d271ee
   SwiftCSV: 8b64b738fc54567d229acb17ce6d584e0dd27560
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: c403961156d360a52639c1339e49521837836ff8
+PODFILE CHECKSUM: d557cbff232ea6c157de1555d8566b6c261b5efa
 
 COCOAPODS: 1.0.0

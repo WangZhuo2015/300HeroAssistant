@@ -12,11 +12,13 @@ import MJRefresh
 import PKHUD
 class MatchViewController: UIViewController {
     @IBOutlet weak var matchTableView: UITableView!
+    let pageName = "MatchViewController"
     
     //MatchCell
     let MatchCellIdentifier = "MatchCellIdentifier"
     var matchBasicInfoArray = [List](){
         didSet{
+            matchTableView.mj_footer?.hidden = matchBasicInfoArray.count == 0
             var count = 0
             matchBasicInfoArray.forEach { (item) in
                 if matchDetailDownload.indexForKey(item.matchID) == nil{
@@ -25,9 +27,7 @@ class MatchViewController: UIViewController {
                             self.matchDetailDownload[item.matchID] = detail
                         }
                         self.matchTableView.reloadData()
-                        //self.matchTableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:count,inSection: 0)], withRowAnimation: .None)
                     })
-                    
                 }
                 count += 1
             }
@@ -79,11 +79,25 @@ class MatchViewController: UIViewController {
         })
         footer.stateLabel.textColor = UIColor.whiteColor()
         matchTableView.mj_footer = footer
+        matchTableView.mj_footer.hidden = matchBasicInfoArray.count == 0
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        AVAnalytics.beginLogPageView(pageName)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        AVAnalytics.endLogPageView(pageName)
     }
     
     func userChange(){
         self.navigationController?.popToRootViewControllerAnimated(false)
+        let name = UIBarButtonItem(title: "  " + (User.sharedUser.userName ?? ""), style: .Done, target: nil, action: nil)
+        name.tintColor = UIColor.whiteColor()
+        name.enabled = false
+        navigationItem.leftBarButtonItem = name
         loadMatchList(loadMore: false)
     }
 

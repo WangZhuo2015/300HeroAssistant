@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReachabilitySwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,17 +57,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>20822B564FBDA5C9BD0B72509A30B10A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>29DD99664D189A7CA206368F493B1E0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C5D8D41B733ECCE2260BDF68BACA9B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>470664FDACAA1FEE4663EEB24D6AD079</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6847254D016329D4A531D34ED2B6DF81</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>77F39E8743FDF937D9A07972EE9F4F44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,22 +82,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D0F2B302A9B87B84DA7F6B54CCF497A6</key>
+		<key>7C6EF73751BA3DD44D96D54F919E79E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E66E3F0DC9E2D55530088113881F53CD</key>
+		<key>A46CB33A3E58753A89EB7005B748ABAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D47CAB54DA7D56D8DF327A0DB7662EE2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E96E13C4D3B5B5FC0651440734C2BF4D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ED093D5496C4F21983B955AD31597CAF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

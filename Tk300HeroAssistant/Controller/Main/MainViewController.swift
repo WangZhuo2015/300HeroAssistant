@@ -7,16 +7,32 @@
 //
 
 import UIKit
-
-class MainViewController: UITabBarController {
-
+import StoreKit
+class MainViewController: UITabBarController,SKStoreProductViewControllerDelegate {
+    var timer: NSTimer?
     override func viewDidLoad() {
         super.viewDidLoad()
         loadAllViewController()
+        if AppManager.appUseCountUp() > 5 && !AppManager.isEvaluated(){
+            reviewThisApp()
+        }
         if User.sharedUser.userName == nil{
             self.selectedIndex = (self.viewControllers?.count)! - 1
         }
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0*30, target: self, selector: #selector(self.checkNewMessage), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        //timer.fireDate = NSDate.distantFuture()
+        timer?.fireDate = NSDate.distantPast()
+        timer!.fire()
+    }
+    
+    deinit{
+        timer?.invalidate()
+        timer = nil
     }
     
     func loadAllViewController(){
@@ -67,13 +83,58 @@ class MainViewController: UITabBarController {
         self.selectedIndex = 0
     }
 
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    func reviewThisApp(){
+        let alert = UIAlertController(title: "快来评价吧ヽ(･ω･｡)ﾉ", message: "喜欢这款App吗?来评价一下吧!", preferredStyle: .Alert)
+        let goToEvaluate = UIAlertAction(title: "去评价*~(￣▽￣)~*", style: .Default) { (action) in
+            self.evaluate()
+        }
+        let refuse = UIAlertAction(title: "残忍地拒绝( •̥́ ˍ •̀)", style: .Default) { (action) in
+            AppManager.evaluated()
+        }
+        let cancel = UIAlertAction(title: "以后再说", style: .Cancel,handler: nil)
+        alert.addAction(goToEvaluate)
+        alert.addAction(refuse)
+        alert.addAction(cancel)
+        presentViewController(alert, animated: true, completion: nil)
     }
     
 
+    
+    func evaluate(){
+        //初始化控制器
+        let storeProductViewContorller = SKStoreProductViewController()
+        //设置代理请求为当前控制器本身
+        storeProductViewContorller.delegate = self
+        //加载一个新的视图展示
+        storeProductViewContorller.loadProductWithParameters([SKStoreProductParameterITunesItemIdentifier:"1114391519"]) { (result,error) in
+            if error != nil{
+                print(error)
+            }else{
+                //模态弹出appstore
+                self.presentViewController(storeProductViewContorller, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func checkNewMessage(){
+        LCUserFeedbackAgent.sharedInstance().countUnreadFeedbackThreadsWithBlock { (number, error) in
+            guard error != nil && number != 0 else{
+                // 网络出错了，不设置红点
+                ((self.viewControllers?.last as! UINavigationController).viewControllers.first as! PersonalInfoViewController).removeNewMessage()
+                self.viewControllers?.last?.tabBarItem.badgeValue = nil
+                return
+            }
+            self.viewControllers?.last?.tabBarItem.badgeValue = "\(number)"
+            ((self.viewControllers?.last as! UINavigationController).viewControllers.first as! PersonalInfoViewController).recieveNewMessage()
+        }
+    }
+    
+    func productViewControllerDidFinish(viewController: SKStoreProductViewController) {
+        loadAllViewController()
+        AppManager.evaluated()
+    }
     /*
     // MARK: - Navigation
 

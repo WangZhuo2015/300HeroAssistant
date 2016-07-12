@@ -25,58 +25,26 @@ extension MatchDetailViewController:UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 28))
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 28))
-        label.backgroundColor = UIColor(red: 9.2/255, green: 52.5/255, blue: 73.6/255, alpha: 1.0)
-        label.textColor = UIColor.whiteColor()
-        label.center = view.center
-        label.text = {
+        let view = MatchHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 28))
         switch section {
         case 0:
-            return "    Winner"
+            view.setContent(
+                section, kill: matchData?.winSideKill,
+                assistant: matchData?.winSideAssistant,
+                death: matchData?.winSideDeath,
+                money: matchData?.winSideMoney)
         case 1:
-            return "    Loser"
+            view.setContent(
+                section, kill: matchData?.loseSideKill,
+                assistant: matchData?.loseSideAssistant,
+                death: matchData?.loseSideDeath,money:
+                matchData?.loseSideMoney)
         default:
-            return "    error"
-        }}()
-        view.addSubview(label)
-        return label
+            view.setContent(section, kill: 0, assistant: 0, death: 0, money: 0)
+        }
+        return view
     }
     
-//    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        switch section {
-//        case 0:
-//            return "    Winner"
-//        case 1:
-//            return "    Loser"
-//        default:
-//            return "    error"
-//        }
-//    }
-//    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        //let view = tableView.dequeueReusableHeaderFooterViewWithIdentifier()// UIView()//frame: CGRect(x: 0,y: 0,width: 300,height: 30))
-//        let label = UILabel()
-//        view.addSubview(label)
-//        
-//        view.backgroundColor = UIColor(red: 113, green: 135, blue: 255, alpha: 1)
-//        view.tintColor = UIColor.whiteColor()
-//        label.textColor = UIColor.whiteColor()
-//        label.snp_makeConstraints { (make) in
-//            make.center.equalTo(view.snp_center)
-//        }
-//        label.text = {
-//            switch section {
-//            case 0:
-//                return "Winner"
-//            case 1:
-//                return "Loser"
-//            default:
-//                return "error"
-//            }
-//        }()
-//        print(label.text)
-//        return view
-//    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(matchDetailCellIdentifier) as! matchDetailTableViewCell
@@ -86,6 +54,15 @@ extension MatchDetailViewController:UITableViewDataSource,UITableViewDelegate{
         case 1:
             cell.setRoleCell((matchData?.loseSide[indexPath.row])!)
         default:break
+        }
+        if indexPath == myScorePosition{
+            cell.playerNameLabel.shadowColor = UIColor.grayColor()
+            cell.playerNameLabel.shadowOffset = CGSize(width: 1,height: 1)
+            cell.playerNameLabel.font = UIFont(name: "PingFangSC-Semibold", size: 22)
+            let content = NSMutableAttributedString(string:  User.sharedUser.userName!)
+            let contentRange = NSRange(location: 0,length: content.length)
+            content.addAttribute(NSUnderlineStyleAttributeName, value:NSUnderlineStyle.StyleSingle.rawValue, range: contentRange)
+            cell.playerNameLabel.attributedText = content;
         }
         return cell
     }

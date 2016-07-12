@@ -31,7 +31,7 @@ public class PKHUD: NSObject {
     public override init () {
         super.init()
         NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: Selector("willEnterForeground:"),
+            selector: #selector(PKHUD.willEnterForeground(_:)),
             name: UIApplicationWillEnterForegroundNotification,
             object: nil)
         userInteractionOnUnderlyingViewsEnabled = false
@@ -39,6 +39,10 @@ public class PKHUD: NSObject {
                                               .FlexibleRightMargin,
                                               .FlexibleTopMargin,
                                               .FlexibleBottomMargin ]
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
     public var dimsBackground = true
@@ -88,7 +92,11 @@ public class PKHUD: NSObject {
         stopAnimatingContentView()
     }
     
-    public func hide(afterDelay delay: NSTimeInterval = 1.0, completion: TimerAction? = nil) {
+    public func hide(animated: Bool, completion: TimerAction? = nil) {
+        hide(animated: animated, completion: completion)
+    }
+    
+    public func hide(afterDelay delay: NSTimeInterval, completion: TimerAction? = nil) {
         let key = NSUUID().UUIDString
         let userInfo = ["timerActionKey": key]
         if let completion = completion {
@@ -98,7 +106,7 @@ public class PKHUD: NSObject {
         hideTimer?.invalidate()
         hideTimer = NSTimer.scheduledTimerWithTimeInterval(delay,
                                                            target: self,
-                                                           selector: Selector("performDelayedHide:"),
+                                                           selector: #selector(PKHUD.performDelayedHide(_:)),
                                                            userInfo: userInfo,
                                                            repeats: false)
     }
@@ -115,6 +123,7 @@ public class PKHUD: NSObject {
         
         if let key = key, let action = timerActions[key] {
             completion = action
+            timerActions[key] = nil
         }
         
         hide(animated: true, completion: completion);

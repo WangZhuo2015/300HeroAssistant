@@ -16,13 +16,12 @@ class EquipmentCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-//        assert(equipmentLabel != nil,"equipmentLabel is nil")
-//        assert(equipmentImage != nil,"equipmentImage is nil")
     }
     
     func setContent(equipment:EquipmentData){
         equipmentLabel.text = equipment.name
         equipmentImage.image = UIImage(named: equipment.id!)
+        //equipmentImage.layer.shouldRasterize = true
     }
 
 }

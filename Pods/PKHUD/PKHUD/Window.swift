@@ -27,7 +27,7 @@ internal class Window: UIWindow {
     
     private func commonInit() {
         rootViewController = WindowRootViewController()
-        windowLevel = UIWindowLevelNormal + 1.0
+        windowLevel = UIWindowLevelNormal + 500.0
         backgroundColor = UIColor.clearColor()
         
         addSubview(backgroundView)
@@ -53,12 +53,10 @@ internal class Window: UIWindow {
     
     internal func hideFrameView(animated anim: Bool, completion: ((Bool) -> Void)? = nil) {
         let finalize: (finished: Bool) -> (Void) = { finished in
-            if finished {
-                self.hidden = true
-                self.resignKeyWindow()
-            }
-            
+            self.hidden = true
+            self.resignKeyWindow()
             self.willHide = false
+            
             completion?(finished)
         }
         
@@ -72,7 +70,7 @@ internal class Window: UIWindow {
             UIView.animateWithDuration(0.8, animations: {
                 self.frameView.alpha = 0.0
                 self.hideBackground(animated: false)
-            }, completion: finalize)
+            }, completion: { bool in finalize(finished: true) } )
         } else {
             self.frameView.alpha = 0.0
             finalize(finished: true)

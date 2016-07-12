@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OgL-99-wB3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OgL-99-wB3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -43,7 +43,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P6P-jq-5v7">
-                                <rect key="frame" x="-4" y="64" width="328" height="504"/>
+                                <rect key="frame" x="-4" y="64" width="328" height="455"/>
                                 <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jws-kh-b4J">
                                     <size key="itemSize" width="80" height="100"/>
@@ -111,24 +111,19 @@
                             <constraint firstItem="P6P-jq-5v7" firstAttribute="top" secondItem="Cwh-IO-LMy" secondAttribute="bottom" id="CcQ-xo-J0d"/>
                             <constraint firstItem="Cwh-IO-LMy" firstAttribute="top" secondItem="rhr-TJ-PnZ" secondAttribute="bottom" constant="-44" id="XMV-6B-PvY"/>
                             <constraint firstItem="Cwh-IO-LMy" firstAttribute="width" secondItem="4th-qU-HlW" secondAttribute="width" id="gE5-Bq-Onm"/>
-                            <constraint firstItem="P6P-jq-5v7" firstAttribute="bottom" secondItem="4th-qU-HlW" secondAttribute="bottomMargin" id="hzz-iP-qia"/>
+                            <constraint firstItem="P6P-jq-5v7" firstAttribute="bottom" secondItem="4th-qU-HlW" secondAttribute="bottomMargin" constant="-49" id="hzz-iP-qia"/>
                             <constraint firstItem="Cwh-IO-LMy" firstAttribute="centerX" secondItem="4th-qU-HlW" secondAttribute="centerX" id="pIX-N5-hUV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="P6P-jq-5v7" secondAttribute="trailing" constant="-20" id="vRC-BM-EXb"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="装备" id="dzU-6a-ei0"/>
-                    <navigationItem key="navigationItem" title="装备" id="slF-Qy-PyH">
-                        <barButtonItem key="rightBarButtonItem" title="搜索" id="1qV-b7-dU0">
-                            <connections>
-                                <action selector="searchTapped:" destination="0oQ-qB-RJL" id="T1x-Qh-1XL"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="装备" id="slF-Qy-PyH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="P6P-jq-5v7" id="C7E-Bo-Ua2"/>
                         <outlet property="searchBar" destination="Cwh-IO-LMy" id="DGu-BH-XuT"/>
                         <outlet property="searchBarHeight" destination="aoY-3E-sCO" id="CcO-kS-hsf"/>
+                        <outlet property="searchBarTop" destination="XMV-6B-PvY" id="RrE-ti-ghB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cac-eY-4bT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -138,12 +133,12 @@
         <!--Equipment Detail View Controller-->
         <scene sceneID="XLK-rF-a8j">
             <objects>
-                <viewController id="4gZ-ex-XUd" customClass="EquipmentDetailViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EquipmentDetailViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4gZ-ex-XUd" customClass="EquipmentDetailViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ku7-du-qlK"/>
                         <viewControllerLayoutGuide type="bottom" id="Gh8-4u-9vg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KyG-6K-0Od" customClass="EquipmentCollectionViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="KyG-6K-0Od">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -155,25 +150,73 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="装备名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XM-D9-K0w">
-                                <rect key="frame" x="104" y="72" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="104" y="72" width="96" height="29"/>
+                                <color key="backgroundColor" red="0.20528522133827209" green="0.59513360261917114" blue="0.49505996704101562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="效果" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYT-uI-gQG">
-                                <rect key="frame" x="104" y="101" width="208" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="技能" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-RS-Obf">
-                                <rect key="frame" x="16" y="160" width="292" height="21"/>
+                                <rect key="frame" x="104" y="109" width="208" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zef-Mk-Aup">
-                                <rect key="frame" x="278" y="72" width="34" height="21"/>
+                                <rect key="frame" x="264" y="72" width="48" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.96472355769230766" green="0.73256770373216495" blue="0.28063862368255826" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="78G-hs-4Hr">
+                                <rect key="frame" x="4" y="275" width="312" height="236"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="r7h-SM-FeC">
+                                        <rect key="frame" x="0.0" y="0.0" width="312" height="114"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SS-1r-fNo">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="  可合成装备">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="73d-mI-vRN" customClass="HorizontalMenuScrollView" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="33" width="312" height="81"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="81" placeholder="YES" id="YXa-f6-hQ6"/>
+                                                </constraints>
+                                            </scrollView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="73d-mI-vRN" secondAttribute="trailing" id="ee8-NT-i03"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="QCy-ez-Rni">
+                                        <rect key="frame" x="0.0" y="122" width="312" height="114"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGb-ya-0IU">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="  合成所需装备">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8SN-cm-gwx" customClass="HorizontalMenuScrollView" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="33" width="312" height="81"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="81" placeholder="YES" id="LA8-65-RkI"/>
+                                                </constraints>
+                                            </scrollView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="8SN-cm-gwx" firstAttribute="width" secondItem="QCy-ez-Rni" secondAttribute="width" id="Es1-fh-JRO"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="技能" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-RS-Obf">
+                                <rect key="frame" x="16" y="160" width="292" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -182,28 +225,35 @@
                         <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="ohH-WM-B72" secondAttribute="leading" id="479-Zy-rBD"/>
-                            <constraint firstItem="GYT-uI-gQG" firstAttribute="top" secondItem="3XM-D9-K0w" secondAttribute="bottom" constant="8" id="601-0S-rxs"/>
                             <constraint firstItem="Cil-RS-Obf" firstAttribute="leading" secondItem="ohH-WM-B72" secondAttribute="leading" id="6aj-lF-kQe"/>
                             <constraint firstItem="ohH-WM-B72" firstAttribute="top" secondItem="Ku7-du-qlK" secondAttribute="bottom" constant="8" id="8MS-iZ-XNh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cil-RS-Obf" secondAttribute="trailing" constant="-4" id="9EI-Bh-UQn"/>
                             <constraint firstItem="zef-Mk-Aup" firstAttribute="top" secondItem="Ku7-du-qlK" secondAttribute="bottom" constant="8" id="9dJ-ed-aRb"/>
-                            <constraint firstItem="Cil-RS-Obf" firstAttribute="top" secondItem="ohH-WM-B72" secondAttribute="bottom" constant="8" id="CCu-sF-3vR"/>
+                            <constraint firstItem="Cil-RS-Obf" firstAttribute="top" secondItem="ohH-WM-B72" secondAttribute="bottom" constant="8" id="BGB-Ty-IRK"/>
+                            <constraint firstItem="GYT-uI-gQG" firstAttribute="top" secondItem="zef-Mk-Aup" secondAttribute="bottom" constant="8" id="DaS-UH-2Q9"/>
+                            <constraint firstItem="78G-hs-4Hr" firstAttribute="leading" secondItem="KyG-6K-0Od" secondAttribute="leadingMargin" constant="-12" id="LPr-Al-8uT"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Cil-RS-Obf" secondAttribute="leading" id="R1v-O2-7bu"/>
                             <constraint firstItem="3XM-D9-K0w" firstAttribute="leading" secondItem="ohH-WM-B72" secondAttribute="trailing" constant="8" id="WP1-aT-6i1"/>
                             <constraint firstItem="3XM-D9-K0w" firstAttribute="top" secondItem="ohH-WM-B72" secondAttribute="top" id="X4G-mB-pxD"/>
                             <constraint firstItem="zef-Mk-Aup" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3XM-D9-K0w" secondAttribute="trailing" constant="8" id="ilC-Ha-KRh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="78G-hs-4Hr" secondAttribute="trailing" constant="-12" id="kMy-cW-Re2"/>
                             <constraint firstItem="GYT-uI-gQG" firstAttribute="leading" secondItem="ohH-WM-B72" secondAttribute="trailing" constant="8" id="ozn-Xl-KYS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zef-Mk-Aup" secondAttribute="trailing" constant="-8" id="t5M-Zj-v4S"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GYT-uI-gQG" secondAttribute="trailing" constant="-8" id="ybY-bL-e9Q"/>
+                            <constraint firstItem="Gh8-4u-9vg" firstAttribute="top" secondItem="78G-hs-4Hr" secondAttribute="bottom" constant="8" id="z82-6a-mZm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SFC-ON-hds"/>
                     <connections>
+                        <outlet property="combineLabel" destination="2SS-1r-fNo" id="DJg-hU-V7d"/>
+                        <outlet property="combineScrollView" destination="73d-mI-vRN" id="lQK-e1-MFi"/>
                         <outlet property="equipmentAttributeLabel" destination="GYT-uI-gQG" id="fGc-iB-Son"/>
                         <outlet property="equipmentImage" destination="ohH-WM-B72" id="jr0-nm-Wif"/>
                         <outlet property="equipmentName" destination="3XM-D9-K0w" id="Puo-p9-eCx"/>
                         <outlet property="equipmentPriceLabel" destination="zef-Mk-Aup" id="4i6-e5-2QR"/>
                         <outlet property="equipmentSkillLabel" destination="Cil-RS-Obf" id="qLS-Kn-zhj"/>
+                        <outlet property="subEquipmentLabel" destination="IGb-ya-0IU" id="g62-Bo-vGg"/>
+                        <outlet property="subEquipmentScrollView" destination="8SN-cm-gwx" id="PoW-m8-Mof"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3s-1O-3gE" userLabel="First Responder" sceneMemberID="firstResponder"/>
