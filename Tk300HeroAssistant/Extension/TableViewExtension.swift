@@ -24,4 +24,14 @@ extension UITableView{
             self.backgroundView = nil
         }
     }
+    func tableViewDisplayWithView(view:UIView, ifNecessaryForRowCount rowCount:Int){
+        if rowCount == 0{
+            // Display a message when the table is empty
+            // 没有数据的时候，UILabel的显示样式
+            self.backgroundView = view
+            self.separatorStyle = .None
+        }else {
+            self.backgroundView = nil
+        }
+    }
 }

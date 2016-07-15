@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-extension EquipmentViewController:UICollectionViewDelegate,UICollectionViewDataSource,UIScrollViewDelegate{
+extension EquipmentViewController:UICollectionViewDelegate,UICollectionViewDataSource,UIScrollViewDelegate,UISearchBarDelegate{
     //调整collectionViewCell大小
     func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize{
         return CGSizeMake((UIScreen.mainScreen().bounds.width - 50)/4, (UIScreen.mainScreen().bounds.width - 50)/4 + 20)
@@ -70,5 +70,9 @@ extension EquipmentViewController:UICollectionViewDelegate,UICollectionViewDataS
 //            print("不显示")
 //        }
         lastScrollOffest = scrollView.contentOffset.y
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
 }

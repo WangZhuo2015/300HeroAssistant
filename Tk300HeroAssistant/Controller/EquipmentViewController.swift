@@ -77,6 +77,7 @@ class EquipmentViewController: UIViewController {
     */
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        searchBar.resignFirstResponder()
         let VC = segue.destinationViewController as! EquipmentDetailViewController
         let indexPath = collectionView.indexPathsForSelectedItems()![0]
         VC.currentEquipment = equipmentDataArray[indexPath.section * 4 + indexPath.row]
