@@ -13,6 +13,7 @@
 		3501B2841D153B9A00EB136B /* HeroBattleListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501B2831D153B9A00EB136B /* HeroBattleListDataSource.swift */; };
 		3501B2881D153F2500EB136B /* HeroWinRateAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501B2871D153F2500EB136B /* HeroWinRateAnalyzer.swift */; };
 		3501B28A1D153F5400EB136B /* AnalyzerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501B2891D153F5400EB136B /* AnalyzerHelper.swift */; };
+		3505130A1D38813400ED8381 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350513091D38813400ED8381 /* R.generated.swift */; };
 		3509932C1CEF116D0079C7E3 /* CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */; };
 		3509932E1CEF11E70079C7E3 /* HeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509932D1CEF11E70079C7E3 /* HeroCollectionViewCell.swift */; };
 		350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350CCEDD1CEADBFE00D082EB /* SkillData.swift */; };
@@ -143,6 +144,7 @@
 		3501B2831D153B9A00EB136B /* HeroBattleListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroBattleListDataSource.swift; path = Controller/AdvancedAnalysis/HeroBattleListDataSource.swift; sourceTree = "<group>"; };
 		3501B2871D153F2500EB136B /* HeroWinRateAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroWinRateAnalyzer.swift; path = Tk300HeroAssistant/AdvancedAnalyzer/HeroWinRateAnalyzer.swift; sourceTree = SOURCE_ROOT; };
 		3501B2891D153F5400EB136B /* AnalyzerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnalyzerHelper.swift; path = Tk300HeroAssistant/AdvancedAnalyzer/AnalyzerHelper.swift; sourceTree = SOURCE_ROOT; };
+		350513091D38813400ED8381 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewExtension.swift; path = Extension/CollectionViewExtension.swift; sourceTree = "<group>"; };
 		3509932D1CEF11E70079C7E3 /* HeroCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroCollectionViewCell.swift; path = Cells/HeroCollectionViewCell.swift; sourceTree = "<group>"; };
 		350CCEDD1CEADBFE00D082EB /* SkillData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillData.swift; path = Tk300HeroAssistant/Model/Data/SkillData.swift; sourceTree = SOURCE_ROOT; };
@@ -620,6 +622,7 @@
 				35FBA6371CDF704B00A527B4 /* Controllers */,
 				35FBA61D1CDF523C00A527B4 /* Network */,
 				35C811631D15A76C0017A0F5 /* 3rdLibraries */,
+				350513091D38813400ED8381 /* R.generated.swift */,
 				35C811621D15A7610017A0F5 /* Bridging-Header.h */,
 				35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */,
 				35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */,
@@ -765,6 +768,7 @@
 			buildConfigurationList = 35FBA6071CDF4E5C00A527B4 /* Build configuration list for PBXNativeTarget "Tk300HeroAssistant" */;
 			buildPhases = (
 				F25799642AFC6BE177C39ECA /* 📦 Check Pods Manifest.lock */,
+				350513081D3880D700ED8381 /* R.swift */,
 				35FBA5F11CDF4E5C00A527B4 /* Sources */,
 				35FBA5F21CDF4E5C00A527B4 /* Frameworks */,
 				35FBA5F31CDF4E5C00A527B4 /* Resources */,
@@ -870,6 +874,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		350513081D3880D700ED8381 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
 		354BA04D1D2E9CC300A2C045 /* Fabric Crash Report */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -1036,6 +1054,7 @@
 				35E9D02E1CF96F68004170BE /* userAccountTableViewCell.swift in Sources */,
 				354BC7561CFDC63A001E046C /* EquipmentDetailViewController.swift in Sources */,
 				35C811841D15A7940017A0F5 /* LCUserFeedbackAgent.m in Sources */,
+				3505130A1D38813400ED8381 /* R.generated.swift in Sources */,
 				35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */,
 				354BC7521CFDBB65001E046C /* EquipmentCollectionViewCell.swift in Sources */,
 				35FBA5F91CDF4E5C00A527B4 /* AppDelegate.swift in Sources */,

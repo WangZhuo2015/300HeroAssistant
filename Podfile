@@ -15,6 +15,7 @@ target 'Tk300HeroAssistant' do
     pod 'ReachabilitySwift'         # 可达性检查
     pod 'Fabric'                    # Twitter Fabric平台
     pod 'Crashlytics'               # Fabric崩溃数据收集
+    pod 'R.swift'
 #    pod 'AVOSCloudCrashReporting'  # LeanCloud错误报告模块
 #    pod 'LeanCloudFeedback'
 #    pod 'AVOSCloudDynamic'               # 数据存储、短信、云引擎调用等基础服务模块

@@ -16,4 +16,8 @@ extension EquipmentViewController:UISearchBarDelegate{
             equipmentDataArray = rawEquipmentDataArray.filter{($0.name?.containsString(searchText))!}
         }
     }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
 }

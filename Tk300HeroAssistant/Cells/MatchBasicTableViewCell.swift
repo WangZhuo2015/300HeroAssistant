@@ -63,11 +63,12 @@ class MatchBasicTableViewCell: UITableViewCell {
     func matchResToColor(res:Int) -> UIColor?{
         switch res {
         case 1:
-            return UIColor ( red: 0.25, green: 0.7466, blue: 0.0917, alpha: 1.0 )
+            return ApplicationColorManager.WinColor
+                //UIColor ( red: 0.25, green: 0.7466, blue: 0.0917, alpha: 1.0 )
         case 2:
-            return UIColor ( red: 0.7566, green: 0.1814, blue: 0.1502, alpha: 1.0 )
+            return ApplicationColorManager.LoseColor
         case 3:
-            return UIColor ( red: 0.8265, green: 0.7457, blue: 0.0, alpha: 1.0 )
+            return ApplicationColorManager.EscapeColor
         default:
             return UIColor ( red: 0.2794, green: 0.8725, blue: 0.8918, alpha: 1.0 )
         }
