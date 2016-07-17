@@ -126,6 +126,30 @@
                                             <segue destination="j2H-EK-ztG" kind="push" identifier="carryAnalysisSegue" id="DhN-OJ-uH7"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="008-Tf-JOd">
+                                        <rect key="frame" x="0.0" y="132" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="008-Tf-JOd" id="0FH-NN-5OA">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TestMenu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4t-dn-Add">
+                                                    <rect key="frame" x="8" y="11" width="76" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="j4t-dn-Add" secondAttribute="leading" id="Pfs-yM-4jO"/>
+                                                <constraint firstItem="j4t-dn-Add" firstAttribute="centerY" secondItem="0FH-NN-5OA" secondAttribute="centerY" id="k2z-Gh-baF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="CfU-hh-DSF" kind="push" id="C2M-Ij-h62"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -140,7 +164,7 @@
             </objects>
             <point key="canvasLocation" x="1304" y="-731"/>
         </scene>
-        <!--Crash View Controller-->
+        <!--Tset-->
         <scene sceneID="13g-3A-CdS">
             <objects>
                 <viewController id="CfU-hh-DSF" customClass="CrashViewController" customModule="星尘盒子_for_300英雄" customModuleProvider="target" sceneMemberID="viewController">
@@ -151,13 +175,36 @@
                     <view key="view" contentMode="scaleToFill" id="0EZ-bb-K5C">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYV-jw-JV9">
+                                <rect key="frame" x="16" y="52" width="90" height="30"/>
+                                <state key="normal" title="内购数量加一"/>
+                                <connections>
+                                    <action selector="IAPPlus:" destination="CfU-hh-DSF" eventType="touchUpInside" id="EEg-Nt-lVj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yED-Wu-ZQD">
+                                <rect key="frame" x="16" y="90" width="102" height="30"/>
+                                <state key="normal" title="Selector Crash"/>
+                                <connections>
+                                    <action selector="selectorCrash:" destination="CfU-hh-DSF" eventType="touchUpInside" id="A4w-I2-vwL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yED-Wu-ZQD" firstAttribute="top" secondItem="cYV-jw-JV9" secondAttribute="bottom" constant="8" id="CHn-Qe-L8c"/>
+                            <constraint firstItem="yED-Wu-ZQD" firstAttribute="leading" secondItem="0EZ-bb-K5C" secondAttribute="leadingMargin" id="j4x-fq-blm"/>
+                            <constraint firstItem="cYV-jw-JV9" firstAttribute="leading" secondItem="0EZ-bb-K5C" secondAttribute="leadingMargin" id="jLf-cg-9Mx"/>
+                            <constraint firstItem="cYV-jw-JV9" firstAttribute="top" secondItem="zAw-PV-TNW" secondAttribute="bottom" constant="8" id="nvQ-20-3Gl"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="yM6-dZ-Aht"/>
+                    <navigationItem key="navigationItem" title="Tset" id="a2d-PT-YWo"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJ7-Fk-1es" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1304" y="-36"/>
+            <point key="canvasLocation" x="1304" y="-85"/>
         </scene>
         <!--Carry统计-->
         <scene sceneID="fBi-8U-JbD">

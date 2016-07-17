@@ -16,11 +16,11 @@ class AppManager {
         NSUserDefaults.standardUserDefaults().synchronize()
     }
     static func buyCountPlusOne(){
+        let post = AVObject.init(className: "buyIAPLog")
+        post.setObject("true", forKey: "BoughtSuccessed")
+        post.setObject(AppManager.getUUID(), forKey: "UUID")
+        post.saveInBackground()
         //购买量计数
-        let buyIAPLog = AVObject.init(className: "buyIAPLog")
-        buyIAPLog.setObject("ture", forKey: "购买成功")
-        buyIAPLog.setObject(AppManager.getUUID(), forKey: "UUID")
-        buyIAPLog.saveInBackground()
     }
     static func isEvaluated()->Bool{
         return NSUserDefaults.standardUserDefaults().boolForKey("haveEvaluated")

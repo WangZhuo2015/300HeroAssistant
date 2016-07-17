@@ -12,9 +12,9 @@ class CrashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let crash = UIBarButtonItem(title: "Crash", style: .Done, target: self, action: Selector("selector"))
+        let crash = UIBarButtonItem(title: "Crash", style: .Done, target: self, action: #selector(CrashViewController.carsh))
         self.navigationItem.rightBarButtonItem = crash
-        performSelector(#selector(CrashViewController.carsh),withObject: nil,afterDelay: 3)
+//        performSelector(#selector(CrashViewController.carsh),withObject: nil,afterDelay: 3)
         // Do any additional setup after loading the view.
     }
     func carsh(){
@@ -26,6 +26,16 @@ class CrashViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func IAPPlus(sender: UIButton) {
+        AppManager.buyCountPlusOne()
+    }
+    
+    
+    @IBAction func selectorCrash(sender: AnyObject) {
+        performSelector(#selector(CrashViewController.carsh),withObject: nil,afterDelay: 3)
+    }
+    
     
 
     /*
