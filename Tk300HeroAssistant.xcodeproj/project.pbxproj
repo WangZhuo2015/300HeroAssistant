@@ -67,6 +67,10 @@
 		355306E51D040E9600065CDA /* 合成所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 355306E31D040E9600065CDA /* 合成所需.csv */; };
 		355306E61D040E9600065CDA /* 进阶所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 355306E41D040E9600065CDA /* 进阶所需.csv */; };
 		355306EA1D0428A500065CDA /* HorizontalMenuScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355306E91D0428A500065CDA /* HorizontalMenuScrollView.swift */; };
+		3558EC0F1D3BD2FE0063C22B /* MKStoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3558EC0E1D3BD2FE0063C22B /* MKStoreKit.m */; };
+		3558EC111D3BD34D0063C22B /* AdvancedAnalysisIAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3558EC101D3BD34D0063C22B /* AdvancedAnalysisIAP.swift */; };
+		3558EC131D3BD3A20063C22B /* MKStoreKitConfigs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3558EC121D3BD3A20063C22B /* MKStoreKitConfigs.plist */; };
+		3558EC151D3BD51D0063C22B /* AppDelegate+initSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3558EC141D3BD51D0063C22B /* AppDelegate+initSetting.swift */; };
 		356015341D0B2B5F006467E4 /* FriendAnalysisDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356015331D0B2B5F006467E4 /* FriendAnalysisDataSource.swift */; };
 		356F9CD21D07FAF00036E8D2 /* DataAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F9CD11D07FAF00036E8D2 /* DataAnalyzer.swift */; };
 		357758F71D0BF68B00CB0E55 /* IAPPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357758F61D0BF68B00CB0E55 /* IAPPart.swift */; };
@@ -191,6 +195,11 @@
 		355306E31D040E9600065CDA /* 合成所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "合成所需.csv"; sourceTree = "<group>"; };
 		355306E41D040E9600065CDA /* 进阶所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "进阶所需.csv"; sourceTree = "<group>"; };
 		355306E91D0428A500065CDA /* HorizontalMenuScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalMenuScrollView.swift; path = View/HorizontalMenuScrollView.swift; sourceTree = "<group>"; };
+		3558EC0D1D3BD2FE0063C22B /* MKStoreKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKStoreKit.h; path = MKStoreKit/MKStoreKit.h; sourceTree = "<group>"; };
+		3558EC0E1D3BD2FE0063C22B /* MKStoreKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKStoreKit.m; path = MKStoreKit/MKStoreKit.m; sourceTree = "<group>"; };
+		3558EC101D3BD34D0063C22B /* AdvancedAnalysisIAP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdvancedAnalysisIAP.swift; path = AdvancedAnalyzer/AdvancedAnalysisIAP.swift; sourceTree = "<group>"; };
+		3558EC121D3BD3A20063C22B /* MKStoreKitConfigs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MKStoreKitConfigs.plist; path = MKStoreKit/MKStoreKitConfigs.plist; sourceTree = "<group>"; };
+		3558EC141D3BD51D0063C22B /* AppDelegate+initSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+initSetting.swift"; sourceTree = "<group>"; };
 		356015331D0B2B5F006467E4 /* FriendAnalysisDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendAnalysisDataSource.swift; path = Controller/AdvancedAnalysis/FriendAnalysisDataSource.swift; sourceTree = "<group>"; };
 		356F9CD11D07FAF00036E8D2 /* DataAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataAnalyzer.swift; path = Tk300HeroAssistant/AdvancedAnalyzer/DataAnalyzer.swift; sourceTree = SOURCE_ROOT; };
 		357758F61D0BF68B00CB0E55 /* IAPPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IAPPart.swift; path = Controller/AdvancedAnalysis/IAPPart.swift; sourceTree = "<group>"; };
@@ -452,12 +461,13 @@
 		3540E9361D0AF65000E0FB66 /* 基本 */ = {
 			isa = PBXGroup;
 			children = (
+				3558EC101D3BD34D0063C22B /* AdvancedAnalysisIAP.swift */,
+				35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift */,
+				357758F61D0BF68B00CB0E55 /* IAPPart.swift */,
 				3540E93A1D0B0E0300E0FB66 /* 账号切换 */,
 				35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */,
-				35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift */,
 				35E9D02D1CF96F68004170BE /* userAccountTableViewCell.swift */,
 				3540E9371D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift */,
-				357758F61D0BF68B00CB0E55 /* IAPPart.swift */,
 			);
 			name = "基本";
 			sourceTree = "<group>";
@@ -498,6 +508,16 @@
 			path = Tk300HeroAssistantTests;
 			sourceTree = "<group>";
 		};
+		3558EC091D3BD2D00063C22B /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				3558EC121D3BD3A20063C22B /* MKStoreKitConfigs.plist */,
+				3558EC0D1D3BD2FE0063C22B /* MKStoreKit.h */,
+				3558EC0E1D3BD2FE0063C22B /* MKStoreKit.m */,
+			);
+			name = IAP;
+			sourceTree = "<group>";
+		};
 		356F9CD01D07FA750036E8D2 /* AdvancedAnalysis */ = {
 			isa = PBXGroup;
 			children = (
@@ -511,6 +531,7 @@
 		35C811631D15A76C0017A0F5 /* 3rdLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				3558EC091D3BD2D00063C22B /* IAP */,
 				35C811641D15A7940017A0F5 /* LeanCloudFeedback */,
 			);
 			name = 3rdLibraries;
@@ -625,6 +646,7 @@
 				350513091D38813400ED8381 /* R.generated.swift */,
 				35C811621D15A7610017A0F5 /* Bridging-Header.h */,
 				35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */,
+				3558EC141D3BD51D0063C22B /* AppDelegate+initSetting.swift */,
 				35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */,
 				35FBA6011CDF4E5C00A527B4 /* LaunchScreen.storyboard */,
 				35FBA6041CDF4E5C00A527B4 /* Info.plist */,
@@ -854,6 +876,7 @@
 				35C8118E1D15A7940017A0F5 /* feedback_bg_2@2x.png in Resources */,
 				35FBA62F1CDF6FE300A527B4 /* Match.storyboard in Resources */,
 				35F2CA711CFB57060046B653 /* Bugs in Resources */,
+				3558EC131D3BD3A20063C22B /* MKStoreKitConfigs.plist in Resources */,
 				354BC7501CFD5C0A001E046C /* Equipment.storyboard in Resources */,
 				35C8118F1D15A7940017A0F5 /* feedback_btn@2x.png in Resources */,
 				35FBA6001CDF4E5C00A527B4 /* Assets.xcassets in Resources */,
@@ -1025,6 +1048,7 @@
 				3547D7C71D19BA77005C47A9 /* PlayerDetailViewController.swift in Sources */,
 				351910641D0DCD0300FB0F0C /* AppManager.swift in Sources */,
 				3517D6FC1CE0EA70006162BA /* Item.swift in Sources */,
+				3558EC111D3BD34D0063C22B /* AdvancedAnalysisIAP.swift in Sources */,
 				35C811891D15A7940017A0F5 /* LCUserFeedbackViewController.m in Sources */,
 				3517D7031CE0EDE9006162BA /* Rank.swift in Sources */,
 				3501B28A1D153F5400EB136B /* AnalyzerHelper.swift in Sources */,
@@ -1053,6 +1077,7 @@
 				35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */,
 				35E9D02E1CF96F68004170BE /* userAccountTableViewCell.swift in Sources */,
 				354BC7561CFDC63A001E046C /* EquipmentDetailViewController.swift in Sources */,
+				3558EC0F1D3BD2FE0063C22B /* MKStoreKit.m in Sources */,
 				35C811841D15A7940017A0F5 /* LCUserFeedbackAgent.m in Sources */,
 				3505130A1D38813400ED8381 /* R.generated.swift in Sources */,
 				35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */,
@@ -1079,6 +1104,7 @@
 				35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */,
 				35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */,
 				354BC7141CFD534F001E046C /* EquipmentData.swift in Sources */,
+				3558EC151D3BD51D0063C22B /* AppDelegate+initSetting.swift in Sources */,
 				350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */,
 				3509932E1CEF11E70079C7E3 /* HeroCollectionViewCell.swift in Sources */,
 				3517D7051CE0EDE9006162BA /* RoleAPIBase.swift in Sources */,

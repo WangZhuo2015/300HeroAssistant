@@ -22,7 +22,7 @@ extension HeroViewController:UICollectionViewDelegate,UICollectionViewDataSource
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(HeroCollectionViewCellIdentifier, forIndexPath: indexPath) as! HeroCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(R.reuseIdentifier.heroCollectionViewCellIdentifier, forIndexPath: indexPath) ?? HeroCollectionViewCell()
         cell.setContent(heroDataArray[indexPath.section * 4 + indexPath.row ])
         return cell
     }

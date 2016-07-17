@@ -37,8 +37,8 @@ class PersonalInfoViewController: UIViewController {
     
     /// App内购
     
-    let VERIFY_RECEIPT_URL = "https://buy.itunes.apple.com/verifyReceipt"
-    let ITMS_SANDBOX_VERIFY_RECEIPT_URL = "https://sandbox.itunes.apple.com/verifyReceipt"
+//    let VERIFY_RECEIPT_URL = "https://buy.itunes.apple.com/verifyReceipt"
+//    let ITMS_SANDBOX_VERIFY_RECEIPT_URL = "https://sandbox.itunes.apple.com/verifyReceipt"
     var productDict:NSMutableDictionary!
     var rank = [Rank](){
         didSet{
@@ -55,6 +55,7 @@ class PersonalInfoViewController: UIViewController {
         tableView.bounces = false
         tableView.dataSource = self
         tableView.delegate = self
+        initIAP()
         headerView.backgroundColor = ApplicationColorManager.SectionSeparatorColor
         userChange()
         //防止已有
@@ -68,7 +69,9 @@ class PersonalInfoViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: (#selector(PersonalInfoViewController.userChange)), name: userChangedNotification, object: nil)
         loadPlayerBasicInfoWithName()
         
-        SKPaymentQueue.defaultQueue().addTransactionObserver(self)
+        //SKPaymentQueue.defaultQueue().addTransactionObserver(self)
+        
+        
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(animated: Bool) {
@@ -82,7 +85,7 @@ class PersonalInfoViewController: UIViewController {
     
     
     deinit{
-        SKPaymentQueue.defaultQueue().removeTransactionObserver(self)
+        //SKPaymentQueue.defaultQueue().removeTransactionObserver(self)
     }
     
     func userChange(){

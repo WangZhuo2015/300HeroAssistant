@@ -44,7 +44,7 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
             //内购取消
             //performSegueWithIdentifier(advancedAnalysisSegue, sender: nil)
             //内购添加
-            if AppManager.haveBoughtIAP(){
+            if MKStoreKit.sharedKit().isProductPurchased(AppManager.AdvancedFunctionPackage) {//AppManager.haveBoughtIAP(){
                 guard User.sharedUser.userName != nil else{
                     HUD.flash(.LabeledError(title: "数据获取失败", subtitle: "无用户"), delay: 1, completion: nil)
                     return
@@ -57,7 +57,8 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
                         //perform code
                     PKHUD.sharedHUD.contentView = PKHUDProgressView()
                     PKHUD.sharedHUD.show()
-                    self.requestProducts(NSSet(array: ["AdvancedFunctionPackage"]))
+                    MKStoreKit.sharedKit().initiatePaymentRequestForProductWithIdentifier(AppManager.AdvancedFunctionPackage)
+                    //self.requestProducts(NSSet(array: ["AdvancedFunctionPackage"]))
                     //}
                 }
                 let restoreIAP = UIAlertAction(title: "恢复购买", style: .Default) { (action) in
@@ -65,7 +66,7 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
                         //perform code
                     PKHUD.sharedHUD.contentView = PKHUDProgressView()
                     PKHUD.sharedHUD.show()
-                    self.restoreProducts("AdvancedFunctionPackage")
+                    //self.restoreProducts("AdvancedFunctionPackage")
                     //}
                 }
                 let cancel = UIAlertAction(title: "取消", style: .Cancel,handler: nil)

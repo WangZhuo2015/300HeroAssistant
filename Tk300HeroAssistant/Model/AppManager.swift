@@ -45,4 +45,6 @@ class AppManager {
     static func setUUID(UUID:String){
         return NSUserDefaults.standardUserDefaults().setObject(UUID, forKey: "UUID")
     }
+    
+    static let AdvancedFunctionPackage = "AdvancedFunctionPackage"
 }

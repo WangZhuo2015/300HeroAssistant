@@ -16,7 +16,7 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 15 files.
+  /// This `R.file` struct is generated, and contains static references to 16 files.
   struct file {
     /// Resource file `Bugs`.
     static let bugs = FileResource(bundle: _R.hostingBundle, name: "Bugs", pathExtension: "")
@@ -38,6 +38,8 @@ struct R: Rswift.Validatable {
     static let heroDataCsv = FileResource(bundle: _R.hostingBundle, name: "hero data", pathExtension: "csv")
     /// Resource file `Info.plist`.
     static let infoPlist = FileResource(bundle: _R.hostingBundle, name: "Info", pathExtension: "plist")
+    /// Resource file `MKStoreKitConfigs.plist`.
+    static let mKStoreKitConfigsPlist = FileResource(bundle: _R.hostingBundle, name: "MKStoreKitConfigs", pathExtension: "plist")
     /// Resource file `object data.csv`.
     static let objectDataCsv = FileResource(bundle: _R.hostingBundle, name: "object data", pathExtension: "csv")
     /// Resource file `openapi.txt`.
@@ -106,6 +108,12 @@ struct R: Rswift.Validatable {
     /// `bundle.URLForResource("Info", withExtension: "plist")`
     static func infoPlist(_: Void) -> NSURL? {
       let fileResource = R.file.infoPlist
+      return fileResource.bundle.URLForResource(fileResource)
+    }
+    
+    /// `bundle.URLForResource("MKStoreKitConfigs", withExtension: "plist")`
+    static func mKStoreKitConfigsPlist(_: Void) -> NSURL? {
+      let fileResource = R.file.mKStoreKitConfigsPlist
       return fileResource.bundle.URLForResource(fileResource)
     }
     
