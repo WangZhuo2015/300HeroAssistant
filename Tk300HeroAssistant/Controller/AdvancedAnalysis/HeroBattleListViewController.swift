@@ -13,7 +13,6 @@ class HeroBattleListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var hero:Hero?
-    let MatchCellIdentifier = "MatchCellIdentifier"
     var matchBasicInfoArray =  [List]()
     var matchDetail = [Int:Match?]()
     var matchPlayerData = [Int:(Int,Int,Int)]()

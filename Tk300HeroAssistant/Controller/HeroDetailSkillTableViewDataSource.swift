@@ -13,7 +13,7 @@ extension HeroDetailViewController:UITableViewDelegate,UITableViewDataSource{
         return skillArray?.count ?? 0
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(SkillCellIdentifier) as! SkillInfoTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.skillCellIdentifier) ?? SkillInfoTableViewCell()
         cell.setContent((hero?.id)!,data: skillArray![indexPath.row])
         return cell
     }

@@ -47,7 +47,7 @@ extension MatchDetailViewController:UITableViewDataSource,UITableViewDelegate{
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(matchDetailCellIdentifier) as! matchDetailTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.matchDetailCellIdentifier) ?? matchDetailTableViewCell()
         switch indexPath.section {
         case 0:
             cell.setRoleCell((matchData?.winSide[indexPath.row])!)

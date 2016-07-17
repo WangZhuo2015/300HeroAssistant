@@ -14,7 +14,6 @@ class HeroWinRateViewController: UIViewController {
     var data: [HeroWinRate]?
     //var matchData: [Match]
     let pageName = "HeroWinRateViewController"
-    let HeroWinRateCellIdentifier = "HeroWinRateCellIdentifier"
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self

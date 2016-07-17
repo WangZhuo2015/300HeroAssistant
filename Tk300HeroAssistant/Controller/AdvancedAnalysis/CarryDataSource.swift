@@ -15,7 +15,7 @@ extension CarryAnalysisViewController:UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(MatchCellIdentifier) as! MatchBasicTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.matchCellIdentifier) ?? MatchBasicTableViewCell()
         let item  = matchBasicInfoArray[indexPath.row]
         cell.setContent(item)
         cell.matchData = matchPlayerData[matchBasicInfoArray[indexPath.row].matchID]

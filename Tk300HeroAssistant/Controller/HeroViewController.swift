@@ -41,8 +41,6 @@ class HeroViewController: UIViewController {
         }
     }
     
-    let HeroDataCellIdentifier = "HeroDataCellIdentifier"
-    let HeroCollectionViewCellIdentifier = "HeroCollectionViewCellIdentifier"
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self

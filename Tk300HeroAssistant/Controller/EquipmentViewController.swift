@@ -27,7 +27,6 @@ class EquipmentViewController: UIViewController {
             self.collectionView.reloadData()
         }
     }
-    let EquipmentCollectionViewCellIdentifier = "EquipmentCollectionViewCellIdentifier"
     
     override func viewDidLoad() {
         super.viewDidLoad()

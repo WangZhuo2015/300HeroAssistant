@@ -12,7 +12,7 @@ extension FriendAnalysisViewController:UITableViewDelegate,UITableViewDataSource
         return (data?.count)!
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(FriendAnalysisCellIdentifier) as! FriendAnalysisTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.friendAnalysisCellIdentifier) ?? FriendAnalysisTableViewCell()
         cell.playerNameLabel.text = data![indexPath.row].0.playerName
         cell.playCountLabel.text = "\(data![indexPath.row].1)"
         

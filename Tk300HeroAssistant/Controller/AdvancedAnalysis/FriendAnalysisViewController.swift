@@ -13,7 +13,6 @@ class FriendAnalysisViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var data: [(Player,Int)]?
     let pageName = "FriendAnalysisViewController"
-    let FriendAnalysisCellIdentifier = "FriendAnalysisCellIdentifier"
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self

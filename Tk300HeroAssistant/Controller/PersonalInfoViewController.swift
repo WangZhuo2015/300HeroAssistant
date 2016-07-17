@@ -33,10 +33,7 @@ class PersonalInfoViewController: UIViewController {
     let feedbackButton = UIBarButtonItem()
     let pageName = "PersonalInfoViewController"
     
-    //PersonalRankCell
-    let PersonalRankCellIdentifier = "PersonalRankCellIdentifier"
     let advancedAnalysisSegue = "advancedAnalysisSegue"
-    let MenuTableViewCellIdentifier = "MenuTableViewCellIdentifier"
     
     /// App内购
     

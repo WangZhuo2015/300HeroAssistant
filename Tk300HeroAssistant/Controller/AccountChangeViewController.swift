@@ -13,8 +13,6 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
     @IBOutlet weak var currentUserLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
-    let accountCellIdentifier = "accountCellIdentifier"
-    let addNewAccountCellIdentifier = "addNewAccountCellIdentifier"
     
     var canEditAccounts:Bool = false
     var namesArray:[String] {
@@ -94,7 +92,7 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCellWithIdentifier(accountCellIdentifier) as!userAccountTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.accountCellIdentifier) ?? userAccountTableViewCell()
         guard indexPath.row != namesArray.count else{
             cell.userAccountLabel.text = "添加新的账号"
             cell.innerView.backgroundColor = UIColor ( red: 0.3673, green: 0.8866, blue: 0.1082, alpha: 1.0 )

@@ -28,7 +28,6 @@ class MatchDetailViewController: UIViewController {
     
     var matchID = 0
     let pageName = "MatchDetailViewController"
-    let matchDetailCellIdentifier = "matchDetailCellIdentifier"
     var matchData:Match?{
         //找自己的位置
         didSet{

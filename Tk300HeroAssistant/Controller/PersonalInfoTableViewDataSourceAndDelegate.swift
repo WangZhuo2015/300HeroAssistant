@@ -17,12 +17,12 @@ extension PersonalInfoViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
-            let cell = tableView.dequeueReusableCellWithIdentifier(MenuTableViewCellIdentifier) as! MenuTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.menuTableViewCellIdentifier) ?? MenuTableViewCell()
             return cell
         default:
             break
         }
-        let cell = tableView.dequeueReusableCellWithIdentifier(PersonalRankCellIdentifier) as! PersonalRankTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.personalRankCellIdentifier) ?? PersonalRankTableViewCell()
         cell.setCellContent(rank[indexPath.row - 1])
         return cell
     }

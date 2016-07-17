@@ -16,7 +16,6 @@ class CarryAnalysisViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     let pageName = "CarryAnalysisViewController"
-    let MatchCellIdentifier = "MatchCellIdentifier"
     var matchBasicInfoArray =  [List]()
     var matchBasicInfoDic = [Int:List]()
     var matchDetail = [Int:Match?]()

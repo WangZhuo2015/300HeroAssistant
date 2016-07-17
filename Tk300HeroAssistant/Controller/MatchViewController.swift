@@ -14,8 +14,6 @@ class MatchViewController: UIViewController {
     @IBOutlet weak var matchTableView: UITableView!
     let pageName = "MatchViewController"
     
-    //MatchCell
-    let MatchCellIdentifier = "MatchCellIdentifier"
     var matchBasicInfoArray = [List](){
         didSet{
             matchTableView.mj_footer?.hidden = matchBasicInfoArray.count == 0

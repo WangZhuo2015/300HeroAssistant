@@ -12,7 +12,7 @@ extension HeroWinRateViewController:UITableViewDataSource,UITableViewDelegate{
         return data?.count ?? 0
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(HeroWinRateCellIdentifier)as! HeroWinRateTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.heroWinRateCellIdentifier) ?? HeroWinRateTableViewCell()
         cell.setContent(data![indexPath.row])
         return cell
     }

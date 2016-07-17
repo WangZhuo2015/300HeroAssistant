@@ -39,7 +39,6 @@ class HeroDetailViewController: UIViewController {
     
     @IBOutlet weak var moveSpeedLabel: UILabel!
     let pageName = "HeroDetailViewController"
-    let SkillCellIdentifier = "SkillCellIdentifier"
     var hero:HeroData?{
         
         //TODO: -逻辑待优化
