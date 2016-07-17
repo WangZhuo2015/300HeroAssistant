@@ -16,7 +16,7 @@ class AppManager {
         NSUserDefaults.standardUserDefaults().synchronize()
     }
     static func buyCountPlusOne(){
-        let post = AVObject.init(className: "buyIAPLog")
+        let post = AVObject.init(className: "_IAPBoughtLog")
         post.setObject("true", forKey: "BoughtSuccessed")
         post.setObject(AppManager.getUUID(), forKey: "UUID")
         post.saveInBackground()
