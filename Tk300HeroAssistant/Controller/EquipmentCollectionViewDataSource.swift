@@ -34,19 +34,13 @@ extension EquipmentViewController:UICollectionViewDelegate,UICollectionViewDataS
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-//        guard searchBarTop.constant > topHideValue else{
-//            searchBarTop.constant = topHideValue
-//            return
-//        }
-//        guard searchBarTop.constant > -topNormalValue else{
-//            searchBarTop.constant = topNormalValue
-//            return
-//        }
         if scrollView.contentOffset.y - lastScrollOffest > 0 && searchBarTop.constant > topHideValue{
             //隐藏
             searchBarTop.constant -= scrollView.contentOffset.y - lastScrollOffest
             if searchBarTop.constant < topHideValue{
                 searchBarTop.constant = topHideValue
+            }else{
+                searchBar.resignFirstResponder()
             }
             searchBar.layoutIfNeeded()
         }else if scrollView.contentOffset.y - lastScrollOffest < 0 && searchBarTop.constant < topNormalValue{
@@ -62,13 +56,6 @@ extension EquipmentViewController:UICollectionViewDelegate,UICollectionViewDataS
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-//        if scrollView.contentOffset.y - lastScrollOffest < 0 {
-//            searchBarHidden = false
-//            print("显示")
-//        }else if scrollView.contentOffset.y - lastScrollOffest > 0{
-//            searchBarHidden = true
-//            print("不显示")
-//        }
         lastScrollOffest = scrollView.contentOffset.y
     }
 

@@ -38,10 +38,6 @@ class EquipmentViewController: UIViewController {
         topHideValue = searchBarTop.constant
         searchBarTop.constant += 44
         topNormalValue = searchBarTop.constant
-        
-        
-        
-        
         CSVDataManager.sharedInstance.loadEquipData { (data) in
             self.rawEquipmentDataArray = data//.sort{ (Int($0.售价!)! + Int($1.售价!)!)>0}
             self.equipmentDataArray = data
