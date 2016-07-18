@@ -380,7 +380,8 @@
                                                 <constraint firstItem="11B-Vq-UIY" firstAttribute="width" secondItem="wtE-Zh-rJZ" secondAttribute="width" multiplier="0.3333" id="8YS-sw-3il"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Brn-UG-c0d" secondAttribute="trailing" constant="8" id="DZh-Dh-sUh"/>
                                                 <constraint firstItem="11B-Vq-UIY" firstAttribute="leading" secondItem="wtE-Zh-rJZ" secondAttribute="leadingMargin" constant="-8" id="KZz-ZJ-xex"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Brn-UG-c0d" secondAttribute="bottom" constant="8" id="bY4-RG-l9d"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="11B-Vq-UIY" secondAttribute="bottom" constant="8" id="MQe-eU-3RD"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Brn-UG-c0d" secondAttribute="bottom" constant="8" id="bY4-RG-l9d"/>
                                                 <constraint firstItem="Brn-UG-c0d" firstAttribute="leading" secondItem="11B-Vq-UIY" secondAttribute="trailing" constant="8" id="oSt-J5-HKC"/>
                                                 <constraint firstItem="Brn-UG-c0d" firstAttribute="top" secondItem="wtE-Zh-rJZ" secondAttribute="topMargin" id="vjH-fg-XrE"/>
                                             </constraints>
