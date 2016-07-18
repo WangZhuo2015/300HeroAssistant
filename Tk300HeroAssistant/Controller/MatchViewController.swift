@@ -31,6 +31,7 @@ class MatchViewController: UIViewController {
             }
         }
     }
+    //下载ID对应的详细数据
     var matchDetailDownload = [Int:Match?](){
         didSet{
             matchDetailDownload.forEach { (id,match) in
@@ -39,8 +40,10 @@ class MatchViewController: UIViewController {
                     if let data = match{
                         allRoles.appendContentsOf(data.loseSide)
                         allRoles.appendContentsOf(data.winSide)
-                        let role = allRoles.filter{$0.roleName == User.sharedUser.userName}[0]
-                        matchPlayerData[id] = (role.killCount,role.deathCount,role.assistCount)
+                        let role = allRoles.filter{$0.roleName == User.sharedUser.userName}.first
+                        if let myMatchRole = role {
+                            matchPlayerData[id] = (myMatchRole.killCount,myMatchRole.deathCount,myMatchRole.assistCount)
+                        }
                     }
                 }
             }

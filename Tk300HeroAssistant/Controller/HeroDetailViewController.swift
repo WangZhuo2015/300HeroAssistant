@@ -9,6 +9,10 @@
 import UIKit
 
 class HeroDetailViewController: UIViewController {
+    @IBOutlet weak var topContainerView: UIView!
+    
+    @IBOutlet weak var functionSegmentedControl: UISegmentedControl!
+    
     @IBOutlet weak var heroIcon: UIImageView!
 
     @IBOutlet weak var tableView: UITableView!
@@ -68,6 +72,8 @@ class HeroDetailViewController: UIViewController {
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 44.0
+        topContainerView.backgroundColor = ApplicationColorManager.SectionSeparatorColor
+        functionSegmentedControl.addTarget(self, action: #selector(HeroDetailViewController.functionChange(_:)), forControlEvents: .ValueChanged)
         setContent(hero!)
         
         
@@ -127,4 +133,7 @@ class HeroDetailViewController: UIViewController {
     }
     */
 
+    func functionChange(segmentedControl:UISegmentedControl){
+        tableView.reloadData()
+    }
 }

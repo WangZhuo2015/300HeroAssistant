@@ -6316,8 +6316,8 @@ struct R: Rswift.Validatable {
     static let friendAnalysisCellIdentifier: ReuseIdentifier<FriendAnalysisTableViewCell> = ReuseIdentifier(identifier: "FriendAnalysisCellIdentifier")
     /// Reuse identifier `HeroCollectionViewCellIdentifier`.
     static let heroCollectionViewCellIdentifier: ReuseIdentifier<HeroCollectionViewCell> = ReuseIdentifier(identifier: "HeroCollectionViewCellIdentifier")
-    /// Reuse identifier `HeroInfoCellIdentitier`.
-    static let heroInfoCellIdentitier: ReuseIdentifier<UITableViewCell> = ReuseIdentifier(identifier: "HeroInfoCellIdentitier")
+    /// Reuse identifier `HeroStoryTableViewCellIdentitier`.
+    static let heroStoryTableViewCellIdentitier: ReuseIdentifier<HeroStoryTableViewCell> = ReuseIdentifier(identifier: "HeroStoryTableViewCellIdentitier")
     /// Reuse identifier `HeroWinRateCellIdentifier`.
     static let heroWinRateCellIdentifier: ReuseIdentifier<HeroWinRateTableViewCell> = ReuseIdentifier(identifier: "HeroWinRateCellIdentifier")
     /// Reuse identifier `MatchCellIdentifier`.
