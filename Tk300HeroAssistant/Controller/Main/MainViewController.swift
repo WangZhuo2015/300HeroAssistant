@@ -118,6 +118,7 @@ class MainViewController: UITabBarController,SKStoreProductViewControllerDelegat
         }
     }
     
+    //检查反馈新回复
     func checkNewMessage(){
         LCUserFeedbackAgent.sharedInstance().countUnreadFeedbackThreadsWithBlock { (number, error) in
             guard error == nil && number != 0 else{

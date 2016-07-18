@@ -129,11 +129,23 @@ class MatchViewController: UIViewController {
             self.matchTableView.reloadData()
         }
     }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        switch identifier {
+        case R.segue.matchViewController.matchDetailSegue.identifier:
+            if matchTableView.indexPathForSelectedRow != nil {
+                return true
+            }
+        default:
+            return false
+        }
+        return false
+    }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let vc = segue.destinationViewController as! MatchDetailViewController
         vc.matchID = matchBasicInfoArray [matchTableView.indexPathForSelectedRow!.row].matchID
-        vc.matchData = matchDetailDownload[vc.matchID]!
+        vc.matchData = matchDetailDownload[vc.matchID] ?? nil
     }
     
     func downloadMatchDetail(matchID:Int,completehandle:(Match?)->Void){

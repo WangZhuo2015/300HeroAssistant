@@ -127,7 +127,7 @@
                                             <outlet property="matchType" destination="GTT-WE-U8T" id="Ykv-vs-SBB"/>
                                             <outlet property="playerInnerView" destination="rAf-f3-Tvv" id="ssE-dy-5go"/>
                                             <outlet property="playerName" destination="JPU-f7-QlL" id="aBR-nh-mS2"/>
-                                            <segue destination="ftT-R1-tRq" kind="push" id="Z2Q-yM-7kc"/>
+                                            <segue destination="ftT-R1-tRq" kind="push" identifier="matchDetailSegue" id="Z2Q-yM-7kc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

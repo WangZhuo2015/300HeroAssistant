@@ -6306,7 +6306,7 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 10 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 11 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `accountCellIdentifier`.
     static let accountCellIdentifier: ReuseIdentifier<userAccountTableViewCell> = ReuseIdentifier(identifier: "accountCellIdentifier")
@@ -6316,6 +6316,8 @@ struct R: Rswift.Validatable {
     static let friendAnalysisCellIdentifier: ReuseIdentifier<FriendAnalysisTableViewCell> = ReuseIdentifier(identifier: "FriendAnalysisCellIdentifier")
     /// Reuse identifier `HeroCollectionViewCellIdentifier`.
     static let heroCollectionViewCellIdentifier: ReuseIdentifier<HeroCollectionViewCell> = ReuseIdentifier(identifier: "HeroCollectionViewCellIdentifier")
+    /// Reuse identifier `HeroInfoCellIdentitier`.
+    static let heroInfoCellIdentitier: ReuseIdentifier<UITableViewCell> = ReuseIdentifier(identifier: "HeroInfoCellIdentitier")
     /// Reuse identifier `HeroWinRateCellIdentifier`.
     static let heroWinRateCellIdentifier: ReuseIdentifier<HeroWinRateTableViewCell> = ReuseIdentifier(identifier: "HeroWinRateCellIdentifier")
     /// Reuse identifier `MatchCellIdentifier`.
@@ -6332,7 +6334,7 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.segue` struct is generated, and contains static references to 2 view controllers.
+  /// This `R.segue` struct is generated, and contains static references to 3 view controllers.
   struct segue {
     /// This struct is generated for `AdvancedAnalysisMainTableViewController`, and contains static references to 3 segues.
     struct advancedAnalysisMainTableViewController {
@@ -6362,6 +6364,21 @@ struct R: Rswift.Validatable {
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
       static func heroWinRateSegue(segue segue: UIStoryboardSegue) -> TypedStoryboardSegueInfo<UIStoryboardSegue, AdvancedAnalysisMainTableViewController, HeroWinRateViewController>? {
         return TypedStoryboardSegueInfo(segueIdentifier: R.segue.advancedAnalysisMainTableViewController.heroWinRateSegue, segue: segue)
+      }
+      
+      private init() {}
+    }
+    
+    /// This struct is generated for `MatchViewController`, and contains static references to 1 segues.
+    struct matchViewController {
+      /// Segue identifier `matchDetailSegue`.
+      static let matchDetailSegue: StoryboardSegueIdentifier<UIStoryboardSegue, MatchViewController, MatchDetailViewController> = StoryboardSegueIdentifier(identifier: "matchDetailSegue")
+      
+      /// Optionally returns a typed version of segue `matchDetailSegue`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func matchDetailSegue(segue segue: UIStoryboardSegue) -> TypedStoryboardSegueInfo<UIStoryboardSegue, MatchViewController, MatchDetailViewController>? {
+        return TypedStoryboardSegueInfo(segueIdentifier: R.segue.matchViewController.matchDetailSegue, segue: segue)
       }
       
       private init() {}

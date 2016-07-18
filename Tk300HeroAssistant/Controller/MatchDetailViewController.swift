@@ -55,6 +55,8 @@ class MatchDetailViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        headerView.backgroundColor = ApplicationColorManager.SectionSeparatorColor
+        tableView.bounces = false
         guard matchData != nil else{
             ServiceProxy.getMatchDetail(matchID) { (matchDetail, error) in
                 self.matchData = (matchDetail?.match)
@@ -63,8 +65,6 @@ class MatchDetailViewController: UIViewController {
             }
             return
         }
-        headerView.backgroundColor = ApplicationColorManager.SectionSeparatorColor
-        tableView.bounces = false
         self.setMatchInfo(self.matchData!)
         self.tableView.reloadData()
         // Do any additional setup after loading the view.
