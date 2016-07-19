@@ -355,8 +355,16 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroPointAddTableViewCellIdentifier" rowHeight="286" id="vfg-iO-iW2" customClass="HeroPointAddTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="359" width="320" height="286"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vfg-iO-iW2" id="qCB-us-ebY">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="285"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroStoryTableViewCellIdentitier" rowHeight="217" id="wac-Dq-hZi" customClass="HeroStoryTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="359" width="320" height="217"/>
+                                        <rect key="frame" x="0.0" y="645" width="320" height="217"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wac-Dq-hZi" id="wtE-Zh-rJZ">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
@@ -394,7 +402,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SkillCellIdentifier" rowHeight="153" id="TO4-50-n9m" customClass="SkillInfoTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="576" width="320" height="153"/>
+                                        <rect key="frame" x="0.0" y="862" width="320" height="153"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TO4-50-n9m" id="odW-nO-E9k">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
@@ -501,14 +509,6 @@
                                             <outlet property="skillMagicUseLabel" destination="YG2-rH-x6k" id="SX4-Ca-WKM"/>
                                             <outlet property="skillNameLabel" destination="dPn-Bt-C3h" id="IA9-hu-7zG"/>
                                         </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vfg-iO-iW2">
-                                        <rect key="frame" x="0.0" y="729" width="320" height="147"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vfg-iO-iW2" id="qCB-us-ebY">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

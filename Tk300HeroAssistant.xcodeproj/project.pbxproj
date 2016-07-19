@@ -101,6 +101,7 @@
 		35CB9EE41CEC5B6D0007C47C /* SkillInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE31CEC5B6D0007C47C /* SkillInfoTableViewCell.swift */; };
 		35CB9EE61CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9EE51CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift */; };
 		35D396741D3C9A76001BEDBB /* HeroStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D396731D3C9A76001BEDBB /* HeroStoryTableViewCell.swift */; };
+		35D396761D3CA9DF001BEDBB /* HeroPointAddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D396751D3CA9DF001BEDBB /* HeroPointAddTableViewCell.swift */; };
 		35DCA5CC1CE567730037577B /* PersonalRankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */; };
 		35DCA5CE1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift */; };
 		35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E259D31CE87F2C005AEE4F /* HeroData.swift */; };
@@ -243,6 +244,7 @@
 		35CB9EE31CEC5B6D0007C47C /* SkillInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillInfoTableViewCell.swift; path = Cells/SkillInfoTableViewCell.swift; sourceTree = "<group>"; };
 		35CB9EE51CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDetailSkillTableViewDataSource.swift; path = Controller/HeroDetailSkillTableViewDataSource.swift; sourceTree = "<group>"; };
 		35D396731D3C9A76001BEDBB /* HeroStoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroStoryTableViewCell.swift; path = Cells/HeroStoryTableViewCell.swift; sourceTree = "<group>"; };
+		35D396751D3CA9DF001BEDBB /* HeroPointAddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroPointAddTableViewCell.swift; path = Cells/HeroPointAddTableViewCell.swift; sourceTree = "<group>"; };
 		35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalRankTableViewCell.swift; path = Cells/PersonalRankTableViewCell.swift; sourceTree = "<group>"; };
 		35DCA5CD1CE5B47A0037577B /* PersonalInfoTableViewDataSourceAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInfoTableViewDataSourceAndDelegate.swift; path = Controller/PersonalInfoTableViewDataSourceAndDelegate.swift; sourceTree = "<group>"; };
 		35E259D31CE87F2C005AEE4F /* HeroData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroData.swift; path = Tk300HeroAssistant/Model/Data/HeroData.swift; sourceTree = SOURCE_ROOT; };
@@ -589,6 +591,7 @@
 				35CB9EE51CEC6AE80007C47C /* HeroDetailSkillTableViewDataSource.swift */,
 				35CB9EE31CEC5B6D0007C47C /* SkillInfoTableViewCell.swift */,
 				35D396731D3C9A76001BEDBB /* HeroStoryTableViewCell.swift */,
+				35D396751D3CA9DF001BEDBB /* HeroPointAddTableViewCell.swift */,
 			);
 			name = "英雄详情";
 			sourceTree = "<group>";
@@ -1092,6 +1095,7 @@
 				3540E9381D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift in Sources */,
 				350CCEE01CEAE30500D082EB /* EquipCombineData.swift in Sources */,
 				35FBA63F1CDF714A00A527B4 /* MatchViewController.swift in Sources */,
+				35D396761D3CA9DF001BEDBB /* HeroPointAddTableViewCell.swift in Sources */,
 				35FBA63B1CDF711800A527B4 /* PersonalInfoViewController.swift in Sources */,
 				3501B2841D153B9A00EB136B /* HeroBattleListDataSource.swift in Sources */,
 				3517D70A1CE0EE5F006162BA /* List.swift in Sources */,
