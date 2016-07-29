@@ -355,29 +355,21 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroPointAddTableViewCellIdentifier" rowHeight="286" id="vfg-iO-iW2" customClass="HeroPointAddTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="359" width="320" height="286"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vfg-iO-iW2" id="qCB-us-ebY">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="285"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroStoryTableViewCellIdentitier" rowHeight="217" id="wac-Dq-hZi" customClass="HeroStoryTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="645" width="320" height="217"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HeroStoryTableViewCellIdentitier" rowHeight="217" id="wac-Dq-hZi" customClass="HeroStoryTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="359" width="320" height="217"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wac-Dq-hZi" id="wtE-Zh-rJZ">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brn-UG-c0d">
-                                                    <rect key="frame" x="115" y="8" width="189" height="192"/>
+                                                    <rect key="frame" x="123" y="8" width="181" height="192"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="11B-Vq-UIY">
-                                                    <rect key="frame" x="0.0" y="8" width="107" height="160"/>
+                                                    <rect key="frame" x="8" y="8" width="107" height="160"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="11B-Vq-UIY" secondAttribute="height" multiplier="2:3" id="uJ1-Xg-GcM"/>
                                                     </constraints>
@@ -387,7 +379,7 @@
                                                 <constraint firstItem="11B-Vq-UIY" firstAttribute="top" secondItem="wtE-Zh-rJZ" secondAttribute="topMargin" id="2gQ-GC-wUJ"/>
                                                 <constraint firstItem="11B-Vq-UIY" firstAttribute="width" secondItem="wtE-Zh-rJZ" secondAttribute="width" multiplier="0.3333" id="8YS-sw-3il"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Brn-UG-c0d" secondAttribute="trailing" constant="8" id="DZh-Dh-sUh"/>
-                                                <constraint firstItem="11B-Vq-UIY" firstAttribute="leading" secondItem="wtE-Zh-rJZ" secondAttribute="leadingMargin" constant="-8" id="KZz-ZJ-xex"/>
+                                                <constraint firstItem="11B-Vq-UIY" firstAttribute="leading" secondItem="wtE-Zh-rJZ" secondAttribute="leadingMargin" id="KZz-ZJ-xex"/>
                                                 <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="11B-Vq-UIY" secondAttribute="bottom" constant="8" id="MQe-eU-3RD"/>
                                                 <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Brn-UG-c0d" secondAttribute="bottom" constant="8" id="bY4-RG-l9d"/>
                                                 <constraint firstItem="Brn-UG-c0d" firstAttribute="leading" secondItem="11B-Vq-UIY" secondAttribute="trailing" constant="8" id="oSt-J5-HKC"/>
@@ -400,6 +392,14 @@
                                             <outlet property="heroImage" destination="11B-Vq-UIY" id="C9W-nu-Juc"/>
                                             <outlet property="heroStoryLabel" destination="Brn-UG-c0d" id="DDq-yj-byr"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroPointAddTableViewCellIdentifier" rowHeight="286" id="vfg-iO-iW2" customClass="HeroPointAddTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="576" width="320" height="286"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vfg-iO-iW2" id="qCB-us-ebY">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="285"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SkillCellIdentifier" rowHeight="153" id="TO4-50-n9m" customClass="SkillInfoTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="862" width="320" height="153"/>

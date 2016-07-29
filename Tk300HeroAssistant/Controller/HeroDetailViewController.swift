@@ -76,6 +76,7 @@ class HeroDetailViewController: UIViewController {
         topContainerView.backgroundColor = ApplicationColorManager.SectionSeparatorColor
         functionSegmentedControl.addTarget(self, action: #selector(HeroDetailViewController.functionChange(_:)), forControlEvents: .ValueChanged)
         setContent(hero!)
+        functionSegmentedControl.removeSegmentAtIndex(2, animated: false)
         
         
         // Do any additional setup after loading the view.
