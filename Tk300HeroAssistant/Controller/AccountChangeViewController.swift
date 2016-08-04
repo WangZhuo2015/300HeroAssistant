@@ -66,7 +66,7 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
         alert.addTextFieldWithConfigurationHandler {
             (txtUsername) -> Void in
             usernameTextField = txtUsername
-            usernameTextField!.placeholder = "<Your username here>"
+            usernameTextField!.placeholder = "在此输入账号"
         }
         let cancelAction = UIAlertAction(title: "取消", style: .Cancel, handler: nil)
         let loginAction = UIAlertAction(
@@ -74,11 +74,17 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
             (action) -> Void in
             usernameTextField?.resignFirstResponder()
             User.login((usernameTextField?.text)!, successHandle: {
+                AppManager.reportLog("LoginSuccess", info: ["Account":(usernameTextField?.text)!])
                 self.tableView.reloadData()
                 }, failHandle: { reason in
-                    let alert = UIAlertController(title: "切换失败", message: reason, preferredStyle: .Alert)
+                    let alert = UIAlertController(title: "切换失败", message: self.translateReason(reason), preferredStyle: .Alert)
                     alert.addAction(UIAlertAction(title: "好的", style: .Cancel, handler: nil))
                     self.presentViewController(alert, animated: true, completion: nil)
+                    //
+                    if let error = reason{
+                        AppManager.reportLog("LoginError", info: ["Account":(usernameTextField?.text)!,"reason":error])
+                        AppManager.buyCountPlusOne()
+                    }
             })
         }
         alert.addAction(loginAction)
@@ -135,6 +141,18 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
             User.deleteUserName(namesArray[indexPath.row])
             //更新视图
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        }
+    }
+    
+    func translateReason(reason:String?)->String?{
+        guard reason != nil else{return nil}
+        switch reason! {
+        case "ParameterInvalid":
+            return "用户名不合法"
+        case"sql: no rows in result set":
+            return "用户名不存在"
+        default:
+            return reason
         }
     }
 }

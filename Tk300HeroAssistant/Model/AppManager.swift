@@ -15,16 +15,19 @@ class AppManager {
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "boughtIAP")
         NSUserDefaults.standardUserDefaults().synchronize()
     }
+    //统计内购购买次数
     static func buyCountPlusOne(){
-        let post = AVObject.init(className: "_IAPBoughtLog")
+        let post = AVObject.init(className: "IAPBoughtLog")
         post.setObject("true", forKey: "BoughtSuccessed")
         post.setObject(AppManager.getUUID(), forKey: "UUID")
         post.saveInBackground()
         //购买量计数
     }
+    //是否评分
     static func isEvaluated()->Bool{
         return NSUserDefaults.standardUserDefaults().boolForKey("haveEvaluated")
     }
+    
     static func evaluated(){
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "haveEvaluated")
         NSUserDefaults.standardUserDefaults().synchronize()
@@ -47,4 +50,13 @@ class AppManager {
     }
     
     static let AdvancedFunctionPackage = "AdvancedFunctionPackage"
+    
+    static func reportLog(table:String,info:[String:String]){
+        let report = AVObject(className: table)
+        for item in info{
+            report.setObject(item.1, forKey: item.0)
+        }
+        report.saveInBackground()
+        //记录错误
+    }
 }

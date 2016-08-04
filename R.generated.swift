@@ -155,7 +155,7 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 876 images.
+  /// This `R.image` struct is generated, and contains static references to 878 images.
   struct image {
     /// Image `armored_boot`.
     static let armored_boot = ImageResource(bundle: _R.hostingBundle, name: "armored_boot")
@@ -801,6 +801,10 @@ struct R: Rswift.Validatable {
     static let hero14纳兹 = ImageResource(bundle: _R.hostingBundle, name: "hero-14纳兹")
     /// Image `hero-14雷炎龙形态`.
     static let hero14雷炎龙形态 = ImageResource(bundle: _R.hostingBundle, name: "hero-14雷炎龙形态")
+    /// Image `hero-151柏崎星奈`.
+    static let hero151柏崎星奈 = ImageResource(bundle: _R.hostingBundle, name: "hero-151柏崎星奈")
+    /// Image `hero-152缇米`.
+    static let hero152缇米 = ImageResource(bundle: _R.hostingBundle, name: "hero-152缇米")
     /// Image `hero-15库洛牌`.
     static let hero15库洛牌 = ImageResource(bundle: _R.hostingBundle, name: "hero-15库洛牌")
     /// Image `hero-15斩炎`.
@@ -3518,6 +3522,16 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "hero-14雷炎龙形态", bundle: ..., traitCollection: ...)`
     static func hero14雷炎龙形态(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.hero14雷炎龙形态, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "hero-151柏崎星奈", bundle: ..., traitCollection: ...)`
+    static func hero151柏崎星奈(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero151柏崎星奈, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "hero-152缇米", bundle: ..., traitCollection: ...)`
+    static func hero152缇米(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero152缇米, compatibleWithTraitCollection: traitCollection)
     }
     
     /// `UIImage(named: "hero-15库洛牌", bundle: ..., traitCollection: ...)`
