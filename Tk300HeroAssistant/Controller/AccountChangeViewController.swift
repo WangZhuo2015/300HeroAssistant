@@ -83,7 +83,6 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
                     //
                     if let error = reason{
                         AppManager.reportLog("LoginError", info: ["Account":(usernameTextField?.text)!,"reason":error])
-                        AppManager.buyCountPlusOne()
                     }
             })
         }
