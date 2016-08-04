@@ -417,7 +417,7 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="Zml-Tp-VJp" secondAttribute="bottom" constant="2" id="nRG-d7-BaL"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.022635697279999999" green="0.48174332619999999" blue="0.64821714740000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.023529411764705882" green="0.4823529411764706" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="innerView" destination="Zml-Tp-VJp" id="VOr-WJ-jVE"/>

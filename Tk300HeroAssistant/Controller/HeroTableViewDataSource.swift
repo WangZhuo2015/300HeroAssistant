@@ -10,20 +10,26 @@ import UIKit
 extension HeroViewController:UICollectionViewDelegate,UICollectionViewDataSource{
     //调整collectionViewCell大小
     func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize{
-        return CGSizeMake((UIScreen.mainScreen().bounds.width - 50)/4, (UIScreen.mainScreen().bounds.width - 50)/4 + 20)
+        let width = (UIScreen.mainScreen().bounds.width - CGFloat(colPerRow + 1) * 15)/CGFloat(colPerRow)
+        return CGSizeMake(width, width + 20)
     }
-    
+    //Section个数
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        collectionView.collectionViewDisplayWith("数据加载ing", ifNecessaryForRowCount: heroDataArray.count)
-        return heroDataArray.count/4 + (( heroDataArray.count % 4 == 0 ) ? 0:1)
+        collectionView.collectionViewDisplayWith("数据加载                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ing", ifNecessaryForRowCount: heroDataArray.count)
+        return Int(ceil(Double(heroDataArray.count)/Double(colPerRow)))
     }
+    //每个Section Item个数
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (section == (heroDataArray.count/4 + (( heroDataArray.count%4 == 0 ) ? 0:1)-1)) ? heroDataArray.count % 4 : 4
+        let lastRow = Int(floor(Double(heroDataArray.count)/Double(colPerRow)))
+        if section == lastRow{
+            return heroDataArray.count % colPerRow
+        }
+        return colPerRow
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(R.reuseIdentifier.heroCollectionViewCellIdentifier, forIndexPath: indexPath) ?? HeroCollectionViewCell()
-        cell.setContent(heroDataArray[indexPath.section * 4 + indexPath.row ])
+        cell.setContent(heroDataArray[indexPath.section * colPerRow + indexPath.row ])
         return cell
     }
 }

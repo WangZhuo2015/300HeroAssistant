@@ -25,6 +25,7 @@ class PersonalRankTableViewCell: UITableViewCell {
         super.awakeFromNib()
         innerView.layer.cornerRadius = 5
         innerView.layer.masksToBounds = true
+        contentView.backgroundColor = ApplicationColorManager.LightBackgroundColor
         // Initialization code
     }
 

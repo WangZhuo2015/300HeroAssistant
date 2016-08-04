@@ -55,6 +55,7 @@ class PersonalInfoViewController: UIViewController {
         tableView.bounces = false
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.backgroundColor = ApplicationColorManager.AppMainBackgroundColor
         initIAP()
         headerView.backgroundColor = ApplicationColorManager.SectionSeparatorColor
         userChange()

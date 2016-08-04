@@ -14,6 +14,9 @@ class userAccountTableViewCell: UITableViewCell {
     @IBOutlet weak var userAccountLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        backgroundColor = ApplicationColorManager.LightBackgroundColor
+        contentView.backgroundColor = ApplicationColorManager.LightBackgroundColor
+        innerView.backgroundColor = ApplicationColorManager.LightBackgroundColor
         // Initialization code
     }
 

@@ -95,6 +95,7 @@ class matchDetailTableViewCell: UITableViewCell {
         //playerInnerView.layer.cornerRadius = innerView.layer.cornerRadius
         playerImage.layer.cornerRadius = playerImage.bounds.width/2
         self.innerView.clipsToBounds = true
+        self.contentView.backgroundColor = ApplicationColorManager.AppMainBackgroundColor
         // Initialization code
     }
 

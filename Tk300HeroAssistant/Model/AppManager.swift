@@ -59,4 +59,22 @@ class AppManager {
         report.saveInBackground()
         //记录错误
     }
+    
+    static func checkDviceType()->DeviceType{
+        print(UIDevice.currentDevice().model)
+        switch UIDevice.currentDevice().model {
+        case "iPod touch":
+            return .iPod
+        case "iPad":
+            return .iPad
+        default:
+            return .iPhone
+        }
+    }
+}
+
+enum DeviceType{
+    case iPad
+    case iPhone
+    case iPod
 }

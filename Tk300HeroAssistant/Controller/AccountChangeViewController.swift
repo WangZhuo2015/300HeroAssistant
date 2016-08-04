@@ -27,6 +27,7 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
+        
         self.navigationItem.title = "账号切换"
         userChange()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: (#selector(PersonalInfoViewController.userChange)), name: userChangedNotification, object: nil)
@@ -103,7 +104,7 @@ class AccountChangeViewController: UIViewController,UITableViewDataSource,UITabl
             cell.innerView.backgroundColor = UIColor ( red: 0.3673, green: 0.8866, blue: 0.1082, alpha: 1.0 )
             return cell
         }
-        cell.innerView.backgroundColor = UIColor(red: 6/255, green: 123/255, blue: 165/255, alpha: 1)
+        cell.innerView.backgroundColor = ApplicationColorManager.LightBackgroundColor//UIColor(red: 6/255, green: 123/255, blue: 165/255, alpha: 1)
         cell.accessoryType = .None
         if namesArray[indexPath.row] == User.sharedUser.userName {
             cell.accessoryType = .Checkmark

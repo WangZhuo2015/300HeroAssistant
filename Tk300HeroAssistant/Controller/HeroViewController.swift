@@ -13,7 +13,7 @@ class HeroViewController: UIViewController {
     
     @IBOutlet weak var filterButton: UIBarButtonItem!
     let pageName = "HeroViewController"
-    
+    var colPerRow = 4
     var rawHeroDataArray = [HeroData](){
         didSet{
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
@@ -43,9 +43,12 @@ class HeroViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        colPerRow = AppManager.checkDviceType() == .iPad ? 8: 4
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.bounces = false
+        collectionView.backgroundColor = ApplicationColorManager.AppMainBackgroundColor
         CSVDataManager.sharedInstance.loadHeroData { (dataArray) in
             self.rawHeroDataArray = dataArray
         }
@@ -88,6 +91,11 @@ class HeroViewController: UIViewController {
         })
         alertSheet.addAction(allAction)
         alertSheet.addAction(cancelAction)
+        if AppManager.checkDviceType() == .iPad{
+            let popOver = alertSheet.popoverPresentationController
+            popOver?.barButtonItem = self.navigationItem.rightBarButtonItem
+            popOver?.permittedArrowDirections = .Up
+        }
         presentViewController(alertSheet, animated: true,completion: nil)
     }
 

@@ -71,6 +71,7 @@ class HeroDetailViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.bounces = false
+        tableView.backgroundColor = ApplicationColorManager.AppMainBackgroundColor
         tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 44.0
         topContainerView.backgroundColor = ApplicationColorManager.SectionSeparatorColor

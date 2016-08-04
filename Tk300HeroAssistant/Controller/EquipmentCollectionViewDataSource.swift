@@ -9,17 +9,24 @@
 import Foundation
 import UIKit
 extension EquipmentViewController:UICollectionViewDelegate,UICollectionViewDataSource,UIScrollViewDelegate{
+    
     //调整collectionViewCell大小
     func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize{
-        return CGSizeMake((UIScreen.mainScreen().bounds.width - 50)/4, (UIScreen.mainScreen().bounds.width - 50)/4 + 20)
+        let width = (UIScreen.mainScreen().bounds.width - CGFloat(colPerRow + 1) * 15)/CGFloat(colPerRow)
+        return CGSizeMake(width, width + 20)
     }
-    
+    //Section个数
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        collectionView.collectionViewDisplayWith("数据加载ing", ifNecessaryForRowCount: equipmentDataArray.count)
-        return equipmentDataArray.count/4 + (( equipmentDataArray.count % 4 == 0 ) ? 0:1)
+        collectionView.collectionViewDisplayWith("数据加载                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ing", ifNecessaryForRowCount: equipmentDataArray.count)
+        return Int(ceil(Double(equipmentDataArray.count)/Double(colPerRow)))
     }
+    //每个Section Item个数
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (section == (equipmentDataArray.count/4 + (( equipmentDataArray.count%4 == 0 ) ? 0:1)-1)) ? equipmentDataArray.count % 4 : 4
+        let lastRow = Int(floor(Double(equipmentDataArray.count)/Double(colPerRow)))
+        if section == lastRow{
+            return equipmentDataArray.count % colPerRow
+        }
+        return colPerRow
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

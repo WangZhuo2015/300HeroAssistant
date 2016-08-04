@@ -153,14 +153,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYV-jw-JV9">
-                                <rect key="frame" x="16" y="52" width="90" height="30"/>
+                                <rect key="frame" x="16" y="72" width="90" height="30"/>
                                 <state key="normal" title="内购数量加一"/>
                                 <connections>
                                     <action selector="IAPPlus:" destination="CfU-hh-DSF" eventType="touchUpInside" id="EEg-Nt-lVj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yED-Wu-ZQD">
-                                <rect key="frame" x="16" y="90" width="102" height="30"/>
+                                <rect key="frame" x="16" y="110" width="102" height="30"/>
                                 <state key="normal" title="Selector Crash"/>
                                 <connections>
                                     <action selector="selectorCrash:" destination="CfU-hh-DSF" eventType="touchUpInside" id="A4w-I2-vwL"/>

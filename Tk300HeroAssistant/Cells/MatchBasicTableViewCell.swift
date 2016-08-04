@@ -37,6 +37,7 @@ class MatchBasicTableViewCell: UITableViewCell {
         super.awakeFromNib()
         innerView.layer.cornerRadius = 6
         innerView.clipsToBounds = true
+        self.contentView.backgroundColor = ApplicationColorManager.AppMainBackgroundColor
         // Initialization code
     }
     

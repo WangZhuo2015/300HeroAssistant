@@ -75,6 +75,8 @@
 		356F9CD21D07FAF00036E8D2 /* DataAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F9CD11D07FAF00036E8D2 /* DataAnalyzer.swift */; };
 		357758F71D0BF68B00CB0E55 /* IAPPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357758F61D0BF68B00CB0E55 /* IAPPart.swift */; };
 		358B36E21CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */; };
+		35A2DF9F1D5345B10075DF6A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2DF9E1D5345B10075DF6A /* UIColorExtension.swift */; };
+		35A2DFA11D53707C0075DF6A /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2DFA01D53707C0075DF6A /* UIDeviceExtension.swift */; };
 		35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */; };
 		35A892BA1CE8AE5100FDCCCD /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */; };
 		35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
@@ -206,6 +208,8 @@
 		356F9CD11D07FAF00036E8D2 /* DataAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataAnalyzer.swift; path = Tk300HeroAssistant/AdvancedAnalyzer/DataAnalyzer.swift; sourceTree = SOURCE_ROOT; };
 		357758F61D0BF68B00CB0E55 /* IAPPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IAPPart.swift; path = Controller/AdvancedAnalysis/IAPPart.swift; sourceTree = "<group>"; };
 		358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentSearchBarDelegate.swift; path = Controller/EquipmentSearchBarDelegate.swift; sourceTree = "<group>"; };
+		35A2DF9E1D5345B10075DF6A /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extension/UIColorExtension.swift; sourceTree = "<group>"; };
+		35A2DFA01D53707C0075DF6A /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDeviceExtension.swift; path = Extension/UIDeviceExtension.swift; sourceTree = "<group>"; };
 		35A700B41CE7841A00808CD6 /* MatchHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchHeaderView.swift; path = Cells/MatchHeaderView.swift; sourceTree = "<group>"; };
 		35A892B91CE8AE5100FDCCCD /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = Cells/HeroTableViewCell.swift; sourceTree = "<group>"; };
 		35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVDataManager.swift; path = Tk300HeroAssistant/Model/CSVDataManager.swift; sourceTree = SOURCE_ROOT; };
@@ -436,6 +440,8 @@
 				35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */,
 				3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */,
 				35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */,
+				35A2DF9E1D5345B10075DF6A /* UIColorExtension.swift */,
+				35A2DFA01D53707C0075DF6A /* UIDeviceExtension.swift */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -470,7 +476,6 @@
 				357758F61D0BF68B00CB0E55 /* IAPPart.swift */,
 				3540E93A1D0B0E0300E0FB66 /* 账号切换 */,
 				35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */,
-				35E9D02D1CF96F68004170BE /* userAccountTableViewCell.swift */,
 				3540E9371D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift */,
 			);
 			name = "基本";
@@ -491,6 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				35E9D02B1CF96F11004170BE /* AccountChangeViewController.swift */,
+				35E9D02D1CF96F68004170BE /* userAccountTableViewCell.swift */,
 			);
 			name = "账号切换";
 			sourceTree = "<group>";
@@ -1049,6 +1055,7 @@
 				35F4C2781D31011700A44787 /* ApplicationColorManager.swift in Sources */,
 				35C811871D15A7940017A0F5 /* LCUserFeedbackReplyCell.m in Sources */,
 				3540E93C1D0B15C000E0FB66 /* FriendAnalysisViewController.swift in Sources */,
+				35A2DFA11D53707C0075DF6A /* UIDeviceExtension.swift in Sources */,
 				35401A6C1CE835E500F0EDE2 /* TableViewExtension.swift in Sources */,
 				3540E9331D0AEC6F00E0FB66 /* HeroWinRateTableViewCell.swift in Sources */,
 				3547D7C71D19BA77005C47A9 /* PlayerDetailViewController.swift in Sources */,
@@ -1061,6 +1068,7 @@
 				3540E9351D0AEE6D00E0FB66 /* HeroWinRateDataSource.swift in Sources */,
 				35FBA6201CDF523C00A527B4 /* HttpClient.swift in Sources */,
 				35CB9EE21CEC55120007C47C /* HeroDetailViewController.swift in Sources */,
+				35A2DF9F1D5345B10075DF6A /* UIColorExtension.swift in Sources */,
 				356F9CD21D07FAF00036E8D2 /* DataAnalyzer.swift in Sources */,
 				3517D6FE1CE0EA70006162BA /* Match.swift in Sources */,
 				3517D7091CE0EE5F006162BA /* Hero.swift in Sources */,
@@ -1330,6 +1338,7 @@
 				PRODUCT_NAME = "星尘盒子 for 300英雄";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tk300HeroAssistant/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1348,6 +1357,7 @@
 				PRODUCT_NAME = "星尘盒子 for 300英雄";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tk300HeroAssistant/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

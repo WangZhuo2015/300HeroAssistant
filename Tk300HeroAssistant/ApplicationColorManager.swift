@@ -9,6 +9,7 @@
 import Foundation
 struct ApplicationColorManager {
     static let AppMainBackgroundColor = UIColor ( red: 0.0431, green: 0.3569, blue: 0.4941, alpha: 1.0 )
+    static let LightBackgroundColor = UIColor(hexString: "067BA5")
     //UIColor ( red: 0.4627, green: 0.7725, blue: 0.9804, alpha: 1.0 )
     static let SectionSeparatorColor = UIColor(red: 9.2/255, green: 52.5/255, blue: 73.6/255, alpha: 1.0)
     static let BarColor = UIColor(red: 9.2/255, green: 52.5/255, blue: 73.6/255, alpha: 1.0)

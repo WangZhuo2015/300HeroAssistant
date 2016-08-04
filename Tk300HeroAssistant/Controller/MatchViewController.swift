@@ -13,7 +13,7 @@ import PKHUD
 class MatchViewController: UIViewController {
     @IBOutlet weak var matchTableView: UITableView!
     let pageName = "MatchViewController"
-    
+    //请求战绩列表
     var matchBasicInfoArray = [List](){
         didSet{
             matchTableView.mj_footer?.hidden = matchBasicInfoArray.count == 0
@@ -55,7 +55,7 @@ class MatchViewController: UIViewController {
         //设置TableView
         matchTableView.dataSource = self
         matchTableView.delegate = self
-
+        matchTableView.backgroundColor = ApplicationColorManager.AppMainBackgroundColor
 
         //设置导航栏
         navigationItem.title = "战绩查询"

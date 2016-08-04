@@ -17,6 +17,8 @@ class EquipmentViewController: UIViewController {
     @IBOutlet weak var searchBarTop: NSLayoutConstraint!
     
     let pageName = "EquipmentViewController"
+    var colPerRow = 4
+    
     var lastScrollOffest:CGFloat = 0.0
     var topNormalValue: CGFloat = 0.0
     var topHideValue: CGFloat = 0.0
@@ -30,14 +32,18 @@ class EquipmentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        colPerRow = AppManager.checkDviceType() == .iPad ? 8: 4
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.bounces = false
+        collectionView.backgroundColor = ApplicationColorManager.AppMainBackgroundColor
+        //searchBar setting
         searchBar.delegate = self
-        searchBar.backgroundColor = UIColor ( red: 0.4627, green: 0.7725, blue: 0.9804, alpha: 1.0 )
+        searchBar.placeholder = "查找装备"
         topHideValue = searchBarTop.constant
         searchBarTop.constant += 44
         topNormalValue = searchBarTop.constant
+        //
         CSVDataManager.sharedInstance.loadEquipData { (data) in
             self.rawEquipmentDataArray = data//.sort{ (Int($0.售价!)! + Int($1.售价!)!)>0}
             self.equipmentDataArray = data
