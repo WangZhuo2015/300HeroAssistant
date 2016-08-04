@@ -22,6 +22,7 @@ class HeroWinRateTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        contentView.backgroundColor = ApplicationColorManager.AppMainBackgroundColor
         // Initialization code
     }
 

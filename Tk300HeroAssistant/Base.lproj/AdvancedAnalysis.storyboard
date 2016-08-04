@@ -53,7 +53,7 @@
                         <sections>
                             <tableViewSection id="l8G-7g-p3o">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="eLf-bT-oyx">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="eLf-bT-oyx" customClass="MenuTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eLf-bT-oyx" id="7H5-Tu-8Xg">
@@ -78,7 +78,7 @@
                                             <segue destination="eAi-XQ-j0t" kind="push" identifier="HeroWinRateSegue" id="8gJ-79-ai9"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="dFM-0o-gqD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="dFM-0o-gqD" customClass="MenuTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dFM-0o-gqD" id="VNf-KY-kMT">
@@ -92,6 +92,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="BG6-zi-zO2" firstAttribute="centerY" secondItem="VNf-KY-kMT" secondAttribute="centerY" id="Mdm-l0-UFE"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="BG6-zi-zO2" secondAttribute="leading" id="fhz-yF-cXK"/>
@@ -102,7 +103,7 @@
                                             <segue destination="gLi-6l-1Us" kind="push" identifier="friendAnalysisSegue" id="nwg-9w-LS3"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="zr2-zH-ylQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="zr2-zH-ylQ" customClass="MenuTableViewCell" customModule="星尘盒子_for_300英雄" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="88" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zr2-zH-ylQ" id="dOF-vb-4Ky">
@@ -116,6 +117,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="JhF-lr-rQF" firstAttribute="centerY" secondItem="dOF-vb-4Ky" secondAttribute="centerY" id="M1Z-fm-Ccv"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="JhF-lr-rQF" secondAttribute="leading" id="OdF-OQ-rpB"/>
@@ -152,15 +154,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYV-jw-JV9">
-                                <rect key="frame" x="16" y="72" width="90" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYV-jw-JV9">
+                                <rect key="frame" x="16" y="52" width="90" height="30"/>
                                 <state key="normal" title="内购数量加一"/>
                                 <connections>
                                     <action selector="IAPPlus:" destination="CfU-hh-DSF" eventType="touchUpInside" id="EEg-Nt-lVj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yED-Wu-ZQD">
-                                <rect key="frame" x="16" y="110" width="102" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yED-Wu-ZQD">
+                                <rect key="frame" x="16" y="90" width="102" height="30"/>
                                 <state key="normal" title="Selector Crash"/>
                                 <connections>
                                     <action selector="selectorCrash:" destination="CfU-hh-DSF" eventType="touchUpInside" id="A4w-I2-vwL"/>

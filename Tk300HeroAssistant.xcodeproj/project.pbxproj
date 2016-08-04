@@ -449,6 +449,7 @@
 		3540E9291D0AEAB800E0FB66 /* 高级分析功能 */ = {
 			isa = PBXGroup;
 			children = (
+				3540E9371D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift */,
 				3540E92D1D0AEBE700E0FB66 /* AdvancedAnalysisMainTableViewController.swift */,
 				3540E9391D0B0D7400E0FB66 /* 开黑分析 */,
 				3540E92A1D0AEAC500E0FB66 /* 英雄胜率分析 */,
@@ -476,7 +477,6 @@
 				357758F61D0BF68B00CB0E55 /* IAPPart.swift */,
 				3540E93A1D0B0E0300E0FB66 /* 账号切换 */,
 				35DCA5CB1CE567730037577B /* PersonalRankTableViewCell.swift */,
-				3540E9371D0AFAA700E0FB66 /* AdvancedAnalysisMenuTableViewCell.swift */,
 			);
 			name = "基本";
 			sourceTree = "<group>";

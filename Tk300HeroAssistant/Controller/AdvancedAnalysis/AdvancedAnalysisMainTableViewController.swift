@@ -23,6 +23,7 @@ class AdvancedAnalysisMainTableViewController: UITableViewController,DataAnalyze
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
+        tableView.backgroundColor = ApplicationColorManager.AppMainBackgroundColor
         dataAnalyzer.userName = User.sharedUser.userName ?? ""
         dataAnalyzer.delegate = self
         guard User.sharedUser.userName != nil else{
