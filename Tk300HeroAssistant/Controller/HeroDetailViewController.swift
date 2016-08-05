@@ -98,7 +98,8 @@ class HeroDetailViewController: UIViewController {
     
     func setContent(hero:HeroData){
         heroIcon.image = UIImage(named: "hero-" + hero.id! + hero.name!)
-        
+        heroIcon.layer.cornerRadius = 10
+        heroIcon.layer.masksToBounds = true
         heroNameLabel.text = hero.name
         
         attackTypeLabel.text = hero.attype

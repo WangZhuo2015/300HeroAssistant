@@ -42,6 +42,8 @@ class SkillInfoTableViewCell: UITableViewCell {
     }
 
     func setContent(heroID:String,data:SkillData){
+        skillImage.layer.cornerRadius = 10
+        skillImage.layer.masksToBounds = true
         //没图片总比崩溃了好
         let image = data.name?.stringByReplacingOccurrencesOfString("/",withString: "or")
         skillImage.image = UIImage(named: "hero-" + heroID + (image ?? ""))// + (data.id ?? ""))

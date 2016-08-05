@@ -19,6 +19,8 @@ class HeroStoryTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        heroImage.layer.cornerRadius = 10
+        heroImage.layer.masksToBounds = true
         contentView.backgroundColor = ApplicationColorManager.AppMainBackgroundColor
         // Initialization code
     }

@@ -63,6 +63,8 @@ class CSVDataManager{
 //                CSVReader.loadComplexDataFromCSV("进阶所需", keyName: "id", orginalDictionary: combineDictionary, arrayAttributeName: ["进阶物品id"], completionHandle: completionHandle)
 //            })
 //        }
+        //异步读取
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
         let filePath = NSBundle.mainBundle().pathForResource("equipment", ofType: "json")
         let rawData = NSData(contentsOfURL: NSURL(fileURLWithPath: filePath!))
         let json = try! NSJSONSerialization.JSONObjectWithData(rawData!, options: NSJSONReadingOptions.MutableContainers) as! NSArray
@@ -73,6 +75,7 @@ class CSVDataManager{
             //.reduce([], combine: {$0[String($1!.id!)] = $1})
             .forEach{ dic[String($0!.id!)] = $0 }
         completionHandle(dic)
+        })
     }
     
     
