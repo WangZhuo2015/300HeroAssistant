@@ -139,8 +139,10 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 1062 images.
+  /// This `R.image` struct is generated, and contains static references to 1204 images.
   struct image {
+    /// Image `ArcherImage`.
+    static let archerImage = ImageResource(bundle: _R.hostingBundle, name: "ArcherImage")
     /// Image `armored_boot`.
     static let armored_boot = ImageResource(bundle: _R.hostingBundle, name: "armored_boot")
     /// Image `armored_boot_filled`.
@@ -2251,6 +2253,8 @@ struct R: Rswift.Validatable {
     static let magical_scroll_filled = ImageResource(bundle: _R.hostingBundle, name: "magical_scroll_filled")
     /// Image `rook`.
     static let rook = ImageResource(bundle: _R.hostingBundle, name: "rook")
+    /// Image `SaberImage`.
+    static let saberImage = ImageResource(bundle: _R.hostingBundle, name: "SaberImage")
     /// Image `sword`.
     static let sword = ImageResource(bundle: _R.hostingBundle, name: "sword")
     /// Image `sword_filled`.
@@ -2265,6 +2269,291 @@ struct R: Rswift.Validatable {
     static let user_male_circle_filled = ImageResource(bundle: _R.hostingBundle, name: "user_male_circle_filled")
     /// Image `win`.
     static let win = ImageResource(bundle: _R.hostingBundle, name: "win")
+    /// Image `一方通行Image`.
+    static let 一方通行Image = ImageResource(bundle: _R.hostingBundle, name: "一方通行Image")
+    /// Image `三笠Image`.
+    static let 三笠Image = ImageResource(bundle: _R.hostingBundle, name: "三笠Image")
+    /// Image `不知火舞Image`.
+    static let 不知火舞Image = ImageResource(bundle: _R.hostingBundle, name: "不知火舞Image")
+    /// Image `两仪式Image`.
+    static let 两仪式Image = ImageResource(bundle: _R.hostingBundle, name: "两仪式Image")
+    /// Image `乔帮主Image`.
+    static let 乔帮主Image = ImageResource(bundle: _R.hostingBundle, name: "乔帮主Image")
+    /// Image `五更琉璃Image`.
+    static let 五更琉璃Image = ImageResource(bundle: _R.hostingBundle, name: "五更琉璃Image")
+    /// Image `五河琴里Image`.
+    static let 五河琴里Image = ImageResource(bundle: _R.hostingBundle, name: "五河琴里Image")
+    /// Image `亚里亚Image`.
+    static let 亚里亚Image = ImageResource(bundle: _R.hostingBundle, name: "亚里亚Image")
+    /// Image `亡灵女王Image`.
+    static let 亡灵女王Image = ImageResource(bundle: _R.hostingBundle, name: "亡灵女王Image")
+    /// Image `伊卡洛斯Image`.
+    static let 伊卡洛斯Image = ImageResource(bundle: _R.hostingBundle, name: "伊卡洛斯Image")
+    /// Image `伊莉雅Image`.
+    static let 伊莉雅Image = ImageResource(bundle: _R.hostingBundle, name: "伊莉雅Image")
+    /// Image `伊莎Image`.
+    static let 伊莎Image = ImageResource(bundle: _R.hostingBundle, name: "伊莎Image")
+    /// Image `佐仓杏子Image`.
+    static let 佐仓杏子Image = ImageResource(bundle: _R.hostingBundle, name: "佐仓杏子Image")
+    /// Image `佐罗Image`.
+    static let 佐罗Image = ImageResource(bundle: _R.hostingBundle, name: "佐罗Image")
+    /// Image `克子Image`.
+    static let 克子Image = ImageResource(bundle: _R.hostingBundle, name: "克子Image")
+    /// Image `八云紫Image`.
+    static let 八云紫Image = ImageResource(bundle: _R.hostingBundle, name: "八云紫Image")
+    /// Image `关羽Image`.
+    static let 关羽Image = ImageResource(bundle: _R.hostingBundle, name: "关羽Image")
+    /// Image `初音未来Image`.
+    static let 初音未来Image = ImageResource(bundle: _R.hostingBundle, name: "初音未来Image")
+    /// Image `化形战士Image`.
+    static let 化形战士Image = ImageResource(bundle: _R.hostingBundle, name: "化形战士Image")
+    /// Image `匹诺曹Image`.
+    static let 匹诺曹Image = ImageResource(bundle: _R.hostingBundle, name: "匹诺曹Image")
+    /// Image `十六夜咲夜Image`.
+    static let 十六夜咲夜Image = ImageResource(bundle: _R.hostingBundle, name: "十六夜咲夜Image")
+    /// Image `博丽灵梦Image`.
+    static let 博丽灵梦Image = ImageResource(bundle: _R.hostingBundle, name: "博丽灵梦Image")
+    /// Image `卡殿下Image`.
+    static let 卡殿下Image = ImageResource(bundle: _R.hostingBundle, name: "卡殿下Image")
+    /// Image `变异魔菇Image`.
+    static let 变异魔菇Image = ImageResource(bundle: _R.hostingBundle, name: "变异魔菇Image")
+    /// Image `古娜Image`.
+    static let 古娜Image = ImageResource(bundle: _R.hostingBundle, name: "古娜Image")
+    /// Image `吉尔加美什Image`.
+    static let 吉尔加美什Image = ImageResource(bundle: _R.hostingBundle, name: "吉尔加美什Image")
+    /// Image `吕子乔Image`.
+    static let 吕子乔Image = ImageResource(bundle: _R.hostingBundle, name: "吕子乔Image")
+    /// Image `吕布Image`.
+    static let 吕布Image = ImageResource(bundle: _R.hostingBundle, name: "吕布Image")
+    /// Image `唐僧Image`.
+    static let 唐僧Image = ImageResource(bundle: _R.hostingBundle, name: "唐僧Image")
+    /// Image `四糸乃Image`.
+    static let 四糸乃Image = ImageResource(bundle: _R.hostingBundle, name: "四糸乃Image")
+    /// Image `坂田银时Image`.
+    static let 坂田银时Image = ImageResource(bundle: _R.hostingBundle, name: "坂田银时Image")
+    /// Image `垃圾毁灭者Image`.
+    static let 垃圾毁灭者Image = ImageResource(bundle: _R.hostingBundle, name: "垃圾毁灭者Image")
+    /// Image `夏娜Image`.
+    static let 夏娜Image = ImageResource(bundle: _R.hostingBundle, name: "夏娜Image")
+    /// Image `夏洛特Image`.
+    static let 夏洛特Image = ImageResource(bundle: _R.hostingBundle, name: "夏洛特Image")
+    /// Image `夜刀神十香Image`.
+    static let 夜刀神十香Image = ImageResource(bundle: _R.hostingBundle, name: "夜刀神十香Image")
+    /// Image `夜夜Image`.
+    static let 夜夜Image = ImageResource(bundle: _R.hostingBundle, name: "夜夜Image")
+    /// Image `大傻Image`.
+    static let 大傻Image = ImageResource(bundle: _R.hostingBundle, name: "大傻Image")
+    /// Image `奇犽Image`.
+    static let 奇犽Image = ImageResource(bundle: _R.hostingBundle, name: "奇犽Image")
+    /// Image `奈亚子Image`.
+    static let 奈亚子Image = ImageResource(bundle: _R.hostingBundle, name: "奈亚子Image")
+    /// Image `奥特曼Image`.
+    static let 奥特曼Image = ImageResource(bundle: _R.hostingBundle, name: "奥特曼Image")
+    /// Image `姬丝秀忒Image`.
+    static let 姬丝秀忒Image = ImageResource(bundle: _R.hostingBundle, name: "姬丝秀忒Image")
+    /// Image `小悟空Image`.
+    static let 小悟空Image = ImageResource(bundle: _R.hostingBundle, name: "小悟空Image")
+    /// Image `小鸟游六花Image`.
+    static let 小鸟游六花Image = ImageResource(bundle: _R.hostingBundle, name: "小鸟游六花Image")
+    /// Image `尼禄Image`.
+    static let 尼禄Image = ImageResource(bundle: _R.hostingBundle, name: "尼禄Image")
+    /// Image `岛风Image`.
+    static let 岛风Image = ImageResource(bundle: _R.hostingBundle, name: "岛风Image")
+    /// Image `岩石巨像Image`.
+    static let 岩石巨像Image = ImageResource(bundle: _R.hostingBundle, name: "岩石巨像Image")
+    /// Image `左二少Image`.
+    static let 左二少Image = ImageResource(bundle: _R.hostingBundle, name: "左二少Image")
+    /// Image `巴依老爷Image`.
+    static let 巴依老爷Image = ImageResource(bundle: _R.hostingBundle, name: "巴依老爷Image")
+    /// Image `巴麻美Image`.
+    static let 巴麻美Image = ImageResource(bundle: _R.hostingBundle, name: "巴麻美Image")
+    /// Image `平天大圣Image`.
+    static let 平天大圣Image = ImageResource(bundle: _R.hostingBundle, name: "平天大圣Image")
+    /// Image `幻刺·D·露西Image`.
+    static let 幻刺D露西Image = ImageResource(bundle: _R.hostingBundle, name: "幻刺·D·露西Image")
+    /// Image `幻刺·L·莉莉Image`.
+    static let 幻刺L莉莉Image = ImageResource(bundle: _R.hostingBundle, name: "幻刺·L·莉莉Image")
+    /// Image `库奇Image`.
+    static let 库奇Image = ImageResource(bundle: _R.hostingBundle, name: "库奇Image")
+    /// Image `张飞Image`.
+    static let 张飞Image = ImageResource(bundle: _R.hostingBundle, name: "张飞Image")
+    /// Image `强袭自由Image`.
+    static let 强袭自由Image = ImageResource(bundle: _R.hostingBundle, name: "强袭自由Image")
+    /// Image `影舞者Image`.
+    static let 影舞者Image = ImageResource(bundle: _R.hostingBundle, name: "影舞者Image")
+    /// Image `御坂美琴Image`.
+    static let 御坂美琴Image = ImageResource(bundle: _R.hostingBundle, name: "御坂美琴Image")
+    /// Image `我受罗Image`.
+    static let 我受罗Image = ImageResource(bundle: _R.hostingBundle, name: "我受罗Image")
+    /// Image `战士娃Image`.
+    static let 战士娃Image = ImageResource(bundle: _R.hostingBundle, name: "战士娃Image")
+    /// Image `战斗暴龙兽Image`.
+    static let 战斗暴龙兽Image = ImageResource(bundle: _R.hostingBundle, name: "战斗暴龙兽Image")
+    /// Image `捕鱼达人Image`.
+    static let 捕鱼达人Image = ImageResource(bundle: _R.hostingBundle, name: "捕鱼达人Image")
+    /// Image `敌法师Image`.
+    static let 敌法师Image = ImageResource(bundle: _R.hostingBundle, name: "敌法师Image")
+    /// Image `斧王Image`.
+    static let 斧王Image = ImageResource(bundle: _R.hostingBundle, name: "斧王Image")
+    /// Image `时崎狂三Image`.
+    static let 时崎狂三Image = ImageResource(bundle: _R.hostingBundle, name: "时崎狂三Image")
+    /// Image `晓美焰Image`.
+    static let 晓美焰Image = ImageResource(bundle: _R.hostingBundle, name: "晓美焰Image")
+    /// Image `暴风狂斧Image`.
+    static let 暴风狂斧Image = ImageResource(bundle: _R.hostingBundle, name: "暴风狂斧Image")
+    /// Image `曾小贤Image`.
+    static let 曾小贤Image = ImageResource(bundle: _R.hostingBundle, name: "曾小贤Image")
+    /// Image `月之女祭司Image`.
+    static let 月之女祭司Image = ImageResource(bundle: _R.hostingBundle, name: "月之女祭司Image")
+    /// Image `朝田诗乃Image`.
+    static let 朝田诗乃Image = ImageResource(bundle: _R.hostingBundle, name: "朝田诗乃Image")
+    /// Image `杀生丸Image`.
+    static let 杀生丸Image = ImageResource(bundle: _R.hostingBundle, name: "杀生丸Image")
+    /// Image `李小狼Image`.
+    static let 李小狼Image = ImageResource(bundle: _R.hostingBundle, name: "李小狼Image")
+    /// Image `柏崎星奈Image`.
+    static let 柏崎星奈Image = ImageResource(bundle: _R.hostingBundle, name: "柏崎星奈Image")
+    /// Image `栗山未来Image`.
+    static let 栗山未来Image = ImageResource(bundle: _R.hostingBundle, name: "栗山未来Image")
+    /// Image `格雷Image`.
+    static let 格雷Image = ImageResource(bundle: _R.hostingBundle, name: "格雷Image")
+    /// Image `桂木桂马Image`.
+    static let 桂木桂马Image = ImageResource(bundle: _R.hostingBundle, name: "桂木桂马Image")
+    /// Image `桐人Image`.
+    static let 桐人Image = ImageResource(bundle: _R.hostingBundle, name: "桐人Image")
+    /// Image `梦梦Image`.
+    static let 梦梦Image = ImageResource(bundle: _R.hostingBundle, name: "梦梦Image")
+    /// Image `楪祈Image`.
+    static let 楪祈Image = ImageResource(bundle: _R.hostingBundle, name: "楪祈Image")
+    /// Image `樱满集Image`.
+    static let 樱满集Image = ImageResource(bundle: _R.hostingBundle, name: "樱满集Image")
+    /// Image `死亡骑士Image`.
+    static let 死亡骑士Image = ImageResource(bundle: _R.hostingBundle, name: "死亡骑士Image")
+    /// Image `死神Image`.
+    static let 死神Image = ImageResource(bundle: _R.hostingBundle, name: "死神Image")
+    /// Image `江户川柯南Image`.
+    static let 江户川柯南Image = ImageResource(bundle: _R.hostingBundle, name: "江户川柯南Image")
+    /// Image `沙僧Image`.
+    static let 沙僧Image = ImageResource(bundle: _R.hostingBundle, name: "沙僧Image")
+    /// Image `沢田纲吉Image`.
+    static let 沢田纲吉Image = ImageResource(bundle: _R.hostingBundle, name: "沢田纲吉Image")
+    /// Image `涅普顿Image`.
+    static let 涅普顿Image = ImageResource(bundle: _R.hostingBundle, name: "涅普顿Image")
+    /// Image `深渊之眼Image`.
+    static let 深渊之眼Image = ImageResource(bundle: _R.hostingBundle, name: "深渊之眼Image")
+    /// Image `火拳·SImage`.
+    static let 火拳SImage = ImageResource(bundle: _R.hostingBundle, name: "火拳·SImage")
+    /// Image `牧师娃Image`.
+    static let 牧师娃Image = ImageResource(bundle: _R.hostingBundle, name: "牧师娃Image")
+    /// Image `牧濑红莉栖Image`.
+    static let 牧濑红莉栖Image = ImageResource(bundle: _R.hostingBundle, name: "牧濑红莉栖Image")
+    /// Image `猎人娃Image`.
+    static let 猎人娃Image = ImageResource(bundle: _R.hostingBundle, name: "猎人娃Image")
+    /// Image `猪八戒Image`.
+    static let 猪八戒Image = ImageResource(bundle: _R.hostingBundle, name: "猪八戒Image")
+    /// Image `疾风之忍Image`.
+    static let 疾风之忍Image = ImageResource(bundle: _R.hostingBundle, name: "疾风之忍Image")
+    /// Image `痛苦女王Image`.
+    static let 痛苦女王Image = ImageResource(bundle: _R.hostingBundle, name: "痛苦女王Image")
+    /// Image `白井黑子Image`.
+    static let 白井黑子Image = ImageResource(bundle: _R.hostingBundle, name: "白井黑子Image")
+    /// Image `白岩射手Image`.
+    static let 白岩射手Image = ImageResource(bundle: _R.hostingBundle, name: "白岩射手Image")
+    /// Image `盗贼娃Image`.
+    static let 盗贼娃Image = ImageResource(bundle: _R.hostingBundle, name: "盗贼娃Image")
+    /// Image `神目黑刀Image`.
+    static let 神目黑刀Image = ImageResource(bundle: _R.hostingBundle, name: "神目黑刀Image")
+    /// Image `空条承太郎Image`.
+    static let 空条承太郎Image = ImageResource(bundle: _R.hostingBundle, name: "空条承太郎Image")
+    /// Image `立华奏Image`.
+    static let 立华奏Image = ImageResource(bundle: _R.hostingBundle, name: "立华奏Image")
+    /// Image `纏流子Image`.
+    static let 纏流子Image = ImageResource(bundle: _R.hostingBundle, name: "纏流子Image")
+    /// Image `纳兹Image`.
+    static let 纳兹Image = ImageResource(bundle: _R.hostingBundle, name: "纳兹Image")
+    /// Image `结城明日奈Image`.
+    static let 结城明日奈Image = ImageResource(bundle: _R.hostingBundle, name: "结城明日奈Image")
+    /// Image `绯村剑心Image`.
+    static let 绯村剑心Image = ImageResource(bundle: _R.hostingBundle, name: "绯村剑心Image")
+    /// Image `缇米Image`.
+    static let 缇米Image = ImageResource(bundle: _R.hostingBundle, name: "缇米Image")
+    /// Image `美树沙耶加Image`.
+    static let 美树沙耶加Image = ImageResource(bundle: _R.hostingBundle, name: "美树沙耶加Image")
+    /// Image `美猴王Image`.
+    static let 美猴王Image = ImageResource(bundle: _R.hostingBundle, name: "美猴王Image")
+    /// Image `胡子船长Image`.
+    static let 胡子船长Image = ImageResource(bundle: _R.hostingBundle, name: "胡子船长Image")
+    /// Image `舰队统帅Image`.
+    static let 舰队统帅Image = ImageResource(bundle: _R.hostingBundle, name: "舰队统帅Image")
+    /// Image `草帽小子Image`.
+    static let 草帽小子Image = ImageResource(bundle: _R.hostingBundle, name: "草帽小子Image")
+    /// Image `菲特Image`.
+    static let 菲特Image = ImageResource(bundle: _R.hostingBundle, name: "菲特Image")
+    /// Image `萨菲罗斯Image`.
+    static let 萨菲罗斯Image = ImageResource(bundle: _R.hostingBundle, name: "萨菲罗斯Image")
+    /// Image `蒂塔Image`.
+    static let 蒂塔Image = ImageResource(bundle: _R.hostingBundle, name: "蒂塔Image")
+    /// Image `蛇叔Image`.
+    static let 蛇叔Image = ImageResource(bundle: _R.hostingBundle, name: "蛇叔Image")
+    /// Image `蛇血舞姬Image`.
+    static let 蛇血舞姬Image = ImageResource(bundle: _R.hostingBundle, name: "蛇血舞姬Image")
+    /// Image `蛮锤勇士Image`.
+    static let 蛮锤勇士Image = ImageResource(bundle: _R.hostingBundle, name: "蛮锤勇士Image")
+    /// Image `记忆金属Image`.
+    static let 记忆金属Image = ImageResource(bundle: _R.hostingBundle, name: "记忆金属Image")
+    /// Image `诱宵美九Image`.
+    static let 诱宵美九Image = ImageResource(bundle: _R.hostingBundle, name: "诱宵美九Image")
+    /// Image `诸葛亮Image`.
+    static let 诸葛亮Image = ImageResource(bundle: _R.hostingBundle, name: "诸葛亮Image")
+    /// Image `诺瓦露Image`.
+    static let 诺瓦露Image = ImageResource(bundle: _R.hostingBundle, name: "诺瓦露Image")
+    /// Image `貂蝉Image`.
+    static let 貂蝉Image = ImageResource(bundle: _R.hostingBundle, name: "貂蝉Image")
+    /// Image `远坂凛Image`.
+    static let 远坂凛Image = ImageResource(bundle: _R.hostingBundle, name: "远坂凛Image")
+    /// Image `金木研Image`.
+    static let 金木研Image = ImageResource(bundle: _R.hostingBundle, name: "金木研Image")
+    /// Image `金色之暗Image`.
+    static let 金色之暗Image = ImageResource(bundle: _R.hostingBundle, name: "金色之暗Image")
+    /// Image `陈美嘉Image`.
+    static let 陈美嘉Image = ImageResource(bundle: _R.hostingBundle, name: "陈美嘉Image")
+    /// Image `雅典娜Image`.
+    static let 雅典娜Image = ImageResource(bundle: _R.hostingBundle, name: "雅典娜Image")
+    /// Image `雷霆之怒Image`.
+    static let 雷霆之怒Image = ImageResource(bundle: _R.hostingBundle, name: "雷霆之怒Image")
+    /// Image `雾影射手Image`.
+    static let 雾影射手Image = ImageResource(bundle: _R.hostingBundle, name: "雾影射手Image")
+    /// Image `霍比侦查兵Image`.
+    static let 霍比侦查兵Image = ImageResource(bundle: _R.hostingBundle, name: "霍比侦查兵Image")
+    /// Image `青丘国主Image`.
+    static let 青丘国主Image = ImageResource(bundle: _R.hostingBundle, name: "青丘国主Image")
+    /// Image `食之忍者Image`.
+    static let 食之忍者Image = ImageResource(bundle: _R.hostingBundle, name: "食之忍者Image")
+    /// Image `骑士娃Image`.
+    static let 骑士娃Image = ImageResource(bundle: _R.hostingBundle, name: "骑士娃Image")
+    /// Image `高町奈叶Image`.
+    static let 高町奈叶Image = ImageResource(bundle: _R.hostingBundle, name: "高町奈叶Image")
+    /// Image `魂魄妖梦Image`.
+    static let 魂魄妖梦Image = ImageResource(bundle: _R.hostingBundle, name: "魂魄妖梦Image")
+    /// Image `魔导少女Image`.
+    static let 魔导少女Image = ImageResource(bundle: _R.hostingBundle, name: "魔导少女Image")
+    /// Image `鸢一折纸Image`.
+    static let 鸢一折纸Image = ImageResource(bundle: _R.hostingBundle, name: "鸢一折纸Image")
+    /// Image `鹿目圆香Image`.
+    static let 鹿目圆香Image = ImageResource(bundle: _R.hostingBundle, name: "鹿目圆香Image")
+    /// Image `黑Image`.
+    static let 黑Image = ImageResource(bundle: _R.hostingBundle, name: "黑Image")
+    /// Image `黑岩射手Image`.
+    static let 黑岩射手Image = ImageResource(bundle: _R.hostingBundle, name: "黑岩射手Image")
+    /// Image `黑雪姬Image`.
+    static let 黑雪姬Image = ImageResource(bundle: _R.hostingBundle, name: "黑雪姬Image")
+    /// Image `齐天小剩Image`.
+    static let 齐天小剩Image = ImageResource(bundle: _R.hostingBundle, name: "齐天小剩Image")
+    
+    /// `UIImage(named: "ArcherImage", bundle: ..., traitCollection: ...)`
+    static func archerImage(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.archerImage, compatibleWithTraitCollection: traitCollection)
+    }
     
     /// `UIImage(named: "armored_boot", bundle: ..., traitCollection: ...)`
     static func armored_boot(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
@@ -7541,6 +7830,11 @@ struct R: Rswift.Validatable {
       return UIImage(resource: R.image.rook, compatibleWithTraitCollection: traitCollection)
     }
     
+    /// `UIImage(named: "SaberImage", bundle: ..., traitCollection: ...)`
+    static func saberImage(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.saberImage, compatibleWithTraitCollection: traitCollection)
+    }
+    
     /// `UIImage(named: "sword", bundle: ..., traitCollection: ...)`
     static func sword(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.sword, compatibleWithTraitCollection: traitCollection)
@@ -7574,6 +7868,706 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "win", bundle: ..., traitCollection: ...)`
     static func win(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.win, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "一方通行Image", bundle: ..., traitCollection: ...)`
+    static func 一方通行Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.一方通行Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "三笠Image", bundle: ..., traitCollection: ...)`
+    static func 三笠Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.三笠Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "不知火舞Image", bundle: ..., traitCollection: ...)`
+    static func 不知火舞Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.不知火舞Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "两仪式Image", bundle: ..., traitCollection: ...)`
+    static func 两仪式Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.两仪式Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "乔帮主Image", bundle: ..., traitCollection: ...)`
+    static func 乔帮主Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.乔帮主Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "五更琉璃Image", bundle: ..., traitCollection: ...)`
+    static func 五更琉璃Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.五更琉璃Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "五河琴里Image", bundle: ..., traitCollection: ...)`
+    static func 五河琴里Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.五河琴里Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "亚里亚Image", bundle: ..., traitCollection: ...)`
+    static func 亚里亚Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.亚里亚Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "亡灵女王Image", bundle: ..., traitCollection: ...)`
+    static func 亡灵女王Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.亡灵女王Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "伊卡洛斯Image", bundle: ..., traitCollection: ...)`
+    static func 伊卡洛斯Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.伊卡洛斯Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "伊莉雅Image", bundle: ..., traitCollection: ...)`
+    static func 伊莉雅Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.伊莉雅Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "伊莎Image", bundle: ..., traitCollection: ...)`
+    static func 伊莎Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.伊莎Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "佐仓杏子Image", bundle: ..., traitCollection: ...)`
+    static func 佐仓杏子Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.佐仓杏子Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "佐罗Image", bundle: ..., traitCollection: ...)`
+    static func 佐罗Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.佐罗Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "克子Image", bundle: ..., traitCollection: ...)`
+    static func 克子Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.克子Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "八云紫Image", bundle: ..., traitCollection: ...)`
+    static func 八云紫Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.八云紫Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "关羽Image", bundle: ..., traitCollection: ...)`
+    static func 关羽Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.关羽Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "初音未来Image", bundle: ..., traitCollection: ...)`
+    static func 初音未来Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.初音未来Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "化形战士Image", bundle: ..., traitCollection: ...)`
+    static func 化形战士Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.化形战士Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "匹诺曹Image", bundle: ..., traitCollection: ...)`
+    static func 匹诺曹Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.匹诺曹Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "十六夜咲夜Image", bundle: ..., traitCollection: ...)`
+    static func 十六夜咲夜Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.十六夜咲夜Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "博丽灵梦Image", bundle: ..., traitCollection: ...)`
+    static func 博丽灵梦Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.博丽灵梦Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "卡殿下Image", bundle: ..., traitCollection: ...)`
+    static func 卡殿下Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.卡殿下Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "变异魔菇Image", bundle: ..., traitCollection: ...)`
+    static func 变异魔菇Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.变异魔菇Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "古娜Image", bundle: ..., traitCollection: ...)`
+    static func 古娜Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.古娜Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "吉尔加美什Image", bundle: ..., traitCollection: ...)`
+    static func 吉尔加美什Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.吉尔加美什Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "吕子乔Image", bundle: ..., traitCollection: ...)`
+    static func 吕子乔Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.吕子乔Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "吕布Image", bundle: ..., traitCollection: ...)`
+    static func 吕布Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.吕布Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "唐僧Image", bundle: ..., traitCollection: ...)`
+    static func 唐僧Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.唐僧Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "四糸乃Image", bundle: ..., traitCollection: ...)`
+    static func 四糸乃Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.四糸乃Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "坂田银时Image", bundle: ..., traitCollection: ...)`
+    static func 坂田银时Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.坂田银时Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "垃圾毁灭者Image", bundle: ..., traitCollection: ...)`
+    static func 垃圾毁灭者Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.垃圾毁灭者Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "夏娜Image", bundle: ..., traitCollection: ...)`
+    static func 夏娜Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.夏娜Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "夏洛特Image", bundle: ..., traitCollection: ...)`
+    static func 夏洛特Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.夏洛特Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "夜刀神十香Image", bundle: ..., traitCollection: ...)`
+    static func 夜刀神十香Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.夜刀神十香Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "夜夜Image", bundle: ..., traitCollection: ...)`
+    static func 夜夜Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.夜夜Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "大傻Image", bundle: ..., traitCollection: ...)`
+    static func 大傻Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.大傻Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "奇犽Image", bundle: ..., traitCollection: ...)`
+    static func 奇犽Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.奇犽Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "奈亚子Image", bundle: ..., traitCollection: ...)`
+    static func 奈亚子Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.奈亚子Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "奥特曼Image", bundle: ..., traitCollection: ...)`
+    static func 奥特曼Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.奥特曼Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "姬丝秀忒Image", bundle: ..., traitCollection: ...)`
+    static func 姬丝秀忒Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.姬丝秀忒Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "小悟空Image", bundle: ..., traitCollection: ...)`
+    static func 小悟空Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.小悟空Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "小鸟游六花Image", bundle: ..., traitCollection: ...)`
+    static func 小鸟游六花Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.小鸟游六花Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "尼禄Image", bundle: ..., traitCollection: ...)`
+    static func 尼禄Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.尼禄Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "岛风Image", bundle: ..., traitCollection: ...)`
+    static func 岛风Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.岛风Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "岩石巨像Image", bundle: ..., traitCollection: ...)`
+    static func 岩石巨像Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.岩石巨像Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "左二少Image", bundle: ..., traitCollection: ...)`
+    static func 左二少Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.左二少Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "巴依老爷Image", bundle: ..., traitCollection: ...)`
+    static func 巴依老爷Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.巴依老爷Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "巴麻美Image", bundle: ..., traitCollection: ...)`
+    static func 巴麻美Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.巴麻美Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "平天大圣Image", bundle: ..., traitCollection: ...)`
+    static func 平天大圣Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.平天大圣Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "幻刺·D·露西Image", bundle: ..., traitCollection: ...)`
+    static func 幻刺D露西Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.幻刺D露西Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "幻刺·L·莉莉Image", bundle: ..., traitCollection: ...)`
+    static func 幻刺L莉莉Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.幻刺L莉莉Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "库奇Image", bundle: ..., traitCollection: ...)`
+    static func 库奇Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.库奇Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "张飞Image", bundle: ..., traitCollection: ...)`
+    static func 张飞Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.张飞Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "强袭自由Image", bundle: ..., traitCollection: ...)`
+    static func 强袭自由Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.强袭自由Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "影舞者Image", bundle: ..., traitCollection: ...)`
+    static func 影舞者Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.影舞者Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "御坂美琴Image", bundle: ..., traitCollection: ...)`
+    static func 御坂美琴Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.御坂美琴Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "我受罗Image", bundle: ..., traitCollection: ...)`
+    static func 我受罗Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.我受罗Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "战士娃Image", bundle: ..., traitCollection: ...)`
+    static func 战士娃Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.战士娃Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "战斗暴龙兽Image", bundle: ..., traitCollection: ...)`
+    static func 战斗暴龙兽Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.战斗暴龙兽Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "捕鱼达人Image", bundle: ..., traitCollection: ...)`
+    static func 捕鱼达人Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.捕鱼达人Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "敌法师Image", bundle: ..., traitCollection: ...)`
+    static func 敌法师Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.敌法师Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "斧王Image", bundle: ..., traitCollection: ...)`
+    static func 斧王Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.斧王Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "时崎狂三Image", bundle: ..., traitCollection: ...)`
+    static func 时崎狂三Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.时崎狂三Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "晓美焰Image", bundle: ..., traitCollection: ...)`
+    static func 晓美焰Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.晓美焰Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "暴风狂斧Image", bundle: ..., traitCollection: ...)`
+    static func 暴风狂斧Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.暴风狂斧Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "曾小贤Image", bundle: ..., traitCollection: ...)`
+    static func 曾小贤Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.曾小贤Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "月之女祭司Image", bundle: ..., traitCollection: ...)`
+    static func 月之女祭司Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.月之女祭司Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "朝田诗乃Image", bundle: ..., traitCollection: ...)`
+    static func 朝田诗乃Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.朝田诗乃Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "杀生丸Image", bundle: ..., traitCollection: ...)`
+    static func 杀生丸Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.杀生丸Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "李小狼Image", bundle: ..., traitCollection: ...)`
+    static func 李小狼Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.李小狼Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "柏崎星奈Image", bundle: ..., traitCollection: ...)`
+    static func 柏崎星奈Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.柏崎星奈Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "栗山未来Image", bundle: ..., traitCollection: ...)`
+    static func 栗山未来Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.栗山未来Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "格雷Image", bundle: ..., traitCollection: ...)`
+    static func 格雷Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.格雷Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "桂木桂马Image", bundle: ..., traitCollection: ...)`
+    static func 桂木桂马Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.桂木桂马Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "桐人Image", bundle: ..., traitCollection: ...)`
+    static func 桐人Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.桐人Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "梦梦Image", bundle: ..., traitCollection: ...)`
+    static func 梦梦Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.梦梦Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "楪祈Image", bundle: ..., traitCollection: ...)`
+    static func 楪祈Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.楪祈Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "樱满集Image", bundle: ..., traitCollection: ...)`
+    static func 樱满集Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.樱满集Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "死亡骑士Image", bundle: ..., traitCollection: ...)`
+    static func 死亡骑士Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.死亡骑士Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "死神Image", bundle: ..., traitCollection: ...)`
+    static func 死神Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.死神Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "江户川柯南Image", bundle: ..., traitCollection: ...)`
+    static func 江户川柯南Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.江户川柯南Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "沙僧Image", bundle: ..., traitCollection: ...)`
+    static func 沙僧Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.沙僧Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "沢田纲吉Image", bundle: ..., traitCollection: ...)`
+    static func 沢田纲吉Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.沢田纲吉Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "涅普顿Image", bundle: ..., traitCollection: ...)`
+    static func 涅普顿Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.涅普顿Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "深渊之眼Image", bundle: ..., traitCollection: ...)`
+    static func 深渊之眼Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.深渊之眼Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "火拳·SImage", bundle: ..., traitCollection: ...)`
+    static func 火拳SImage(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.火拳SImage, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "牧师娃Image", bundle: ..., traitCollection: ...)`
+    static func 牧师娃Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.牧师娃Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "牧濑红莉栖Image", bundle: ..., traitCollection: ...)`
+    static func 牧濑红莉栖Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.牧濑红莉栖Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "猎人娃Image", bundle: ..., traitCollection: ...)`
+    static func 猎人娃Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.猎人娃Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "猪八戒Image", bundle: ..., traitCollection: ...)`
+    static func 猪八戒Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.猪八戒Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "疾风之忍Image", bundle: ..., traitCollection: ...)`
+    static func 疾风之忍Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.疾风之忍Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "痛苦女王Image", bundle: ..., traitCollection: ...)`
+    static func 痛苦女王Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.痛苦女王Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "白井黑子Image", bundle: ..., traitCollection: ...)`
+    static func 白井黑子Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.白井黑子Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "白岩射手Image", bundle: ..., traitCollection: ...)`
+    static func 白岩射手Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.白岩射手Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "盗贼娃Image", bundle: ..., traitCollection: ...)`
+    static func 盗贼娃Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.盗贼娃Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "神目黑刀Image", bundle: ..., traitCollection: ...)`
+    static func 神目黑刀Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.神目黑刀Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "空条承太郎Image", bundle: ..., traitCollection: ...)`
+    static func 空条承太郎Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.空条承太郎Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "立华奏Image", bundle: ..., traitCollection: ...)`
+    static func 立华奏Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.立华奏Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "纏流子Image", bundle: ..., traitCollection: ...)`
+    static func 纏流子Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.纏流子Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "纳兹Image", bundle: ..., traitCollection: ...)`
+    static func 纳兹Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.纳兹Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "结城明日奈Image", bundle: ..., traitCollection: ...)`
+    static func 结城明日奈Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.结城明日奈Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "绯村剑心Image", bundle: ..., traitCollection: ...)`
+    static func 绯村剑心Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.绯村剑心Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "缇米Image", bundle: ..., traitCollection: ...)`
+    static func 缇米Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.缇米Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "美树沙耶加Image", bundle: ..., traitCollection: ...)`
+    static func 美树沙耶加Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.美树沙耶加Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "美猴王Image", bundle: ..., traitCollection: ...)`
+    static func 美猴王Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.美猴王Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "胡子船长Image", bundle: ..., traitCollection: ...)`
+    static func 胡子船长Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.胡子船长Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "舰队统帅Image", bundle: ..., traitCollection: ...)`
+    static func 舰队统帅Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.舰队统帅Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "草帽小子Image", bundle: ..., traitCollection: ...)`
+    static func 草帽小子Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.草帽小子Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "菲特Image", bundle: ..., traitCollection: ...)`
+    static func 菲特Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.菲特Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "萨菲罗斯Image", bundle: ..., traitCollection: ...)`
+    static func 萨菲罗斯Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.萨菲罗斯Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "蒂塔Image", bundle: ..., traitCollection: ...)`
+    static func 蒂塔Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.蒂塔Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "蛇叔Image", bundle: ..., traitCollection: ...)`
+    static func 蛇叔Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.蛇叔Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "蛇血舞姬Image", bundle: ..., traitCollection: ...)`
+    static func 蛇血舞姬Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.蛇血舞姬Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "蛮锤勇士Image", bundle: ..., traitCollection: ...)`
+    static func 蛮锤勇士Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.蛮锤勇士Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "记忆金属Image", bundle: ..., traitCollection: ...)`
+    static func 记忆金属Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.记忆金属Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "诱宵美九Image", bundle: ..., traitCollection: ...)`
+    static func 诱宵美九Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.诱宵美九Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "诸葛亮Image", bundle: ..., traitCollection: ...)`
+    static func 诸葛亮Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.诸葛亮Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "诺瓦露Image", bundle: ..., traitCollection: ...)`
+    static func 诺瓦露Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.诺瓦露Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "貂蝉Image", bundle: ..., traitCollection: ...)`
+    static func 貂蝉Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.貂蝉Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "远坂凛Image", bundle: ..., traitCollection: ...)`
+    static func 远坂凛Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.远坂凛Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "金木研Image", bundle: ..., traitCollection: ...)`
+    static func 金木研Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.金木研Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "金色之暗Image", bundle: ..., traitCollection: ...)`
+    static func 金色之暗Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.金色之暗Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "陈美嘉Image", bundle: ..., traitCollection: ...)`
+    static func 陈美嘉Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.陈美嘉Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "雅典娜Image", bundle: ..., traitCollection: ...)`
+    static func 雅典娜Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.雅典娜Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "雷霆之怒Image", bundle: ..., traitCollection: ...)`
+    static func 雷霆之怒Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.雷霆之怒Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "雾影射手Image", bundle: ..., traitCollection: ...)`
+    static func 雾影射手Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.雾影射手Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "霍比侦查兵Image", bundle: ..., traitCollection: ...)`
+    static func 霍比侦查兵Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.霍比侦查兵Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "青丘国主Image", bundle: ..., traitCollection: ...)`
+    static func 青丘国主Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.青丘国主Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "食之忍者Image", bundle: ..., traitCollection: ...)`
+    static func 食之忍者Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.食之忍者Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "骑士娃Image", bundle: ..., traitCollection: ...)`
+    static func 骑士娃Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.骑士娃Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "高町奈叶Image", bundle: ..., traitCollection: ...)`
+    static func 高町奈叶Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.高町奈叶Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "魂魄妖梦Image", bundle: ..., traitCollection: ...)`
+    static func 魂魄妖梦Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.魂魄妖梦Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "魔导少女Image", bundle: ..., traitCollection: ...)`
+    static func 魔导少女Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.魔导少女Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "鸢一折纸Image", bundle: ..., traitCollection: ...)`
+    static func 鸢一折纸Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.鸢一折纸Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "鹿目圆香Image", bundle: ..., traitCollection: ...)`
+    static func 鹿目圆香Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.鹿目圆香Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "黑Image", bundle: ..., traitCollection: ...)`
+    static func 黑Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.黑Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "黑岩射手Image", bundle: ..., traitCollection: ...)`
+    static func 黑岩射手Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.黑岩射手Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "黑雪姬Image", bundle: ..., traitCollection: ...)`
+    static func 黑雪姬Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.黑雪姬Image, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "齐天小剩Image", bundle: ..., traitCollection: ...)`
+    static func 齐天小剩Image(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.齐天小剩Image, compatibleWithTraitCollection: traitCollection)
     }
     
     private init() {}
