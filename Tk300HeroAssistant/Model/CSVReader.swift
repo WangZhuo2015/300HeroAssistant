@@ -25,7 +25,9 @@ class CSVReader {
                 let dataArray = csv.rows.map({ (dic:[String:String]) -> T in
                     let data = T()
                     dic.forEach({ (key,value) in
-                        data.setValue(value, forKey: key)
+                        if key != ""{
+                            data.setValue(value, forKey: key)
+                        }
                     })
                     return data
                 })

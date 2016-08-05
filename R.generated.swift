@@ -16,7 +16,7 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 17 files.
+  /// This `R.file` struct is generated, and contains static references to 14 files.
   struct file {
     /// Resource file `Bugs`.
     static let bugs = FileResource(bundle: _R.hostingBundle, name: "Bugs", pathExtension: "")
@@ -42,16 +42,10 @@ struct R: Rswift.Validatable {
     static let infoPlist = FileResource(bundle: _R.hostingBundle, name: "Info", pathExtension: "plist")
     /// Resource file `MKStoreKitConfigs.plist`.
     static let mKStoreKitConfigsPlist = FileResource(bundle: _R.hostingBundle, name: "MKStoreKitConfigs", pathExtension: "plist")
-    /// Resource file `object data.csv`.
-    static let objectDataCsv = FileResource(bundle: _R.hostingBundle, name: "object data", pathExtension: "csv")
     /// Resource file `openapi.txt`.
     static let openapiTxt = FileResource(bundle: _R.hostingBundle, name: "openapi", pathExtension: "txt")
     /// Resource file `skill data.csv`.
     static let skillDataCsv = FileResource(bundle: _R.hostingBundle, name: "skill data", pathExtension: "csv")
-    /// Resource file `合成所需.csv`.
-    static let 合成所需Csv = FileResource(bundle: _R.hostingBundle, name: "合成所需", pathExtension: "csv")
-    /// Resource file `进阶所需.csv`.
-    static let 进阶所需Csv = FileResource(bundle: _R.hostingBundle, name: "进阶所需", pathExtension: "csv")
     
     /// `bundle.URLForResource("Bugs", withExtension: "")`
     static func bugs(_: Void) -> NSURL? {
@@ -125,12 +119,6 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("object data", withExtension: "csv")`
-    static func objectDataCsv(_: Void) -> NSURL? {
-      let fileResource = R.file.objectDataCsv
-      return fileResource.bundle.URLForResource(fileResource)
-    }
-    
     /// `bundle.URLForResource("openapi", withExtension: "txt")`
     static func openapiTxt(_: Void) -> NSURL? {
       let fileResource = R.file.openapiTxt
@@ -143,18 +131,6 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("合成所需", withExtension: "csv")`
-    static func 合成所需Csv(_: Void) -> NSURL? {
-      let fileResource = R.file.合成所需Csv
-      return fileResource.bundle.URLForResource(fileResource)
-    }
-    
-    /// `bundle.URLForResource("进阶所需", withExtension: "csv")`
-    static func 进阶所需Csv(_: Void) -> NSURL? {
-      let fileResource = R.file.进阶所需Csv
-      return fileResource.bundle.URLForResource(fileResource)
-    }
-    
     private init() {}
   }
   
@@ -163,7 +139,7 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 1052 images.
+  /// This `R.image` struct is generated, and contains static references to 1062 images.
   struct image {
     /// Image `armored_boot`.
     static let armored_boot = ImageResource(bundle: _R.hostingBundle, name: "armored_boot")
@@ -1157,10 +1133,30 @@ struct R: Rswift.Validatable {
     static let hero14纳兹 = ImageResource(bundle: _R.hostingBundle, name: "hero-14纳兹")
     /// Image `hero-14雷炎龙形态`.
     static let hero14雷炎龙形态 = ImageResource(bundle: _R.hostingBundle, name: "hero-14雷炎龙形态")
+    /// Image `hero-150巨大化艾米载入`.
+    static let hero150巨大化艾米载入 = ImageResource(bundle: _R.hostingBundle, name: "hero-150巨大化艾米载入")
+    /// Image `hero-150缇米`.
+    static let hero150缇米 = ImageResource(bundle: _R.hostingBundle, name: "hero-150缇米")
+    /// Image `hero-150艾米的愤怒`.
+    static let hero150艾米的愤怒 = ImageResource(bundle: _R.hostingBundle, name: "hero-150艾米的愤怒")
+    /// Image `hero-150艾米的拥抱`.
+    static let hero150艾米的拥抱 = ImageResource(bundle: _R.hostingBundle, name: "hero-150艾米的拥抱")
+    /// Image `hero-150艾米的赐福`.
+    static let hero150艾米的赐福 = ImageResource(bundle: _R.hostingBundle, name: "hero-150艾米的赐福")
+    /// Image `hero-150艾米的过载`.
+    static let hero150艾米的过载 = ImageResource(bundle: _R.hostingBundle, name: "hero-150艾米的过载")
+    /// Image `hero-151奥义-开山`.
+    static let hero151奥义开山 = ImageResource(bundle: _R.hostingBundle, name: "hero-151奥义-开山")
+    /// Image `hero-151怪物猎人`.
+    static let hero151怪物猎人 = ImageResource(bundle: _R.hostingBundle, name: "hero-151怪物猎人")
     /// Image `hero-151柏崎星奈`.
     static let hero151柏崎星奈 = ImageResource(bundle: _R.hostingBundle, name: "hero-151柏崎星奈")
-    /// Image `hero-152缇米`.
-    static let hero152缇米 = ImageResource(bundle: _R.hostingBundle, name: "hero-152缇米")
+    /// Image `hero-151格挡反击`.
+    static let hero151格挡反击 = ImageResource(bundle: _R.hostingBundle, name: "hero-151格挡反击")
+    /// Image `hero-151蓄力斩`.
+    static let hero151蓄力斩 = ImageResource(bundle: _R.hostingBundle, name: "hero-151蓄力斩")
+    /// Image `hero-151飞扑`.
+    static let hero151飞扑 = ImageResource(bundle: _R.hostingBundle, name: "hero-151飞扑")
     /// Image `hero-15库洛牌`.
     static let hero15库洛牌 = ImageResource(bundle: _R.hostingBundle, name: "hero-15库洛牌")
     /// Image `hero-15斩炎`.
@@ -4750,14 +4746,64 @@ struct R: Rswift.Validatable {
       return UIImage(resource: R.image.hero14雷炎龙形态, compatibleWithTraitCollection: traitCollection)
     }
     
+    /// `UIImage(named: "hero-150巨大化艾米载入", bundle: ..., traitCollection: ...)`
+    static func hero150巨大化艾米载入(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero150巨大化艾米载入, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "hero-150缇米", bundle: ..., traitCollection: ...)`
+    static func hero150缇米(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero150缇米, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "hero-150艾米的愤怒", bundle: ..., traitCollection: ...)`
+    static func hero150艾米的愤怒(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero150艾米的愤怒, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "hero-150艾米的拥抱", bundle: ..., traitCollection: ...)`
+    static func hero150艾米的拥抱(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero150艾米的拥抱, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "hero-150艾米的赐福", bundle: ..., traitCollection: ...)`
+    static func hero150艾米的赐福(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero150艾米的赐福, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "hero-150艾米的过载", bundle: ..., traitCollection: ...)`
+    static func hero150艾米的过载(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero150艾米的过载, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "hero-151奥义-开山", bundle: ..., traitCollection: ...)`
+    static func hero151奥义开山(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero151奥义开山, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "hero-151怪物猎人", bundle: ..., traitCollection: ...)`
+    static func hero151怪物猎人(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero151怪物猎人, compatibleWithTraitCollection: traitCollection)
+    }
+    
     /// `UIImage(named: "hero-151柏崎星奈", bundle: ..., traitCollection: ...)`
     static func hero151柏崎星奈(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.hero151柏崎星奈, compatibleWithTraitCollection: traitCollection)
     }
     
-    /// `UIImage(named: "hero-152缇米", bundle: ..., traitCollection: ...)`
-    static func hero152缇米(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
-      return UIImage(resource: R.image.hero152缇米, compatibleWithTraitCollection: traitCollection)
+    /// `UIImage(named: "hero-151格挡反击", bundle: ..., traitCollection: ...)`
+    static func hero151格挡反击(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero151格挡反击, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "hero-151蓄力斩", bundle: ..., traitCollection: ...)`
+    static func hero151蓄力斩(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero151蓄力斩, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "hero-151飞扑", bundle: ..., traitCollection: ...)`
+    static func hero151飞扑(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.hero151飞扑, compatibleWithTraitCollection: traitCollection)
     }
     
     /// `UIImage(named: "hero-15库洛牌", bundle: ..., traitCollection: ...)`

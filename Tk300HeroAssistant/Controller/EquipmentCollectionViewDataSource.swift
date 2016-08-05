@@ -31,7 +31,7 @@ extension EquipmentViewController:UICollectionViewDelegate,UICollectionViewDataS
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(R.reuseIdentifier.equipmentCollectionViewCellIdentifier, forIndexPath: indexPath) ?? EquipmentCollectionViewCell()
-        cell.setContent(equipmentDataArray[indexPath.section * 4 + indexPath.row ])
+        cell.setContent(equipmentDataArray[indexPath.section * colPerRow + indexPath.row ])
         return cell
     }
     

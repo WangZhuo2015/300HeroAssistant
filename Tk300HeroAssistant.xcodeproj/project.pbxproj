@@ -48,11 +48,9 @@
 		3540E93E1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540E93D1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift */; };
 		3547D7C71D19BA77005C47A9 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3547D7C61D19BA77005C47A9 /* PlayerDetailViewController.swift */; };
 		354BC70C1CFD5233001E046C /* EquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC70B1CFD5233001E046C /* EquipmentViewController.swift */; };
-		354BC7121CFD5334001E046C /* object data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70F1CFD5334001E046C /* object data.csv */; };
 		354BC7141CFD534F001E046C /* EquipmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7131CFD534F001E046C /* EquipmentData.swift */; };
 		354BC73D1CFD59B9001E046C /* Tk300HeroAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC73C1CFD59B9001E046C /* Tk300HeroAssistantTests.swift */; };
 		354BC7451CFD59DF001E046C /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB3E051CEE2F2100FED888 /* CSVReader.swift */; };
-		354BC7461CFD59E4001E046C /* object data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 354BC70F1CFD5334001E046C /* object data.csv */; };
 		354BC7481CFD59E9001E046C /* hero data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA6C1CFB53B50046B653 /* hero data.csv */; };
 		354BC7491CFD59E9001E046C /* skill data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35F2CA6D1CFB53B50046B653 /* skill data.csv */; };
 		354BC74A1CFD59EE001E046C /* HeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E259D31CE87F2C005AEE4F /* HeroData.swift */; };
@@ -64,8 +62,6 @@
 		354BC7541CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */; };
 		354BC7561CFDC63A001E046C /* EquipmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */; };
 		354BC7581CFDE615001E046C /* CSVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A892BB1CE8B36300FDCCCD /* CSVDataManager.swift */; };
-		355306E51D040E9600065CDA /* 合成所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 355306E31D040E9600065CDA /* 合成所需.csv */; };
-		355306E61D040E9600065CDA /* 进阶所需.csv in Resources */ = {isa = PBXBuildFile; fileRef = 355306E41D040E9600065CDA /* 进阶所需.csv */; };
 		355306EA1D0428A500065CDA /* HorizontalMenuScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355306E91D0428A500065CDA /* HorizontalMenuScrollView.swift */; };
 		3558EC0F1D3BD2FE0063C22B /* MKStoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3558EC0E1D3BD2FE0063C22B /* MKStoreKit.m */; };
 		3558EC111D3BD34D0063C22B /* AdvancedAnalysisIAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3558EC101D3BD34D0063C22B /* AdvancedAnalysisIAP.swift */; };
@@ -191,7 +187,6 @@
 		3540E93D1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendAnalysisTableViewCell.swift; path = Cells/FriendAnalysisTableViewCell.swift; sourceTree = "<group>"; };
 		3547D7C61D19BA77005C47A9 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerDetailViewController.swift; path = Controller/AdvancedAnalysis/PlayerDetailViewController.swift; sourceTree = "<group>"; };
 		354BC70B1CFD5233001E046C /* EquipmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentViewController.swift; path = Controller/EquipmentViewController.swift; sourceTree = "<group>"; };
-		354BC70F1CFD5334001E046C /* object data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "object data.csv"; sourceTree = "<group>"; };
 		354BC7131CFD534F001E046C /* EquipmentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentData.swift; path = Tk300HeroAssistant/Model/Data/EquipmentData.swift; sourceTree = SOURCE_ROOT; };
 		354BC73A1CFD59B9001E046C /* Tk300HeroAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tk300HeroAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		354BC73C1CFD59B9001E046C /* Tk300HeroAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tk300HeroAssistantTests.swift; sourceTree = "<group>"; };
@@ -200,8 +195,6 @@
 		354BC7511CFDBB65001E046C /* EquipmentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentCollectionViewCell.swift; path = Cells/EquipmentCollectionViewCell.swift; sourceTree = "<group>"; };
 		354BC7531CFDBE04001E046C /* EquipmentCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentCollectionViewDataSource.swift; path = Controller/EquipmentCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		354BC7551CFDC63A001E046C /* EquipmentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentDetailViewController.swift; path = Controller/EquipmentDetailViewController.swift; sourceTree = "<group>"; };
-		355306E31D040E9600065CDA /* 合成所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "合成所需.csv"; sourceTree = "<group>"; };
-		355306E41D040E9600065CDA /* 进阶所需.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "进阶所需.csv"; sourceTree = "<group>"; };
 		355306E91D0428A500065CDA /* HorizontalMenuScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalMenuScrollView.swift; path = View/HorizontalMenuScrollView.swift; sourceTree = "<group>"; };
 		3558EC0D1D3BD2FE0063C22B /* MKStoreKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKStoreKit.h; path = MKStoreKit/MKStoreKit.h; sourceTree = "<group>"; };
 		3558EC0E1D3BD2FE0063C22B /* MKStoreKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKStoreKit.m; path = MKStoreKit/MKStoreKit.m; sourceTree = "<group>"; };
@@ -625,11 +618,8 @@
 			isa = PBXGroup;
 			children = (
 				3588C30B1D545CF5007DF189 /* equipment.json */,
-				355306E31D040E9600065CDA /* 合成所需.csv */,
-				355306E41D040E9600065CDA /* 进阶所需.csv */,
 				35F2CA6C1CFB53B50046B653 /* hero data.csv */,
 				35F2CA6D1CFB53B50046B653 /* skill data.csv */,
-				354BC70F1CFD5334001E046C /* object data.csv */,
 			);
 			name = LocalData;
 			sourceTree = "<group>";
@@ -880,7 +870,6 @@
 			files = (
 				354BC7481CFD59E9001E046C /* hero data.csv in Resources */,
 				354BC7491CFD59E9001E046C /* skill data.csv in Resources */,
-				354BC7461CFD59E4001E046C /* object data.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -890,12 +879,10 @@
 			files = (
 				35C811821D15A7940017A0F5 /* Info.plist in Resources */,
 				35C8118B1D15A7940017A0F5 /* feedback_add_image@2x.png in Resources */,
-				355306E51D040E9600065CDA /* 合成所需.csv in Resources */,
 				35FBA6321CDF701600A527B4 /* Hero.storyboard in Resources */,
 				35FBA6031CDF4E5C00A527B4 /* LaunchScreen.storyboard in Resources */,
 				35FBA60B1CDF4EA800A527B4 /* openapi.txt in Resources */,
 				3588C30E1D547CAA007DF189 /* Assets.xcassets in Resources */,
-				354BC7121CFD5334001E046C /* object data.csv in Resources */,
 				35C8118E1D15A7940017A0F5 /* feedback_bg_2@2x.png in Resources */,
 				3588C30C1D545CF5007DF189 /* equipment.json in Resources */,
 				35FBA62F1CDF6FE300A527B4 /* Match.storyboard in Resources */,
@@ -913,7 +900,6 @@
 				35F2CA6F1CFB53B50046B653 /* skill data.csv in Resources */,
 				35C8118C1D15A7940017A0F5 /* feedback_back@2x.png in Resources */,
 				35C811911D15A7940017A0F5 /* feedback_warning@2x.png in Resources */,
-				355306E61D040E9600065CDA /* 进阶所需.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

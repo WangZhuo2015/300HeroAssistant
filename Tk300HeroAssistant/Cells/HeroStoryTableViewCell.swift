@@ -31,7 +31,7 @@ class HeroStoryTableViewCell: UITableViewCell {
     
     func setContent(heroID:String,name:String,story:String){
         //没图片总比崩溃了好
-        heroImage.image = UIImage(named: "hero-" + heroID + name)
+        heroImage.image = DataImageManager.getHeroImageBy(name: name)
         if heroImage.image == nil {
             print("不存在的图片\("hero-" + heroID + name)")
         }
