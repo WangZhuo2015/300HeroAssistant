@@ -113,9 +113,9 @@ class HeroViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let VC = segue.destinationViewController as! HeroDetailViewController
         let indexPath = collectionView.indexPathsForSelectedItems()![0]
-        VC.hero = heroDataArray[indexPath.section*4 + indexPath.row]
+        VC.hero = heroDataArray[indexPath.section*colPerRow + indexPath.row]
         VC.skillArray = skillDataArray.filter({ (data) -> Bool in
-            data.id == heroDataArray[indexPath.section*4 + indexPath.row].id
+            data.id == heroDataArray[indexPath.section*colPerRow + indexPath.row].id
         })
     }
 }
