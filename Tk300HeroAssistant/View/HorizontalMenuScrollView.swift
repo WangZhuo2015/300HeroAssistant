@@ -50,7 +50,7 @@ class HorizontalMenuScrollView: UIScrollView {
         }
         
         for item in array{
-            let image = UIImage(named: item)
+            let image = DataImageManager.getEquipmentImageBy(id: item)
             print("显示装备图片,编号:" + item)
             let imageView  = UIImageView()
             imageView.snp_makeConstraints(closure: { (make) in

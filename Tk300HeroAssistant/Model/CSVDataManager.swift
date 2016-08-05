@@ -41,7 +41,6 @@ class CSVDataManager{
     }
     
     internal func loadEquipData(completionHandle:([EquipmentData])->Void) {
-        //CSVReader.loadDataFromCSV("object data", completionHandle: completionHandle)
         if equipmentDataDictionary != nil{
             completionHandle(equipmentDataArray!)
         }else{
@@ -57,13 +56,23 @@ class CSVDataManager{
     }
     
     
-    
+    //从文件中读取装备数据
     private func loadEquipmentDataDictionary(completionHandle:([String:EquipmentData])->Void) {
-        CSVReader.loadComplexDataFromCSV("object data", keyName: "id") { (objectDictionary: [String:EquipmentData]) in
-            CSVReader.loadComplexDataFromCSV("合成所需", keyName: "id", orginalDictionary: objectDictionary, arrayAttributeName: ["所需物品id"], completionHandle: { (combineDictionary) in
-                CSVReader.loadComplexDataFromCSV("进阶所需", keyName: "id", orginalDictionary: combineDictionary, arrayAttributeName: ["进阶物品id"], completionHandle: completionHandle)
-            })
-        }
+//        CSVReader.loadComplexDataFromCSV("object data", keyName: "id") { (objectDictionary: [String:EquipmentData]) in
+//            CSVReader.loadComplexDataFromCSV("合成所需", keyName: "id", orginalDictionary: objectDictionary, arrayAttributeName: ["所需物品id"], completionHandle: { (combineDictionary) in
+//                CSVReader.loadComplexDataFromCSV("进阶所需", keyName: "id", orginalDictionary: combineDictionary, arrayAttributeName: ["进阶物品id"], completionHandle: completionHandle)
+//            })
+//        }
+        let filePath = NSBundle.mainBundle().pathForResource("equipment", ofType: "json")
+        let rawData = NSData(contentsOfURL: NSURL(fileURLWithPath: filePath!))
+        let json = try! NSJSONSerialization.JSONObjectWithData(rawData!, options: NSJSONReadingOptions.MutableContainers) as! NSArray
+        var dic = [String:EquipmentData]()
+        json
+            .map{EquipmentJSON(fromDictionary: $0 as! NSDictionary)}
+            .map{EquipmentData(json: $0)}
+            //.reduce([], combine: {$0[String($1!.id!)] = $1})
+            .forEach{ dic[String($0!.id!)] = $0 }
+        completionHandle(dic)
     }
     
     

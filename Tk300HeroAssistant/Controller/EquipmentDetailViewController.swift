@@ -67,7 +67,7 @@ class EquipmentDetailViewController: UIViewController {
             self.setContent(self.currentEquipment!)
         }
         
-        equipmentImage.image = UIImage(named: equipmentData.id!)
+        equipmentImage.image = DataImageManager.getEquipmentImageBy(id: equipmentData.id!)
         equipmentName.text = " \(equipmentData.name!) "
         equipmentAttributeLabel.text = equipmentData.属性
         equipmentSkillLabel.text = equipmentData.装备技能

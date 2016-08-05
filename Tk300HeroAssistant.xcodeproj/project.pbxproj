@@ -74,6 +74,11 @@
 		356015341D0B2B5F006467E4 /* FriendAnalysisDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356015331D0B2B5F006467E4 /* FriendAnalysisDataSource.swift */; };
 		356F9CD21D07FAF00036E8D2 /* DataAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F9CD11D07FAF00036E8D2 /* DataAnalyzer.swift */; };
 		357758F71D0BF68B00CB0E55 /* IAPPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357758F61D0BF68B00CB0E55 /* IAPPart.swift */; };
+		3588C3051D54535A007DF189 /* DataImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3588C3041D54535A007DF189 /* DataImageManager.swift */; };
+		3588C3091D5454E9007DF189 /* EquipmentJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3588C3081D5454E9007DF189 /* EquipmentJSON.swift */; };
+		3588C30A1D5455D1007DF189 /* EquipmentJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3588C3081D5454E9007DF189 /* EquipmentJSON.swift */; };
+		3588C30C1D545CF5007DF189 /* equipment.json in Resources */ = {isa = PBXBuildFile; fileRef = 3588C30B1D545CF5007DF189 /* equipment.json */; };
+		3588C30E1D547CAA007DF189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3588C30D1D547CAA007DF189 /* Assets.xcassets */; };
 		358B36E21CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */; };
 		35A2DF9F1D5345B10075DF6A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2DF9E1D5345B10075DF6A /* UIColorExtension.swift */; };
 		35A2DFA11D53707C0075DF6A /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2DFA01D53707C0075DF6A /* UIDeviceExtension.swift */; };
@@ -115,7 +120,6 @@
 		35F4C2781D31011700A44787 /* ApplicationColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F4C2771D31011700A44787 /* ApplicationColorManager.swift */; };
 		35FBA5F91CDF4E5C00A527B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */; };
 		35FBA5FE1CDF4E5C00A527B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA5FC1CDF4E5C00A527B4 /* Main.storyboard */; };
-		35FBA6001CDF4E5C00A527B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */; };
 		35FBA6031CDF4E5C00A527B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA6011CDF4E5C00A527B4 /* LaunchScreen.storyboard */; };
 		35FBA60B1CDF4EA800A527B4 /* openapi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA60A1CDF4EA800A527B4 /* openapi.txt */; };
 		35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA61B1CDF51BF00A527B4 /* NirKxMenu.m */; };
@@ -207,6 +211,10 @@
 		356015331D0B2B5F006467E4 /* FriendAnalysisDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendAnalysisDataSource.swift; path = Controller/AdvancedAnalysis/FriendAnalysisDataSource.swift; sourceTree = "<group>"; };
 		356F9CD11D07FAF00036E8D2 /* DataAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataAnalyzer.swift; path = Tk300HeroAssistant/AdvancedAnalyzer/DataAnalyzer.swift; sourceTree = SOURCE_ROOT; };
 		357758F61D0BF68B00CB0E55 /* IAPPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IAPPart.swift; path = Controller/AdvancedAnalysis/IAPPart.swift; sourceTree = "<group>"; };
+		3588C3041D54535A007DF189 /* DataImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataImageManager.swift; path = Tk300HeroAssistant/Model/DataImageManager.swift; sourceTree = SOURCE_ROOT; };
+		3588C3081D5454E9007DF189 /* EquipmentJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentJSON.swift; path = Tk300HeroAssistant/Model/Data/EquipmentJSON.swift; sourceTree = SOURCE_ROOT; };
+		3588C30B1D545CF5007DF189 /* equipment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = equipment.json; sourceTree = "<group>"; };
+		3588C30D1D547CAA007DF189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		358B36E11CFECFCA00EE9A79 /* EquipmentSearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EquipmentSearchBarDelegate.swift; path = Controller/EquipmentSearchBarDelegate.swift; sourceTree = "<group>"; };
 		35A2DF9E1D5345B10075DF6A /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extension/UIColorExtension.swift; sourceTree = "<group>"; };
 		35A2DFA01D53707C0075DF6A /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDeviceExtension.swift; path = Extension/UIDeviceExtension.swift; sourceTree = "<group>"; };
@@ -261,7 +269,6 @@
 		35FBA5F51CDF4E5C00A527B4 /* 星尘盒子 for 300英雄.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "星尘盒子 for 300英雄.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35FBA5FD1CDF4E5C00A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35FBA6021CDF4E5C00A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35FBA6041CDF4E5C00A527B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35FBA60A1CDF4EA800A527B4 /* openapi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = openapi.txt; path = ../openapi.txt; sourceTree = "<group>"; };
@@ -609,6 +616,7 @@
 				350CCEDD1CEADBFE00D082EB /* SkillData.swift */,
 				350CCEDF1CEAE30500D082EB /* EquipCombineData.swift */,
 				354BC7131CFD534F001E046C /* EquipmentData.swift */,
+				3588C3081D5454E9007DF189 /* EquipmentJSON.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -616,6 +624,7 @@
 		35F2CA6B1CFB53A70046B653 /* LocalData */ = {
 			isa = PBXGroup;
 			children = (
+				3588C30B1D545CF5007DF189 /* equipment.json */,
 				355306E31D040E9600065CDA /* 合成所需.csv */,
 				355306E41D040E9600065CDA /* 进阶所需.csv */,
 				35F2CA6C1CFB53B50046B653 /* hero data.csv */,
@@ -659,8 +668,8 @@
 				35C811621D15A7610017A0F5 /* Bridging-Header.h */,
 				35FBA5F81CDF4E5C00A527B4 /* AppDelegate.swift */,
 				3558EC141D3BD51D0063C22B /* AppDelegate+initSetting.swift */,
-				35FBA5FF1CDF4E5C00A527B4 /* Assets.xcassets */,
 				35FBA6011CDF4E5C00A527B4 /* LaunchScreen.storyboard */,
+				3588C30D1D547CAA007DF189 /* Assets.xcassets */,
 				35FBA6041CDF4E5C00A527B4 /* Info.plist */,
 				35F2CA701CFB57060046B653 /* Bugs */,
 			);
@@ -710,6 +719,7 @@
 				35401A691CE830D900F0EDE2 /* Global.swift */,
 				351910631D0DCD0300FB0F0C /* AppManager.swift */,
 				35F4C2771D31011700A44787 /* ApplicationColorManager.swift */,
+				3588C3041D54535A007DF189 /* DataImageManager.swift */,
 			);
 			name = Model;
 			path = Network;
@@ -884,14 +894,15 @@
 				35FBA6321CDF701600A527B4 /* Hero.storyboard in Resources */,
 				35FBA6031CDF4E5C00A527B4 /* LaunchScreen.storyboard in Resources */,
 				35FBA60B1CDF4EA800A527B4 /* openapi.txt in Resources */,
+				3588C30E1D547CAA007DF189 /* Assets.xcassets in Resources */,
 				354BC7121CFD5334001E046C /* object data.csv in Resources */,
 				35C8118E1D15A7940017A0F5 /* feedback_bg_2@2x.png in Resources */,
+				3588C30C1D545CF5007DF189 /* equipment.json in Resources */,
 				35FBA62F1CDF6FE300A527B4 /* Match.storyboard in Resources */,
 				35F2CA711CFB57060046B653 /* Bugs in Resources */,
 				3558EC131D3BD3A20063C22B /* MKStoreKitConfigs.plist in Resources */,
 				354BC7501CFD5C0A001E046C /* Equipment.storyboard in Resources */,
 				35C8118F1D15A7940017A0F5 /* feedback_btn@2x.png in Resources */,
-				35FBA6001CDF4E5C00A527B4 /* Assets.xcassets in Resources */,
 				35C811921D15A7940017A0F5 /* LeanCloudFeedback.strings in Resources */,
 				35FBA6351CDF703A00A527B4 /* PersonalInfo.storyboard in Resources */,
 				3540E9281D0AD1F600E0FB66 /* AdvancedAnalysis.storyboard in Resources */,
@@ -1034,6 +1045,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3588C30A1D5455D1007DF189 /* EquipmentJSON.swift in Sources */,
 				354BC74A1CFD59EE001E046C /* HeroData.swift in Sources */,
 				354BC73D1CFD59B9001E046C /* Tk300HeroAssistantTests.swift in Sources */,
 				354BC7451CFD59DF001E046C /* CSVReader.swift in Sources */,
@@ -1119,6 +1131,7 @@
 				3540E93E1D0B186000E0FB66 /* FriendAnalysisTableViewCell.swift in Sources */,
 				35E259D41CE87F2C005AEE4F /* HeroData.swift in Sources */,
 				35A700B51CE7841A00808CD6 /* MatchHeaderView.swift in Sources */,
+				3588C3091D5454E9007DF189 /* EquipmentJSON.swift in Sources */,
 				354BC7141CFD534F001E046C /* EquipmentData.swift in Sources */,
 				3558EC151D3BD51D0063C22B /* AppDelegate+initSetting.swift in Sources */,
 				350CCEDE1CEADBFE00D082EB /* SkillData.swift in Sources */,
@@ -1127,6 +1140,7 @@
 				3501B2881D153F2500EB136B /* HeroWinRateAnalyzer.swift in Sources */,
 				353AF3221D2ACBED00822044 /* CrashViewController.swift in Sources */,
 				35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */,
+				3588C3051D54535A007DF189 /* DataImageManager.swift in Sources */,
 				35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */,
 				35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */,
 				35FD3BAC1D145C6B0048343D /* CarryDataSource.swift in Sources */,

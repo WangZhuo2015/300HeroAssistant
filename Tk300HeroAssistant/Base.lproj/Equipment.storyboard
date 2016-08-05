@@ -142,13 +142,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ohH-WM-B72">
-                                <rect key="frame" x="16" y="72" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="ZME-Qj-cpP"/>
-                                    <constraint firstAttribute="width" constant="80" id="aMI-3F-xlU"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="装备名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XM-D9-K0w">
                                 <rect key="frame" x="104" y="72" width="96" height="29"/>
                                 <color key="backgroundColor" red="0.20528522133827209" green="0.59513360261917114" blue="0.49505996704101562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -156,9 +149,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="效果" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYT-uI-gQG">
-                                <rect key="frame" x="104" y="109" width="208" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="效果" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYT-uI-gQG">
+                                <rect key="frame" x="104" y="109" width="208" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -215,12 +208,19 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="技能" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-RS-Obf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="技能" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-RS-Obf">
                                 <rect key="frame" x="16" y="160" width="292" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ohH-WM-B72">
+                                <rect key="frame" x="16" y="72" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ZME-Qj-cpP"/>
+                                    <constraint firstAttribute="width" constant="80" id="aMI-3F-xlU"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.054901960780000002" green="0.4039215686" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -229,17 +229,18 @@
                             <constraint firstItem="ohH-WM-B72" firstAttribute="top" secondItem="Ku7-du-qlK" secondAttribute="bottom" constant="8" id="8MS-iZ-XNh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cil-RS-Obf" secondAttribute="trailing" constant="-4" id="9EI-Bh-UQn"/>
                             <constraint firstItem="zef-Mk-Aup" firstAttribute="top" secondItem="Ku7-du-qlK" secondAttribute="bottom" constant="8" id="9dJ-ed-aRb"/>
-                            <constraint firstItem="Cil-RS-Obf" firstAttribute="top" secondItem="ohH-WM-B72" secondAttribute="bottom" constant="8" id="BGB-Ty-IRK"/>
-                            <constraint firstItem="GYT-uI-gQG" firstAttribute="top" secondItem="zef-Mk-Aup" secondAttribute="bottom" constant="8" id="DaS-UH-2Q9"/>
+                            <constraint firstItem="Cil-RS-Obf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ohH-WM-B72" secondAttribute="bottom" priority="750" constant="8" id="BGB-Ty-IRK"/>
+                            <constraint firstItem="Cil-RS-Obf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GYT-uI-gQG" secondAttribute="bottom" constant="8" id="Irx-Wn-zuM"/>
                             <constraint firstItem="78G-hs-4Hr" firstAttribute="leading" secondItem="KyG-6K-0Od" secondAttribute="leadingMargin" constant="-12" id="LPr-Al-8uT"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Cil-RS-Obf" secondAttribute="leading" id="R1v-O2-7bu"/>
                             <constraint firstItem="3XM-D9-K0w" firstAttribute="leading" secondItem="ohH-WM-B72" secondAttribute="trailing" constant="8" id="WP1-aT-6i1"/>
                             <constraint firstItem="3XM-D9-K0w" firstAttribute="top" secondItem="ohH-WM-B72" secondAttribute="top" id="X4G-mB-pxD"/>
                             <constraint firstItem="zef-Mk-Aup" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3XM-D9-K0w" secondAttribute="trailing" constant="8" id="ilC-Ha-KRh"/>
+                            <constraint firstItem="GYT-uI-gQG" firstAttribute="top" secondItem="3XM-D9-K0w" secondAttribute="bottom" constant="8" id="k0c-43-VCH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="78G-hs-4Hr" secondAttribute="trailing" constant="-12" id="kMy-cW-Re2"/>
                             <constraint firstItem="GYT-uI-gQG" firstAttribute="leading" secondItem="ohH-WM-B72" secondAttribute="trailing" constant="8" id="ozn-Xl-KYS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zef-Mk-Aup" secondAttribute="trailing" constant="-8" id="t5M-Zj-v4S"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GYT-uI-gQG" secondAttribute="trailing" constant="-8" id="ybY-bL-e9Q"/>
+                            <constraint firstItem="GYT-uI-gQG" firstAttribute="trailing" secondItem="KyG-6K-0Od" secondAttribute="trailingMargin" constant="8" id="ybY-bL-e9Q"/>
                             <constraint firstItem="Gh8-4u-9vg" firstAttribute="top" secondItem="78G-hs-4Hr" secondAttribute="bottom" constant="8" id="z82-6a-mZm"/>
                         </constraints>
                     </view>

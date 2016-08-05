@@ -16,10 +16,12 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 16 files.
+  /// This `R.file` struct is generated, and contains static references to 17 files.
   struct file {
     /// Resource file `Bugs`.
     static let bugs = FileResource(bundle: _R.hostingBundle, name: "Bugs", pathExtension: "")
+    /// Resource file `equipment.json`.
+    static let equipmentJson = FileResource(bundle: _R.hostingBundle, name: "equipment", pathExtension: "json")
     /// Resource file `feedback_add_image@2x.png`.
     static let feedback_add_image2xPng = FileResource(bundle: _R.hostingBundle, name: "feedback_add_image@2x", pathExtension: "png")
     /// Resource file `feedback_back@2x.png`.
@@ -54,6 +56,12 @@ struct R: Rswift.Validatable {
     /// `bundle.URLForResource("Bugs", withExtension: "")`
     static func bugs(_: Void) -> NSURL? {
       let fileResource = R.file.bugs
+      return fileResource.bundle.URLForResource(fileResource)
+    }
+    
+    /// `bundle.URLForResource("equipment", withExtension: "json")`
+    static func equipmentJson(_: Void) -> NSURL? {
+      let fileResource = R.file.equipmentJson
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -155,7 +163,7 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 878 images.
+  /// This `R.image` struct is generated, and contains static references to 1052 images.
   struct image {
     /// Image `armored_boot`.
     static let armored_boot = ImageResource(bundle: _R.hostingBundle, name: "armored_boot")
@@ -173,6 +181,354 @@ struct R: Rswift.Validatable {
     static let death = ImageResource(bundle: _R.hostingBundle, name: "death")
     /// Image `death-old`.
     static let deathOld = ImageResource(bundle: _R.hostingBundle, name: "death-old")
+    /// Image `equipment1`.
+    static let equipment1 = ImageResource(bundle: _R.hostingBundle, name: "equipment1")
+    /// Image `equipment10`.
+    static let equipment10 = ImageResource(bundle: _R.hostingBundle, name: "equipment10")
+    /// Image `equipment101`.
+    static let equipment101 = ImageResource(bundle: _R.hostingBundle, name: "equipment101")
+    /// Image `equipment102`.
+    static let equipment102 = ImageResource(bundle: _R.hostingBundle, name: "equipment102")
+    /// Image `equipment104`.
+    static let equipment104 = ImageResource(bundle: _R.hostingBundle, name: "equipment104")
+    /// Image `equipment107`.
+    static let equipment107 = ImageResource(bundle: _R.hostingBundle, name: "equipment107")
+    /// Image `equipment108`.
+    static let equipment108 = ImageResource(bundle: _R.hostingBundle, name: "equipment108")
+    /// Image `equipment109`.
+    static let equipment109 = ImageResource(bundle: _R.hostingBundle, name: "equipment109")
+    /// Image `equipment11`.
+    static let equipment11 = ImageResource(bundle: _R.hostingBundle, name: "equipment11")
+    /// Image `equipment110`.
+    static let equipment110 = ImageResource(bundle: _R.hostingBundle, name: "equipment110")
+    /// Image `equipment111`.
+    static let equipment111 = ImageResource(bundle: _R.hostingBundle, name: "equipment111")
+    /// Image `equipment112`.
+    static let equipment112 = ImageResource(bundle: _R.hostingBundle, name: "equipment112")
+    /// Image `equipment113`.
+    static let equipment113 = ImageResource(bundle: _R.hostingBundle, name: "equipment113")
+    /// Image `equipment114`.
+    static let equipment114 = ImageResource(bundle: _R.hostingBundle, name: "equipment114")
+    /// Image `equipment115`.
+    static let equipment115 = ImageResource(bundle: _R.hostingBundle, name: "equipment115")
+    /// Image `equipment116`.
+    static let equipment116 = ImageResource(bundle: _R.hostingBundle, name: "equipment116")
+    /// Image `equipment117`.
+    static let equipment117 = ImageResource(bundle: _R.hostingBundle, name: "equipment117")
+    /// Image `equipment118`.
+    static let equipment118 = ImageResource(bundle: _R.hostingBundle, name: "equipment118")
+    /// Image `equipment119`.
+    static let equipment119 = ImageResource(bundle: _R.hostingBundle, name: "equipment119")
+    /// Image `equipment12`.
+    static let equipment12 = ImageResource(bundle: _R.hostingBundle, name: "equipment12")
+    /// Image `equipment120`.
+    static let equipment120 = ImageResource(bundle: _R.hostingBundle, name: "equipment120")
+    /// Image `equipment121`.
+    static let equipment121 = ImageResource(bundle: _R.hostingBundle, name: "equipment121")
+    /// Image `equipment122`.
+    static let equipment122 = ImageResource(bundle: _R.hostingBundle, name: "equipment122")
+    /// Image `equipment125`.
+    static let equipment125 = ImageResource(bundle: _R.hostingBundle, name: "equipment125")
+    /// Image `equipment126`.
+    static let equipment126 = ImageResource(bundle: _R.hostingBundle, name: "equipment126")
+    /// Image `equipment127`.
+    static let equipment127 = ImageResource(bundle: _R.hostingBundle, name: "equipment127")
+    /// Image `equipment128`.
+    static let equipment128 = ImageResource(bundle: _R.hostingBundle, name: "equipment128")
+    /// Image `equipment129`.
+    static let equipment129 = ImageResource(bundle: _R.hostingBundle, name: "equipment129")
+    /// Image `equipment13`.
+    static let equipment13 = ImageResource(bundle: _R.hostingBundle, name: "equipment13")
+    /// Image `equipment130`.
+    static let equipment130 = ImageResource(bundle: _R.hostingBundle, name: "equipment130")
+    /// Image `equipment131`.
+    static let equipment131 = ImageResource(bundle: _R.hostingBundle, name: "equipment131")
+    /// Image `equipment132`.
+    static let equipment132 = ImageResource(bundle: _R.hostingBundle, name: "equipment132")
+    /// Image `equipment133`.
+    static let equipment133 = ImageResource(bundle: _R.hostingBundle, name: "equipment133")
+    /// Image `equipment134`.
+    static let equipment134 = ImageResource(bundle: _R.hostingBundle, name: "equipment134")
+    /// Image `equipment135`.
+    static let equipment135 = ImageResource(bundle: _R.hostingBundle, name: "equipment135")
+    /// Image `equipment136`.
+    static let equipment136 = ImageResource(bundle: _R.hostingBundle, name: "equipment136")
+    /// Image `equipment137`.
+    static let equipment137 = ImageResource(bundle: _R.hostingBundle, name: "equipment137")
+    /// Image `equipment138`.
+    static let equipment138 = ImageResource(bundle: _R.hostingBundle, name: "equipment138")
+    /// Image `equipment139`.
+    static let equipment139 = ImageResource(bundle: _R.hostingBundle, name: "equipment139")
+    /// Image `equipment14`.
+    static let equipment14 = ImageResource(bundle: _R.hostingBundle, name: "equipment14")
+    /// Image `equipment140`.
+    static let equipment140 = ImageResource(bundle: _R.hostingBundle, name: "equipment140")
+    /// Image `equipment141`.
+    static let equipment141 = ImageResource(bundle: _R.hostingBundle, name: "equipment141")
+    /// Image `equipment142`.
+    static let equipment142 = ImageResource(bundle: _R.hostingBundle, name: "equipment142")
+    /// Image `equipment143`.
+    static let equipment143 = ImageResource(bundle: _R.hostingBundle, name: "equipment143")
+    /// Image `equipment144`.
+    static let equipment144 = ImageResource(bundle: _R.hostingBundle, name: "equipment144")
+    /// Image `equipment145`.
+    static let equipment145 = ImageResource(bundle: _R.hostingBundle, name: "equipment145")
+    /// Image `equipment146`.
+    static let equipment146 = ImageResource(bundle: _R.hostingBundle, name: "equipment146")
+    /// Image `equipment147`.
+    static let equipment147 = ImageResource(bundle: _R.hostingBundle, name: "equipment147")
+    /// Image `equipment148`.
+    static let equipment148 = ImageResource(bundle: _R.hostingBundle, name: "equipment148")
+    /// Image `equipment149`.
+    static let equipment149 = ImageResource(bundle: _R.hostingBundle, name: "equipment149")
+    /// Image `equipment15`.
+    static let equipment15 = ImageResource(bundle: _R.hostingBundle, name: "equipment15")
+    /// Image `equipment150`.
+    static let equipment150 = ImageResource(bundle: _R.hostingBundle, name: "equipment150")
+    /// Image `equipment151`.
+    static let equipment151 = ImageResource(bundle: _R.hostingBundle, name: "equipment151")
+    /// Image `equipment152`.
+    static let equipment152 = ImageResource(bundle: _R.hostingBundle, name: "equipment152")
+    /// Image `equipment153`.
+    static let equipment153 = ImageResource(bundle: _R.hostingBundle, name: "equipment153")
+    /// Image `equipment154`.
+    static let equipment154 = ImageResource(bundle: _R.hostingBundle, name: "equipment154")
+    /// Image `equipment155`.
+    static let equipment155 = ImageResource(bundle: _R.hostingBundle, name: "equipment155")
+    /// Image `equipment156`.
+    static let equipment156 = ImageResource(bundle: _R.hostingBundle, name: "equipment156")
+    /// Image `equipment157`.
+    static let equipment157 = ImageResource(bundle: _R.hostingBundle, name: "equipment157")
+    /// Image `equipment158`.
+    static let equipment158 = ImageResource(bundle: _R.hostingBundle, name: "equipment158")
+    /// Image `equipment159`.
+    static let equipment159 = ImageResource(bundle: _R.hostingBundle, name: "equipment159")
+    /// Image `equipment16`.
+    static let equipment16 = ImageResource(bundle: _R.hostingBundle, name: "equipment16")
+    /// Image `equipment161`.
+    static let equipment161 = ImageResource(bundle: _R.hostingBundle, name: "equipment161")
+    /// Image `equipment162`.
+    static let equipment162 = ImageResource(bundle: _R.hostingBundle, name: "equipment162")
+    /// Image `equipment163`.
+    static let equipment163 = ImageResource(bundle: _R.hostingBundle, name: "equipment163")
+    /// Image `equipment166`.
+    static let equipment166 = ImageResource(bundle: _R.hostingBundle, name: "equipment166")
+    /// Image `equipment168`.
+    static let equipment168 = ImageResource(bundle: _R.hostingBundle, name: "equipment168")
+    /// Image `equipment169`.
+    static let equipment169 = ImageResource(bundle: _R.hostingBundle, name: "equipment169")
+    /// Image `equipment17`.
+    static let equipment17 = ImageResource(bundle: _R.hostingBundle, name: "equipment17")
+    /// Image `equipment170`.
+    static let equipment170 = ImageResource(bundle: _R.hostingBundle, name: "equipment170")
+    /// Image `equipment171`.
+    static let equipment171 = ImageResource(bundle: _R.hostingBundle, name: "equipment171")
+    /// Image `equipment172`.
+    static let equipment172 = ImageResource(bundle: _R.hostingBundle, name: "equipment172")
+    /// Image `equipment173`.
+    static let equipment173 = ImageResource(bundle: _R.hostingBundle, name: "equipment173")
+    /// Image `equipment174`.
+    static let equipment174 = ImageResource(bundle: _R.hostingBundle, name: "equipment174")
+    /// Image `equipment175`.
+    static let equipment175 = ImageResource(bundle: _R.hostingBundle, name: "equipment175")
+    /// Image `equipment176`.
+    static let equipment176 = ImageResource(bundle: _R.hostingBundle, name: "equipment176")
+    /// Image `equipment177`.
+    static let equipment177 = ImageResource(bundle: _R.hostingBundle, name: "equipment177")
+    /// Image `equipment178`.
+    static let equipment178 = ImageResource(bundle: _R.hostingBundle, name: "equipment178")
+    /// Image `equipment179`.
+    static let equipment179 = ImageResource(bundle: _R.hostingBundle, name: "equipment179")
+    /// Image `equipment180`.
+    static let equipment180 = ImageResource(bundle: _R.hostingBundle, name: "equipment180")
+    /// Image `equipment181`.
+    static let equipment181 = ImageResource(bundle: _R.hostingBundle, name: "equipment181")
+    /// Image `equipment182`.
+    static let equipment182 = ImageResource(bundle: _R.hostingBundle, name: "equipment182")
+    /// Image `equipment183`.
+    static let equipment183 = ImageResource(bundle: _R.hostingBundle, name: "equipment183")
+    /// Image `equipment184`.
+    static let equipment184 = ImageResource(bundle: _R.hostingBundle, name: "equipment184")
+    /// Image `equipment185`.
+    static let equipment185 = ImageResource(bundle: _R.hostingBundle, name: "equipment185")
+    /// Image `equipment186`.
+    static let equipment186 = ImageResource(bundle: _R.hostingBundle, name: "equipment186")
+    /// Image `equipment187`.
+    static let equipment187 = ImageResource(bundle: _R.hostingBundle, name: "equipment187")
+    /// Image `equipment188`.
+    static let equipment188 = ImageResource(bundle: _R.hostingBundle, name: "equipment188")
+    /// Image `equipment189`.
+    static let equipment189 = ImageResource(bundle: _R.hostingBundle, name: "equipment189")
+    /// Image `equipment19`.
+    static let equipment19 = ImageResource(bundle: _R.hostingBundle, name: "equipment19")
+    /// Image `equipment190`.
+    static let equipment190 = ImageResource(bundle: _R.hostingBundle, name: "equipment190")
+    /// Image `equipment191`.
+    static let equipment191 = ImageResource(bundle: _R.hostingBundle, name: "equipment191")
+    /// Image `equipment192`.
+    static let equipment192 = ImageResource(bundle: _R.hostingBundle, name: "equipment192")
+    /// Image `equipment2`.
+    static let equipment2 = ImageResource(bundle: _R.hostingBundle, name: "equipment2")
+    /// Image `equipment20`.
+    static let equipment20 = ImageResource(bundle: _R.hostingBundle, name: "equipment20")
+    /// Image `equipment21`.
+    static let equipment21 = ImageResource(bundle: _R.hostingBundle, name: "equipment21")
+    /// Image `equipment22`.
+    static let equipment22 = ImageResource(bundle: _R.hostingBundle, name: "equipment22")
+    /// Image `equipment24`.
+    static let equipment24 = ImageResource(bundle: _R.hostingBundle, name: "equipment24")
+    /// Image `equipment25`.
+    static let equipment25 = ImageResource(bundle: _R.hostingBundle, name: "equipment25")
+    /// Image `equipment26`.
+    static let equipment26 = ImageResource(bundle: _R.hostingBundle, name: "equipment26")
+    /// Image `equipment27`.
+    static let equipment27 = ImageResource(bundle: _R.hostingBundle, name: "equipment27")
+    /// Image `equipment28`.
+    static let equipment28 = ImageResource(bundle: _R.hostingBundle, name: "equipment28")
+    /// Image `equipment29`.
+    static let equipment29 = ImageResource(bundle: _R.hostingBundle, name: "equipment29")
+    /// Image `equipment3`.
+    static let equipment3 = ImageResource(bundle: _R.hostingBundle, name: "equipment3")
+    /// Image `equipment31`.
+    static let equipment31 = ImageResource(bundle: _R.hostingBundle, name: "equipment31")
+    /// Image `equipment32`.
+    static let equipment32 = ImageResource(bundle: _R.hostingBundle, name: "equipment32")
+    /// Image `equipment34`.
+    static let equipment34 = ImageResource(bundle: _R.hostingBundle, name: "equipment34")
+    /// Image `equipment35`.
+    static let equipment35 = ImageResource(bundle: _R.hostingBundle, name: "equipment35")
+    /// Image `equipment36`.
+    static let equipment36 = ImageResource(bundle: _R.hostingBundle, name: "equipment36")
+    /// Image `equipment37`.
+    static let equipment37 = ImageResource(bundle: _R.hostingBundle, name: "equipment37")
+    /// Image `equipment38`.
+    static let equipment38 = ImageResource(bundle: _R.hostingBundle, name: "equipment38")
+    /// Image `equipment39`.
+    static let equipment39 = ImageResource(bundle: _R.hostingBundle, name: "equipment39")
+    /// Image `equipment4`.
+    static let equipment4 = ImageResource(bundle: _R.hostingBundle, name: "equipment4")
+    /// Image `equipment40`.
+    static let equipment40 = ImageResource(bundle: _R.hostingBundle, name: "equipment40")
+    /// Image `equipment41`.
+    static let equipment41 = ImageResource(bundle: _R.hostingBundle, name: "equipment41")
+    /// Image `equipment42`.
+    static let equipment42 = ImageResource(bundle: _R.hostingBundle, name: "equipment42")
+    /// Image `equipment43`.
+    static let equipment43 = ImageResource(bundle: _R.hostingBundle, name: "equipment43")
+    /// Image `equipment44`.
+    static let equipment44 = ImageResource(bundle: _R.hostingBundle, name: "equipment44")
+    /// Image `equipment45`.
+    static let equipment45 = ImageResource(bundle: _R.hostingBundle, name: "equipment45")
+    /// Image `equipment46`.
+    static let equipment46 = ImageResource(bundle: _R.hostingBundle, name: "equipment46")
+    /// Image `equipment47`.
+    static let equipment47 = ImageResource(bundle: _R.hostingBundle, name: "equipment47")
+    /// Image `equipment48`.
+    static let equipment48 = ImageResource(bundle: _R.hostingBundle, name: "equipment48")
+    /// Image `equipment49`.
+    static let equipment49 = ImageResource(bundle: _R.hostingBundle, name: "equipment49")
+    /// Image `equipment5`.
+    static let equipment5 = ImageResource(bundle: _R.hostingBundle, name: "equipment5")
+    /// Image `equipment51`.
+    static let equipment51 = ImageResource(bundle: _R.hostingBundle, name: "equipment51")
+    /// Image `equipment52`.
+    static let equipment52 = ImageResource(bundle: _R.hostingBundle, name: "equipment52")
+    /// Image `equipment53`.
+    static let equipment53 = ImageResource(bundle: _R.hostingBundle, name: "equipment53")
+    /// Image `equipment54`.
+    static let equipment54 = ImageResource(bundle: _R.hostingBundle, name: "equipment54")
+    /// Image `equipment55`.
+    static let equipment55 = ImageResource(bundle: _R.hostingBundle, name: "equipment55")
+    /// Image `equipment56`.
+    static let equipment56 = ImageResource(bundle: _R.hostingBundle, name: "equipment56")
+    /// Image `equipment57`.
+    static let equipment57 = ImageResource(bundle: _R.hostingBundle, name: "equipment57")
+    /// Image `equipment58`.
+    static let equipment58 = ImageResource(bundle: _R.hostingBundle, name: "equipment58")
+    /// Image `equipment59`.
+    static let equipment59 = ImageResource(bundle: _R.hostingBundle, name: "equipment59")
+    /// Image `equipment6`.
+    static let equipment6 = ImageResource(bundle: _R.hostingBundle, name: "equipment6")
+    /// Image `equipment60`.
+    static let equipment60 = ImageResource(bundle: _R.hostingBundle, name: "equipment60")
+    /// Image `equipment61`.
+    static let equipment61 = ImageResource(bundle: _R.hostingBundle, name: "equipment61")
+    /// Image `equipment62`.
+    static let equipment62 = ImageResource(bundle: _R.hostingBundle, name: "equipment62")
+    /// Image `equipment63`.
+    static let equipment63 = ImageResource(bundle: _R.hostingBundle, name: "equipment63")
+    /// Image `equipment64`.
+    static let equipment64 = ImageResource(bundle: _R.hostingBundle, name: "equipment64")
+    /// Image `equipment65`.
+    static let equipment65 = ImageResource(bundle: _R.hostingBundle, name: "equipment65")
+    /// Image `equipment66`.
+    static let equipment66 = ImageResource(bundle: _R.hostingBundle, name: "equipment66")
+    /// Image `equipment67`.
+    static let equipment67 = ImageResource(bundle: _R.hostingBundle, name: "equipment67")
+    /// Image `equipment68`.
+    static let equipment68 = ImageResource(bundle: _R.hostingBundle, name: "equipment68")
+    /// Image `equipment69`.
+    static let equipment69 = ImageResource(bundle: _R.hostingBundle, name: "equipment69")
+    /// Image `equipment70`.
+    static let equipment70 = ImageResource(bundle: _R.hostingBundle, name: "equipment70")
+    /// Image `equipment71`.
+    static let equipment71 = ImageResource(bundle: _R.hostingBundle, name: "equipment71")
+    /// Image `equipment72`.
+    static let equipment72 = ImageResource(bundle: _R.hostingBundle, name: "equipment72")
+    /// Image `equipment73`.
+    static let equipment73 = ImageResource(bundle: _R.hostingBundle, name: "equipment73")
+    /// Image `equipment74`.
+    static let equipment74 = ImageResource(bundle: _R.hostingBundle, name: "equipment74")
+    /// Image `equipment75`.
+    static let equipment75 = ImageResource(bundle: _R.hostingBundle, name: "equipment75")
+    /// Image `equipment77`.
+    static let equipment77 = ImageResource(bundle: _R.hostingBundle, name: "equipment77")
+    /// Image `equipment78`.
+    static let equipment78 = ImageResource(bundle: _R.hostingBundle, name: "equipment78")
+    /// Image `equipment79`.
+    static let equipment79 = ImageResource(bundle: _R.hostingBundle, name: "equipment79")
+    /// Image `equipment80`.
+    static let equipment80 = ImageResource(bundle: _R.hostingBundle, name: "equipment80")
+    /// Image `equipment81`.
+    static let equipment81 = ImageResource(bundle: _R.hostingBundle, name: "equipment81")
+    /// Image `equipment82`.
+    static let equipment82 = ImageResource(bundle: _R.hostingBundle, name: "equipment82")
+    /// Image `equipment83`.
+    static let equipment83 = ImageResource(bundle: _R.hostingBundle, name: "equipment83")
+    /// Image `equipment84`.
+    static let equipment84 = ImageResource(bundle: _R.hostingBundle, name: "equipment84")
+    /// Image `equipment85`.
+    static let equipment85 = ImageResource(bundle: _R.hostingBundle, name: "equipment85")
+    /// Image `equipment86`.
+    static let equipment86 = ImageResource(bundle: _R.hostingBundle, name: "equipment86")
+    /// Image `equipment87`.
+    static let equipment87 = ImageResource(bundle: _R.hostingBundle, name: "equipment87")
+    /// Image `equipment88`.
+    static let equipment88 = ImageResource(bundle: _R.hostingBundle, name: "equipment88")
+    /// Image `equipment89`.
+    static let equipment89 = ImageResource(bundle: _R.hostingBundle, name: "equipment89")
+    /// Image `equipment9`.
+    static let equipment9 = ImageResource(bundle: _R.hostingBundle, name: "equipment9")
+    /// Image `equipment90`.
+    static let equipment90 = ImageResource(bundle: _R.hostingBundle, name: "equipment90")
+    /// Image `equipment91`.
+    static let equipment91 = ImageResource(bundle: _R.hostingBundle, name: "equipment91")
+    /// Image `equipment92`.
+    static let equipment92 = ImageResource(bundle: _R.hostingBundle, name: "equipment92")
+    /// Image `equipment93`.
+    static let equipment93 = ImageResource(bundle: _R.hostingBundle, name: "equipment93")
+    /// Image `equipment94`.
+    static let equipment94 = ImageResource(bundle: _R.hostingBundle, name: "equipment94")
+    /// Image `equipment95`.
+    static let equipment95 = ImageResource(bundle: _R.hostingBundle, name: "equipment95")
+    /// Image `equipment96`.
+    static let equipment96 = ImageResource(bundle: _R.hostingBundle, name: "equipment96")
+    /// Image `equipment97`.
+    static let equipment97 = ImageResource(bundle: _R.hostingBundle, name: "equipment97")
+    /// Image `equipment98`.
+    static let equipment98 = ImageResource(bundle: _R.hostingBundle, name: "equipment98")
+    /// Image `equipment99`.
+    static let equipment99 = ImageResource(bundle: _R.hostingBundle, name: "equipment99")
     /// Image `feedback_add_image`.
     static let feedback_add_image = ImageResource(bundle: _R.hostingBundle, name: "feedback_add_image")
     /// Image `feedback_back`.
@@ -1952,6 +2308,876 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "death-old", bundle: ..., traitCollection: ...)`
     static func deathOld(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.deathOld, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment1", bundle: ..., traitCollection: ...)`
+    static func equipment1(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment1, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment10", bundle: ..., traitCollection: ...)`
+    static func equipment10(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment10, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment101", bundle: ..., traitCollection: ...)`
+    static func equipment101(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment101, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment102", bundle: ..., traitCollection: ...)`
+    static func equipment102(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment102, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment104", bundle: ..., traitCollection: ...)`
+    static func equipment104(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment104, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment107", bundle: ..., traitCollection: ...)`
+    static func equipment107(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment107, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment108", bundle: ..., traitCollection: ...)`
+    static func equipment108(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment108, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment109", bundle: ..., traitCollection: ...)`
+    static func equipment109(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment109, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment11", bundle: ..., traitCollection: ...)`
+    static func equipment11(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment11, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment110", bundle: ..., traitCollection: ...)`
+    static func equipment110(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment110, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment111", bundle: ..., traitCollection: ...)`
+    static func equipment111(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment111, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment112", bundle: ..., traitCollection: ...)`
+    static func equipment112(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment112, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment113", bundle: ..., traitCollection: ...)`
+    static func equipment113(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment113, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment114", bundle: ..., traitCollection: ...)`
+    static func equipment114(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment114, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment115", bundle: ..., traitCollection: ...)`
+    static func equipment115(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment115, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment116", bundle: ..., traitCollection: ...)`
+    static func equipment116(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment116, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment117", bundle: ..., traitCollection: ...)`
+    static func equipment117(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment117, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment118", bundle: ..., traitCollection: ...)`
+    static func equipment118(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment118, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment119", bundle: ..., traitCollection: ...)`
+    static func equipment119(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment119, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment12", bundle: ..., traitCollection: ...)`
+    static func equipment12(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment12, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment120", bundle: ..., traitCollection: ...)`
+    static func equipment120(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment120, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment121", bundle: ..., traitCollection: ...)`
+    static func equipment121(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment121, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment122", bundle: ..., traitCollection: ...)`
+    static func equipment122(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment122, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment125", bundle: ..., traitCollection: ...)`
+    static func equipment125(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment125, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment126", bundle: ..., traitCollection: ...)`
+    static func equipment126(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment126, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment127", bundle: ..., traitCollection: ...)`
+    static func equipment127(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment127, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment128", bundle: ..., traitCollection: ...)`
+    static func equipment128(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment128, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment129", bundle: ..., traitCollection: ...)`
+    static func equipment129(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment129, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment13", bundle: ..., traitCollection: ...)`
+    static func equipment13(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment13, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment130", bundle: ..., traitCollection: ...)`
+    static func equipment130(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment130, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment131", bundle: ..., traitCollection: ...)`
+    static func equipment131(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment131, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment132", bundle: ..., traitCollection: ...)`
+    static func equipment132(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment132, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment133", bundle: ..., traitCollection: ...)`
+    static func equipment133(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment133, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment134", bundle: ..., traitCollection: ...)`
+    static func equipment134(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment134, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment135", bundle: ..., traitCollection: ...)`
+    static func equipment135(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment135, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment136", bundle: ..., traitCollection: ...)`
+    static func equipment136(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment136, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment137", bundle: ..., traitCollection: ...)`
+    static func equipment137(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment137, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment138", bundle: ..., traitCollection: ...)`
+    static func equipment138(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment138, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment139", bundle: ..., traitCollection: ...)`
+    static func equipment139(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment139, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment14", bundle: ..., traitCollection: ...)`
+    static func equipment14(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment14, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment140", bundle: ..., traitCollection: ...)`
+    static func equipment140(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment140, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment141", bundle: ..., traitCollection: ...)`
+    static func equipment141(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment141, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment142", bundle: ..., traitCollection: ...)`
+    static func equipment142(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment142, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment143", bundle: ..., traitCollection: ...)`
+    static func equipment143(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment143, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment144", bundle: ..., traitCollection: ...)`
+    static func equipment144(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment144, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment145", bundle: ..., traitCollection: ...)`
+    static func equipment145(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment145, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment146", bundle: ..., traitCollection: ...)`
+    static func equipment146(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment146, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment147", bundle: ..., traitCollection: ...)`
+    static func equipment147(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment147, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment148", bundle: ..., traitCollection: ...)`
+    static func equipment148(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment148, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment149", bundle: ..., traitCollection: ...)`
+    static func equipment149(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment149, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment15", bundle: ..., traitCollection: ...)`
+    static func equipment15(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment15, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment150", bundle: ..., traitCollection: ...)`
+    static func equipment150(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment150, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment151", bundle: ..., traitCollection: ...)`
+    static func equipment151(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment151, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment152", bundle: ..., traitCollection: ...)`
+    static func equipment152(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment152, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment153", bundle: ..., traitCollection: ...)`
+    static func equipment153(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment153, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment154", bundle: ..., traitCollection: ...)`
+    static func equipment154(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment154, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment155", bundle: ..., traitCollection: ...)`
+    static func equipment155(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment155, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment156", bundle: ..., traitCollection: ...)`
+    static func equipment156(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment156, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment157", bundle: ..., traitCollection: ...)`
+    static func equipment157(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment157, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment158", bundle: ..., traitCollection: ...)`
+    static func equipment158(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment158, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment159", bundle: ..., traitCollection: ...)`
+    static func equipment159(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment159, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment16", bundle: ..., traitCollection: ...)`
+    static func equipment16(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment16, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment161", bundle: ..., traitCollection: ...)`
+    static func equipment161(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment161, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment162", bundle: ..., traitCollection: ...)`
+    static func equipment162(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment162, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment163", bundle: ..., traitCollection: ...)`
+    static func equipment163(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment163, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment166", bundle: ..., traitCollection: ...)`
+    static func equipment166(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment166, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment168", bundle: ..., traitCollection: ...)`
+    static func equipment168(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment168, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment169", bundle: ..., traitCollection: ...)`
+    static func equipment169(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment169, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment17", bundle: ..., traitCollection: ...)`
+    static func equipment17(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment17, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment170", bundle: ..., traitCollection: ...)`
+    static func equipment170(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment170, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment171", bundle: ..., traitCollection: ...)`
+    static func equipment171(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment171, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment172", bundle: ..., traitCollection: ...)`
+    static func equipment172(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment172, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment173", bundle: ..., traitCollection: ...)`
+    static func equipment173(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment173, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment174", bundle: ..., traitCollection: ...)`
+    static func equipment174(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment174, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment175", bundle: ..., traitCollection: ...)`
+    static func equipment175(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment175, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment176", bundle: ..., traitCollection: ...)`
+    static func equipment176(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment176, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment177", bundle: ..., traitCollection: ...)`
+    static func equipment177(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment177, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment178", bundle: ..., traitCollection: ...)`
+    static func equipment178(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment178, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment179", bundle: ..., traitCollection: ...)`
+    static func equipment179(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment179, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment180", bundle: ..., traitCollection: ...)`
+    static func equipment180(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment180, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment181", bundle: ..., traitCollection: ...)`
+    static func equipment181(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment181, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment182", bundle: ..., traitCollection: ...)`
+    static func equipment182(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment182, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment183", bundle: ..., traitCollection: ...)`
+    static func equipment183(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment183, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment184", bundle: ..., traitCollection: ...)`
+    static func equipment184(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment184, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment185", bundle: ..., traitCollection: ...)`
+    static func equipment185(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment185, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment186", bundle: ..., traitCollection: ...)`
+    static func equipment186(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment186, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment187", bundle: ..., traitCollection: ...)`
+    static func equipment187(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment187, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment188", bundle: ..., traitCollection: ...)`
+    static func equipment188(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment188, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment189", bundle: ..., traitCollection: ...)`
+    static func equipment189(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment189, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment19", bundle: ..., traitCollection: ...)`
+    static func equipment19(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment19, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment190", bundle: ..., traitCollection: ...)`
+    static func equipment190(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment190, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment191", bundle: ..., traitCollection: ...)`
+    static func equipment191(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment191, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment192", bundle: ..., traitCollection: ...)`
+    static func equipment192(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment192, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment2", bundle: ..., traitCollection: ...)`
+    static func equipment2(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment2, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment20", bundle: ..., traitCollection: ...)`
+    static func equipment20(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment20, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment21", bundle: ..., traitCollection: ...)`
+    static func equipment21(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment21, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment22", bundle: ..., traitCollection: ...)`
+    static func equipment22(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment22, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment24", bundle: ..., traitCollection: ...)`
+    static func equipment24(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment24, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment25", bundle: ..., traitCollection: ...)`
+    static func equipment25(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment25, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment26", bundle: ..., traitCollection: ...)`
+    static func equipment26(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment26, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment27", bundle: ..., traitCollection: ...)`
+    static func equipment27(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment27, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment28", bundle: ..., traitCollection: ...)`
+    static func equipment28(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment28, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment29", bundle: ..., traitCollection: ...)`
+    static func equipment29(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment29, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment3", bundle: ..., traitCollection: ...)`
+    static func equipment3(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment3, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment31", bundle: ..., traitCollection: ...)`
+    static func equipment31(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment31, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment32", bundle: ..., traitCollection: ...)`
+    static func equipment32(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment32, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment34", bundle: ..., traitCollection: ...)`
+    static func equipment34(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment34, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment35", bundle: ..., traitCollection: ...)`
+    static func equipment35(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment35, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment36", bundle: ..., traitCollection: ...)`
+    static func equipment36(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment36, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment37", bundle: ..., traitCollection: ...)`
+    static func equipment37(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment37, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment38", bundle: ..., traitCollection: ...)`
+    static func equipment38(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment38, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment39", bundle: ..., traitCollection: ...)`
+    static func equipment39(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment39, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment4", bundle: ..., traitCollection: ...)`
+    static func equipment4(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment4, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment40", bundle: ..., traitCollection: ...)`
+    static func equipment40(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment40, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment41", bundle: ..., traitCollection: ...)`
+    static func equipment41(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment41, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment42", bundle: ..., traitCollection: ...)`
+    static func equipment42(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment42, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment43", bundle: ..., traitCollection: ...)`
+    static func equipment43(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment43, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment44", bundle: ..., traitCollection: ...)`
+    static func equipment44(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment44, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment45", bundle: ..., traitCollection: ...)`
+    static func equipment45(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment45, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment46", bundle: ..., traitCollection: ...)`
+    static func equipment46(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment46, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment47", bundle: ..., traitCollection: ...)`
+    static func equipment47(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment47, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment48", bundle: ..., traitCollection: ...)`
+    static func equipment48(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment48, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment49", bundle: ..., traitCollection: ...)`
+    static func equipment49(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment49, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment5", bundle: ..., traitCollection: ...)`
+    static func equipment5(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment5, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment51", bundle: ..., traitCollection: ...)`
+    static func equipment51(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment51, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment52", bundle: ..., traitCollection: ...)`
+    static func equipment52(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment52, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment53", bundle: ..., traitCollection: ...)`
+    static func equipment53(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment53, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment54", bundle: ..., traitCollection: ...)`
+    static func equipment54(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment54, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment55", bundle: ..., traitCollection: ...)`
+    static func equipment55(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment55, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment56", bundle: ..., traitCollection: ...)`
+    static func equipment56(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment56, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment57", bundle: ..., traitCollection: ...)`
+    static func equipment57(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment57, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment58", bundle: ..., traitCollection: ...)`
+    static func equipment58(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment58, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment59", bundle: ..., traitCollection: ...)`
+    static func equipment59(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment59, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment6", bundle: ..., traitCollection: ...)`
+    static func equipment6(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment6, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment60", bundle: ..., traitCollection: ...)`
+    static func equipment60(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment60, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment61", bundle: ..., traitCollection: ...)`
+    static func equipment61(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment61, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment62", bundle: ..., traitCollection: ...)`
+    static func equipment62(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment62, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment63", bundle: ..., traitCollection: ...)`
+    static func equipment63(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment63, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment64", bundle: ..., traitCollection: ...)`
+    static func equipment64(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment64, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment65", bundle: ..., traitCollection: ...)`
+    static func equipment65(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment65, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment66", bundle: ..., traitCollection: ...)`
+    static func equipment66(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment66, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment67", bundle: ..., traitCollection: ...)`
+    static func equipment67(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment67, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment68", bundle: ..., traitCollection: ...)`
+    static func equipment68(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment68, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment69", bundle: ..., traitCollection: ...)`
+    static func equipment69(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment69, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment70", bundle: ..., traitCollection: ...)`
+    static func equipment70(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment70, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment71", bundle: ..., traitCollection: ...)`
+    static func equipment71(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment71, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment72", bundle: ..., traitCollection: ...)`
+    static func equipment72(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment72, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment73", bundle: ..., traitCollection: ...)`
+    static func equipment73(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment73, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment74", bundle: ..., traitCollection: ...)`
+    static func equipment74(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment74, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment75", bundle: ..., traitCollection: ...)`
+    static func equipment75(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment75, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment77", bundle: ..., traitCollection: ...)`
+    static func equipment77(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment77, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment78", bundle: ..., traitCollection: ...)`
+    static func equipment78(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment78, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment79", bundle: ..., traitCollection: ...)`
+    static func equipment79(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment79, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment80", bundle: ..., traitCollection: ...)`
+    static func equipment80(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment80, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment81", bundle: ..., traitCollection: ...)`
+    static func equipment81(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment81, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment82", bundle: ..., traitCollection: ...)`
+    static func equipment82(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment82, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment83", bundle: ..., traitCollection: ...)`
+    static func equipment83(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment83, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment84", bundle: ..., traitCollection: ...)`
+    static func equipment84(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment84, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment85", bundle: ..., traitCollection: ...)`
+    static func equipment85(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment85, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment86", bundle: ..., traitCollection: ...)`
+    static func equipment86(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment86, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment87", bundle: ..., traitCollection: ...)`
+    static func equipment87(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment87, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment88", bundle: ..., traitCollection: ...)`
+    static func equipment88(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment88, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment89", bundle: ..., traitCollection: ...)`
+    static func equipment89(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment89, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment9", bundle: ..., traitCollection: ...)`
+    static func equipment9(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment9, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment90", bundle: ..., traitCollection: ...)`
+    static func equipment90(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment90, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment91", bundle: ..., traitCollection: ...)`
+    static func equipment91(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment91, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment92", bundle: ..., traitCollection: ...)`
+    static func equipment92(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment92, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment93", bundle: ..., traitCollection: ...)`
+    static func equipment93(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment93, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment94", bundle: ..., traitCollection: ...)`
+    static func equipment94(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment94, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment95", bundle: ..., traitCollection: ...)`
+    static func equipment95(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment95, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment96", bundle: ..., traitCollection: ...)`
+    static func equipment96(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment96, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment97", bundle: ..., traitCollection: ...)`
+    static func equipment97(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment97, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment98", bundle: ..., traitCollection: ...)`
+    static func equipment98(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment98, compatibleWithTraitCollection: traitCollection)
+    }
+    
+    /// `UIImage(named: "equipment99", bundle: ..., traitCollection: ...)`
+    static func equipment99(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.equipment99, compatibleWithTraitCollection: traitCollection)
     }
     
     /// `UIImage(named: "feedback_add_image", bundle: ..., traitCollection: ...)`
