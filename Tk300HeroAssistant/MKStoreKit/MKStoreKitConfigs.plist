@@ -9,6 +9,6 @@
 		<string>AdvancedFunctionPackage</string>
 	</array>
 	<key>SharedSecret</key>
-	<string>316e5aa039f343289ffb1bb529665364</string>
+	<string>sharedSecret</string>
 </dict>
 </plist>

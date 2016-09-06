@@ -17,7 +17,7 @@ extension AppDelegate{
         Fabric.with([Crashlytics.self])
         //AVOSCloudCrashReporting.enable()
         //注册ID
-        AVOSCloud.setApplicationId("McTRN6wWrpJ3h4JKIH6h4pKA-gzGzoHsz", clientKey: "RtFCOng84Rwka4w1S3uBIDo2")
+        AVOSCloud.setApplicationId("#{Your AppID}", clientKey: "#{Your AppKey}")
         AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         //记录UDID
         if AppManager.getUUID() == nil{

@@ -118,7 +118,6 @@
 		35FBA5FE1CDF4E5C00A527B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA5FC1CDF4E5C00A527B4 /* Main.storyboard */; };
 		35FBA6031CDF4E5C00A527B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA6011CDF4E5C00A527B4 /* LaunchScreen.storyboard */; };
 		35FBA60B1CDF4EA800A527B4 /* openapi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA60A1CDF4EA800A527B4 /* openapi.txt */; };
-		35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA61B1CDF51BF00A527B4 /* NirKxMenu.m */; };
 		35FBA6201CDF523C00A527B4 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA61E1CDF523C00A527B4 /* HttpClient.swift */; };
 		35FBA6211CDF523C00A527B4 /* ServiceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FBA61F1CDF523C00A527B4 /* ServiceProxy.swift */; };
 		35FBA62F1CDF6FE300A527B4 /* Match.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FBA62D1CDF6FE300A527B4 /* Match.storyboard */; };
@@ -265,8 +264,6 @@
 		35FBA6021CDF4E5C00A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35FBA6041CDF4E5C00A527B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35FBA60A1CDF4EA800A527B4 /* openapi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = openapi.txt; path = ../openapi.txt; sourceTree = "<group>"; };
-		35FBA61A1CDF51BF00A527B4 /* NirKxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NirKxMenu.h; sourceTree = "<group>"; };
-		35FBA61B1CDF51BF00A527B4 /* NirKxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NirKxMenu.m; sourceTree = "<group>"; };
 		35FBA61E1CDF523C00A527B4 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		35FBA61F1CDF523C00A527B4 /* ServiceProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProxy.swift; sourceTree = "<group>"; };
 		35FBA62E1CDF6FE300A527B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Match.storyboard; sourceTree = "<group>"; };
@@ -436,7 +433,6 @@
 		35401A6D1CE839C800F0EDE2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				35FBA6221CDF523F00A527B4 /* 3rd */,
 				35401A6B1CE835E500F0EDE2 /* TableViewExtension.swift */,
 				3509932B1CEF116D0079C7E3 /* CollectionViewExtension.swift */,
 				35401A6E1CE839DC00F0EDE2 /* UITableViewNetErrorDataSource.swift */,
@@ -666,15 +662,6 @@
 			path = Tk300HeroAssistant;
 			sourceTree = "<group>";
 		};
-		35FBA6191CDF51BF00A527B4 /* NirKxMenu */ = {
-			isa = PBXGroup;
-			children = (
-				35FBA61A1CDF51BF00A527B4 /* NirKxMenu.h */,
-				35FBA61B1CDF51BF00A527B4 /* NirKxMenu.m */,
-			);
-			path = NirKxMenu;
-			sourceTree = "<group>";
-		};
 		35FBA61D1CDF523C00A527B4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -683,14 +670,6 @@
 				35FBA61F1CDF523C00A527B4 /* ServiceProxy.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		35FBA6221CDF523F00A527B4 /* 3rd */ = {
-			isa = PBXGroup;
-			children = (
-				35FBA6191CDF51BF00A527B4 /* NirKxMenu */,
-			);
-			name = 3rd;
 			sourceTree = "<group>";
 		};
 		35FBA6231CDF57DB00A527B4 /* Model */ = {
@@ -808,7 +787,6 @@
 				35FBA5F31CDF4E5C00A527B4 /* Resources */,
 				AC6CF727BCF18C30A9F2424F /* 📦 Embed Pods Frameworks */,
 				B7DA3539B62C5293FC5C2A82 /* 📦 Copy Pods Resources */,
-				354BA04D1D2E9CC300A2C045 /* Fabric Crash Report */,
 			);
 			buildRules = (
 			);
@@ -919,20 +897,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
-		};
-		354BA04D1D2E9CC300A2C045 /* Fabric Crash Report */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Fabric Crash Report";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 337959c28d91bd9a09da5d5f52a2c069b995d2aa d41bede1e426e1eb32d9b6722b08b6c01893f13f03de64a4f9b3385116f56713";
 		};
 		5156A7F7F722F3FD6DE47523 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1128,7 +1092,6 @@
 				35A892BC1CE8B36300FDCCCD /* CSVDataManager.swift in Sources */,
 				3588C3051D54535A007DF189 /* DataImageManager.swift in Sources */,
 				35CB3E061CEE2F2100FED888 /* CSVReader.swift in Sources */,
-				35FBA61C1CDF51BF00A527B4 /* NirKxMenu.m in Sources */,
 				35FD3BAC1D145C6B0048343D /* CarryDataSource.swift in Sources */,
 				355306EA1D0428A500065CDA /* HorizontalMenuScrollView.swift in Sources */,
 				3517D70F1CE0F38D006162BA /* MatchBasicTableViewCell.swift in Sources */,
